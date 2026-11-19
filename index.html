@@ -1,0 +1,923 @@
+<!doctype html>
+<html lang="en" data-site="dark" data-reader="black">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Inkstone Reader</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&family=Lora:wght@400;700&family=Nunito:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ui-bg:#17181c; --ui-card:#0f1012; --ui-line:#2a2b30; --ui-fg:#e8e9ec; --ui-mute:#9a9ca3; --ui-accent:#4f9bf5; --ui-field:#222328;
+  --pg-bg:#000; --pg-fg:#fff; --pg-card:#050505; --pg-line:#26272b; --pg-mute:#9a9ca3;
+  --c-sys:#6cb3ff; --c-user:#8cbcff; --c-patch:#e7c26b;
+  --fs:22px; --lh:1.5; --ff:'Nunito',system-ui,sans-serif; --pgap:.45em; --maxw:760px;
+}
+html[data-site="light"]{ --ui-bg:#f4f4f6; --ui-card:#fff; --ui-line:#d9dadf; --ui-fg:#1c1d21; --ui-mute:#6a6c74; --ui-accent:#1f6fd6; --ui-field:#ebecf0; }
+html[data-reader="charcoal"]{ --pg-bg:#1b1c1f; --pg-fg:#e3e4e7; --pg-card:#131416; --pg-line:#2b2c31; --pg-mute:#92949b; }
+html[data-reader="black"]{ --pg-bg:#000; --pg-fg:#fff; --pg-card:#050505; --pg-line:#26272b; --pg-mute:#9a9ca3; }
+html[data-reader="midnight"]{ --pg-bg:#0d1424; --pg-fg:#dfe6f5; --pg-card:#0a101d; --pg-line:#1f2a44; --pg-mute:#8e9bb8; }
+html[data-reader="sepia"]{ --pg-bg:#f2e8d5; --pg-fg:#3b3024; --pg-card:#f8f0e0; --pg-line:#dccfb4; --pg-mute:#7d6e58; --c-sys:#1a64b8; --c-user:#1a64b8; --c-patch:#9a6a00; }
+html[data-reader="ocean"]{ --pg-bg:#06223b; --pg-fg:#e4f0fb; --pg-card:#041a2e; --pg-line:#14405f; --pg-mute:#86a6c0; }
+html[data-reader="slate"]{ --pg-bg:#33363d; --pg-fg:#eceef2; --pg-card:#2a2d33; --pg-line:#464a53; --pg-mute:#a2a6b0; }
+html[data-reader="white"]{ --pg-bg:#fff; --pg-fg:#1a1a1a; --pg-card:#fff; --pg-line:#dcdde1; --pg-mute:#6a6c74; --c-sys:#1a64b8; --c-user:#1a64b8; --c-patch:#9a6a00; }
+html[data-reader="cream"]{ --pg-bg:#f6efd9; --pg-fg:#3a3224; --pg-card:#f6efd9; --pg-line:#dccfb4; --pg-mute:#7d6e58; --c-sys:#1a64b8; --c-user:#1a64b8; --c-patch:#9a6a00; }
+html[data-reader="tan"]{ --pg-bg:#f1dcb6; --pg-fg:#3b2f1c; --pg-card:#f1dcb6; --pg-line:#d9c196; --pg-mute:#7a6746; --c-sys:#1a5aa5; --c-user:#1a5aa5; --c-patch:#8a5a00; }
+html[data-reader="sky"]{ --pg-bg:#dce9f1; --pg-fg:#1d2b36; --pg-card:#dce9f1; --pg-line:#bcd0de; --pg-mute:#5c7384; --c-sys:#1a5aa5; --c-user:#1a5aa5; --c-patch:#8a5a00; }
+html[data-reader="rose"]{ --pg-bg:#f7e2e2; --pg-fg:#3a2326; --pg-card:#f7e2e2; --pg-line:#e4c4c4; --pg-mute:#8a6468; --c-sys:#1a5aa5; --c-user:#1a5aa5; --c-patch:#8a5a00; }
+html[data-reader="mint"]{ --pg-bg:#d9e8d6; --pg-fg:#1f3023; --pg-card:#d9e8d6; --pg-line:#bcd2b7; --pg-mute:#5d7a62; --c-sys:#1a5aa5; --c-user:#1a5aa5; --c-patch:#8a5a00; }
+*{box-sizing:border-box}
+html,body{margin:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--pg-bg);color:var(--pg-fg);font-family:system-ui,Segoe UI,sans-serif;min-height:100vh;padding-bottom:0}
+button{font:inherit;color:inherit;cursor:pointer}
+.hidden{display:none!important}
+
+/* top header */
+.top{display:flex;align-items:center;gap:10px;padding:10px 16px;background:var(--ui-bg);border-bottom:1px solid var(--ui-line);color:var(--ui-fg);position:sticky;top:0;z-index:30}
+.brand{font-weight:700;letter-spacing:.02em;margin-right:auto;font-size:16px}
+.tbtn{display:inline-flex;align-items:center;gap:6px;background:transparent;border:1px solid transparent;color:var(--ui-mute);padding:6px 10px;border-radius:8px;font-size:14px}
+.tbtn:hover{color:var(--ui-fg);background:var(--ui-field)}
+.tbtn.sq{border:1px solid var(--ui-line);color:var(--ui-fg);padding:6px 9px}
+
+/* reader cards */
+#reader{max-width:var(--maxw);margin:14px auto 0;padding:0 12px}
+body[data-width="narrow"]{--maxw:620px} body[data-width="wide"]{--maxw:940px}
+.card{background:var(--pg-card);border:1px solid var(--pg-line);border-radius:10px;padding:12px 14px;margin-bottom:10px}
+.novelname{color:var(--pg-mute);font-size:14px;cursor:pointer}
+.navrow{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.nbtn{background:var(--pg-bg);border:1px solid var(--pg-line);color:var(--pg-fg);padding:7px 14px;border-radius:8px;font-size:14px;display:inline-flex;align-items:center;gap:6px}
+.nbtn:hover:not(:disabled){border-color:var(--ui-accent)}
+.nbtn:disabled{opacity:.35;cursor:not-allowed}
+.navmid{text-align:center;font-size:14px;line-height:1.3}
+.navmid b{font-weight:600}
+.navmid span{display:block;color:var(--pg-mute);font-size:13px}
+.seg{display:flex;border:1px solid var(--pg-line);border-radius:8px;overflow:hidden;margin-top:10px}
+.seg button{flex:1;background:transparent;border:0;border-right:1px solid var(--pg-line);padding:7px 6px;font-size:14px;color:var(--pg-fg)}
+.seg button:last-child{border-right:0}
+.seg button.on{background:var(--pg-bg);box-shadow:inset 0 -2px 0 var(--ui-accent)}
+.chtitle{font-size:20px;margin:4px 0 0}
+.chtitle b{margin-right:6px}
+.chipline{display:flex;align-items:center;margin:10px 0 6px}
+.chipline:before,.chipline:after{content:"";flex:1;border-top:1px solid var(--pg-line)}
+.chip{font-size:12px;border:1px solid var(--pg-line);background:var(--pg-bg);border-radius:8px;padding:3px 10px;margin:0 8px;color:var(--pg-fg)}
+
+/* chapter text */
+#chBody{font-family:var(--ff);font-size:var(--fs);line-height:var(--lh);text-align:left}
+body[data-align="justify"] #chBody{text-align:justify}
+body[data-pspace="compact"] #chBody{--pgap:.2em} body[data-pspace="wide"] #chBody{--pgap:.9em}
+#chBody p{margin:0 0 var(--pgap)}
+body[data-indent="on"] #chBody p{text-indent:1.6em}
+#chBody .chhead{font-size:1.15em;font-weight:700;margin:.4em 0 .8em}
+#chBody .chsec + .chsec{margin-top:2.4em;padding-top:1.6em;border-top:1px dashed var(--pg-line)}
+.term{border-radius:3px}
+body[data-tstyle="semi"] .term{font-weight:600} body[data-tstyle="bold"] .term{font-weight:700}
+body[data-tstyle="underline"] .term{text-decoration:underline;text-underline-offset:3px}
+body[data-tstyle="italic"] .term{font-style:italic}
+body.tc-on.tc-sys .t-sys{color:var(--c-sys)} body.tc-on.tc-user .t-user{color:var(--c-user)} body.tc-on.tc-patch .t-patch{color:var(--c-patch)}
+body.old #reader .card{background:transparent;border-color:transparent;padding-left:0;padding-right:0}
+body.old #chBody{font-family:Georgia,'Times New Roman',serif;text-align:justify}
+.endnav{display:flex;gap:10px;justify-content:space-between;margin:26px 0 8px}
+.sentinel{height:1px}
+
+/* dock */
+#dock{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;flex-direction:column;align-items:center;pointer-events:none;border-top:1px solid var(--ui-line)}
+#dock>*{pointer-events:auto}
+#dockPanel{width:calc(100% - 24px);max-width:calc(var(--maxw) - 24px);background:var(--ui-bg);color:var(--ui-fg);border:1px solid var(--ui-line);border-top:0;border-bottom:0;border-radius:0;padding:8px 10px;max-height:56vh;overflow:auto}
+#dockTabs{width:calc(100% - 24px);max-width:calc(var(--maxw) - 24px);display:flex;background:var(--ui-card);border:1px solid var(--ui-line);border-top:0;border-bottom:0;color:var(--ui-mute)}
+#dockTabs button{flex:1;background:transparent;border:0;border-top:2px solid transparent;padding:5px 4px 6px;font-size:12px;color:var(--ui-mute);display:flex;flex-direction:column;align-items:center;gap:0}
+#dockTabs button.on{color:var(--ui-fg);border-top-color:var(--ui-accent);background:var(--ui-bg)}
+.grip{background:var(--ui-card);border:1px solid var(--ui-line);color:var(--ui-fg);width:44px;height:16px;border-radius:8px 8px 0 0;border-bottom:0;margin-bottom:-1px;font-size:10px;line-height:12px;padding:0}
+.lab{font-size:12px;letter-spacing:.06em;color:var(--ui-mute);text-transform:uppercase;margin:8px 0 4px}
+.lab:first-child{margin-top:0}
+.row{display:flex;gap:0;border:1px solid var(--ui-line);border-radius:8px;overflow:hidden;background:var(--ui-card)}
+.row.gap{gap:8px;border:0;background:transparent;overflow:visible}
+.row button{flex:1;background:transparent;border:0;border-right:1px solid var(--ui-line);padding:6px 6px;font-size:13px;color:var(--ui-fg)}
+.row button:last-child{border-right:0}
+.row button.on{background:var(--ui-field);box-shadow:inset 0 -2px 0 var(--ui-accent)}
+.row.gap button{border:1px solid var(--ui-line);border-radius:8px;background:var(--ui-card)}
+.bigbtn{width:100%;background:var(--ui-card);border:1px solid var(--ui-line);border-radius:8px;padding:7px;font-size:13px;color:var(--ui-fg)}
+.bigbtn:hover,.row button:hover{background:var(--ui-field)}
+.swatches{display:flex;border:1px solid var(--ui-line);border-radius:8px;overflow:hidden}
+.swatches button{flex:1;border:0;padding:8px 0;font-weight:700;font-size:15px}
+.swatches button.on{outline:2px solid var(--ui-accent);outline-offset:-2px}
+.novelcard{display:flex;align-items:center;gap:10px;border:1px solid var(--ui-line);border-radius:8px;background:var(--ui-card);padding:3px 8px;text-align:left}
+.cover{width:34px;height:44px;border-radius:5px;background:linear-gradient(160deg,#c0762c,#5b2a0c 60%,#1b0d05);color:#ffe3b5;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none;letter-spacing:.04em}
+.novelcard small{display:block;color:var(--ui-mute);font-size:11px;letter-spacing:.08em}
+.novelcard span{font-size:13px;line-height:1.2}
+#dockPanel .nbtn{padding:4px 12px;font-size:13px}
+.dnav{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.dnav .nbtn{min-width:76px}
+.dnav .navmid{flex:1}
+.novelcard .nt{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.novelcard .chev{margin-left:auto;font-size:18px;color:var(--ui-mute)}
+.two>*{min-width:0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:6px}
+.switch{display:flex;align-items:center;gap:10px;margin-top:8px;font-size:14px}
+.switch input{appearance:none;width:38px;height:22px;border-radius:11px;background:var(--ui-line);position:relative;cursor:pointer;flex:none;transition:background .15s}
+.switch input:after{content:"";position:absolute;left:3px;top:3px;width:16px;height:16px;border-radius:50%;background:#fff;transition:left .15s}
+.switch input:checked{background:var(--ui-accent)}
+.switch input:checked:after{left:19px}
+
+/* drawers */
+#scrim{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:60}
+.drawer{position:fixed;left:0;top:0;bottom:0;width:min(420px,94vw);background:var(--ui-bg);color:var(--ui-fg);border-right:1px solid var(--ui-line);z-index:70;display:flex;flex-direction:column;transform:translateX(-102%);transition:transform .2s}
+.drawer.open{transform:none}
+.dhead{display:flex;align-items:center;gap:12px;padding:12px 14px;border-bottom:1px solid var(--ui-line)}
+.dhead h3{margin:0;font-size:17px;flex:1}
+.xbtn{background:transparent;border:0;color:var(--ui-fg);font-size:22px;line-height:1;padding:2px 6px}
+.dtabs{display:flex;gap:2px}
+.dtabs button{background:transparent;border:0;border-bottom:2px solid transparent;color:var(--ui-mute);padding:6px 10px;font-size:14px}
+.dtabs button.on{color:var(--ui-fg);border-bottom-color:var(--ui-accent)}
+.dbody{flex:1;overflow:auto;padding:14px}
+.dfoot{display:flex;justify-content:flex-end;gap:8px;padding:10px 14px;border-top:1px solid var(--ui-line)}
+.toc-item{display:block;width:100%;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--ui-line);padding:12px 14px;color:var(--ui-fg)}
+.toc-item b{display:block;font-weight:600;font-size:14px}
+.toc-item small{color:var(--ui-mute);font-size:11px;letter-spacing:.05em}
+.toc-item.on{color:var(--ui-accent)} .toc-item.on:after{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ui-accent);margin-left:8px}
+.field{width:100%;background:var(--ui-field);border:1px solid var(--ui-line);color:var(--ui-fg);border-radius:8px;padding:10px 12px;font:inherit;font-size:14px}
+.field:focus{outline:2px solid var(--ui-accent);outline-offset:-1px}
+.frow{display:flex;align-items:center;justify-content:space-between;margin:12px 0 6px;font-size:13px}
+.frow label{color:var(--ui-mute)}
+.pill{background:var(--ui-card);border:1px solid var(--ui-line);color:var(--ui-fg);border-radius:8px;padding:5px 10px;font-size:13px;margin-left:6px}
+.hint{font-size:12px;color:var(--ui-mute);margin:6px 0}
+.btn{background:var(--ui-card);border:1px solid var(--ui-line);color:var(--ui-fg);border-radius:8px;padding:9px 16px;font-size:14px}
+.btn.pri{background:var(--ui-accent);border-color:var(--ui-accent);color:#fff;font-weight:600}
+.btn.sm{padding:5px 11px;font-size:13px}
+.trow{display:flex;gap:10px;align-items:center;border:1px solid var(--ui-line);background:var(--ui-card);border-radius:8px;padding:8px 10px;margin-bottom:8px}
+.trow .tt{flex:1;font-size:13px;line-height:1.5;word-break:break-word}
+.trow .tt small{color:var(--ui-mute);display:block}
+.trow .tt b{font-weight:600}
+.chipbtn{display:inline-block;border:1px solid var(--ui-line);border-radius:8px;padding:3px 10px;font-size:12px;color:var(--ui-mute);margin:10px 0 8px}
+.preview{background:#000;color:#fff;border:1px solid var(--ui-line);border-radius:8px;padding:12px;font-size:15px;line-height:1.6}
+.addterm{position:absolute;left:0;top:0;z-index:50;white-space:nowrap;background:var(--ui-card);color:var(--ui-accent);border:1px solid var(--ui-accent);border-radius:8px;padding:8px 14px;font-size:14px;box-shadow:0 4px 16px rgba(0,0,0,.4)}
+
+/* modal */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:80;display:flex;align-items:flex-start;justify-content:center;padding:6vh 12px;overflow:auto}
+.mbox{background:var(--ui-bg);color:var(--ui-fg);border:1px solid var(--ui-line);border-radius:12px;width:min(640px,100%);padding:16px}
+.lib{display:flex;gap:12px;border:1px solid var(--ui-line);background:var(--ui-card);border-radius:10px;padding:10px;margin-top:10px}
+.lib .cover{width:64px;height:86px;font-size:16px}
+.lib h4{margin:0 0 4px;font-size:16px}
+.lib p{margin:2px 0;color:var(--ui-mute);font-size:13px}
+.bar{height:6px;background:var(--ui-line);border-radius:3px;margin:8px 0;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--ui-accent)}
+.toast{position:fixed;left:50%;bottom:92px;transform:translateX(-50%) translateY(16px);background:#222;color:#fff;border:1px solid #444;padding:9px 16px;border-radius:999px;font-size:14px;opacity:0;pointer-events:none;transition:all .18s;z-index:90}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+/* term popover, badges, spinner */
+.term{cursor:pointer}
+.tpop{position:absolute;z-index:55;width:320px;max-width:calc(100vw - 16px);background:#0b0c0f;color:#fff;border:1px solid #2a2b30;border-radius:10px;padding:10px 12px;font:13px/1.4 system-ui,Segoe UI,sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.55)}
+.tpop .pr{display:flex;align-items:center;gap:10px;margin:6px 0;min-height:24px}
+.tpop .pr b{width:34px;text-align:right;font-size:12px;font-weight:700;flex:none}
+.tpop .pf{display:flex;align-items:center;justify-content:space-between;margin-top:8px}
+.tpop .phelp{font-size:12px;color:#aeb0b8;margin:6px 0 0 44px}
+.hbtn{width:30px;height:30px;border-radius:50%;border:1px solid #3a3b41;background:transparent;color:#fff;font-size:14px}
+.bdg{display:inline-flex;align-items:stretch;border-radius:6px;overflow:hidden;font-size:12px;font-weight:700;max-width:100%}
+.bdg i{font-style:normal;padding:3px 7px;display:flex;align-items:center}
+.bdg em{font-style:normal;padding:3px 9px;display:flex;align-items:center;word-break:break-word}
+.bdg.g i{background:#0a3a22;color:#d6ffe6} .bdg.g em{background:#0f7a40;color:#fff}
+.bdg.b i{background:#16398a;color:#dbe6ff} .bdg.b em{background:#1f5bd1;color:#fff}
+.bdg.opt{border:0;padding:0;cursor:pointer;font:inherit;font-size:12px;font-weight:700;color:#fff;background:none}
+.bdg.opt:hover:not(:disabled){filter:brightness(1.2)}
+.bdg.opt.on{outline:2px solid rgba(255,255,255,.65);outline-offset:1px}
+.bdg.opt:disabled{cursor:default;opacity:.8}
+.tin{background:transparent;border:0;outline:0;color:#fff;font:inherit;font-weight:700;padding:0;min-width:3ch;max-width:220px;cursor:text}
+.bdg.g em.ed{padding:3px 9px}
+.bdg.g em.ed:focus-within{background:#13924d}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+.hrow{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:6px 0}
+.hrow .hint{margin:0}
+.btn.danger{background:rgba(220,60,80,.16);color:#ff7d8c;border-color:rgba(220,60,80,.4)}
+.btn.sq{padding:8px 12px;border-radius:8px}
+.spin{display:inline-block;width:16px;height:16px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle}
+.spin.sm{width:14px;height:14px}
+.btn.pri.sv:disabled{opacity:1;cursor:default;min-width:84px}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* ---- header icons, menu, search, user dropdown ---- */
+.top{background:#1c2026;color:#e8e9ec;border-bottom:1px solid #2c3038;gap:8px;padding:8px 10px}
+.ibtn{width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:1px solid #3a3f47;color:#e8e9ec;border-radius:9px;padding:0;flex:none}
+.ibtn:hover,.ibtn.on{background:#2a2e35}
+svg.i,.ibtn svg,[data-ic] svg,.mitem svg,.uitem svg,.mcard svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.brand{display:flex;align-items:center;gap:8px;font-weight:600;font-size:18px;letter-spacing:.04em;margin-right:auto;color:#e8e9ec}
+.brand svg{width:26px;height:26px;stroke-width:1.6}
+.sbox{display:none;flex:1;align-items:center;gap:8px}
+.top.searching .sbox{display:flex}
+.top.searching .brand,.top.searching .hid-s{display:none}
+.sinp{flex:1;min-width:0;background:#2a2e35;border:1px solid #3a3f47;color:#fff;border-radius:9px;padding:9px 12px;font:inherit;font-size:15px}
+.sinp:focus{outline:2px solid var(--ui-accent);outline-offset:-1px}
+#searchRes{position:fixed;left:0;right:0;top:57px;bottom:0;background:var(--ui-bg);color:var(--ui-fg);overflow:auto;z-index:35}
+.sres{display:block;width:100%;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--ui-line);padding:12px 14px;color:var(--ui-fg)}
+.sres b{display:block;font-weight:600;font-size:14px}
+.sres span{display:block;color:var(--ui-mute);font-size:13px;margin-top:3px;line-height:1.4}
+.sres mark{background:rgba(79,155,245,.3);color:inherit;border-radius:3px}
+#userMenu{position:fixed;right:8px;top:58px;width:min(330px,calc(100vw - 16px));background:var(--ui-bg);color:var(--ui-fg);border:1px solid var(--ui-line);border-radius:12px;box-shadow:0 12px 34px rgba(0,0,0,.45);z-index:65;padding:12px}
+.ucard{border:1px solid var(--ui-line);background:var(--ui-card);border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:13px}
+.ucard .bar{margin:6px 0 0}
+.uitem,.mitem{display:flex;align-items:center;gap:14px;width:100%;background:transparent;border:0;color:var(--ui-fg);padding:11px 8px;font-size:16px;text-align:left;border-radius:8px}
+.uitem:hover,.mitem:hover{background:var(--ui-field)}
+.uitem svg,.mitem svg{width:22px;height:22px}
+.usep{border-top:1px solid var(--ui-line);margin:8px 0}
+#menuDrawer{width:min(330px,86vw)}
+#menuDrawer .dhead h3{font-size:18px;font-weight:600;letter-spacing:.04em}
+.mcard{display:flex;flex-direction:column;align-items:flex-start;gap:2px;background:var(--ui-card);border:1px solid var(--ui-line);color:var(--ui-fg);border-radius:8px;padding:10px 12px;text-align:left;font-size:14px}
+.mcard svg{width:20px;height:20px;margin-bottom:2px}
+.mcard small{color:var(--ui-mute);font-size:12px}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+
+/* ---- bottom panel (dock): chevron + tabs ---- */
+#dock{background:var(--ui-bg)}
+.grip{position:absolute;top:-22px;left:50%;transform:translateX(-50%);width:46px;height:22px;border-radius:8px 8px 0 0;background:#3a3d43;border:0;color:#fff;display:flex;align-items:center;justify-content:center;padding:0;z-index:2}
+.grip svg{width:18px;height:18px;stroke-width:2.4}
+#dockTabs button svg,#dockTabs button .tt{width:22px;height:22px;font-size:19px;line-height:22px;font-weight:700;font-style:normal;display:block}
+#dockTabs button{gap:3px;padding:8px 2px 7px}
+.swatches{display:grid;grid-template-columns:repeat(6,1fr)}
+.swatches button{padding:9px 0;border-bottom:1px solid var(--ui-line);border-right:1px solid var(--ui-line);font-size:14px}
+
+/* ---- term editor as bottom sheet on phones ---- */
+@media (max-width:700px){
+  :root{--maxw:100%}
+  .top{padding:8px 8px}
+  #reader{margin:0;padding:0;max-width:none}
+  .card{background:transparent;border:0;border-bottom:3px double var(--pg-line);border-radius:0;margin:0;padding:12px 14px}
+  #chCard{border-bottom:0;padding-bottom:40px}
+  .novelname{font-size:14px;color:var(--pg-fg)}
+  .chtitle{font-size:22px;line-height:1.35}
+  .chip{font-size:13px;padding:4px 12px}
+  .nbtn{border-radius:7px;background:transparent}
+  #dockPanel,#dockTabs{width:100%;max-width:none;border-left:0;border-right:0;border-radius:0}
+  #dockPanel{padding:12px 12px 6px;max-height:58vh}
+  .row button,.bigbtn{padding:10px 6px;font-size:14px}
+  .lab{margin:12px 0 6px}
+  .toast{bottom:150px}
+  .drawer{width:min(420px,88vw)}
+  #termDrawer{left:0;right:0;top:auto;bottom:0;width:100%;max-height:94vh;border-right:0;border-top:1px solid var(--ui-line);border-radius:16px 16px 0 0;transform:translateY(104%)}
+  #termDrawer.open{transform:none}
+  #termDrawer.full{top:0;max-height:none;border-radius:0}
+  #termDrawer .dhead{padding:10px 12px}
+  #termDrawer .dtabs button{font-size:16px;padding:8px 10px}
+  #termDrawer .dbody{padding:14px 12px}
+  #termDrawer .dfoot{padding:10px 12px}
+  #termDrawer .field{font-size:17px;padding:11px 12px}
+  .tpop{width:min(320px,calc(100vw - 16px))}
+}
+</style>
+</head>
+<body data-tstyle="bold" class="tc-on tc-sys tc-user tc-patch">
+
+<header class="top" id="topBar">
+  <button class="ibtn hid-s" id="btnMenu" data-ic="menu" aria-label="Menu"></button>
+  <div class="brand"><span data-ic="logo"></span> INKSTONE</div>
+  <div class="sbox"><button class="ibtn" id="sBack" data-ic="back" aria-label="Close search"></button><input class="sinp" id="sInput" type="search" placeholder="Search chapters..." autocomplete="off"></div>
+  <button class="ibtn hid-s" id="btnSearch" data-ic="search" aria-label="Search"></button>
+  <button class="ibtn hid-s" id="btnLibrary" data-ic="inbox" aria-label="Library"></button>
+  <button class="ibtn hid-s" id="btnUser" data-ic="user" aria-label="Account and settings"></button>
+</header>
+<div id="searchRes" class="hidden"></div>
+<div id="userMenu" class="hidden"></div>
+
+<main id="reader">
+  <div class="card"><div class="novelname" id="novelName"></div></div>
+  <div class="card" id="navCard">
+    <div class="navrow">
+      <button class="nbtn" id="prevTop">&#8249; Prev</button>
+      <div class="navmid"><b id="chNo"></b><span id="chPct"></span></div>
+      <button class="nbtn" id="nextTop">Next &#8250;</button>
+    </div>
+    <div class="seg" id="svcTop"><button data-svc="web">Web</button><button data-svc="webplus">Web+</button></div>
+  </div>
+  <div class="card" id="chCard">
+    <div class="chtitle"><b id="chHash"></b><span id="chName"></span></div>
+    <div class="chipline"><span class="chip" id="chip"></span></div>
+    <div id="chBody"></div>
+    <div class="endnav"><button class="nbtn" id="prevBot">&#8249; Prev</button><button class="nbtn" id="nextBot">Next &#8250;</button></div>
+    <div class="sentinel" id="sentinel"></div>
+  </div>
+</main>
+
+<div id="dock" class="hidden">
+  <button class="grip" id="gripBtn" data-ic="down" aria-label="Hide panel"></button>
+  <div id="dockPanel"></div>
+  <div id="dockTabs">
+    <button data-tab="read"><i data-ic="book"></i>Read</button>
+    <button data-tab="display"><i class="tt">Tт</i>Display</button>
+    <button data-tab="settings"><i data-ic="gear"></i>Settings</button>
+    <button data-tab="more"><i data-ic="list"></i>More</button>
+  </div>
+</div>
+
+<button class="addterm hidden" id="addTermBtn">+ Add Term</button>
+
+<div id="scrim" class="hidden"></div>
+
+<aside class="drawer" id="menuDrawer">
+  <div class="dhead"><h3>INKSTONE</h3><button class="xbtn" data-close="menu">&times;</button></div>
+  <div class="dbody" id="menuBody" style="padding:8px 14px"></div>
+</aside>
+
+<aside class="drawer" id="tocDrawer">
+  <div class="dhead"><h3>Table of Contents</h3><button class="xbtn" data-close="toc">&times;</button></div>
+  <div class="dbody" id="tocList" style="padding:0"></div>
+</aside>
+
+<aside class="drawer" id="termDrawer">
+  <div class="dhead">
+    <div class="dtabs" id="termTabs"><button data-tt="editor">Editor</button><button data-tt="list">Your Terms</button><button data-tt="config">Config</button></div>
+    <span style="flex:1"></span>
+    <button class="xbtn" data-close="term">&times;</button>
+  </div>
+  <div class="dbody" id="termBody"></div>
+  <div class="dfoot" id="termFoot"></div>
+</aside>
+
+<div class="modal hidden" id="libModal"><div class="mbox" id="libBox"></div></div>
+<input type="file" id="fileIn" accept=".md,.markdown,.txt" multiple class="hidden">
+<input type="file" id="termIn" accept=".json" class="hidden">
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+"use strict";
+var NOVEL = {"title": "Reclined Sovereign: Just an Ordinary Office Worker", "chapters": [{"n": 1, "title": "Leave on Time", "raw": "# Chapter 1: Leave on Time\n\nQingyan City, Hengxin Logistics Group, Operations Department.\n\nFriday, 4:40 p.m.\n\nChen Xuan checked the clock in the corner of his monitor and smiled to himself.\n\nOnly fifteen minutes left before he could pack up without drawing stares, and fifty minutes until the 6:10 express bus left for Yunxi County. If he caught it, he'd be sitting at his mother's table before eight with a steaming bowl of pork-rib soup in front of him.\n\nTo be honest, that was his entire ambition for the weekend, and he thought it was a pretty good one.\n\nAt Hengxin Logistics, Chen Xuan was a mid-level operations supervisor making 12,000 yuan a month. In a provincial capital like Qingyan, that was comfortable ordinary pay, enough to rent a small place near work, eat well, and send a little money home without anyone getting jealous. He never fought for bonuses, never tagged along to the boss's drinking dinners, and never stayed a single minute late. His secret was simple: finish everything before lunch, then drink hot tea and rest all afternoon.\n\n\"Supervisor Chen, do you have a minute?\"\n\nA nervous voice pulled his eyes off the clock.\n\nDepartment Manager Hu Dewei stood beside his desk, clutching a ceramic mug the size of a flowerpot while his other hand tugged at his tie. He always looked like a man who had just heard bad news.\n\n\"Sure, Manager. What's up?\"\n\n\"It's the port bills.\" Hu Dewei coughed awkwardly and looked away. \"Three cargo containers cleared customs this month, and every invoice has to be checked against the shipping records. General Manager Sun wants the audit on his desk Monday at nine sharp. I know it's Friday, and I hate to ask, but somebody has to stay late tonight.\"\n\nThe whole office went dead quiet!\n\nEveryone stared down at their keyboards, praying the manager wouldn't look their way.\n\n\"I can stay, Manager!\"\n\nBefore three seconds passed, Zhang Pengfei shot up from his chair. Always dressed in a crisp suit, he was the first man in every morning and the last out every night, hungry for the next promotion. \"I've already worked nineteen late nights this quarter! One more Friday means nothing to me. I never leave work half-done, not like some people who vanish the second the clock hits five.\"\n\nHe tilted his chin straight toward Chen Xuan when he said \"some people.\"\n\n\"Pengfei really is the hardest worker on this floor!\" Sister Pan chimed in loudly from the next cubicle. She was the oldest clerk in the department, with sharp eyes and a loud opinion about everybody's business.\n\nSeveral younger clerks traded uneasy glances. Everybody knew Zhang Pengfei had been trying to make Chen Xuan look lazy for weeks.\n\nChen Xuan didn't look bothered at all. He reached out, nudged his mouse, and spoke in an easy, mild voice.\n\n\"Wait a second, Manager. That audit is already finished. I put the file in the shared folder at 11:20 this morning.\"\n\nSilence.\n\n\"Finished?\" Hu Dewei blinked twice, wondering if he'd heard wrong. \"All three containers?\"\n\n\"Mm,\" Chen Xuan said, nodding lightly. \"And I caught a mistake on the second container. The port agent billed us twice for storage. I marked the line in yellow.\"\n\nHu Dewei hurried to the nearest computer and clicked into the folder. As he scrolled down the columns, the doubt on his face turned into surprise, and then straight into shock!\n\nEvery invoice matched to the decimal. At the bottom, marked in neat yellow, sat a calm note: *Overcharged 14,000 yuan for duplicate storage. Please request a refund.*\n\nFourteen thousand yuan, more than an entire month of Chen Xuan's own salary, saved without a single word of bragging!\n\n\"Eleven-twenty?\" Sister Pan blurted out, her jaw dropping. \"He finished all three containers before lunch?! But he went down to eat at noon, and at two o'clock he was napping with his head on his arms!\"\n\n\"He checked all three containers in one morning?\"\n\n\"And caught a fourteen-thousand-yuan error?!\"\n\n\"Supervisor Chen works way too fast!\"\n\n\"Wait, why didn't he even tell Manager Hu he saved fourteen thousand yuan?\"\n\nWhispers rippled across the whole floor.\n\nIn the middle of the room, Zhang Pengfei stood frozen with his mouth half open, feeling as if someone had slapped him right in front of the entire department!\n\nFor three weeks he'd waited for Chen Xuan to make just one careless mistake so everyone could see who truly deserved the promotion. And now? While Zhang Pengfei was gearing up to sacrifice his Friday night like a hero, the job had been done since morning, and Chen Xuan was sitting right there, calmly peeling the wax paper off a red-bean bun!\n\nWas it a trick? Did he copy someone's spreadsheet, or did he have a secret contact at the port? And why on earth would a man save the company fourteen thousand yuan and not even send an email to take credit?\n\nZhang Pengfei's face burned bright red. Humiliated and angry, he sank back into his chair and clenched his jaw. Next week, he swore to himself, he'd check every report three times, no, four times!\n\n\"Well, then, Supervisor Chen, you can head home,\" Hu Dewei said, his voice oddly dry.\n\nEver since March, Hu Dewei had felt a strange nervousness whenever Chen Xuan stood nearby, and he couldn't explain why. Chen Xuan never shouted, never broke a rule, and never acted like a big shot. So why did Hu Dewei always feel an urge to straighten his back the moment Chen Xuan walked past?\n\nHe had no answer, and not knowing only made his palms sweat more.\n\n\"Thank you, Manager. Have a good weekend.\"\n\nChen Xuan tucked the red-bean bun into his canvas bag, picked up his scratched old green thermos, and walked out at 4:55 sharp while the whole floor watched his back.\n\nIn the hallway, the elevator was already waiting on the twelfth floor, its doors wide open.\n\nIn three years of working in this building, that had never happened once on a Friday afternoon.\n\n\"Lucky,\" Chen Xuan thought happily, and stepped inside.\n\nQingyan Express Bus Station, 5:50 p.m.\n\nThe waiting hall was packed and noisy, smelling of fried dough, tea eggs, and diesel fumes, while a loudspeaker called out county names he'd never visited.\n\nChen Xuan bought a 68-yuan ticket for the 6:10 bus to Yunxi County and took his usual spot at Gate Six, tucked behind a pillar out of the draft. Almost every Friday for three years, he'd stood right here.\n\nSuddenly, his phone buzzed.\n\nIt was a voice message from his mother, Liu Meifang. She had the loudest voice in the family, and even when she was crying, she didn't turn the volume down a single notch.\n\n\"Xuan, listen, don't panic! The police took your Second Uncle away this afternoon! At two o'clock, straight out of his own shop, in handcuffs, in front of the whole street! Your father ran to the police station and they wouldn't even let him inside! Your Second Aunt has been sitting on our sofa since three and hasn't drunk a drop of water! They claim he beat somebody up. How could that be true?! Your Second Uncle's hands shake when he scales a fish! Come home as fast as you can!\"\n\nChen Xuan stood still by the pillar and played the message a second time.\n\n\"Hmm?\"\n\nHis Second Uncle, Chen Mingde, was his father's younger brother, a soft-spoken man who'd run a tiny hardware shop on Yunxi's Old Street for over twenty years. When Chen Xuan was seven, Second Uncle had taught him how to fish. Every New Year, even in lean winters when the shop barely paid rent, Second Uncle still pressed a crisp red envelope into his hand.\n\nA man like that, beating someone up in broad daylight? And the police hauling him off in handcuffs from his own counter?\n\nChen Xuan didn't flare up in anger. Instead, a quiet, steady weight settled in his chest, like seeing someone you love caught in the rain and knowing you have to bring them an umbrella.\n\nHe typed with his thumb: *I'm on the 6:10 bus. Don't worry. Please eat dinner first.*\n\nRemembering how his mother skipped meals whenever she worried, he added one more line: *Mom, eat first.*\n\nHis family always joked that his calm temper was laziness. To be honest, it wasn't laziness at all. It was just a simple rule his grandfather had taught him long ago: when something goes wrong, ask once, politely. If the answer isn't right, ask again, politely.\n\nThe gate clicked open. Chen Xuan climbed aboard and took a window seat on the right.\n\nA minute later, a plain-looking middle-aged man in a faded gray jacket boarded right before the doors hissed shut. Carrying a small dark canvas bag on his lap, he sat three rows behind Chen Xuan and closed his eyes at once, like any tired worker heading home for the weekend.\n\nChen Xuan didn't glance back once. He ate his red-bean bun and watched the lights of Qingyan City drift past the window, one by one.\n\nThree rows behind him, the man in the gray jacket cracked one sharp eye open. Inside his half-zipped canvas bag, a slim black phone lit up silently with a single line of green text. He glanced down, tapped three quick words on the screen, and slid his hand smoothly back over the bag.\n"}, {"n": 2, "title": "Old Street", "raw": "# Chapter 2: Old Street\n\nYunxi County, Old Street, Mingde Hardware. Friday, 1:30 p.m.\n\nThe little shop smelled of machine oil, hemp rope, and old wood. Chen Mingde could walk behind his counter with his eyes closed and find any screw a customer asked for in three seconds flat.\n\nBehind him stood a wall of small wooden drawers, every one labeled in his neat square handwriting: M4, M5, M6, flat head, brass. Every Spring Festival when Chen Xuan was small, the boy used to perch on the high stool by the counter and read those labels aloud until he nodded off.\n\nToday, a stranger sat on that stool.\n\nFor nine straight days, four men had lounged in his shop every afternoon. They didn't shout or smash a single shelf. They just crossed their legs, blew thick cigarette smoke into the air, and stared at him without blinking. Regular customers took one look through the doorway and hurried across the street.\n\nThey looked like men paid to sit until an old shopkeeper broke.\n\n\"Old Chen.\"\n\nAt last, the man with the thick gold chain stood up. Dong Haisheng, boss of Hongrui Real Estate, had a smooth face and a polite smile that never reached his eyes. \"It's one-thirty. I've waited nine days. Even my patience runs out eventually.\"\n\n\"I'm sorry, Boss Dong,\" Chen Mingde said, gripping the edge of the counter. \"I can't sign.\"\n\n\"Four hundred and fifty-six thousand yuan. Cash, wired within a week.\"\n\n\"Boss Dong, my shop is a hundred and twenty square meters on the corner! On Old Street, a shop like mine is worth nearly a million!\"\n\n\"I know what you think it's worth.\" Dong Haisheng's smile didn't budge an inch. \"Old Chen, a thing is only worth what somebody will pay for it.\"\n\nChen Mingde fell silent, his heart hammering hard against his ribs.\n\nHe wasn't a brave man, and he knew it. His wife teased him that he couldn't win a fight against a chicken. Still, this shop was twenty-two years of his life! It had paid his daughter's university tuition and kept the family fed without begging anyone for a yuan. At normal market prices, his corner shop was worth nearly one million yuan. Dong Haisheng was offering less than half. In Yunxi County, 456,000 yuan couldn't even buy a replacement storefront, let alone keep his family going. Once he signed, their livelihood was gone forever!\n\nHe couldn't do it. He simply couldn't.\n\n\"Then I'm afraid we have a problem,\" Dong Haisheng sighed, giving a tiny nod toward the door.\n\nA young man in a neat driver's uniform had been standing quietly beside the stacked paint cans. He looked at Chen Mingde, glanced back at Dong Haisheng, and swallowed hard.\n\nThe next instant, the driver threw himself sideways straight into the metal paint shelf!\n\nCrash!\n\nPaint cans clattered and rolled all across the floor. The driver hit the concrete on his back, clutched his shoulder, and howled loud enough to wake the entire lane!\n\n\"He hit me! Help! This crazy old man attacked me!\"\n\nChen Mingde froze behind the counter, still holding a cardboard box of steel washers in both hands.\n\nHe hadn't moved an inch! Was this some kind of sick joke? Before he could shout that he hadn't touched anyone, two uniformed police officers walked briskly through the front door.\n\nIt was 2:05 p.m. sharp.\n\nSo fast, Chen Mingde thought, a chill rushing down his spine. They didn't even have to run. They'd been waiting outside!\n\n\"Chen Mingde?\" the taller officer barked, snapping open silver handcuffs. \"You're suspected of assault and injuring another person. Come with us!\"\n\n\"I never laid a finger on him!\" Chen Mingde cried, his voice shaking. \"Ask anyone out there! Ask my neighbors!\"\n\n\"Save your story for the station.\"\n\nThe steel cuffs bit cold around his wrists. Outside, a hushed crowd had already gathered along Old Street.\n\n\"Wait, Old Chen didn't even step out from behind his counter!\" someone muttered under their breath.\n\n\"Shh! Keep your voice down! That's Boss Dong from Hongrui Real Estate.\"\n\n\"What can an ordinary shopkeeper do against people like that?\"\n\nBy the tailor's doorway, Old Yu shook his gray head bitterly, unable to meet his friend's eyes. Across the lane, Meng Xiaofang from the steamed-bun stall clapped a hand over her mouth. Nobody dared step forward.\n\nDon't shout, Chen Mingde told himself, holding his back straight inside the patrol car. His wife would hear about this in ten minutes, and she'd already have enough to carry.\n\nThrough the rear window, he watched his hand-painted sign shrink into the distance: MINGDE HARDWARE, red letters he'd brushed on himself. He remembered seven-year-old Chen Xuan yanking too hard on a bamboo fishing pole by the river. \"Don't pull back when the fish pulls,\" he'd told the boy. \"Wait. Let it wear itself out.\"\n\nHe could wait. If there was one thing an old shopkeeper knew how to do, it was wait.\n"}, {"n": 3, "title": "The Booking Desk", "raw": "# Chapter 3: The Booking Desk\n\nYunxi County, Old Street Police Station. Friday, 2:40 p.m.\n\nWei Kun sat behind the booking desk, staring down at his intake form.\n\nOld Street Station had thirty-six staff on the roster, though only ten were formal police officers. The other twenty-six were auxiliary officers on one-year contracts who carried batons instead of guns and could never be promoted.\n\nThe station's official chief was Cheng Biao, who also held the higher post of Deputy Director at the county police bureau, so he rarely sat in this small building. Normally, the Political Instructor, Qiu Guoqiang, the steady second-in-command who actually kept the station running by the book, handled daily work. Conveniently, two weeks ago, both Qiu Guoqiang and the station's deputy chief had been \"sent to a training course,\" leaving the keys and all the dirty files dumped on duty officer Wei Kun.\n\nIn twelve years behind this desk, Wei Kun had booked over three hundred suspects. This thin, gray-haired shopkeeper wouldn't make trouble. He kept his eyes on the floor and answered quietly. Under Attitude, Wei Kun wrote: Calm.\n\nThen he flipped to the attached evidence, and his pen stopped dead!\n\nClipped to the file was a private clinic's injury note for Boss Dong's driver, stamped 1:50 p.m.\n\nWei Kun's neck went ice-cold!\n\nThe arrest had happened at 2:05 p.m. The doctor's injury note had been signed fifteen minutes before the assault even happened!\n\nIt was fake, prepared in advance. And Wei Kun knew perfectly well whose signature sat on the detention order.\n\nShould he speak up? To whom?\n\nAfter twelve years on the force, Wei Kun understood the bitter math of government rank. To put it nicely, he held a senior pay grade on paper, deputy principal staff member; to put it bluntly, it was an empty title with zero real power! Nobody worked under him, and he couldn't sign a single binding order. Cheng Biao, on the other hand, held a real leadership post as Deputy Director of the county police bureau and head of this station. One real step separated the man who gave orders from the man who filled out forms.\n\nAnd Wei Kun still had a 2,800-yuan monthly mortgage hanging over his head, plus a wife seven months pregnant who could barely tie her own shoes.\n\nCheng Biao's warning at the morning meeting still rang in his ears: \"You fill in the forms, Wei. Thinking is my job.\"\n\nWei Kun swallowed hard and kept writing until he reached the box marked Time of Decision, where police had to record when they legally decided to detain a suspect. His fingers refused to move. He left it blank.\n\n\"Don't fill that box in yet.\"\n\nCheng Biao had strolled in quietly, wearing a black leather jacket over his uniform trousers, a wooden toothpick rolling between his teeth. \"We'll write the time in later.\"\n\n\"Yes, Director Cheng,\" Wei Kun said stiffly. In government offices, lower officers always dropped the word \"deputy\" and called a boss by his highest title, especially a man whose signature could lock anyone in Yunxi behind bars for fifteen days.\n\nCheng Biao perched casually on the corner of the desk, smiling down at Chen Mingde like a friendly uncle at a family dinner.\n\n\"Old Chen, let's be honest,\" he said softly. \"Assaulting a man in public means ten days in detention, maybe fifteen, plus a police record. Your daughter's in college, right? Think about how she'll have to explain her father's record at every job interview. Now, it doesn't have to be ugly. Sign the buyout contract, Hongrui drops the complaint, and you're home for dinner in ten minutes.\"\n\nSilence hung over the desk.\n\n\"Director Cheng,\" Chen Mingde said quietly, not looking up. \"I want to see the written detention order first.\"\n\nCheng Biao blinked. \"What?\"\n\n\"The official paper saying why you're holding me, and when it was signed. I want to see it first.\"\n\nThe toothpick between Cheng Biao's lips stopped moving!\n\nEleven Old Street owners had sat in that chair over the past two months. Eleven times, they'd broken down and signed. Why was this twelfth man, a nobody with a tiny shop and zero connections, calmly asking for official paperwork?\n\nWas he stubborn, stupid, or did he know someone?\n\nUnease prickled down Cheng Biao's neck. Too much rode on this corner shop: his brother-in-law's 38-million-yuan demolition contract, the villa his wife wanted, and next Wednesday, when the provincial inspection team arrived in Yunxi County! Those were senior anti-corruption investigators sent straight from the provincial capital to hunt for scandals and hear citizen complaints. One dirty land grab exposed to them could end a local official's career in a single afternoon!\n\nWednesday sat on Cheng Biao's chest like a heavy stone.\n\n\"Fine, Old Chen,\" he snapped, his friendly mask vanishing. \"Wait for your paper, then. Lock him up, Wei. A cold night in the cell will clear his head!\"\n"}, {"n": 4, "title": "Watching and Waiting", "raw": "# Chapter 4: Watching and Waiting\n\nQingyan City, a quiet walled courtyard in the east of town. Friday, 6:15 p.m.\n\n\"Chief, this is Nine.\"\n\nThe low, steady voice came from a small encrypted speaker on a dark wooden desk. Beside it sat a white-haired elder with soldier-straight posture, a cup of tea cooling untouched by his elbow.\n\nHis name was An Zhiyuan, Chief An to everyone in the hidden protection force. His serial number was Two, meaning across the entire elite network guarding Chen Xuan from the shadows, only one person ranked higher than him.\n\n\"Go ahead, Nine.\"\n\n\"The Boss is on the 6:10 express bus to Yunxi County,\" reported Nine, the plain man in the gray jacket sitting three rows behind Chen Xuan. \"At 5:52, his mother sent a voice message. His second uncle, Chen Mingde, was handcuffed and taken from his hardware shop by local police at 2:05. The Boss listened twice and said one word: 'Hmm.'\"\n\n\"Only 'hmm'?\" Chief An raised an eyebrow.\n\n\"Yes, Chief. Then he texted his mother to eat dinner first. He's completely calm, hasn't sent any signal, and ate a red-bean bun.\"\n\nSilence settled over the study. Chief An looked down at his cooling tea, a mix of deep warmth and helpless frustration softening his eyes.\n\nNobody at Hengxin Logistics, not even Chen Xuan's own parents, had the faintest idea who Chen Xuan really was. They thought he was just an easygoing operations supervisor riding a county bus home for soup. They didn't know his file sat sealed at the highest secret level in the country, or that a quiet team of veteran security officers, analysts, and lawyers watched over every city he lived in. They certainly didn't know that one real emergency request from him could trigger an immediate top-level review across the province, though even his own force lived by strict rules: never break the law, never skip proper steps without real cause.\n\nYet his uncle had been hauled out of his shop in handcuffs in front of an entire street, and what had the Boss done? Told his mother to eat and chewed a red-bean bun.\n\nDidn't he know one word from him could have investigators moving on Yunxi County before his bus even pulled into the station?\n\nOf course he knew. He simply refused to pull strings on what might still be an ordinary problem. That was Chen Xuan's iron rule: handle things the normal, lawful way first, like any citizen, and never step in unless someone truly crossed the line.\n\nTo be honest, that was why an old veteran like Chief An respected him from the bottom of his heart, and why Chief An kept losing sleep!\n\n\"Nine, here are my orders,\" Chief An said crisply. \"Stay on the bus and keep out of his sight. Contact Number Twenty-three in Yunxi, Gong Yi's unit. Tell them to keep quiet eyes on the family apartment and the Old Street shop tonight.\"\n\nWherever Chen Xuan's family lived, Chief An always kept trusted operatives blended into the neighborhood, just in case.\n\n\"Nobody touches the police,\" Chief An ordered firmly. \"Nobody calls any official, and nobody pulls internal files. We do not lift a finger unless the Boss gives the signal. Until then, we watch from the outside and gather only public records. Clear?\"\n\n\"Clear, Chief.\"\n\n\"One more thing.\" Chief An tapped a thin folder his aide had laid on the desk. Across the top page, a title was circled in red ink: Yunxi County, Old Street Rebuilding Project. Clipped to it was a note: Provincial inspection team arrives next Wednesday.\n\nAn old street, a hardware shop, a sudden arrest, and provincial anti-corruption inspectors arriving in five days. All in the same week?\n\nWas that really an accident?\n\nChief An had spent forty years reading men and power, and he didn't believe in accidents.\n\n\"Tell Twenty-three I want public filings on that Old Street project,\" Chief An said quietly. \"The approved relocation budget, the developer's loans, and which county office runs the buyout. Put it on my desk by morning.\"\n\n\"Understood, Chief.\"\n\nThe speaker clicked off. Somewhere fifty minutes down the highway, a hardware shop stood dark and the Boss was riding a bus home for soup. Chief An hoped it was a small matter. After forty years on the job, though, he was already bracing for a storm.\n\nYunxi County Bus Station, 7:05 p.m.\n\nThe bus hissed to a stop, and the familiar hometown air rushed in: fried dough, damp earth, and sweet woodsmoke drifting in from the countryside.\n\n\"Xuan! Over here!\"\n\nAt the edge of the lot, his father, Chen Jianguo, waved wildly beside a battered electric scooter, wearing the same faded gray work jacket from his factory foreman days.\n\n\"Dad, it's a ten-minute walk. You didn't have to come out.\"\n\n\"Nonsense! Your mother kicked me out at six sharp. Get on!\" He shoved a tiny plastic helmet into Xuan's hands. \"I'll tell you on the way.\"\n\nAs the scooter hummed into evening traffic, Chen Xuan asked, \"Dad, what happened?\"\n\nAll the cheer vanished from Chen Jianguo's voice, replaced by raw fury.\n\n\"Two cops marched straight into your uncle's shop and handcuffed him in front of the whole street! Claimed he beat up Hongrui Real Estate's driver! I ran to the police station at three, and they told me, 'Case is under review. Go home and wait.' I told them I'm his older brother, and the smug clerk behind the glass sneered, 'Who do you think you are?' Who do I think I am?! I'm his brother!\"\n\nThe handlebars shook with his anger!\n\n\"And that real-estate boss with the thick gold chain stood outside the shop smiling. Smiling, Xuan!\"\n\n\"I hear you, Dad,\" Chen Xuan said steadily, holding the chin strap of the too-small helmet. \"Did anyone see the driver fall?\"\n\n\"Old Yu the tailor saw everything! Swears your uncle never left his counter. But who's going to listen to an old tailor?\"\n\n\"We'll listen. Let's eat first, Dad. Then we'll know what to ask.\"\n\nChen Jianguo let out half a laugh and half a sigh. \"You sound just like your grandfather.\" He steered into Fuxing New Village, and neither of them said another word.\n"}, {"n": 5, "title": "Home", "raw": "# Chapter 5: Home\n\nFuxing New Village, Building 2, Room 601. Friday, 7:30 p.m.\n\nBy the fourth flight of stairs, Chen Xuan could smell pork-rib soup. Before he could knock, the front door flew open!\n\n\"Xuan!\" His mother, Liu Meifang, hurried out holding a soup ladle, her eyes red. \"You're here! Sit down, sit down! I made pork-rib soup. I didn't touch a bite, waiting for you!\"\n\n\"Mom, I told you to eat first.\"\n\n\"How could I eat while your Second Uncle is locked in a cell?\" Her voice cracked, and she spun back into the kitchen banging pots loudly.\n\nOn the edge of the sofa sat Second Aunt Wu Lanying, clutching a cold glass of water. Always neat, tonight her hair hung loose and her cardigan was buttoned wrong.\n\n\"Xuan,\" she said, standing up with trembling lips. \"Your uncle has never hit anyone in his life. He practically cries killing a fish!\"\n\n\"I know, Second Aunt.\" Chen Xuan gently wrapped her shaking fingers back around the glass. \"Please sit. Let's have some soup first, then tell me everything.\"\n\nIt was a simple gesture, yet her shoulders eased enough to sit down.\n\nSoon the whole family crowded around the folding table. His sharp-tongued sister, Chen Yuan, a junior high school teacher, kept filling Second Aunt's bowl, while his younger brother, Chen Hao, hid behind a high-school math book with one earbud in.\n\n\"Brother, you look like you just woke up,\" Chen Hao muttered.\n\n\"I did. On the bus.\"\n\n\"Classic!\" Chen Yuan snapped. \"Second Uncle is in a cell, and our big brother is napping on the bus!\"\n\n\"Yuan!\" their mother scolded.\n\n\"I'm just saying, Mom. He's the only person alive who could snore through a flood!\"\n\nChen Xuan drank a long spoonful of hot, salty soup, then set the bowl down and listened closely as Second Aunt laid out the whole trap.\n\nYunxi County was knocking down Old Street for a new mall built by Hongrui Real Estate. Hongrui offered 3,800 yuan per square meter, coming out to 456,000 yuan for Second Uncle's 120-square-meter corner shop, when real Old Street shops sold for 8,000 a square meter, nearly one million yuan!\n\nThey called it relocation pay. To put it plainly, it was robbery at less than half price!\n\nEleven owners had already buckled. Only three refused, and Second Uncle's corner lot sat right where the mall's main entrance had to go.\n\n\"For nine days, thugs sat on his stools smoking,\" Second Aunt wept. \"Today the gold-chain boss warned him to sign before something ugly happened. Then that driver threw himself straight into the paint shelf! Old Yu saw it, and the police walked right in like they were waiting outside.\"\n\nClack! Chen Yuan slammed her chopsticks down, her face burning with anger!\n\n\"That's daylight bullying! Tomorrow morning I'm marching straight to that police station myself!\"\n\n\"You're not going anywhere!\" Chen Jianguo barked. \"You're a schoolteacher. One shout in there and they'll ruin your record!\"\n\n\"Then what do we do, Dad?\" Chen Yuan's eyes turned red. \"Just sit here and wait while they break Second Uncle?\"\n\nEvery eye around the table turned slowly toward Chen Xuan.\n\nHe quietly set down his spoon and looked at Second Aunt. \"Don't sign anything tonight, no matter who calls. Tomorrow morning at eight-thirty, Dad and I will go down to the police station, take a queue number like everyone else, and ask them to put their reason in writing.\"\n\nChen Yuan stared at him in total disbelief. \"Take a number at a police station? Brother, did you really bump your head on the bus?\"\n\n\"No,\" Chen Xuan replied mildly, picking up his chopsticks again. \"Their front hall has service windows and a ticket machine that prints queue numbers, just like a bank. You pull a number, wait until your turn flashes on the screen, and talk at the window. Nobody can accuse us of making trouble.\"\n\n\"Xuan, your father already went today!\" Liu Meifang cried anxiously. \"They brushed him right off!\"\n\n\"Then tomorrow we ask for the written detention notice,\" Chen Xuan said calmly. \"By law, they have to give the family a reason in writing. Second Aunt, please promise me one thing. No matter who calls you, don't sign a single sheet of paper. Not for any price.\"\n\n\"But what if they keep him locked up?\" Second Aunt's eyes filled with tears again. \"What if they ruin our daughter's future?\"\n\n\"I'll bring him home,\" Chen Xuan said.\n\nHe spoke as simply as a neighbor predicting clear weather tomorrow.\n\nNobody at the table truly believed he could pull off a miracle. Chen Yuan rolled her eyes, Liu Meifang wiped her cheeks and dropped two more pork ribs into his bowl, and Chen Jianguo cleared his throat with a mumbled proverb about still water running deep. Everyone thought he was just trying to keep Second Aunt from collapsing.\n\nOnly Chen Xuan knew he meant every single word.\n"}, {"n": 6, "title": "The Empty Chair", "raw": "# Chapter 6: The Empty Chair\n\nYunxi County, Fuyuan Garden Restaurant, private banquet room. 9:40 p.m.\n\nBehind closed dark wooden doors, the private room was warm and smelled faintly of high-grade white liquor and tea.\n\nThree men sat around a round table set for four. Nobody glanced at the empty chair.\n\nThat empty seat belonged to Tao Shu, the County Magistrate, head of Yunxi's county government and the second most powerful official in the county. An hour earlier, Tao Shu's aide had called to apologize: the Magistrate had come down with a bad cold and couldn't attend.\n\nAt the head of the table sat Fan Weiguo, Yunxi's County Party Secretary, the true number-one boss who held the final say over every major decision and every official's career in the county. After thirty years in government, Fan Weiguo didn't believe that cold for a second.\n\nTao Shu had wanted his top chair for eight years! Whenever a private dinner smelled like future trouble, Tao Shu conveniently caught a cold and stayed safely home, leaving Fan Weiguo alone at the table if anything ever went wrong.\n\nTo Fan Weiguo's right sat Dong Haisheng, owner of Hongrui Real Estate, who had won the contract to tear down Old Street and build a big new shopping mall. Across from him, sitting stiffly on the front third of his chair with his leather jacket buttoned neat and both hands resting on his knees, was Cheng Biao, Deputy Director of the county police bureau and chief of Old Street Station.\n\nBetween a county's number-one leader and a deputy police director stood three full steps of the government ladder. Cheng Biao didn't even dare touch his chopsticks until the Secretary lifted his.\n\nDong Haisheng stood up first, bending slightly at the waist and holding his small liquor cup in both hands, carefully keeping his rim lower than Fan Weiguo's.\n\n\"Secretary Fan, please allow me to offer a respectful toast,\" Dong Haisheng said, his voice smooth and polite. \"Thanks to the county's steady guidance, eleven Old Street shop owners have already signed their buyout agreements. Only three are left, including that corner hardware shop. Without the corner lot, our builders can't even open the mall's front entrance.\"\n\n\"I'm aware,\" Fan Weiguo said evenly. He raised his teacup half an inch instead of touching his liquor glass. Inside his jacket pocket, his phone lay on silent, and tonight he'd already checked it eleven times.\n\nSeeing the Secretary's tight brow, Cheng Biao straightened his back even further and spoke in the careful, respectful tone of a lower official giving a work report.\n\n\"Secretary Fan, please rest assured,\" Cheng Biao said politely. \"Our station has been helping keep order on Old Street. After patient talks and legal reminders, the first eleven shop owners all understood the bigger picture and agreed to sign. The corner hardware owner was brought in today over a minor fight, and I expect he will agree to sign the buyout contract by Monday.\"\n\nClink.\n\nFan Weiguo set his teacup gently onto its saucer.\n\nThe sound wasn't loud, yet the temperature in the private room dropped twenty degrees in an instant!\n\n\"Eleven,\" Fan Weiguo repeated, his voice quiet and completely flat.\n\nHe didn't raise his volume, and he didn't slam the table. He simply looked across the white tablecloth at Cheng Biao with thirty years of quiet authority behind his eyes.\n\n\"Comrade Cheng Biao,\" Fan Weiguo said softly, \"are you telling me that the county police have been using jail cells to force shop owners into signing business contracts?\"\n\nCold sweat broke out along Cheng Biao's collar! He half-rose from his chair at once, his smooth posture falling apart. \"No, Secretary Fan, never! Every single case started from a real citizen complaint and followed normal police rules!\"\n\n\"Sit down,\" Fan Weiguo said coldly.\n\nCheng Biao dropped back onto the edge of his seat like a scolded schoolboy.\n\nFan Weiguo's gentle expression was gone, replaced by an icy stillness that made even Dong Haisheng's stomach tighten.\n\n\"Listen to me very carefully,\" Fan Weiguo said, every word crisp and calm. \"The provincial inspection team arrives in Yunxi next Wednesday. Five days from tonight.\"\n\nEvery official in the room felt the weight of those words. The provincial inspection team consisted of senior anti-corruption investigators sent straight from the provincial capital, two full levels above the county, to dig for dirty deals and hear citizen complaints. One serious scandal exposed to them could end a thirty-year career in a single afternoon!\n\n\"If even one angry family camps outside the county gate next week,\" Fan Weiguo continued in that same chilling, quiet voice, \"if one old woman breaks down crying in front of those inspectors, I will not be the only person answering questions. Starting tomorrow morning, there will be no more arrests on Old Street. Paperwork only. No pressure, no scenes, nothing an inspector can photograph. Is my order clear?\"\n\n\"Yes, Secretary Fan! Completely clear!\" Cheng Biao answered at once, not daring to meet his eyes.\n\nFan Weiguo leaned back slowly, hiding the hard thud of his pulse behind a calm face.\n\nNeither man across from him knew the real reason his palms were cold tonight: somebody had already sent a secret complaint letter straight to the Governor's office in the provincial capital! Yesterday an old friend up in the province had quietly warned him that leaders above were already asking questions about Old Street.\n\nWho had sent it? One of the three shopkeepers? A reporter? Or Tao Shu, resting comfortably at home with his convenient cold? Fan Weiguo glanced darkly at the empty fourth chair.\n\nWorse still, the low buyout price wasn't even the real time bomb! To make up the difference between Hongrui's 3,800-yuan offer and Old Street's real 8,000-yuan value, the county had set aside a 640-million-yuan relocation fund, and huge chunks of that money had quietly vanished without reaching any family. Fan Weiguo hadn't pocketed a single yuan himself, he was almost certain of that, yet his signature sat on every approval sheet. The man actually holding the purse strings and running the Old Street office was Lu Wenzhe, the Executive Deputy Magistrate who controlled Yunxi's budget.\n\n\"Secretary Fan, please don't worry on our account,\" Dong Haisheng said respectfully, refilling the Secretary's teacup with both hands. \"Hongrui will follow every county order fully. We won't cause a single ripple before Wednesday.\"\n\nOutwardly, Dong Haisheng looked calm and humble. Inside, his stomach burned with fear! He owed Huaxin Bank 1.1 billion yuan, with a loan review hitting on the thirtieth. If construction hadn't started by then, the bank could take everything he owned. Even worse, he'd secretly borrowed another 300 million yuan from a shadowy private lender called Chairman Huang, who'd already phoned three times today, never shouting, only asking gently: \"Is the corner cleared yet, Boss Dong?\"\n\nTrying carefully to ease the heavy silence, Dong Haisheng added in a light, cautious tone, \"Actually, Secretary, I don't expect any trouble from that hardware family. His older brother is just a retired factory worker, and his nephew is an ordinary clerk at a small logistics company in Qingyan City. We heard the nephew is coming back tomorrow morning to ask questions at the station.\"\n\nCheng Biao seized the chance to reassure his boss, offering a restrained, dutiful nod. \"Just a small company clerk, Secretary Fan. We'll receive him politely and handle everything strictly by the book.\"\n\nInside, Cheng Biao sneered. A logistics clerk from the city thought he could walk into Old Street Station and lecture him? They knew exactly how to wear down ordinary clerks!\n\nFan Weiguo didn't answer. He pulled out his phone and stared down at the calendar screen, where next Wednesday at nine o'clock glowed circled in red.\n\nFive days. Thirty years in government, survived by never taking one careless step. Yet tonight, for a reason he couldn't quite name, he felt like a man standing on a frozen river, listening to the ice quietly crack right under his shoes.\n"}, {"n": 7, "title": "Hot Water", "raw": "# Chapter 7: Hot Water\n\nYunxi County, Old Street. Friday, 10:30 p.m.\n\nThe narrow lane lay dark, every storefront shutter pulled tight except two.\n\nAt the far end, under one bare bulb beside an ancient sewing machine, Old Yu sat hemming a trouser cuff by hand after forty-four years on this street.\n\nTonight, his fingers weren't really sewing. They were shaking.\n\nHe couldn't get the sight of Chen Mingde in handcuffs out of his head. He'd stood silent in his doorway while Boss Dong smiled at him, and he felt disgusted with himself! Eleven families had signed. Out of the last three, the toughest one sat in a police cell. Only two remained.\n\nIf Old Chen signs, Old Yu thought bitterly, I have no chance. If he doesn't, they'll come for me next, and who pays my granddaughter's tuition or my wife's heart medicine?\n\nHe sighed, watching the steel needle tremble. Tomorrow, he promised himself. If Old Chen is still in that cell tomorrow night, I'll sign. I'm an old man. Nobody will blame me.\n\nDirectly across the dark street, one other faint yellow light burned.\n\nInside the shuttered steamed-bun stall, Meng Xiaofang sat beside her sleeping four-year-old daughter, her eyes swollen red. In her dented tin box lay eighty-three crumpled yuan for rent, flour, and milk.\n\nIf Old Yu signed, she'd be the very last holdout left, and the last one standing was always the easiest to crush.\n\nNeither neighbor knew what the other had decided. Yet behind two dim windows across the silent lane, two exhausted people made the exact same quiet vow: if Chen Mingde wasn't home by tomorrow night, they were giving up!\n\nYunxi County, Old Street Police Station, holding cell. Friday, 11:00 p.m.\n\nThe holding cell was small and smelled faintly of bleach and damp concrete. Inside sat a hard concrete bench, a tiny barred window high near the ceiling, and a bare bulb that never switched off.\n\nChen Mingde sat on the bench with his back pressed against the wall and his rough hands tucked between his knees. Nobody had given him a blanket. The autumn chill crept straight up through the concrete into his bones.\n\nAcross from him, a heavyset man brought in for a bar fight snored loudly on the opposite bench. He'd spent two nights in this room before, and before rolling over he'd given Chen Mingde some blunt advice: the food was terrible, the blankets were a myth, and the smartest thing to do was sleep.\n\nChen Mingde couldn't sleep.\n\nHe thought of his wife, Wu Lanying, probably sitting stiffly on his brother's sofa clutching a cup of water she wouldn't drink. He thought of his daughter, Xiaoqing, laughing with her roommates in her Wuhan dormitory, completely unaware. He hadn't let anyone call her. Let the girl have one more peaceful night.\n\nAnd against his will, he thought about the 456,000 yuan.\n\nTo be honest, wasn't that a pile of money? He'd never held that much cash in his entire life. If he signed tomorrow morning, he'd walk straight out the front door, and his wife would burst into tears of relief. Who could blame an aging hardware seller for wanting to go home?\n\nYet that little corner shop was twenty-two years of his life! It was opening the rolling shutter at seven every morning and locking it at nine every night. It was every hand-labeled screw drawer, the red-and-white sign he'd painted himself, and every neighbor on Old Street saying, \"Go ask Old Chen, he'll have it.\" If he sold it for less than half its worth, what would he be? Not a hardware man. Not anything.\n\n\"Don't pull back when the fish pulls,\" he whispered softly to the blank wall. \"Wait.\"\n\nSlow, heavy footsteps echoed down the concrete hallway.\n\nThey stopped right outside the iron bars. Chen Mingde looked up and saw a round-faced police officer with red, tired eyes standing there, holding a steaming paper cup.\n\nWei Kun stood silently for several seconds, almost as if he'd forgotten why he walked down here.\n\n\"Uncle,\" he said at last, keeping his voice low enough that the hallway camera couldn't pick it up. \"Would you like some hot water?\"\n\nChen Mingde reached through the bars and took the cup with both hands. It was only plain boiled water, yet the moment the warmth hit his palms, his fingers stopped shaking.\n\n\"Thank you, young man.\"\n\nWei Kun gave one stiff nod without another word and walked briskly back down the hall, moving like a man who'd just broken a rule.\n\nChen Mingde pressed the warm cup against his chest and closed his eyes. He couldn't explain why, yet a quiet certainty settled over him. Somebody was already on the way. His older brother, of course. And right behind his brother, somewhere out there in the night, was the boy who had learned never to yank too hard on a fishing line.\n"}, {"n": 8, "title": "Wait Your Turn", "raw": "# Chapter 8: Wait Your Turn\n\nYunxi County, Old Street Police Station lobby. Saturday, 8:30 a.m.\n\nThe public waiting hall was gray, drafty, and crowded with early errands.\n\nOverhead, blue plastic signs marked the service windows: Family Records, ID Cards, and Case Questions. An old woman sat with a cloth sack of onions balanced on her knees, waiting to fix her family booklet. A young delivery rider paced back and forth arguing into his headset, while a little girl kept sliding down the steel bench despite her grandfather's scolding.\n\n\"Dad, hold this.\" Chen Xuan pulled a thin white paper slip from the ticket machine by the glass doors.\n\nChen Jianguo squinted at the printed digits. \"Thirty-seven.\"\n\nAbove the Case Inquiries window, the red LED screen showed the number currently being served: twelve.\n\n\"Thirty-seven?!\" Chen Jianguo groaned as if reading his own sentence. \"Xuan, by the time they call thirty-seven, your uncle will have a beard down to his waist!\"\n\n\"Then we wait,\" Chen Xuan said easily, sitting down on the steel bench with his scratched green thermos resting on his knee.\n\nBehind the thick service glass, Wei Kun hadn't slept a wink.\n\nHe'd spent the whole night sitting in the duty room with his boots still laced. Every time he shut his eyes, he saw a thin, gray-haired shopkeeper holding a paper cup with both hands. At 7:40 this morning, Director Cheng Biao had stepped into the duty room, his face tight after last night's dinner. \"The nephew is showing up today,\" Cheng Biao had ordered flatly. \"Finish the detention decision paper. Write Friday, 2:30 p.m., right after the arrest.\"\n\nWei Kun had picked up his black gel pen. Then he'd set it back down.\n\nIt was only a date and a time. Yet writing it meant signing a lie on purpose in his own handwriting on an official paper a man's family would hold in their hands. He thought of his pregnant wife at home, who asked him every single night when he walked through the door, \"Was it a good day?\"\n\nSo Wei Kun wrote the true time: Saturday, 7:50 a.m. It was the single honest line on the entire sheet. When Cheng Biao frowned at it, Wei Kun stammered that he'd slipped up and would reprint it right away. He never reprinted it.\n\nIt was the smallest rebellion of his twelve-year career, and he still didn't know why his palms were sweating!\n\nAt 9:50, the red screen chimed and flashed thirty-seven.\n\nThe service counter had the old style of glass barrier with a small speaking grille and a narrow slot at the bottom. Wei Kun looked up from a half-eaten sesame bun and saw a young man with a very mild, calm face.\n\n\"Good morning, Officer,\" Chen Xuan said politely. \"My name is Chen Xuan. My uncle, Chen Mingde, was brought in yesterday at two in the afternoon. We'd like to know the exact charge and when his family can visit him.\"\n\n\"Chen Mingde.\" Wei Kun's fingers tapped across his keyboard while his voice sounded far away. \"Assault and hurting another person. The case is still being checked. He is being held in jail. No visits allowed.\"\n\n\"For how long?\"\n\n\"Ten days, maybe fifteen. Depends on his attitude.\"\n\n\"May we have the written holding notice, please?\"\n\nWei Kun stopped chewing!\n\nIn twelve years behind this window, he'd faced screaming families, weeping mothers, and panicked relatives who tried to kneel on the tile floor. He'd never once seen a young man ask for an official police notice as calmly as someone asking for a bank receipt! Worse, his heart jumped straight into his throat because he knew exactly what was written on that sheet!\n\n\"Who are you, a lawyer?\" Wei Kun forced himself to ask stiffly.\n\n\"No, Officer. I'm an operations supervisor at a logistics company. I check forms every day for work.\"\n\nSomeone waiting in the line behind Chen Xuan let out a sudden snort of laughter!\n\nWei Kun's ears flushed bright red. An office clerk, in front of a crowded lobby, lecturing a veteran officer about paperwork? Yet underneath his embarrassment crept a sharp, cold fear: what if this guy really knew how to read forms? What if he spotted the timestamp right away?\n\n\"Sir, you're holding up the queue,\" Wei Kun said coldly. \"We're busy. We'll mail the family notice.\"\n\n\"By police rules, the station has to tell the family in writing within twenty-four hours, Officer,\" Chen Xuan replied gently, never raising his voice. \"It's been nearly twenty hours already. Could we please take our copy now so we don't have to trouble you again?\"\n\n\"I told you, we'll mail it!\"\n\n\"Then we'll sit right here and wait until you have a moment.\"\n\nChen Xuan turned around and sat calmly back down on the steel bench.\n\nHe didn't shout, didn't bang the glass, and didn't leave. He simply sat beside his fuming father with his green thermos on his knee, looking completely content to wait all morning, leaving Wei Kun utterly stuck!\n\n\"Tch!\" Wei Kun grabbed the desk phone and dialed the inner office. \"Director Cheng? It's Wei. The nephew is here, and he won't leave without the written notice. Yes, Director.\"\n\nTen minutes later, a heavy steel door at the rear of the lobby clicked open.\n\nA broad-shouldered man in a black leather jacket strode out with a wooden toothpick tucked in the corner of his mouth. The moment he stepped into the hall, the chatter dropped to a nervous hush. Even the little girl stopped sliding off the bench.\n\nCheng Biao didn't spare a glance for Chen Jianguo. His eyes swept slowly over Chen Xuan from his plain sneakers to his neat hair, sizing him up with thinly veiled contempt.\n\n\"So you're the logistics clerk,\" Cheng Biao said coolly.\n\n\"Good morning, Director Cheng.\"\n\n\"Hand them the family notice and clear my lobby, Wei.\" Cheng Biao plucked the toothpick from his lips. \"And inform them the detention visiting room is closed this weekend. For pipe repairs.\"\n\n\"Director Cheng,\" Chen Xuan asked politely, \"is the lawyer reception window open on Saturdays?\"\n\nCheng Biao's lip curled in a faint, mocking smile. \"Have you hired a lawyer?\"\n\n\"Not yet.\"\n\n\"Then I suggest you find a very good one.\"\n\nHe turned sharply on his heel and walked back through the heavy steel door, letting it clang shut behind him.\n\nA moment later, a single stamped sheet of white paper slid quietly out through the slot beneath the glass.\n"}, {"n": 9, "title": "Ask Again", "raw": "# Chapter 9: Ask Again\n\nChen Jianguo snatched the stamped sheet from the slot before it finished sliding out. His rough hands shook with anger. \"Look at this, Xuan! Look at the nonsense they wrote!\"\n\nChen Xuan gently took the notice and read it from top to bottom, running his thumb slowly beneath each line.\n\nThe form stated that Chen Mingde was ordered to serve ten days in jail for assault and hurting another person. Down at the bottom, right beside the red station stamp, sat the handwritten line: Time of Decision, Saturday, 7:50 a.m.\n\nChen Xuan paused and read that line a second time.\n\n\"Dad,\" he said quietly. \"They handcuffed Second Uncle at two o'clock yesterday afternoon.\"\n\n\"I know! So what?\"\n\n\"So the formal decision to detain him wasn't signed until 7:50 this morning. That's nearly eighteen hours later. For eighteen hours, they locked him in a cell without a single legal detention order on file.\"\n\nChen Jianguo's mouth opened, then snapped shut in shock!\n\n\"Think about it, Dad,\" Chen Xuan murmured, lowering his voice just enough so only the two of them heard. \"If everyone in that office wanted to hide a dirty arrest, they would've backdated the line to Friday afternoon. Nobody checks twice. Whoever filled out this notice wrote the real time on purpose. That person didn't want to sign a lie.\"\n\nChen Xuan's eyes dropped to the final line listing the supporting evidence: Medical Injury Note, Ankang Private Clinic.\n\n\"And look here, Dad. There's a second problem. In a real assault case, an official police doctor has to examine the injury and write a formal report. They didn't use one. They used a slip from a private street clinic.\"\n\n\"Why does that matter?\" Chen Jianguo asked, blinking fast.\n\n\"Because a private clinic will write whatever someone pays it to write.\"\n\nBehind the glass barrier, Wei Kun froze with the last piece of his sesame bun halfway to his mouth!\n\nHis heart slammed against his ribs! How on earth had an ordinary company clerk spotted both fatal flaws in less than sixty seconds?! Looking at that mild young man standing outside the glass, Wei Kun felt an uncanny chill, as if a stranger had reached straight through the partition, laid a quiet hand on his shoulder, and whispered, *I know what you did.*\n\n\"Xuan, how do you know all this?\" Chen Jianguo stared at his son in stunned disbelief.\n\n\"It's just paperwork, Dad.\"\n\nTo be honest, it really was an everyday skill. In three years auditing shipping bills at Hengxin Logistics, Chen Xuan had inspected more forms than he could count. He knew what an honest paper trail looked like, and he knew what a cooked one looked like. Real records had tiny, messy human quirks; forged ones were always too tidy, and their timestamps always slanted in the same direction.\n\nChen Jianguo's anger flared all over again! He puffed out his chest and took a sharp breath.\n\n\"They forged an arrest on my brother! I'm going to yell right here in this hall until every person in Yunxi hears!\"\n\n\"Dad.\" Chen Xuan laid a gentle, steady hand on his father's sleeve. \"Shouting won't fix a forged form. It'll only give them an excuse to call security.\"\n\n\"Then what will?!\"\n\n\"Let's step outside first. I need to think.\"\n\nThey walked out into the crisp, bright Saturday morning. Chen Jianguo had been ready to shout for an hour, yet somehow, stepping into the cool sunlight beside his calm son, the helpless rage drained right out of his chest.\n\nInside Old Street Police Station, holding cell. 10:20 a.m.\n\n\"Old Chen.\"\n\nChen Mingde blinked awake. With the bare bulb burning nonstop overhead, he'd lost track of whether it was morning or night.\n\nCheng Biao stood outside the iron bars with both hands tucked into his leather jacket pockets. The friendly uncle smile from yesterday was completely gone.\n\n\"Your brother and your nephew stopped by the front lobby this morning,\" Cheng Biao said softly. \"A polite little office clerk asking for written notices. Very cute. Now let me spell reality out for you, Old Chen. They can sit on those lobby benches for a solid week, and they still won't open this iron door. Only you can open it. Say yes to the buyout, sign the line, and walk home.\"\n\n\"My nephew came?\" Chen Mingde asked quietly.\n\n\"That's what I just told you.\"\n\nA slow, steady warmth spread across Chen Mingde's chest. Despite the cold concrete, the empty stomach, and a sleepless night, the corners of his eyes crinkled into a genuine smile.\n\n\"Then I'll keep waiting, Director Cheng.\"\n\nCheng Biao stared through the bars, his brow tightening!\n\nFor the first time since the Old Street buyout began, a thin thread of doubt crept under his skin. Eleven men had cracked when he laid out the math. Why on earth was this nobody, a small-town hardware seller with zero powerful friends, sitting on cold concrete smiling at him?!\n\n\"Suit yourself,\" Cheng Biao muttered coldly, turning down the hallway.\n\nAcross the road from the station, beneath an old locust tree, Chen Xuan pulled out his phone.\n\nHe stared at the dark screen for a long second. He hated dialing this contact. In three years, he'd only used it four times, and each time he felt oddly guilty, like a polite neighbor knocking on someone's door too late at night.\n\nStill, he'd asked once, politely, at the front window, and the answer was crooked. By his grandfather's rule, now it was time to ask again.\n\nHe snapped a clear photo of the stamped detention notice, attached it, and typed slowly with one thumb, phrasing it exactly the way he spoke: *Hello, Chief An. Sorry to bother you on a Saturday. My Second Uncle, Chen Mingde, is being held at Yunxi's Old Street Police Station. The written notice says they decided to detain him at 7:50 this morning, even though they arrested him yesterday at 2:05 p.m., and their injury proof is just a private clinic slip. Something looks very wrong. Could you please check what's really going on? Strictly by the rules, nothing extra. Thank you.*\n\nHe read it once and pressed send.\n\nA reply buzzed back in less than thirty seconds: *Understood, Boss. We'll look into the facts cleanly and report tonight. Please take care of your family.*\n\n\"Okay,\" Chen Xuan murmured, sliding the phone back into his pocket.\n\n\"Who were you texting?\" Chen Jianguo asked curiously.\n\n\"A friend from the city who knows a lot about legal forms.\"\n\n\"Does he know any decent lawyers?\"\n\n\"A few, I think.\"\n\n\"Good, good!\" Chen Jianguo rubbed his rough palms together, suddenly feeling ten pounds lighter. \"Then let's head back first. Your mother's been messaging me every five minutes asking if they locked us up too!\"\n\n\"Hold on, Dad,\" Chen Xuan said, glancing toward the corner where the narrow lane curved toward Old Street. \"Let's grab some fried dough sticks and stop by Old Yu's tailor shop on the way. If we're going to prove Second Uncle didn't touch that driver, we ought to talk to our eyewitness first.\"\n"}, {"n": 10, "title": "Two Witnesses", "raw": "# Chapter 10: Two Witnesses\n\nYunxi County, Old Street, Old Yu's Tailor Shop. Saturday, 10:50 a.m.\n\nThe little tailor shop smelled of steamed wool and hot iron. Chen Xuan set two bags of warm soy milk and fried dough sticks onto the cutting table while Chen Jianguo pulled up a wooden stool.\n\n\"Old Yu, sorry to interrupt your work,\" Chen Xuan said gently. \"Dad told me you saw everything outside my uncle's hardware shop yesterday.\"\n\nOld Yu paused with his iron hovering over a trouser seam, his lined face tightening with guilt. \"Xuan, I really did see it. Your Second Uncle never stepped an inch from behind his counter! That young driver glanced at Boss Dong and threw himself straight into the paint cans. I swear on my granddaughter's name!\"\n\n\"Thank you, Uncle Yu,\" Chen Xuan said calmly, pulling a plain notebook and pen from his canvas bag. \"Would you mind writing down exactly what you saw, with the time and your signature? You don't have to walk into the police station or face Boss Dong. Just keep it quiet for now.\"\n\nOld Yu hesitated, glancing nervously toward the dark street outside. \"Xuan, even if I write it down, who's going to take an old tailor's word against Hongrui Real Estate?\"\n\n\"A piece of paper alone might not move them,\" Chen Xuan replied mildly, glancing out the window toward the small beef-noodle shop angled directly across from Mingde Hardware. Mounted neatly beneath the noodle shop's red awning sat a black security camera pointing straight down the lane. \"Still, when an eyewitness statement matches a security camera and a fake clinic date, people higher up have to look.\"\n\nOld Yu blinked, following Chen Xuan's gaze across the street, and for the first time since yesterday afternoon, a tiny spark of hope lit behind his thick glasses! Picking up the pen, he pressed his shaking hand steady against the table and wrote out every word cleanly.\n\nJust as Chen Xuan folded the signed page into his pocket, his phone buzzed. The caller ID read Manager Hu Dewei.\n\n\"Hello, Manager Hu?\" Chen Xuan stepped onto the quiet sidewalk to take it.\n\n\"Supervisor Chen! Sorry to bother you on a Saturday!\" Hu Dewei's voice sounded oddly flustered over the line. \"I just wanted to check if you got home safely last night. Everything alright in your hometown?\"\n\n\"Everything's fine, Manager. Why, did the port agent call about the refund?\"\n\n\"Oh, yes, they already confirmed the 14,000-yuan error this morning! General Manager Sun was thrilled.\" Hu Dewei coughed awkwardly. \"And don't laugh, but Zhang Pengfei actually drove into the office at eight this morning to check all his own spreadsheets four times over. He looks ready to pull his hair out!\"\n\n\"Tell him to take a break and eat lunch,\" Chen Xuan said politely. \"See you Monday, Manager.\"\n\nHe hung up with a small, amused smile. Sometimes office rivals were almost endearing!\n\nYunxi County, Old Street, Old Beef Noodles. Saturday, 10:40 a.m.\n\nBack on Old Street, directly across the narrow lane from Mingde Hardware, a lean man in a flour-dusted apron stood behind the counter of a steamy little six-table restaurant called Old Beef Noodles.\n\nHis name was Gong Yi, Number Twenty-three on Chief An's roster. For nine months he'd blended quietly into Old Street as its ordinary noodle cook, keeping a careful eye on the Boss's hometown while strictly obeying Chief An's stand-down order. A minute ago, his lookout across from the police station had signaled that the Boss had walked out, snapped a photo under the locust tree, and turned toward Old Street with his father.\n\nNow Gong Yi's phone buzzed against his hip. Chief An's message was four words: *The Boss spoke. Check it.*\n\n\"Finally,\" Gong Yi muttered under his breath, wiping noodle broth off his wrist onto a towel.\n\nHe flipped the door sign to Closed for Restock, stepped into the back pantry, and opened a laptop linked to the team's city legal analysts. For two months he'd kept his hands off local affairs, and last night he had only pulled the public project filings Chief An asked for. Now he was finally free to look into the arrests themselves!\n\nWorking strictly from public property records, open business records, and the street-facing security camera mounted beneath his own red awning directly opposite Mingde Hardware, Gong Yi compared the dates.\n\nWithin twenty minutes, a stunning pattern leaped off the screen!\n\nOver the past nine weeks, eleven Old Street shopkeepers had suddenly signed over their storefronts to Hongrui Real Estate at the exact same rock-bottom price, and every single sale had been signed off the very morning after an \"assault\" arrest at Old Street Station! Worse, Ankang Private Clinic wasn't independent at all: its secret main owner was a side company linked straight to Hongrui's business circle!\n\nThen Chief An forwarded the photo Chen Xuan had just snapped of his uncle's holding notice.\n\nGong Yi reached under his counter for two crumpled copies two former Old Street neighbors had angrily shown him over noodles last month before moving away. He laid Chen Mingde's notice side by side with theirs, and his fingers froze!\n\nBoth earlier family notices had been neatly backdated to the exact afternoon of the arrest to hide the illegal overnight lockup. On this twelfth notice alone, the handwritten time sat stark and unchanged: Saturday, 7:50 a.m.\n\n\"Well, look at that,\" Gong Yi whispered, a dry, rare smile tugging at the corner of his mouth. Someone inside that dirty little police station had refused, in the smallest possible way, to sign a lie. And whoever that officer was, he'd just handed them the strongest proof in the entire county!\n"}, {"n": 11, "title": "The Hostage Call", "raw": "# Chapter 11: The Hostage Call\n\nFuxing New Village, Building 2, Room 601. Saturday, 2:00 p.m.\n\n\"Mom, if you stir that soup pot any harder, it's going to file a complaint,\" Chen Yuan sighed from the kitchen doorway.\n\n\"Don't talk to me about complaints!\" Liu Meifang waved her big soup ladle like a general's stick. \"Your uncle's been sitting in a cold cell for twenty-four hours, and I can't even keep my hands steady!\"\n\nThe apartment buzzed with restless family nerves. Behind his bedroom door, Chen Hao groaned loudly every few minutes while losing a battle with a practice math exam. In the living room, Second Aunt sat on the edge of the sofa clutching her phone with both hands, never taking her eyes off the dark screen.\n\nChen Xuan sat at the dining table, quietly comparing the photo of his uncle's detention notice against Old Yu's signed statement, jotting down the timeline in neat rows.\n\nSuddenly, Second Aunt's phone rang!\n\nShe jumped as if the handset had burned her fingers. Instantly, the entire apartment froze!\n\n\"It's him,\" she whispered, her face turning pale. \"It's Boss Dong.\"\n\n\"Don't answer that crook!\" Chen Jianguo shouted.\n\n\"Put it on speaker, Second Aunt,\" Chen Xuan said calmly, setting his pen down. \"Let's hear what he wants.\"\n\nWith trembling fingers, she tapped the green button. A smooth, oily voice filled the quiet living room.\n\n\"Sister Wu? This is Boss Dong. Don't be frightened, I'm only calling to help. Your husband is in a tough spot, you know. Fifteen days of detention isn't a small thing. It leaves a permanent police record, and your daughter's university job hunt will suffer for it. Luckily, I have friends. If you sign the buyout contract today, I'll make one call and have Old Chen home at your dinner table tonight! Four hundred and fifty-six thousand yuan, cash in a week. Think about your family, Sister Wu!\"\n\nSecond Aunt's fingers shook so violently she nearly dropped the phone!\n\nTo put it nicely, Boss Dong was offering a helpful shortcut. To put it bluntly, he was trading her husband's freedom for half the value of their shop! Everybody in the room heard the extortion loud and clear!\n\n\"Four hundred and fifty-six thousand is still money,\" Second Aunt whimpered, tears spilling over her lashes. \"Xuan, maybe I should sign the paper so your uncle can come home tonight.\"\n\n\"Second Aunt.\" Chen Xuan stood up, walked over smoothly, and gently pressed the red hang-up button.\n\nThe living room went dead silent.\n\n\"That shop is worth nearly one million yuan,\" Chen Xuan said steadily, looking straight into her eyes. \"The second you sign, they'll claim Second Uncle agreed freely. Once your name is on that contract, nobody can undo it, not a lawyer, not a judge, nobody. Please trust me and wait one more day. Just one more day.\"\n\n\"Xuan, I want to trust you, I really do,\" Second Aunt sobbed softly. \"But how can you promise he will be home in one day? You are only an office clerk.\"\n\n\"An ordinary logistics clerk, I know.\" Chen Xuan offered her a warm, gentle smile. \"A supervisor, actually. Checking messy forms is literally my job. Their paper has an eighteen-hour legal gap, their injury note came from a shady private clinic, and we already have Old Yu's signed statement. They're the ones who should be nervous, not us.\"\n\nSecond Aunt stared up at him, her breathing slowly steadying.\n\nFor a long beat, nobody spoke. Then Chen Jianguo cleared his throat loudly and lifted one finger into the air. Out of lifelong family habit, everyone turned to hear his pearl of wisdom.\n\n\"As the old proverb says: the fisherman who holds the net isn't afraid of a thrashing carp!\"\n\n\"Dad,\" Chen Yuan groaned, rubbing her temples, \"that is not an old proverb.\"\n\n\"It's a brand-new one,\" Chen Jianguo declared proudly. \"I just invented it!\"\n\nSecond Aunt let out a wet, startled laugh that tumbled straight into a sob, yet it was a real laugh all the same. Liu Meifang hurried over and wrapped her arms tightly around her sister-in-law's shoulders.\n\nYunxi County, a black Audi parked beside the river. 2:15 p.m.\n\nDong Haisheng stared down at his dead phone screen, his smooth face darkening like thunder!\n\nThe woman had hung up on him! Even worse, he'd clearly heard the nephew's calm voice right before the line clicked dead. Eleven signatures were already in his pocket, and now a nobody hardware seller and his stubborn office-clerk nephew were refusing to budge!\n\nBefore he could curse, his phone buzzed again. One name flashed across the screen: Chairman Huang.\n\nDong Haisheng's stomach sank! He swallowed hard and answered at once, his back straightening even inside his own car.\n\n\"Chairman Huang! Good afternoon!\"\n\n\"Boss Dong.\" The voice on the other end sounded mild, almost drowsy, yet every word carried ice. \"I dislike asking the same question twice. Is the corner lot cleared?\"\n\n\"Monday, Chairman! Monday morning, I swear it!\" Dong Haisheng's palm turned slick with sweat against the leather steering wheel. \"The shopkeeper is locked up, and his wife is already breaking down. My friend at the police bureau promised he will sign by Monday!\"\n\n\"I have zero interest in your small-town friends,\" Chairman Huang interrupted softly. \"I know Huaxin Bank reviews your 1.1-billion loan on the thirtieth. And I know exactly what happens to a developer who defaults on the thirtieth. Monday, Boss Dong. Not Tuesday.\"\n\nClick. The line went dead.\n\nDong Haisheng sat frozen behind the wheel, staring across the gray river toward the dark rooftops of Old Street. For the first time in twenty years of wheeling and dealing, cold dread crept into his chest: he had borrowed far more than he could ever survive losing!\n\nYunxi County, the County Magistrate's residence. 8:00 p.m.\n\nTao Shu did not have a cold.\n\nSitting comfortably in his quiet study in soft house slippers with a steaming mug of green tea beside him, the County Magistrate looked completely healthy. Behind his thin-rimmed glasses, his eyes were sharp and wide awake.\n\nFor eight long years as Yunxi's number-two official, Tao Shu had waited patiently for Party Secretary Fan Weiguo to slip up.\n\nTonight, he could smell the mistake in the air the way an old farmer smells coming rain.\n\nYet he hadn't written that secret complaint letter to the provincial capital.\n\nHe'd turned the puzzle over in his head for three straight days. Someone had sent an anonymous tip straight to the Governor's office, and people up in the province were already quietly asking questions. Would Tao Shu have loved to see Fan Weiguo stumble? Of course! Yet he knew better than to write anonymous letters himself. In officialdom, a poison arrow usually cuts the archer's own fingers first.\n\nSo who had sent it? One of the frightened shop owners? Unlikely. A local reporter? No county reporter had the guts. Somebody up in Qingyan City who knew far too much about Yunxi's relocation fund?\n\nTao Shu slid open his desk drawer and lifted out a thin cardboard folder. Written neatly on the cover in his own fountain-pen handwriting sat a single surname: Fan.\n\nHe didn't open it. He simply laid his palm flat across the cover, like a patient hunter keeping a hound quiet in the brush.\n\nNot yet. When river ice is already cracking, a wise man doesn't stomp on it. He waits for it to split all by itself.\n"}, {"n": 12, "title": "Three Options", "raw": "# Chapter 12: Three Options\n\nQingyan City, the quiet eastern courtyard. Saturday, 8:40 p.m.\n\n\"Chief, this is Twenty-three. Everything is checked.\"\n\nChief An Zhiyuan sat upright beneath his brass desk lamp. Beside the encrypted speaker lay a clean sheet of white paper bearing two lines in his neat handwriting: Option One. Option Two.\n\n\"Go ahead, Gong Yi.\"\n\n\"First, the Old Street relocation fund,\" Gong Yi reported crisply, the faint clink of a tea mug sounding in the background of his noodle shop. \"Hongrui Real Estate offered shopkeepers 3,800 yuan per square meter when real Old Street shops sell for 8,000. To cover the gap, Yunxi County approved a 640-million-yuan relocation fund. I traced the public payments and open business records. At least 190 million never went to residents. It flowed into three companies: Hongrui Real Estate, a demolition company registered to Deputy Police Director Cheng Biao's brother-in-law, and Ankang Private Clinic.\"\n\nChief An's pen paused mid-stroke. \"The clinic that wrote the injury note?\"\n\n\"The very same, Chief. Attorney Bai's legal assistant pulled the clinic's patient billing receipt through a normal legal records request: it shows Boss Dong's driver was treated at 1:50 p.m., fifteen minutes before the 2:05 arrest, and no official police doctor ever checked him. Meanwhile, my noodle shop's front street camera across from Mingde Hardware caught the whole stunt: the driver threw himself into the paint shelves while the Boss's uncle never moved from behind his counter.\"\n\n\"Clean proof,\" Chief An murmured approvingly. \"Continue.\"\n\n\"Second, property records show eleven Old Street shopkeepers signed over their shops to Hongrui over the past nine weeks, every single one the morning after an assault arrest signed by Cheng Biao. I compared the Boss's photo against copies kept by two of those former shopkeepers. Their earlier notices were all neatly backdated to hide illegal overnight lockups. Only the Boss's uncle's notice carries a truthful 7:50 a.m. time, written by duty officer Wei Kun. Even better, two off-duty auxiliary cops stopped by my noodle shop for lunch today and grumbled that Wei Kun actually sneaked hot water through the cell bars to the old hardware man last night.\"\n\n\"Hot water,\" Chief An repeated softly, a flicker of genuine warmth crossing his stern face.\n\n\"Third, the political clock,\" Gong Yi finished dryly. \"County Party Secretary Fan Weiguo signed the buyout approvals, though Executive Deputy Magistrate Lu Wenzhe controls the project money. County Magistrate Tao Shu skipped their dinner last night with a fake cold. And the Provincial Inspection Team arrives in Yunxi next Wednesday. Every piece came cleanly from public records, neighbor copies, legal requests, and street video. Nobody knows we're here.\"\n\n\"Well done, Gong Yi. Keep your apron on and wait for my word.\"\n\nChief An clicked the line off and gazed down at his handwritten sheet.\n\nWith forty years behind him, Chief An knew three different ways to end this mess before sunrise. One quiet phone call to a top provincial leader, and Yunxi's county police bureau would be flipped inside out before breakfast! Yet that would be loud, sloppy, and heavy-handed. Worse, turning a local land grab into a political earthquake would crush ordinary shopkeepers and bury one honest beat cop in the rubble.\n\nAbove all, Chief An knew his Boss. Chen Xuan didn't want vengeance. He wanted his uncle treated fairly, strictly under the law.\n\nPicking up his phone, Chief An typed a crisp, clear briefing instead of a bloated essay, laying out the verified facts first, followed by three clean paths.\n\nYunxi County, Fuxing New Village, Building 2, Room 601. 9:20 p.m.\n\n\"Brother, if you stare at your phone any longer, it's going to turn into a brick,\" Chen Hao teased from the far end of the sofa, thumbs flying across a mobile game.\n\n\"Just reading a work note,\" Chen Xuan replied mildly.\n\nIn the kitchen, his mother was scrubbing the same soup bowl for the third time to keep her hands busy. Chen Xuan scrolled calmly through Chief An's short messages.\n\nMessage one laid out the hard proof: the fake 1:50 p.m. clinic slip, the eleven forced buyouts, the 190 million yuan quietly taken from the relocation fund, the street camera video showing the staged fall, and the Provincial Inspection Team arriving Wednesday.\n\nMessage two laid out the choices:\n*Option 1: Our legal team delivers a formal, proof-backed complaint straight to Qingyan's city anti-corruption office tonight (the Municipal Discipline Inspection Commission), with copies to the city prosecutor and city police chief. With provincial inspectors arriving Wednesday, they'll be forced to act within hours. Uncle should be home by dawn.*\n*Option 2: Wait until Wednesday and hand everything to the provincial team directly, leaving Uncle inside three more days.*\n*Option 3: Have a senior leader step in directly tonight. Fastest, but loud and outside normal rules.*\n*We recommend Option 1. Note: Duty officer Wei Kun wrote the true 7:50 a.m. time and brought Uncle hot water last night.*\n\nChen Xuan didn't hesitate for five seconds. He saw the pressure point right away!\n\nWith provincial anti-corruption inspectors arriving in four days, Qingyan's city leaders couldn't dare hide clear, proof-backed wrongdoing, especially when Old Yu's signed eyewitness statement matched the street video and the clinic's impossible 1:50 p.m. time! Clean paperwork aimed right at the inspection deadline would break the whole cover-up open without bending a single rule!\n\nAnd as for duty officer Wei Kun, a quiet cop with nothing to gain had chosen to write one honest time and hand an old man a cup of hot water when nobody was watching. A small, genuine warmth rose in Chen Xuan's chest. Wherever you went in this world, there was always someone quietly doing the right thing, wasn't there?\n\nHe tapped back two short messages with his thumb:\n*Option 1. Add Old Yu's eyewitness statement too. I'll send a photo of it now. Everything strictly by the rules, no shortcuts, nobody hurt.*\n*Also, please send Second Uncle a hot meal and a blanket tonight through the regular station window. He's fifty-two and concrete gets cold. And make sure nobody takes revenge on Officer Wei Kun. He did the right thing.*\n\nHe snapped a clean photo of Old Yu's handwritten statement, sent it off, and set his phone down on the coffee table.\n\n\"Whoa, Brother, why are you smiling like that?\" Chen Hao squinted suspiciously over his phone screen.\n\n\"Am I smiling?\"\n\n\"You look like you just won the lottery!\"\n\n\"Must be Mom's pork-rib soup.\"\n\nBack in the quiet Qingyan courtyard, Chief An read both messages once, then let out a slow breath.\n\nThree options on the table, any one of which could shatter a county's leadership before morning, and what did the Boss spend half his message worrying about? A hot bowl of noodles, a blanket for his uncle, and protecting one honest beat cop!\n\nChief An's throat felt oddly tight, and a rare, gentle smile softened his lined face.\n\n\"Gong Yi,\" he spoke into the speaker, \"cook a big bowl of beef noodles with an extra fried egg, pack a thick clean blanket, and drop them off at the station's family delivery window yourself, still wearing your apron. Strictly by station rules. And pass the word: nobody touches Officer Wei Kun. If anyone tries to blame him, they answer to me.\"\n\n\"Already boiling the broth, Chief,\" Gong Yi replied smoothly.\n\n\"Attorney Bai, please step in.\"\n\nThe study door opened smoothly. Attorney Bai Qingzhou, Number Eleven on the roster, stepped inside wearing a neat dark gray suit and carrying a slim black leather folder. A famous sixty-year-old courtroom lawyer whose name alone made city legal departments sit up straight, Bai Qingzhou looked as pleased as a man walking into his favorite concert hall.\n\n\"Everything is checked and ready, Chief,\" Bai Qingzhou said crisply, tapping the folder. \"Nineteen pages, organized cleanly: the 1:50 p.m. private clinic slip, the honest 7:50 a.m. holding notice, the neighbor's eyewitness statement, the street video showing the staged fall, and the 190-million-yuan fund trail. I'll file it myself at the city Discipline Commission's night complaint desk.\"\n\n\"Through the front door, Bai,\" Chief An reminded him. \"Signed receipt, full legal rules, nothing irregular.\"\n\nBai Qingzhou smiled, his eyes gleaming behind silver-rimmed glasses. \"Naturally, Chief. When the law itself is sharp enough to cut iron, why would anyone bother swinging a club?\"\n"}, {"n": 13, "title": "The Midnight Filing", "raw": "# Chapter 13: The Midnight Filing\n\nQingyan City, Municipal Discipline Inspection Commission, night duty desk. Saturday, 11:40 p.m.\n\nThe Discipline Commission was the city's anti-corruption watchdog, the one office every official feared because it had the authority to investigate anyone in government, no matter how high their title.\n\nTonight, the young clerk on night duty was hunched over a steaming cup of instant noodles, his third this week, expecting nothing more exciting than a quiet shift until sunrise.\n\nFootsteps echoed across the empty marble lobby.\n\nA silver-haired gentleman in a crisp charcoal suit walked up to the counter and placed a thick, neatly indexed folder beside the sign-in ledger. Beside it, he set a plain white business card.\n\n\"Good evening,\" Attorney Bai Qingzhou said politely. \"This is an urgent pre-inspection complaint regarding Yunxi County's Old Street rebuilding project and Deputy Police Director Cheng Biao. Nineteen pages of checked proof, including timed police holding records, clinic logs, eyewitness statements, street video, and relocation-fund payments. I'd like a stamped receipt, please.\"\n\n\"Of course, sir. Give me just a second to log it.\"\n\nThe young clerk glanced down at the business card, and his chopsticks froze in midair!\n\nBai Qingzhou. Even a junior clerk knew that name! Senior partner at one of the province's sharpest law firms, a famous courtroom lawyer who never took a weak case and never filed a single sheet unless the proof was rock solid.\n\nWith suddenly unsteady fingers, the clerk flipped open the cover page.\n\nHis eyes caught four lines printed cleanly right at the top: *Arrest time: 2:05 p.m. Private clinic injury note: 1:50 p.m. (fifteen minutes earlier). Eleven forced shop sales after overnight lockups. 190 million yuan taken from a 640-million-yuan relocation fund. Provincial Inspection Team arrives in Yunxi County on Wednesday.*\n\nThe clerk's face drained of every drop of color!\n\nFour days before provincial anti-corruption inspectors arrived in Yunxi County, a famous senior lawyer had just walked through the front door with video proof of a framed arrest and a 190-million-yuan money trail! If the night desk sat on this until Monday morning and the provincial team found out, every leader in this building would lose their career!\n\n\"Sir, please wait one moment!\" The clerk's voice cracked as he grabbed the red desk telephone, misdialed once with shaking fingers, and punched the number again.\n\n\"Deputy Secretary Lin? It's the night desk! Yes, sir, I know it's almost midnight, please listen! Attorney Bai Qingzhou is standing in front of me with a nineteen-page urgent complaint on Yunxi County's Old Street!\"\n\nOn the other end of the line, Deputy Secretary Lin had picked up half asleep, ready to snap at a nervous rookie. The instant he heard *\"eleven forced arrests,\" \"video of a fake fight,\" \"190 million missing,\"* and *\"Provincial Inspection Team arrives Wednesday,\"* the line went dead silent for three full seconds!\n\n\"Stamp his receipt politely,\" Deputy Secretary Lin's voice came back tight and wide awake. \"Lock the lobby doors behind him, scan every page straight to my secure tablet, and don't breathe a word to anyone in Yunxi! I'm calling the Commission Secretary right now!\"\n\nAcross Qingyan City, lights flicked on in quiet bedrooms one after another.\n\nMinutes after midnight, the Secretary of the Municipal Discipline Commission, one of the top ten leaders running Qingyan City, read the scanned 1:50 p.m. clinic slip and the video stills, his face turning grim as stone. He immediately dialed Qingyan's top police chief, who also served as a Vice Mayor of the city.\n\nAlready in bed, the city police chief sat up so fast he knocked his water glass crashing onto the floorboards!\n\nIn Yunxi County, forty minutes down the highway, County Police Director Mai Zhenhua was jerked awake at 12:20 a.m. by his private mobile vibrating violently on his nightstand. Seeing the city police chief's personal number flashing in the dark, Mai Zhenhua sat bolt upright and answered in a rush.\n\n\"Director! Is there an emergency?\"\n\n\"Mai Zhenhua, listen very carefully,\" the city police chief's voice crackled icy cold through the speaker. \"Your Deputy Director Cheng Biao locked up an Old Street hardware owner named Chen Mingde yesterday using a private clinic note dated fifteen minutes before the arrest. Eleven other shopkeepers signed away their stores after similar holds. The Municipal Discipline Commission already has video of the staged fall on their desk, and provincial inspectors land on Wednesday! If Chen Mingde is still sitting in your holding cell at sunrise, don't bother explaining it to me. Explain it to the provincial team!\"\n\nClick!\n\nMai Zhenhua sat frozen on the edge of his bed in the dark, cold sweat soaking the back of his pajamas. Moments later, in another quiet house across Yunxi County, Party Secretary Fan Weiguo's bedside phone began to ring, the caller ID glowing with four terrifying words: Municipal Discipline Inspection Commission.\n"}, {"n": 14, "title": "The Five A.M. Call", "raw": "# Chapter 14: The Five A.M. Call\n\nYunxi County, Old Street Police Station. Sunday, 5:10 a.m.\n\nThe duty-room desk phone jangled so violently that Wei Kun nearly tumbled off his folding chair!\n\nHe'd dozed off with his uniform boots still laced and half a cold sesame bun resting on his chest. Scrambling upright, he snatched the receiver. \"Old Street Station, duty officer Wei Kun speaking.\"\n\n\"Wei Kun!\"\n\nThe thunderous, flat voice on the line belonged to Mai Zhenhua, Director of the County Police Bureau and also a Deputy County Magistrate, the highest law-enforcement boss in Yunxi County. To a low-level duty officer like Wei Kun, hearing the Director call personally at five in the morning on a Sunday felt like lightning striking the desk!\n\n\"Listen to every word,\" Mai Zhenhua snapped. \"Chen Mingde, the hardware shop owner in your holding cell. Release him immediately! Not after breakfast, not in an hour. Right now! You held a citizen for eighteen hours without a signed detention order, relied on a forged private clinic note dated fifteen minutes before the arrest, and every single Old Street detention paper from the past nine weeks is under investigation by the city Discipline Commission! I am already in my car. If Chen Mingde is still behind bars when I step through your front door, you can trade places with him!\"\n\nThe line clicked dead.\n\nWei Kun sat staring blindly at the humming receiver while the cold sesame bun rolled off his lap and thumped onto the concrete floor.\n\nWhat on earth had happened overnight?!\n\nLast night at ten, a quiet noodle-shop owner in a flour-dusted apron had dropped off a steaming bowl of beef noodles with an extra egg and a thick blanket through the family window, strictly by station rules, while Cheng Biao was out drinking. And now, before sunrise on Sunday, the County Police Director himself was racing down the street in a panic, and the city anti-corruption commission was descending on Yunxi?!\n\nWas it because of the timestamp? His honest 7:50 a.m. timestamp? The one stubbornly truthful line he'd refused to fake?!\n\nAnd suddenly Wei Kun thought of Instructor Qiu Guoqiang and the deputy station chief, both conveniently shipped off to a \"training course\" two weeks ago so nobody would stand in Cheng Biao's way. His chest hammered with a wild tangle of fear and relief!\n\nBy 5:40 a.m., word had already rippled through the waking dormitory upstairs. Three bleary-eyed officers hurried down into the hallway just as the back door banged open and Cheng Biao stormed inside, his leather jacket half buttoned and his face gray with panic.\n\n\"Wei Kun! Who the hell called Director Mai?!\" Cheng Biao barked, his toothpick gone and his swagger shattered. \"Did that office clerk file a complaint?!\"\n\n\"No one called me from Yunxi, Cheng Biao,\" a cold voice cut in from the front doorway.\n\nMai Zhenhua stood there with his coat collar turned up, two stern-faced internal affairs officers flanking his shoulders. \"The city police chief woke me up past midnight, and he sounded ready to tear this whole bureau apart. Effective immediately, you are suspended from duty. Hand your station keys to Wei Kun. Instructor Qiu is returning from his 'training course' this morning, and this station is back under his command!\"\n\nCheng Biao's jaw dropped open, and for the first time in his career, not a single smooth excuse came out!\n\n\"Director Mai, there has to be a misunderstanding! Everything we did on Old Street followed normal police rules!\"\n\n\"Save your excuses for the Municipal Discipline Commission,\" Mai Zhenhua said icily. \"Their investigators will be sitting in our meeting room at nine sharp.\"\n\nDown the hallway, hushed whispers exploded among the watching officers!\n\n\"Did you hear that? Suspended right away!\"\n\n\"The city Discipline Commission is coming at nine?!\"\n\n\"Wait, wasn't that over the quiet hardware shopkeeper from Old Street? Who does that old man know?!\"\n\nCheng Biao stood rooted to the tile floor, cold sweat trickling down his spine.\n\nWho on earth had pulled this trigger?! Chen Mingde was a nobody! His older brother was a retired factory foreman! His nephew was just a mild-mannered logistics supervisor from Qingyan City! Could an ordinary clerk possibly have turned the entire city anti-corruption bureau loose overnight?!\n\nSuddenly, Cheng Biao remembered that calm, polite young man standing outside the service glass yesterday morning, asking mildly, *\"Is the lawyer reception window open on Saturdays?\"*\n\nA sick, hollow dread swallowed Cheng Biao's stomach. His brother-in-law's 38-million-yuan demolition contract. His wife's new villa. Next Wednesday. Everything he'd built over fifteen years had vanished in a single night, like water poured onto dry sand!\n\nAt 6:20 a.m., pale morning light washed across the front steps of Old Street Police Station as Chen Mingde walked slowly out into the cool air, wearing yesterday's jacket and holding a paper cup of hot tea.\n\nCounty Police Director Mai Zhenhua walked him personally to the top of the steps, shook his rough hand firmly with both of his own, and delivered a stiff, formal apology on behalf of the bureau before turning briskly back inside, leaving Cheng Biao standing humiliated behind the glass doors in full view of the waking station. Behind Chen Mingde, the office clerk stammered hurried apologies, and someone had nervously tucked a fresh pack of cigarettes into his coat pocket. Chen Mingde held his tea with fingers that still trembled slightly, blinking in the sunrise.\n\n\"Brother Chen,\" Wei Kun hurried down the steps beside him, bowing stiffly. \"We are truly sorry. This was a terrible mistake on our part.\"\n\n\"Did I win the lottery or something?\" Chen Mingde murmured in a weak, bewildered voice.\n\nThen he paused on the bottom step and turned back to look directly into the round-faced officer's tired eyes.\n\n\"The hot water Friday night,\" Chen Mingde said softly. \"Thank you, young man.\"\n\nWei Kun's eyes stung hotly. He didn't trust his voice to answer. He simply bent from the waist and bowed lower than anyone at Old Street Station had ever seen him bow, holding it in silence until the old shopkeeper walked out into the morning light.\n"}, {"n": 15, "title": "Oh, Nice", "raw": "# Chapter 15: Oh, Nice\n\nYunxi County, Old Street. Sunday, 7:00 a.m.\n\nGood news travels twice as fast as a bus down a narrow lane.\n\nBy seven o'clock, every iron shutter along Old Street had rattled open, and shopkeepers stood clustered on the curb with steamed buns in one hand and buzzing phones in the other.\n\n\"They let him out!\" Meng Xiaofang cried, hurrying across the pavement with her sleepy four-year-old daughter balanced on her hip. \"Old Chen is free! They walked him out at dawn, apologized to his face, and suspended Director Cheng right away! The baker saw the whole thing!\"\n\n\"Are you serious?!\" Old Yu stood frozen in his tailor-shop doorway, still holding a brass thimble on his thumb. He hadn't slept a wink all night. Tucked inside his trouser pocket sat a folded slip of paper he'd written in despair at two in the morning: *I agree to sign.* It had weighed on his chest like a brick.\n\n\"It's true! And city anti-corruption investigators are arriving at nine this morning! Nobody's forcing anyone to sell at half price anymore!\"\n\n\"Thank heavens!\" shouted the grocer two doors down. \"I heard even the eleven families who already signed might get their contracts reviewed!\"\n\n\"Wait, how did Old Chen beat Hongrui Real Estate?! Who helped him?!\"\n\nOld Yu didn't join the guessing. Slowly reaching into his pocket, he pulled out the folded surrender note, stared at his own shaky handwriting for one quiet second, and tore it neatly in half.\n\nThen into quarters. Then into eighths.\n\nLooking down at the fluttering scraps, he realized his hands had stopped shaking. A man who hadn't signed could still look himself in the mirror, and that was worth more than any buyout check in Yunxi County!\n\nFuxing New Village, Building 2, Room 601. 7:30 a.m.\n\n\"Xuan! Wake up, everybody! Your Second Uncle is home!\"\n\nChen Jianguo burst through the apartment door moving faster than his battered electric scooter had ever gone. Right behind him stood Chen Mingde, looking worn out, clutching a neatly folded thick blanket over his arm and blinking dizzily like a traveler who'd just stepped off a train from the moon.\n\n\"Mingde!\" Second Aunt threw her arms straight around his shoulders, bursting into loud, unstoppable tears as the entire household erupted into joyful noise!\n\nChen Xuan was already sitting at the dining table eating a warm red-bean bun. Seeing his uncle standing safely in the doorway, a genuine, relaxed smile lit up his mild face. He finished chewing, swallowed, and nodded happily.\n\n\"Oh, nice,\" he said. \"Just in time for breakfast, Second Uncle.\"\n\n\"That's it?! Just 'Oh, nice'?\" Chen Yuan stared at her brother in frustration while dabbing her own damp eyes. \"Brother, Second Uncle was locked in a cell for two days! Now they let him out at sunrise, the big bad police chief got suspended, and you act like the corner bakery just reopened!\"\n\n\"They actually apologized to me,\" Chen Mingde murmured, still gazing around the bright living room in disbelief. \"County Police Director Mai shook my hand himself! And Director Cheng, the tough one who threatened me yesterday, got sent packing right in front of everybody. They even poured me hot tea on my way out!\"\n\n\"Someone up in heaven must've answered our prayers!\" Chen Jianguo declared, beaming from ear to ear.\n\n\"Or maybe it was that 'friend who knows legal forms' Brother texted yesterday,\" Chen Yuan said, narrowing her eyes playfully at Chen Xuan.\n\n\"Nah, I bet it was my brother's magic 'Oh, nice,'\" Chen Hao grinned from his bedroom doorway, hair sticking straight up. \"Say it again, Brother, maybe my math exam will pass itself!\"\n\nEveryone burst out laughing, even Second Aunt, who was laughing and wiping fresh tears at the exact same time.\n\n\"Oh, and the noodles!\" Chen Mingde suddenly remembered, lifting the folded blanket. \"Last night around ten, somebody sent a steaming bowl of beef noodles with an extra fried egg and this thick blanket through the detention window! Best bowl of noodles I've eaten in my life! Sister-in-law, was that you?\"\n\n\"Me?!\" Liu Meifang put both hands on her hips. \"I was pacing this kitchen all night! How would I sneak beef noodles into a police station?\"\n\n\"Maybe the station has a nicer night kitchen than people think,\" Chen Xuan said calmly, taking another bite of his bun.\n\nTo be honest, watching his uncle sit safely at the table while his mother clattered bowls in the kitchen made his chest feel warmer than any big speech ever could. He'd asked politely, sent clean proof through the proper door, and the answer had come out fair. That was all he'd ever wanted!\n\n\"Alright, no more sitting around!\" Liu Meifang announced briskly, tying on her cleanest apron. \"We're heading out to the village early! Grandpa and Grandma have been burning incense and worrying themselves sick for two days. They need to see Mingde with their own eyes before lunch!\"\n\nHongshi Village, Dongqiao Town. 9:00 a.m.\n\nTucked at the foot of a green ridge twenty minutes outside the county seat, Hongshi Village had one paved lane, two tiny grocery stalls, and an old irrigation reservoir older than anyone in the family could remember.\n\n\"Too thin!\" Grandmother Zhou Guilan declared the exact second Chen Xuan stepped through the courtyard gate.\n\nBarely reaching his shoulder, the eighty-year-old grandmother pressed a warm pickled egg into his palm before he could even say hello. Beside the gate, Grandfather Chen Fugen stood tall and straight under a faded straw hat, looking over his younger son Chen Mingde once from head to toe, then giving one satisfied nod as if the world had finally remembered its manners.\n\n\"Good, everybody's safe,\" Grandfather said gruffly. \"Let the women talk in the yard. Xuan, grab the rods. The carp are biting early today.\"\n\nBy 9:30 a.m., they had settled along the quiet sandy edge of Qingshan Reservoir, where green water lapped gently against tall reeds. Chen Xuan unfolded a tiny canvas stool, cast his line lazily into the water, and leaned back with his eyes half closed in the warm autumn sunshine.\n\nTen feet down the bank, another fisherman was already sitting on a folding stool.\n\nHe looked to be in his mid-seventies, dressed in a faded gray cap and an old canvas vest with far too many pockets, yet his spine stayed straight as a wooden ruler. He gripped a plain bamboo rod and stared down at his red-and-white float with fierce, steady focus.\n\n\"Young man, your float is dead,\" the old gentleman remarked without turning his head.\n\n\"It's resting,\" Chen Xuan replied mildly.\n\n\"A fishing float doesn't rest. You're resting. Your float is dead.\"\n\n\"Mm,\" Chen Xuan agreed politely, and left his float right where it was.\n\nThe old man let out an amused snort. A moment later, he patted his vest pockets one by one, frowned, and glanced sideways at Chen Xuan.\n\n\"Young man, do you happen to have ten yuan in cash? The village auntie at the gate collects ten yuan for a day fishing ticket, and I walked out without my wallet again.\"\n\n\"Sure.\" Without even opening his eyes fully, Chen Xuan fished a crisp ten-yuan bill from his jacket and handed it over.\n\n\"Thank you. I'll pay you back,\" the old man said, tucking the bill neatly into his vest. Gazing out across the green reservoir, he added casually, \"Anhe County upstream caught a heavy downpour last night. Water level here is going to climb nicely by Tuesday.\"\n\n\"You follow upstream rain reports?\" Chen Xuan asked idly.\n\n\"Old habit. I read.\"\n\nBeside Chen Xuan, Grandfather Chen Fugen leaned over and lowered his voice. \"That's Old Zhao. Been staying at the village guesthouse for three weeks on a quiet vacation. Used to work inspecting reservoirs and flood-control ditches across Lanshui Province before he retired, something like that. Never remembers his wallet and never catches a single carp, yet every auntie in the village brings him boiled peanuts!\"\n\n\"Mm,\" Chen Xuan murmured contentedly.\n\nHe thought nothing more of it. The autumn sun warmed his face, the reeds smelled sweet, and Grandmother had insisted on tucking a thick wool shawl over his knees before they left the yard. His float didn't twitch once for over an hour, and he couldn't have been happier!\n\nTen feet away, Old Zhao's float didn't move either. Yet the old gentleman wasn't watching the water anymore. Through narrowed, thoughtful eyes, he studied the completely calm young man dozing beside him in the sun. For one brief second, a look of sharp, genuine liking crossed his lined face, before he quietly reached into his vest pocket for his phone.\n"}, {"n": 16, "title": "The Old Gentleman", "raw": "# Chapter 16: The Old Gentleman\n\nQingyan City, Provincial Discipline Inspection Commission, Inspection Team office. Sunday, 11:10 a.m.\n\nVice Director Gao Zhengyi was zipping up his leather briefcase for a quick lunch when his private mobile phone rang on his desk. As one of the senior deputy directors overseeing the province's anti-corruption inspection teams, he fielded high-level calls every single day.\n\nStill, the caller ID glowing on his screen was a number that hadn't dialed him in three full years.\n\nInstinctively, Gao Zhengyi straightened his coat and stood up behind his desk before pressing answer, even though he was completely alone in the room.\n\n\"Hello, sir!\"\n\n\"Gao,\" an old, dry, calm voice came across the line. \"I'm down in Yunxi County doing a little fishing by Qingshan Reservoir. Very quiet spot. There's a young man sitting beside me who hasn't caught a single fish in nearly two hours, and he doesn't look the slightest bit impatient. It's been a long time since I sat next to someone like that.\"\n\n\"Sir,\" Gao Zhengyi answered respectfully, his throat tightening slightly. \"It's truly wonderful to hear you're enjoying your rest.\"\n\n\"Your inspection team is scheduled to arrive in Yunxi on Wednesday, isn't it?\" The old gentleman paused, the faint sound of lapping water drifting through the phone. \"Move it up. Come tomorrow morning instead. I'd like to see what a county looks like when it hasn't had three extra days to clean up its act and hide its account books for the Governor. And Gao, do everything strictly by the book. No fuss.\"\n\n\"Yes, sir! Tomorrow morning, nine sharp, strictly by the rules!\"\n\nThe line clicked softly dead.\n\nGao Zhengyi stood motionless behind his desk for a long ten seconds, still gripping the silent phone.\n\nThat old gentleman had retired from the very top of Lanshui Province eleven years ago, yet for a solid decade before that, every city and county leader in the province had trembled at a single margin note in his handwriting! If he'd quietly picked a small county reservoir for a three-week fishing stay and suddenly ordered the inspection team in two days early, then Yunxi County's sky was about to fall straight onto somebody's head!\n\nSetting his briefcase aside, Gao Zhengyi reached straight for his office landline and began rearranging his entire team's schedule at top speed!\n\nYunxi County Government, Office of the Party Secretary. Sunday, 11:20 a.m.\n\nFan Weiguo hadn't slept a wink in over thirty hours.\n\nBeneath his neatly pressed suit jacket, his white dress shirt clung damply to his back. He sat stiffly behind his wide dark wooden desk with both palms pressed flat against the glass tabletop so nobody walking in could see his fingers tremble.\n\nAt seven o'clock this morning, Qingyan's City Party Secretary, Fan Weiguo's direct superior and the top leader of the entire city, had called him personally. The news had hit like three consecutive thunderbolts! Deputy Police Director Cheng Biao was suspended. Every Old Street buyout deadline was frozen, along with the county's 640-million-yuan relocation fund. All eleven previously signed contracts were being pulled for independent legal review. Worse, three investigators from the Municipal Discipline Commission were already sitting in Yunxi County, with a fourth on the highway!\n\nBefore hanging up, the City Party Secretary had left Fan Weiguo with one chilling sentence in a voice he'd never heard from his boss before: \"Weiguo, I trust you'll cooperate with the investigators. Fully.\"\n\nWho had triggered this avalanche?! Who had walked straight into Qingyan's Discipline Commission at midnight with the clinic timestamp, video proof, and bank records?! For four agonizing hours, Fan Weiguo had racked his brain. All roads seemed to start at an ordinary hardware shopkeeper and his logistics-clerk nephew, yet that made no sense at all!\n\nWas it linked to that secret complaint letter sent to the Governor's office? Had somebody inside his own county staff leaked the relocation-fund ledgers? Or had County Magistrate Tao Shu, who'd so neatly dodged Friday's dinner with his fake cold, finally opened his drawer?!\n\nBrrring!\n\nHis red office landline shattered the silence, making Fan Weiguo's shoulders jerk! Taking a sharp breath to steady his voice, he lifted the receiver. \"Fan Weiguo speaking.\"\n\n\"Secretary Fan?\" The caller's tone was crisp, polite, and unmistakably official. \"I'm calling from the General Office of the Provincial Party Committee. Please do not take notes on this call. Today and tomorrow, a retired senior leader is visiting Qingshan Reservoir in your county privately to fish. There is to be no welcome committee, no security escort, no ID checks, no photographs, and zero questions. Nobody from Yunxi is to approach him, ask his name, or reveal that we called.\"\n\nFan Weiguo's breath caught in his chest! The General Office of the Provincial Party Committee was the nerve center of the entire province's highest leadership!\n\n\"I understand completely,\" Fan Weiguo answered, keeping his voice careful and polite. \"May I ask which senior leader is visiting?\"\n\n\"Secretary Fan,\" the caller cut in smoothly. \"When the City Party Secretary walks into your office, how do you stand?\"\n\n\"I stand up immediately, of course. Straight at attention.\"\n\n\"For this gentleman, the Provincial Party Secretary stands straight.\" There was one quiet, heavy beat on the line. \"If anything spoils the old gentleman's weekend, you won't need to bother coming into work on Monday. That is all.\"\n\nClick.\n\nFan Weiguo sat frozen with the dead phone pressed against his ear, feeling all the blood drain from his face!\n\nSomeone for whom the top leader of the entire province stood straight at attention! How many living people in Lanshui Province fit that description?! Four? Five at most! All retired, all famous, and one of them, Fan Weiguo remembered with a sickening drop in his stomach, had famously loved quiet reservoir fishing!\n\nRight here at Yunxi's Qingshan Reservoir. This exact weekend. Hours after the Old Street scandal exploded in Qingyan City!\n\nCould that possibly be a coincidence?! Had the old gentleman heard about Old Street? Did he somehow know that hardware shopkeeper?! Wait, did Chen Mingde's family secretly have a huge backer in the provincial capital?!\n\nFan Weiguo cut off that thought right away! Even finishing that guess felt dangerous!\n\nBang! His office door burst open without a knock, and his young aide rushed in, white-faced and gasping for breath.\n\n\"Secretary Fan! Bad news! The Provincial Inspection Team just phoned the general office! They canceled Wednesday; they're arriving in Yunxi tomorrow morning at nine o'clock sharp!\"\n\nFan Weiguo didn't even blink. Slowly cradling the silent landline, he stared at the open doorway as if waiting for the ceiling itself to collapse next. After thirty years in government, he knew the storm had already hit shore.\n\nStanding up slowly, he straightened his dark tie with fingers that refused to stay steady.\n\n\"Notify every member of the County Standing Committee,\" Fan Weiguo ordered, his voice hoarse yet controlled. \"Emergency session in Conference Room Three at two-thirty sharp. Tell them nobody gets a cold today.\"\n\nQingyan City, the quiet eastern courtyard. Sunday, 11:40 a.m.\n\nChief An Zhiyuan set down two short encrypted memos his provincial contacts had just routed to his desk, then picked them up and read both lines a second time.\n\n*Memo 1: Provincial Inspection Team has abruptly moved its Yunxi arrival forward from Wednesday to tomorrow morning, 9:00 a.m.*\n*Memo 2: Provincial Party Committee General Office issued a private visit warning for a retired senior leader fishing at Qingshan Reservoir in Yunxi County.*\n\nVery slowly, Chief An placed both slips flat on the wooden desk.\n\nRight now, at this exact minute, the Boss was sitting by Qingshan Reservoir fishing with his grandfather! Yet Chief An's team hadn't made a single call to the provincial capital! Nobody had touched the inspection schedule! Attorney Bai had simply filed a clean legal complaint at the city level, strictly following Chen Xuan's order!\n\nSo who on earth had pushed a provincial anti-corruption team two full days ahead of schedule with one casual phone call?!\n\nChief An had spent forty years watching the highest levels of government. In this entire province, only a tiny handful of retired elders carried that kind of quiet power, and almost every single one of them preferred plain clothes and an afternoon with a fishing rod!\n\nReaching swiftly for his encrypted handset, Chief An pressed Nine's channel, and for the first time in years, a faint tremor edged his steady voice.\n\n\"Nine! Where is the Boss sitting right now? And who is sitting next to him?\"\n"}, {"n": 17, "title": "Seating Order", "raw": "# Chapter 17: Seating Order\n\nYunxi County Party Committee Building, Conference Room Three. Sunday, 2:30 p.m.\n\nAt a meeting like this, you don't need to ask who holds real power. You only have to look at the chairs.\n\nEleven leather seats lined the long polished table, one for each member of the County Standing Committee, the small inner council that actually ran Yunxi County. Every chair's distance from the head of the table showed each leader's exact rank.\n\nIn Seat One sat Fan Weiguo, the County Party Secretary, Yunxi's top boss. Right beside him in Seat Two sat Tao Shu, the County Magistrate, head of the county government and Deputy Party Secretary. On paper, both men held the same county-leader rank, yet everyone in the room knew Seat One held the final word, and Seat Two had spent eight quiet years waiting to take it.\n\nSeat Three belonged to Kang Guangming, Secretary of the County Discipline Inspection Commission, Yunxi's local anti-corruption watchdog. A lean, stone-faced official in his fifties, he hadn't cracked a single smile since walking through the door.\n\nTo put it nicely, Kang Guangming's rank sat half a step below the top two leaders; to put it plainly, his office held the legal power to investigate every single person sitting around this table, including the Party Secretary himself! That was why he held Seat Three, and why nobody ever told jokes near him.\n\nIn Seat Four sat Shao Wenhua, Head of the Organization Department, the quiet official who controlled every promotion, transfer, and appointment in the county. He didn't command police or spend building funds, yet because every official's career passed across his desk, everyone treated him carefully.\n\nSeat Five belonged to Lu Wenzhe, the Executive Deputy Magistrate. \"Executive\" meant first among all deputy county mayors, the man who controlled Yunxi's public budget and ran the Old Street rebuilding office. Though his official title sat below Fan Weiguo and Tao Shu, his grip on the county's money gave him huge power.\n\nRight now, Lu Wenzhe's face looked the color of wet ash, and his teacup had been rattling faintly against his saucer for ten straight minutes!\n\nBack along the far wall, perched on an ordinary wooden chair without a nameplate, sat County Police Director Mai Zhenhua. Wearing the extra hat of Deputy County Magistrate gave him higher standing than ordinary bureau chiefs, yet in Yunxi County the police chief didn't hold a Standing Committee seat. He could sign arrest warrants. He couldn't cast a vote.\n\n\"Comrades,\" Fan Weiguo began, keeping his voice remarkably smooth and dignified despite thirty sleepless hours. \"At seven this morning, the City Party Secretary briefed me directly. The Provincial Inspection Team has moved its arrival forward to nine o'clock tomorrow morning. Deputy Police Director Cheng Biao has been suspended pending inquiry, and investigators from the Municipal Discipline Commission are already working in Yunxi. I've called this emergency session to align our response, starting with the Old Street project.\"\n\nDead silence fell across the polished table.\n\nNobody rushed to speak first. In officialdom, the first man to open his mouth in a crisis is usually the first man to lose his footing!\n\nFan Weiguo let his eyes move calmly around the eleven faces, mentally counting allies. Who would stand behind him? Who was quietly leaning toward Tao Shu? Who would switch sides the second trouble started? His chest felt tight as a drum. Everyone here knew this meeting wasn't really about an old shopping street. It was about who would still hold a chair in this room next month!\n\n\"Secretary Fan,\" Kang Guangming spoke up at last, his voice flat and businesslike. \"Before we discuss policy, I must put one official fact on the record. The city's Discipline Commission sent its investigation team into Yunxi late last night without telling our county office in advance. I only learned they were in town from my own staff at six this morning.\"\n\nA chilly silence swept over the room!\n\nEvery veteran official around the table understood that warning right away! Normally, city anti-corruption investigators informed the local county office first. Going straight around Kang Guangming without a single phone call sent one clear message: the city leaders didn't trust anyone in this room not to tip off the guilty!\n\n\"Comrades, let's not panic over one noisy complaint!\" Lu Wenzhe blurted out suddenly, his voice pitching a little too loud as he tried to steady his shaking teacup. \"The Old Street shopping mall is Yunxi's biggest development project! The buyout prices went through proper county review. If we freeze everything just because one stubborn hardware seller stirred up trouble, the whole county loses face and outside investors will run away!\"\n\n\"Who suggested stopping the entire project, Deputy Magistrate Lu?\" Kang Guangming asked calmly, turning his cold eyes straight across the wood.\n\nLu Wenzhe's mouth snapped shut! Sweat beaded visibly along his hairline.\n\nFrom Seat One, Fan Weiguo watched Lu Wenzhe's panic, and a cold, ugly suspicion sharpened in his gut. Lu Wenzhe was the man who signed every payment from that 640-million-yuan relocation fund! Why on earth was he sweating buckets over one tiny hardware store unless the account books couldn't survive daylight?!\n\n\"Secretary Fan, I believe we should show complete openness,\" County Magistrate Tao Shu spoke up smoothly, folding his slender hands neatly on the table. He looked rested, calm, and completely free of yesterday's convenient \"cold.\" \"I propose the county set up an immediate self-inspection team, which I am willing to lead myself. Before the provincial team arrives at nine tomorrow, we'll check every single Old Street contract and payment record and hand every file over openly. A clean leadership team has nothing to hide.\"\n\nHow reasonable! How fair! How selfless!\n\nYet Fan Weiguo's stomach sank like lead! A self-inspection team led personally by Tao Shu meant giving his rival full power to take every county account book and project file before provincial inspectors even arrived! After eight patient years waiting in Seat Two, Tao Shu was reaching calmly for the top chair, wearing the warmest, most polite smile imaginable!\n\nFan Weiguo's eyes flicked quietly toward Seat Four. Shao Wenhua, the Organization Department head who controlled promotions, sat busy smoothing the corner of his notebook, refusing to meet anyone's eyes. A classic veteran move: stay quiet, watch carefully, and wait to see which side would win before speaking.\n\nBack along the wall, Mai Zhenhua sat motionless as a statue, quietly thanking his lucky stars he'd never signed a single Old Street detention paper. Since midnight, one icy order from the city police chief had echoed in his ears: *Release the shopkeeper, suspend Cheng Biao, and don't touch another document.*\n\n\"Very well,\" Fan Weiguo said steadily, keeping his authority intact. \"If there are no further proposals, we'll put Magistrate Tao's working team to a committee vote.\"\n\n\"Wait one moment, Secretary Fan,\" Kang Guangming interrupted quietly, his tone never rising a fraction. \"Before we vote, I have one more report from my field staff, and I'd like it entered cleanly into today's minutes.\"\n\nSlowly, Kang Guangming flipped open the manila folder in front of him. He didn't glance at Fan Weiguo, and he didn't glance at Tao Shu. His flat, unblinking gaze locked straight onto Seat Five.\n\n\"At twelve-fifteen this afternoon, after city investigators froze the Old Street accounts, two of my officers observed an official county sedan parked behind the private office of Hongrui Real Estate for forty minutes,\" Kang Guangming read evenly. \"The license plate belongs to Executive Deputy Magistrate Lu Wenzhe's personal government car.\"\n\nEvery single head around the long table snapped toward Seat Five!\n\nLu Wenzhe's fingers went numb. His teacup slipped clean out of his hand!\n\nCrack!\n\nThe cup hit the edge of the saucer and split down the middle. Scalding brown tea surged out across the mirror-bright wood, spreading in a dark, quiet tide straight toward Fan Weiguo's open red folder.\n\nAround the eleven-seat table, nobody moved a muscle to wipe it up.\n"}]};
+var LS='inkstone.v1.';
+function load(k,d){try{var v=localStorage.getItem(LS+k);return v?JSON.parse(v):d}catch(e){return d}}
+function save(k,v){try{localStorage.setItem(LS+k,JSON.stringify(v))}catch(e){}}
+function $(s,r){return (r||document).querySelector(s)}
+function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))}
+function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+
+/* ---------- state ---------- */
+var MOB=!!(window.matchMedia&&window.matchMedia('(max-width:700px)').matches);
+var DEF={chIndex:0,service:'webplus',font:'nunito',fontSize:MOB?24:22,lineH:MOB?1.6:1.5,termColors:true,readerTheme:'black',siteTheme:'dark',readerType:'single',
+  termStyle:'bold',sysColored:true,userColored:true,patchColored:true,align:'left',paraSpace:'normal',indent:false,width:'medium',showHeading:true,autosave:true,inLibrary:true};
+var savedState=load('state',{});
+if(savedState.v!==2){delete savedState.lineH;delete savedState.paraSpace}  /* new tighter defaults apply once */
+var S=Object.assign({},DEF,savedState);S.v=2;
+var terms=load('terms',[]);
+var imported=load('imported',{});
+var FONTS={nunito:"'Nunito',system-ui,sans-serif",roboto:"'Roboto',system-ui,sans-serif",lora:"'Lora',Georgia,serif",lexend:"'Lexend',system-ui,sans-serif",dyslexic:"'OpenDyslexic','Comic Sans MS','Trebuchet MS',sans-serif"};
+var FONTNAMES={nunito:'Nunito',roboto:'Roboto',lora:'Lora',lexend:'Lexend',dyslexic:'Dyslexic'};
+var THEMES=[['white','#ffffff','#1a1a1a'],['cream','#f6efd9','#3a3224'],['tan','#f1dcb6','#3b2f1c'],['sky','#dce9f1','#1d2b36'],['rose','#f7e2e2','#3a2326'],['mint','#d9e8d6','#1f3023'],
+  ['charcoal','#1b1c1f','#e3e4e7'],['black','#000','#fff'],['midnight','#0d1424','#dfe6f5'],['ocean','#06223b','#e4f0fb'],['slate','#33363d','#eceef2'],['sepia','#f2e8d5','#3b3024']];
+/* small line icons (24x24) */
+var IC={
+  menu:'<path d="M4 6h16M4 12h16M4 18h16"/>',
+  search:'<circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/>',
+  inbox:'<path d="M3 13l3-8h12l3 8v6H3z"/><path d="M3 13h5l1.5 2h5l1.5-2h5"/>',
+  user:'<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-4 3-6 6.5-6"/><circle cx="17.5" cy="15.5" r="2"/><path d="M17.5 11.5v1.2M17.5 18.3v1.2M13.5 15.5h1.2M20.3 15.5h1.2"/>',
+  back:'<path d="M19 12H5M11 6l-6 6 6 6"/>',
+  down:'<path d="M6 9l6 6 6-6"/>',
+  right:'<path d="M9 6l6 6-6 6"/>',
+  book:'<path d="M3 5.5C5.5 4.5 9 4.5 12 6c3-1.5 6.5-1.5 9-.5V19c-2.5-1-6-1-9 .5-3-1.5-6.5-1.5-9-.5z"/><path d="M12 6v13.5"/>',
+  gear:'<circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1"/>',
+  list:'<path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/>',
+  home:'<path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/>',
+  edit:'<path d="M4 20h4l11-11-4-4L4 16z"/>',
+  dl:'<path d="M12 4v11M7 11l5 5 5-5M5 20h14"/>',
+  ul:'<path d="M12 16V5M7 9l5-5 5 5M5 20h14"/>',
+  lib:'<path d="M5 4h4v16H5zM10 4h4v16h-4z"/><path d="M15.5 5.5l3.6-1 3 14.5-3.6 1z"/>',
+  tt:'<path d="M5 7V5h9v2M9.5 5v12M14 11v-1h6v1M17 10v7"/>',
+  moon:'<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/>',
+  reset:'<path d="M4 12a8 8 0 1 0 2.6-5.9M4 4v4h4"/>',
+  logo:'<path d="M4 20L10 4l3 7 3-3 4 12"/><circle cx="9" cy="9" r=".6"/>'
+};
+function ic(n){return '<svg viewBox="0 0 24 24" aria-hidden="true">'+(IC[n]||'')+'</svg>'}
+function fillIcons(){$$('[data-ic]').forEach(function(e){e.innerHTML=ic(e.getAttribute('data-ic'))})}
+
+/* ---------- chapters ---------- */
+var chapters=[];
+function parseTitle(raw){var m=raw.match(/^#\s*Chapter\s+(\d+)\s*[:：.\-]?\s*(.*)$/m);return m?{n:+m[1],title:(m[2]||'').trim()}:null}
+function buildChapters(){
+  var map={};
+  (NOVEL.chapters||[]).forEach(function(c){map[c.n]={n:c.n,title:c.title,raw:c.raw}});
+  Object.keys(imported).forEach(function(k){var raw=imported[k],p=parseTitle(raw);if(p)map[p.n]={n:p.n,title:p.title,raw:raw}});
+  chapters=Object.keys(map).map(function(k){return map[k]}).sort(function(a,b){return a.n-b.n});
+  chapters.forEach(function(c){c.words=blocksOf(c.raw).join(' ').split(/\s+/).filter(Boolean).length});
+  if(S.chIndex>=chapters.length)S.chIndex=Math.max(0,chapters.length-1);
+}
+function blocksOf(raw){
+  var lines=raw.replace(/\r\n?/g,'\n').split('\n'),out=[],buf=[];
+  function flush(){if(buf.length){out.push(buf.join(' '));buf=[]}}
+  for(var i=0;i<lines.length;i++){var l=lines[i];if(/^#\s/.test(l)||!l.trim()){flush();continue}buf.push(l.trim())}
+  flush();return out;
+}
+function isScene(t){return t.length<150&&/\d{1,2}:\d{2}\s?[ap]\.m\.$/i.test(t)&&!/^(It|At|By|In|On|He|She|They)\s/.test(t)&&!/["“]/.test(t)}
+function inlineMd(s){return esc(s).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/\*([^*]+)\*/g,'<em>$1</em>')}
+
+/* ---------- terms engine ---------- */
+function mk(from,cs,cls,to,pri,id){
+  var alts=String(from).split('|').map(function(x){return x.trim()}).filter(Boolean);
+  if(!alts.length)return null;
+  var parts=alts.map(function(a){
+    var e=a.replace(/[.*+?^${}()|[\]\\]/g,'\\$&').replace(/\\\*/g,"[\\w'’-]*");
+    return (/^\w/.test(a)?'\\b':'')+e+(/\w$/.test(a)||/\*$/.test(a)?'\\b':'');
+  });
+  try{return{re:new RegExp('(?:'+parts.join('|')+')',cs?'g':'gi'),cls:cls,to:to,pri:pri,cs:!!cs,id:id}}catch(e){return null}
+}
+function matchCase(src,to){
+  if(src.length>1&&src===src.toUpperCase()&&/[A-Z]/.test(src))return to.toUpperCase();
+  if(/^[A-Z]/.test(src)&&/^[a-z]/.test(to))return to.charAt(0).toUpperCase()+to.slice(1);
+  return to;
+}
+function buildRules(){
+  if(S.service!=='webplus')return[];
+  var r=[];
+  terms.forEach(function(t){var x=mk(t.from,t.cs,'user',(t.off?null:(t.to||null)),3,t.id);if(x)r.push(x)});
+  return r;
+}
+function findMatches(text,rules){
+  var ms=[];
+  rules.forEach(function(r){r.re.lastIndex=0;var m;while((m=r.re.exec(text))){if(!m[0]){r.re.lastIndex++;continue}ms.push({s:m.index,e:m.index+m[0].length,r:r,t:m[0]})}});
+  ms.sort(function(a,b){return a.s-b.s||b.r.pri-a.r.pri||(b.e-b.s)-(a.e-a.s)});
+  var out=[],end=-1;ms.forEach(function(m){if(m.s>=end){out.push(m);end=m.e}});return out;
+}
+function decorate(root,rules){
+  var w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,null),nodes=[],n;
+  while((n=w.nextNode()))nodes.push(n);
+  nodes.forEach(function(node){
+    var txt=node.nodeValue,ms=findMatches(txt,rules);if(!ms.length)return;
+    var frag=document.createDocumentFragment(),pos=0;
+    ms.forEach(function(m){
+      if(m.s>pos)frag.appendChild(document.createTextNode(txt.slice(pos,m.s)));
+      var sp=document.createElement('span');sp.className='term t-'+m.r.cls;sp.setAttribute('data-orig',m.t);if(m.r.id)sp.setAttribute('data-tid',m.r.id);
+      var rep=(m.r.cls==='user'&&m.r.to)?(m.r.cs?m.r.to:matchCase(m.t,m.r.to)):m.t;
+      sp.textContent=rep;sp.title=(rep!==m.t)?('Your term. Original: '+m.t):'Your saved term';frag.appendChild(sp);pos=m.e;
+    });
+    if(pos<txt.length)frag.appendChild(document.createTextNode(txt.slice(pos)));
+    node.parentNode.replaceChild(frag,node);
+  });
+}
+
+/* ---------- rendering ---------- */
+var rules=[],loadedUpTo=0;
+function chapterNode(i){
+  var ch=chapters[i],sec=el('section','chsec');sec.setAttribute('data-i',i);
+  if(S.showHeading)sec.appendChild(el('h2','chhead',esc('Chapter '+ch.n+': '+ch.title)));
+  blocksOf(ch.raw).forEach(function(b){sec.appendChild(el('p',isScene(b)?'scene':'',inlineMd(b)))});
+  if(rules.length)decorate(sec,rules);
+  return sec;
+}
+function applyLook(){
+  var h=document.documentElement,b=document.body;
+  h.setAttribute('data-site',S.siteTheme);h.setAttribute('data-reader',S.readerTheme);
+  h.style.setProperty('--fs',S.fontSize+'px');h.style.setProperty('--lh',S.lineH);h.style.setProperty('--ff',FONTS[S.font]||FONTS.nunito);
+  b.setAttribute('data-tstyle',S.termStyle);b.setAttribute('data-align',S.align);b.setAttribute('data-pspace',S.paraSpace);
+  b.setAttribute('data-indent',S.indent?'on':'off');b.setAttribute('data-width',S.width);
+  b.classList.toggle('tc-on',!!S.termColors);b.classList.toggle('tc-sys',!!S.sysColored);b.classList.toggle('tc-user',!!S.userColored);b.classList.toggle('tc-patch',!!S.patchColored);
+  b.classList.toggle('old',S.readerType==='old');
+  $$('#svcTop button').forEach(function(x){x.classList.toggle('on',x.getAttribute('data-svc')===S.service)});
+  $('#chip').textContent=S.service==='webplus'?'Web+ · terms on':'Web · as written';
+}
+function persist(){S.scrollY=window.scrollY;if(S.autosave)save('state',S)}
+function saveState(){save('state',S)}
+function renderChapter(i,top){
+  if(!chapters.length)return;
+  i=Math.max(0,Math.min(chapters.length-1,i));S.chIndex=i;rules=buildRules();loadedUpTo=i;
+  var body=$('#chBody');body.innerHTML='';body.appendChild(chapterNode(i));
+  updateNav();if(top!==false)window.scrollTo(0,0);persist();
+}
+function updateNav(){
+  var i=S.chIndex,ch=chapters[i],tot=chapters.length;if(!ch)return;
+  $('#novelName').textContent=NOVEL.title;
+  $('#chNo').textContent='Ch. '+ch.n+' / '+chapters[tot-1].n;
+  $('#chPct').textContent=Math.floor((i+1)/tot*100)+'%';
+  $('#chHash').textContent='#'+ch.n;$('#chName').textContent='Chapter '+ch.n+' '+ch.title;
+  ['prevTop','prevBot'].forEach(function(id){$('#'+id).disabled=i<=0});
+  ['nextTop','nextBot'].forEach(function(id){$('#'+id).disabled=i>=tot-1});
+  document.title=ch.title+' – '+NOVEL.title;
+  $('.endnav').classList.toggle('hidden',S.readerType==='infinite');
+  if(dockTab==='read')renderDock();
+  $$('#tocList .toc-item').forEach(function(x){x.classList.toggle('on',+x.getAttribute('data-i')===i)});
+}
+function go(d){renderChapter(S.chIndex+d)}
+
+/* infinite scroll */
+function infiniteTick(){
+  if(S.readerType!=='infinite'||!chapters.length)return;
+  var body=$('#chBody'),secs=$$('.chsec',body);
+  if(window.innerHeight+window.scrollY>document.documentElement.scrollHeight-700&&loadedUpTo<chapters.length-1){
+    loadedUpTo++;body.appendChild(chapterNode(loadedUpTo));secs=$$('.chsec',body);
+  }
+  var cur=+secs[0].getAttribute('data-i');
+  secs.forEach(function(s){if(s.getBoundingClientRect().top<140)cur=+s.getAttribute('data-i')});
+  if(cur!==S.chIndex){S.chIndex=cur;updateNav();saveState()}
+}
+
+/* ---------- dock ---------- */
+var dockTab='read';
+function seg(items,cur,attr,gap){
+  return '<div class="row'+(gap?' gap':'')+'">'+items.map(function(it){return '<button data-'+attr+'="'+it[0]+'" class="'+(it[0]===cur?'on':'')+'">'+it[1]+'</button>'}).join('')+'</div>';
+}
+function renderDock(){
+  var p=$('#dockPanel');
+  $$('#dockTabs button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-tab')===dockTab)});
+  if(!dockTab)dockTab='read';
+  var h='';
+  if(dockTab==='read'){
+    var ch=chapters[S.chIndex];
+    h+='<div class="dnav"><button class="nbtn" data-act="prev">&#8249; Prev</button><div class="navmid"><b>Ch. '+ch.n+' / '+chapters[chapters.length-1].n+'</b><span>'+Math.floor((S.chIndex+1)/chapters.length*100)+'%</span></div><button class="nbtn" data-act="next">Next &#8250;</button></div>';
+    h+='<div class="two"><button class="bigbtn" data-act="toc">&#9776; Contents</button><button class="novelcard" data-act="lib"><div class="cover">RS</div><div style="flex:1;min-width:0"><small>NOVEL</small><span class="nt">'+esc(NOVEL.title)+'</span></div><span class="chev">&#8250;</span></button></div>';
+    h+='<div class="two"><button class="bigbtn" data-act="terms">&#9998; Edit Terms</button><button class="bigbtn" data-act="addlib">'+(S.inLibrary?'&#10003; In Library':'+ Add to Library')+'</button></div>';
+  }else if(dockTab==='display'){
+    h+='<div class="lab">Font</div>'+seg(Object.keys(FONTNAMES).map(function(k){return[k,FONTNAMES[k]]}),S.font,'font');
+    h+='<div class="lab">Font Size</div><div class="row"><button data-act="fs-">A-</button><button style="flex:1.4;cursor:default">'+S.fontSize+'</button><button data-act="fs+">A+</button></div>';
+    h+='<div class="lab">Line Height</div><div class="row"><button data-act="lh-">Height -</button><button data-act="lh0">'+Math.round(S.lineH*100)+'%</button><button data-act="lh+">Height +</button></div>';
+    h+='<div class="lab">Term Colors</div>'+seg([['on','Enabled'],['off','Disabled']],S.termColors?'on':'off','tcol');
+    h+='<div class="lab"></div><button class="bigbtn" data-act="adv">Open Advanced Config</button>';
+  }else if(dockTab==='more'){
+    h+='<div class="mgrid">'+
+      '<button class="mcard" data-act="lib">'+ic('lib')+'<b>Library</b><small>Your saved novel</small></button>'+
+      '<button class="mcard" data-act="imp">'+ic('ul')+'<b>Import</b><small>Add chapter files (.md)</small></button>'+
+      '<button class="mcard" data-act="dl">'+ic('dl')+'<b>Download</b><small>This chapter as .md</small></button>'+
+      '<button class="mcard" data-act="exp">'+ic('dl')+'<b>Export terms</b><small>Save your terms (.json)</small></button>'+
+      '</div>'+
+      '<div style="margin-top:8px"><button class="mcard" style="width:100%" data-act="reset">'+ic('reset')+'<b>Reset display</b><small>Back to the default font, size and theme</small></button></div>';
+  }else{
+    h+='<div class="lab">Translation Service</div>'+seg([['web','Web'],['webplus','Web+']],S.service,'svc');
+    h+='<div class="hint">Web shows the chapter as written. Web+ applies your terms (replacements and highlights).</div>';
+    h+='<div class="lab">Website Theme</div>'+seg([['light','Light'],['dark','Dark']],S.siteTheme,'site');
+    h+='<div class="lab">Reader Theme</div><div class="swatches">'+THEMES.map(function(t){return '<button data-rt="'+t[0]+'" class="'+(t[0]===S.readerTheme?'on':'')+'" style="background:'+t[1]+';color:'+t[2]+'" title="'+t[0]+'">&quot;Aa&quot;</button>'}).join('')+'</div>';
+    h+='<div class="lab">Reader Type</div>'+seg([['single','Single Page'],['infinite','Infinite'],['old','Old Reader']],S.readerType,'rtype');
+    h+='<label class="switch"><input type="checkbox" id="swAuto" '+(S.autosave?'checked':'')+'> Remember my place and settings</label>';
+    h+='<div style="margin-top:14px"><button class="bigbtn" data-act="reset">Reset display settings</button></div>';
+  }
+  p.innerHTML=h;fitDock();
+}
+/* keep the end of the chapter reachable above the open panel */
+function fitDock(){var d=$('#dock');document.body.style.paddingBottom=d.classList.contains('hidden')?'0px':(d.offsetHeight+20)+'px'}
+function setDock(t){dockTab=t;renderDock()}
+function showDock(){$('#dock').classList.remove('hidden');renderDock()}
+function hideDock(){$('#dock').classList.add('hidden');fitDock()}
+
+/* ---------- drawers ---------- */
+function openDrawer(id){hideDock();closeTop();$('#scrim').classList.remove('hidden');$('#'+id).classList.add('open')}
+/* ---------- top bar: menu, search, account dropdown ---------- */
+function closeTop(){$('#userMenu').classList.add('hidden');$('#btnUser').classList.remove('on');closeSearch()}
+function closeSearch(){$('#topBar').classList.remove('searching');$('#searchRes').classList.add('hidden');$('#sInput').value=''}
+function openSearch(){closeTop();hideDock();$('#topBar').classList.add('searching');$('#sInput').focus()}
+function siteSeg(){return '<div class="row" style="margin:8px 0 2px"><button data-site="light" class="'+(S.siteTheme==='light'?'on':'')+'">Light</button><button data-site="dark" class="'+(S.siteTheme==='dark'?'on':'')+'">Dark</button></div>'}
+function renderMenu(){
+  var h='';
+  [['home','Continue reading','home'],['lib','Library','lib'],['toc','Contents','list'],['terms','Edit Terms','edit'],['imp','Import chapters','ul'],['disp','Display','tt'],['set','Settings','gear']].forEach(function(m){
+    h+='<button class="mitem" data-act="'+m[0]+'">'+ic(m[2])+'<span>'+m[1]+'</span></button>';
+  });
+  h+='<div class="usep"></div>'+siteSeg();
+  $('#menuBody').innerHTML=h;
+}
+function openMenu(){closeTop();renderMenu();openDrawer('menuDrawer')}
+function toggleUser(){
+  var m=$('#userMenu');
+  if(!m.classList.contains('hidden')){closeTop();return}
+  closeSearch();var pct=Math.floor((S.chIndex+1)/chapters.length*100),wc=chapters.reduce(function(a,c){return a+c.words},0);
+  var h='<div class="ucard"><b>'+esc(NOVEL.title)+'</b><div style="color:var(--ui-mute);margin-top:3px">Ch. '+chapters[S.chIndex].n+' of '+chapters.length+' &middot; '+wc.toLocaleString()+' words</div><div class="bar"><i style="width:'+pct+'%"></i></div></div>';
+  [['lib','Library','lib'],['set','Settings','gear'],['imp','Import chapters','ul'],['exp','Export terms','dl'],['reset','Reset display','reset']].forEach(function(x){
+    h+='<button class="uitem" data-act="'+x[0]+'">'+ic(x[2])+'<span>'+x[1]+'</span></button>';
+  });
+  h+='<div class="usep"></div>'+siteSeg();
+  m.innerHTML=h;m.classList.remove('hidden');$('#btnUser').classList.add('on');hideDock();
+}
+function runSearch(q){
+  var box=$('#searchRes');q=q.trim();
+  if(q.length<2){box.classList.add('hidden');return}
+  var ql=q.toLowerCase(),out=[];
+  chapters.forEach(function(c,i){
+    var title=('Chapter '+c.n+': '+c.title),text=blocksOf(c.raw).join(' '),ti=title.toLowerCase().indexOf(ql),bi=text.toLowerCase().indexOf(ql);
+    if(ti<0&&bi<0)return;
+    var snip=bi>=0?(text.slice(Math.max(0,bi-45),bi)+'\u0001'+text.slice(bi,bi+q.length)+'\u0002'+text.slice(bi+q.length,bi+q.length+70)):text.slice(0,110);
+    out.push({i:i,title:title,snip:snip});
+  });
+  var h=out.length?'':'<div class="hint" style="padding:16px">No chapter contains "'+esc(q)+'".</div>';
+  out.slice(0,40).forEach(function(r){
+    h+='<button class="sres" data-si="'+r.i+'"><b>'+esc(r.title)+'</b><span>'+esc(r.snip).replace('\u0001','<mark>').replace('\u0002','</mark>')+'</span></button>';
+  });
+  box.innerHTML=h;box.classList.remove('hidden');
+}
+function closeDrawers(){clearTimeout(saveTimer);saving=false;$$('.drawer').forEach(function(d){d.classList.remove('open')});$('#scrim').classList.add('hidden')}
+function renderToc(){
+  var box=$('#tocList');box.innerHTML='';
+  chapters.forEach(function(c,i){
+    var b=el('button','toc-item'+(i===S.chIndex?' on':''),'<b>'+c.n+'. Chapter '+c.n+' '+esc(c.title)+'</b><small>'+c.words.toLocaleString()+' WORDS</small>');
+    b.setAttribute('data-i',i);b.onclick=function(){closeDrawers();renderChapter(i)};box.appendChild(b);
+  });
+}
+
+/* ---------- term editor ---------- */
+var tTab='editor',editId=null,multi=false,selIds={},cfg=null,cfgTab='term',draft={from:'',to:'',cs:false,novel:false};
+function openTerms(tab,prefill){
+  if(prefill!=null){editId=null;draft={from:prefill,to:'',cs:false,novel:false}}
+  tTab=tab||'editor';if(tTab==='config'){cfg=Object.assign({},S)}
+  renderTerms();openDrawer('termDrawer');
+}
+function tabsOn(){$$('#termTabs button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-tt')===tTab)})}
+function renderTerms(){
+  tabsOn();$('#termDrawer').classList.toggle('full',tTab!=='editor');
+  var body=$('#termBody'),foot=$('#termFoot');body.innerHTML='';foot.innerHTML='';
+  if(tTab==='editor')renderEditor(body,foot);else if(tTab==='list')renderList(body,foot);else renderConfig(body,foot);
+}
+function renderEditor(body,foot){
+  body.innerHTML='<div class="frow"><label>Original Text <span id="cntA">('+draft.from.length+'/128)</span></label><span><button class="pill" id="btnVar">+ Variation</button><button class="pill" id="btnWild">+ Wild Char</button></span></div>'+
+    '<input class="field" id="edFrom" maxlength="128" placeholder="Text to replace" value="'+esc(draft.from)+'">'+
+    '<div class="hrow"><div class="hint">Example: from_1|from_2|from_3 &middot; * = any letters</div><label class="switch" style="margin:0"><input type="checkbox" id="edCs" '+(draft.cs?'checked':'')+'> Case sensitive</label></div>'+
+    '<div class="frow"><label>Replacement Text <span id="cntB">('+draft.to.length+'/128)</span></label></div>'+
+    '<input class="field" id="edTo" maxlength="128" placeholder="Text to replace with (leave empty to only highlight)" value="'+esc(draft.to)+'">'+
+    (editId?badgesHtml():'')+
+    '<label class="switch"><input type="checkbox" id="edNovel" '+(draft.novel?'checked':'')+'> This Novel Only</label>'+
+    '<div class="hint">This term will only apply to this novel.</div>';
+  var f=$('#edFrom'),t=$('#edTo');
+  f.oninput=function(){draft.from=f.value;$('#cntA').textContent='('+f.value.length+'/128)'};
+  t.oninput=function(){draft.to=t.value;$('#cntB').textContent='('+t.value.length+'/128)'};
+  $('#edCs').onchange=function(){draft.cs=this.checked};$('#edNovel').onchange=function(){draft.novel=this.checked};
+  $('#btnVar').onclick=function(){f.value=f.value.replace(/\|?$/,'')+'|';draft.from=f.value;f.focus();$('#cntA').textContent='('+f.value.length+'/128)'};
+  $('#btnWild').onclick=function(){f.value+='*';draft.from=f.value;f.focus();$('#cntA').textContent='('+f.value.length+'/128)'};
+  if(editId){var del=btn('Delete','btn danger',function(){deleteTerm(editId)});foot.appendChild(del);var sp=el('span');sp.style.flex='1';foot.appendChild(sp)}
+  foot.appendChild(btn('?','btn sq',function(){toast('Enter saves · Esc closes · use | for variations, * as a wildcard')}));
+  foot.appendChild(btn('Close','btn',closeDrawers));
+  var sv=btn(editId?'Update':'Save','btn pri sv',saveTermFlow);foot.appendChild(sv);
+}
+function btn(txt,cls,fn){var b=el('button',cls,txt);b.onclick=fn;return b}
+function termCount(id){return $$('#chBody .t-user[data-tid="'+id+'"]').length}
+function badgesHtml(){
+  var n=termCount(editId);
+  return '<div class="badges"><span class="bdg g" title="Times this term appears in this chapter"><i>&#128100; '+n+'</i><em>'+esc(draft.to||draft.from)+'</em></span><span class="bdg b" title="As written"><i>Aa</i><em>'+esc(draft.from)+'</em></span></div>';
+}
+/* Saving: the term is stored and shown on the page at once; the sidebar then shows a spinner and
+   moves to "Your Terms" after a moment. Esc at any time just closes the sidebar. */
+var saveTimer=null,saving=false;
+function commitTerm(){
+  var from=draft.from.trim();if(!from){toast('Enter the original text first');return null}
+  var rec={id:editId||('t'+Date.now()),from:from,to:draft.to.trim(),cs:!!draft.cs,novel:!!draft.novel,off:false};
+  var idx=terms.map(function(x){return x.id}).indexOf(rec.id);if(idx>=0)terms[idx]=rec;else terms.unshift(rec);
+  save('terms',terms);editId=null;draft={from:'',to:'',cs:false,novel:false};
+  renderChapter(S.chIndex,false);return rec;
+}
+function saveTermFlow(){
+  if(saving)return;
+  var rec=commitTerm();if(!rec)return;
+  saving=true;toast('Term saved');
+  var b=$('#termFoot .btn.pri');if(b){b.disabled=true;b.innerHTML='<span class="spin"></span>'}
+  clearTimeout(saveTimer);
+  saveTimer=setTimeout(function(){
+    saving=false;
+    if($('#termDrawer').classList.contains('open')){tTab='list';renderTerms()}
+  },5000);
+}
+function deleteTerm(id){
+  if(saving)return;
+  terms=terms.filter(function(t){return t.id!==id});save('terms',terms);
+  editId=null;draft={from:'',to:'',cs:false,novel:false};
+  renderChapter(S.chIndex,false);toast('Term deleted');
+  saving=true;
+  var d=$('#termFoot .btn.danger');if(d){d.disabled=true;d.innerHTML='<span class="spin"></span>'}
+  var sv=$('#termFoot .btn.pri');if(sv)sv.disabled=true;
+  clearTimeout(saveTimer);
+  saveTimer=setTimeout(function(){
+    saving=false;
+    if($('#termDrawer').classList.contains('open')){tTab='list';renderTerms()}
+  },5000);
+}
+function editTermById(id){
+  var t=terms.filter(function(x){return x.id===id})[0];if(!t)return;
+  closePopover();editId=id;draft={from:t.from,to:t.to||'',cs:!!t.cs,novel:!!t.novel};
+  tTab='editor';renderTerms();openDrawer('termDrawer');
+}
+/* click a highlighted term -> small card with From / To */
+function closePopover(){var p=$('#tpop');if(p)p.remove()}
+function openPopover(sp){
+  closePopover();
+  var id=sp.getAttribute('data-tid'),t=terms.filter(function(x){return x.id===id})[0];if(!t)return;
+  var orig=sp.getAttribute('data-orig')||t.from;
+  var pop=el('div','tpop');pop.id='tpop';pop.setAttribute('data-tid',id);pop.setAttribute('data-orig',orig);
+  document.body.appendChild(pop);
+  drawPopover(pop,t,orig,true);
+  var r=sp.getBoundingClientRect(),w=pop.offsetWidth;
+  pop.style.top=(r.bottom+window.scrollY+8)+'px';
+  pop.style.left=Math.max(8,Math.min(r.left+window.scrollX,document.documentElement.clientWidth-w-8))+'px';
+  /* the blue "as written" choice appears after a short load, like the reference card */
+  setTimeout(function(){if($('#tpop')===pop)drawPopover(pop,t,orig,false)},550);
+}
+function drawPopover(pop,t,orig,loading){
+  var n=termCount(t.id),hasTo=!!t.to,active=(t.off||!hasTo)?'orig':'to';
+  pop.innerHTML='<div class="pr"><b>From</b><span>'+esc(orig)+'</span></div>'+
+    (hasTo?'<div class="pr"><b>To</b><button class="bdg g opt'+(active==='to'?' on':'')+'" data-opt="to" title="Use your term: '+esc(t.to)+'"><i>&#128100; '+n+'</i><em>'+esc(t.to)+'</em></button></div>':'')+
+    '<div class="pr"><b>'+(hasTo?'':'To')+'</b>'+(loading?'<span class="spin sm"></span>':'<button class="bdg b opt'+(active==='orig'?' on':'')+'" data-opt="orig" title="Use the text as written"><i>Aa</i><em>'+esc(orig)+'</em></button>')+'</div>'+
+    '<div class="phelp hidden" id="pHelpTxt">Click the green choice to use your term, or the blue choice to show the text as written. The page changes after a short load. Edit opens the full editor.</div>'+
+    '<div class="pf"><button class="hbtn" id="pHelp">?</button><button class="btn sm" id="pEdit">Edit</button></div>';
+  $('#pEdit').onclick=function(){editTermById(t.id)};
+  $('#pHelp').onclick=function(){$('#pHelpTxt').classList.toggle('hidden')};
+  $$('.opt',pop).forEach(function(b){b.onclick=function(){popoverSet(t.id,b.getAttribute('data-opt'),orig)}});
+}
+/* click one of the two choices in the card: spinner, then the word changes on the page */
+var popT=null,popBusy=false;
+function popoverSet(id,opt,orig){
+  var t=terms.filter(function(x){return x.id===id})[0];if(!t||popBusy)return;
+  var isOrig=!!(t.off||!t.to),want=opt==='orig';
+  if(want===isOrig){toast(want?'Already showing the text as written':'Already using your term');return}
+  popBusy=true;
+  var pop=$('#tpop');
+  if(pop){$$('.opt',pop).forEach(function(b){b.disabled=true});
+    var row=pop.querySelector('[data-opt="'+opt+'"]');if(row)row.parentNode.appendChild(el('span','spin sm',''))}
+  clearTimeout(popT);
+  popT=setTimeout(function(){
+    popBusy=false;t.off=want;save('terms',terms);renderChapter(S.chIndex,false);
+    var p2=$('#tpop');if(p2)drawPopover(p2,t,orig,false);
+    toast(want?'Showing the text as written':'Using your term');
+  },700);
+}
+function renderList(body,foot){
+  var q=el('input','field');q.placeholder='Search your terms...';q.value=listQ||'';
+  body.appendChild(q);
+  var tools=el('div','row gap');tools.style.margin='10px 0 0';
+  var mb=btn(multi?'Cancel Multi-Delete':'Enable Multi-Delete','btn sm',function(){multi=!multi;selIds={};renderTerms()});
+  var ex=btn('Export','btn sm',exportTerms);var im=btn('Import','btn sm',function(){$('#termIn').click()});
+  tools.style.justifyContent='flex-end';[im,ex,mb].forEach(function(x){tools.appendChild(x)});body.appendChild(tools);
+  body.appendChild(el('span','chipbtn','Current Novel'));
+  var wrap=el('div');body.appendChild(wrap);
+  function draw(){
+    wrap.innerHTML='';var qq=(q.value||'').toLowerCase();
+    var shown=terms.filter(function(t){return !qq||t.from.toLowerCase().indexOf(qq)>=0||(t.to||'').toLowerCase().indexOf(qq)>=0});
+    if(!shown.length)wrap.appendChild(el('div','hint','No terms yet. Select text in a chapter and tap "+ Add Term", or use "+ Add New Term".'));
+    shown.forEach(function(t){
+      var r=el('div','trow');
+      if(multi){var c=el('input');c.type='checkbox';c.checked=!!selIds[t.id];c.onchange=function(){selIds[t.id]=c.checked;delBtn()};r.appendChild(c)}
+      else{r.appendChild(btn('Edit','btn sm',function(){editId=t.id;draft={from:t.from,to:t.to||'',cs:!!t.cs,novel:!!t.novel};tTab='editor';renderTerms()}))}
+      r.appendChild(el('div','tt','<small>FROM: <b>'+esc(t.from)+'</b></small><small>TO: <b>'+esc(t.off?'(showing as written)':(t.to||'(highlight only)'))+'</b></small>'));
+      wrap.appendChild(r);
+    });
+  }
+  q.oninput=function(){listQ=q.value;draw()};draw();
+  foot.appendChild(btn('Close','btn',closeDrawers));
+  if(multi){var d=btn('Delete selected','btn',function(){var ids=Object.keys(selIds).filter(function(k){return selIds[k]});if(!ids.length)return;terms=terms.filter(function(t){return ids.indexOf(t.id)<0});save('terms',terms);selIds={};multi=false;toast('Deleted '+ids.length);renderChapter(S.chIndex,false);renderTerms()});d.id='delSel';foot.appendChild(d)}
+  else foot.appendChild(btn('+ Add New Term','btn pri',function(){editId=null;draft={from:'',to:'',cs:false,novel:false};tTab='editor';renderTerms()}));
+  function delBtn(){}
+}
+var listQ='';
+function exportTerms(){
+  var blob=new Blob([JSON.stringify(terms,null,2)],{type:'application/json'}),a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);a.download='inkstone-terms.json';document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},500);toast('Terms exported');
+}
+function renderConfig(body,foot){
+  var h='<div class="dtabs" style="margin-bottom:10px" id="cfgTabs"><button data-ct="term">Term</button><button data-ct="text">Text</button><button data-ct="reader">Reader</button></div>';
+  if(cfgTab==='term'){
+    h+='<div class="lab">Terms Style</div>'+seg([['semi','Semi-Bold'],['bold','Bold'],['underline','Underline'],['italic','Italic']],cfg.termStyle,'cs');
+    h+='<div class="lab">Your Saved Terms</div>'+seg([['c','Colored'],['d','Default']],cfg.userColored?'c':'d','cusr');
+    h+='<div class="hint">Only terms you save are highlighted. Select text in a chapter, tap + Add Term, and it will be shown this way everywhere that text appears.</div>';
+    h+='<div class="lab">Preview</div><div class="preview" id="pv"></div>';
+  }else if(cfgTab==='text'){
+    h+='<div class="lab">Text Align</div>'+seg([['left','Left'],['justify','Justify']],cfg.align,'calign');
+    h+='<div class="lab">Paragraph Spacing</div>'+seg([['compact','Compact'],['normal','Normal'],['wide','Wide']],cfg.paraSpace,'cps');
+    h+='<div class="lab">First-line Indent</div>'+seg([['off','Off'],['on','On']],cfg.indent?'on':'off','cind');
+  }else{
+    h+='<div class="lab">Content Width</div>'+seg([['narrow','Narrow'],['medium','Medium'],['wide','Wide']],cfg.width,'cw');
+    h+='<div class="lab">Chapter Heading In Text</div>'+seg([['show','Show'],['hide','Hide']],cfg.showHeading?'show':'hide','chd');
+  }
+  body.innerHTML=h;
+  $$('#cfgTabs button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-ct')===cfgTab);b.onclick=function(){cfgTab=b.getAttribute('data-ct');renderConfig(body,foot)}});
+  function bind(attr,fn){$$('[data-'+attr+']',body).forEach(function(b){b.onclick=function(){fn(b.getAttribute('data-'+attr));renderConfig(body,foot)}})}
+  bind('cs',function(v){cfg.termStyle=v});bind('cusr',function(v){cfg.userColored=v==='c'});
+  bind('calign',function(v){cfg.align=v});bind('cps',function(v){cfg.paraSpace=v});bind('cind',function(v){cfg.indent=v==='on'});
+  bind('cw',function(v){cfg.width=v});bind('chd',function(v){cfg.showHeading=v==='show'});
+  var pv=$('#pv');if(pv){
+    var st={semi:'600',bold:'700'}[cfg.termStyle]||'400',deco=cfg.termStyle==='underline'?'underline':'none',fi=cfg.termStyle==='italic'?'italic':'normal';
+    function sp(t,c,on){return '<span style="font-weight:'+st+';text-decoration:'+deco+';font-style:'+fi+';color:'+(on?c:'#fff')+'">'+t+'</span>'}
+    pv.innerHTML='“Is it good?” Chen Xuan took the cap back. “I just like that it’s hot.” Across the floor, Zhang Pengfei looked at his new watch, and your saved term '+sp('thermos','#8cbcff',cfg.userColored)+' sat in the middle of the desk.';
+  }
+  foot.innerHTML='';
+  foot.appendChild(btn('Cancel','btn',function(){tTab='editor';renderTerms()}));
+  foot.appendChild(btn('Save Changes','btn pri',function(){
+    ['termStyle','sysColored','userColored','patchColored','align','paraSpace','indent','width','showHeading'].forEach(function(k){S[k]=cfg[k]});
+    saveState();applyLook();renderChapter(S.chIndex,false);toast('Config saved');
+  }));
+}
+
+/* ---------- library + import ---------- */
+function openLibrary(){
+  var box=$('#libBox');
+  var pct=Math.floor((S.chIndex+1)/chapters.length*100);
+  var wc=chapters.reduce(function(a,c){return a+c.words},0);
+  box.innerHTML='<div class="dhead" style="padding:0 0 10px"><h3>Library</h3><button class="xbtn" id="libX">&times;</button></div>'+
+    (S.inLibrary?('<div class="lib"><div class="cover">RS</div><div style="flex:1"><h4>'+esc(NOVEL.title)+'</h4><p>'+chapters.length+' chapters &middot; '+wc.toLocaleString()+' words &middot; reading Ch. '+chapters[S.chIndex].n+'</p><div class="bar"><i style="width:'+pct+'%"></i></div><div class="row gap"><button class="btn sm" id="libCont">Continue reading</button><button class="btn sm" id="libImp">Import chapters</button><button class="btn sm" id="libRem">Remove</button></div></div></div>'):
+    '<p class="hint">Your library is empty.</p><button class="btn pri" id="libAdd">Add "'+esc(NOVEL.title)+'" to library</button>');
+  $('#libModal').classList.remove('hidden');
+  $('#libX').onclick=function(){$('#libModal').classList.add('hidden')};
+  var c=$('#libCont');if(c)c.onclick=function(){$('#libModal').classList.add('hidden')};
+  var i=$('#libImp');if(i)i.onclick=function(){$('#fileIn').click()};
+  var r=$('#libRem');if(r)r.onclick=function(){S.inLibrary=false;saveState();openLibrary();renderDock()};
+  var a=$('#libAdd');if(a)a.onclick=function(){S.inLibrary=true;saveState();openLibrary();renderDock()};
+}
+function importFiles(files){
+  var list=Array.prototype.slice.call(files),done=0,added=0;
+  if(!list.length)return;
+  list.forEach(function(f){
+    var rd=new FileReader();
+    rd.onload=function(){
+      var raw=String(rd.result||''),p=parseTitle(raw);
+      if(p){imported[p.n]=raw;added++}
+      if(++done===list.length){save('imported',imported);buildChapters();renderToc();renderChapter(S.chIndex,false);toast(added?('Imported '+added+' chapter'+(added>1?'s':'')):'No "# Chapter N: Title" heading found');}
+    };rd.readAsText(f);
+  });
+}
+
+/* ---------- misc ---------- */
+var toastT;function toast(m){var t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(toastT);toastT=setTimeout(function(){t.classList.remove('show')},1800)}
+function dlChapter(){
+  var c=chapters[S.chIndex],blob=new Blob([c.raw],{type:'text/markdown'}),a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);a.download='Chapter_'+(c.n<10?'00':c.n<100?'0':'')+c.n+'.md';document.body.appendChild(a);a.click();
+  setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},500);toast('Chapter downloaded');
+}
+function stepFont(d){S.fontSize=Math.max(14,Math.min(44,S.fontSize+d));applyLook();saveState();renderDock()}
+function stepLH(d){S.lineH=Math.max(1.2,Math.min(2.5,Math.round((S.lineH+d)*10)/10));applyLook();saveState();renderDock()}
+
+/* ---------- wiring ---------- */
+document.addEventListener('click',function(e){
+  var t=e.target.closest('button,[data-act]');if(!t)return;
+  var a=t.getAttribute('data-act');
+  if(a&&t.closest('#menuDrawer,#userMenu')){closeDrawers();closeTop()}
+  if(a==='home'){}
+  else if(a==='imp')$('#fileIn').click();
+  else if(a==='exp')exportTerms();
+  else if(a==='dl')dlChapter();
+  else if(a==='disp'){showDock();setDock('display')}
+  else if(a==='set'){showDock();setDock('settings')}
+  else if(a==='prev')go(-1);else if(a==='next')go(1);else if(a==='toc'){renderToc();openDrawer('tocDrawer')}
+  else if(a==='terms')openTerms('editor',null);else if(a==='adv')openTerms('config',null);
+  else if(a==='lib')openLibrary();else if(a==='addlib'){S.inLibrary=!S.inLibrary;saveState();renderDock();toast(S.inLibrary?'Added to library':'Removed from library')}
+  else if(a==='fs-')stepFont(-1);else if(a==='fs+')stepFont(1);else if(a==='lh-')stepLH(-.1);else if(a==='lh+')stepLH(.1);else if(a==='lh0'){S.lineH=DEF.lineH;applyLook();saveState();renderDock()}
+  else if(a==='reset'){['font','fontSize','lineH','termColors','readerTheme','siteTheme','readerType','termStyle','sysColored','userColored','patchColored','align','paraSpace','indent','width','showHeading'].forEach(function(k){S[k]=DEF[k]});saveState();applyLook();renderChapter(S.chIndex,false);renderDock();toast('Display settings reset')}
+  var d=t.getAttribute('data-font');if(d){S.font=d;applyLook();saveState();renderDock()}
+  d=t.getAttribute('data-tcol');if(d){S.termColors=d==='on';applyLook();saveState();renderDock()}
+  d=t.getAttribute('data-svc');if(d){S.service=d;saveState();applyLook();renderChapter(S.chIndex,false);renderDock()}
+  d=t.getAttribute('data-site');if(d){S.siteTheme=d;saveState();applyLook();renderDock();
+    if($('#menuDrawer').classList.contains('open'))renderMenu();
+    if(!$('#userMenu').classList.contains('hidden')){$('#userMenu').classList.add('hidden');toggleUser()}}
+  d=t.getAttribute('data-rt');if(d){S.readerTheme=d;saveState();applyLook();renderDock()}
+  d=t.getAttribute('data-rtype');if(d){S.readerType=d;saveState();applyLook();renderChapter(S.chIndex,false);renderDock()}
+  var c=t.getAttribute('data-close');if(c)closeDrawers();
+});
+document.addEventListener('change',function(e){if(e.target.id==='swAuto'){S.autosave=e.target.checked;if(S.autosave)saveState();else try{localStorage.removeItem(LS+'state')}catch(x){}}});
+$('#prevTop').onclick=$('#prevBot').onclick=function(){go(-1)};
+$('#nextTop').onclick=$('#nextBot').onclick=function(){go(1)};
+$('#svcTop').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return});
+$('#dockTabs').addEventListener('click',function(e){var b=e.target.closest('button');if(b)setDock(b.getAttribute('data-tab'))});
+/* click the page to show the panel, click the page again to hide it */
+document.addEventListener('click',function(e){
+  var term=e.target.closest('#chBody .term');
+  if(term){openPopover(term);return}
+  if(!e.target.closest('#tpop'))closePopover();
+  if(!e.target.closest('#userMenu,#btnUser')&&!$('#userMenu').classList.contains('hidden'))closeTop();
+  if(e.target.closest('button,a,input,select,textarea,label,#dock,.drawer,.modal,#addTermBtn,.top,#scrim,#tpop,#userMenu,#searchRes'))return;
+  if(String(window.getSelection()).trim())return;
+  if($$('.drawer.open').length||!$('#libModal').classList.contains('hidden'))return;
+  if($('#dock').classList.contains('hidden'))showDock();else hideDock();
+});
+$('#termTabs').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;tTab=b.getAttribute('data-tt');if(tTab==='config'){cfg=Object.assign({},S)}renderTerms()});
+$('#scrim').onclick=closeDrawers;
+$('#novelName').onclick=openLibrary;
+$('#btnLibrary').onclick=function(){closeTop();openLibrary()};
+$('#btnMenu').onclick=openMenu;
+$('#btnSearch').onclick=openSearch;
+$('#btnUser').onclick=toggleUser;
+$('#sBack').onclick=closeSearch;
+$('#sInput').oninput=function(){runSearch(this.value)};
+$('#searchRes').addEventListener('click',function(e){var b=e.target.closest('[data-si]');if(!b)return;var i=+b.getAttribute('data-si');closeSearch();renderChapter(i)});
+$('#gripBtn').onclick=hideDock;
+window.addEventListener('resize',fitDock);
+$('#libModal').addEventListener('click',function(e){if(e.target.id==='libModal')$('#libModal').classList.add('hidden')});
+$('#fileIn').onchange=function(){importFiles(this.files);this.value=''};
+$('#termIn').onchange=function(){
+  var f=this.files[0];if(!f)return;var rd=new FileReader();
+  rd.onload=function(){try{var arr=JSON.parse(rd.result);if(!Array.isArray(arr))throw 0;var n=0;arr.forEach(function(t){if(t&&t.from){terms.unshift({id:'t'+Date.now()+n,from:String(t.from),to:String(t.to||''),cs:!!t.cs,novel:!!t.novel});n++}});save('terms',terms);renderChapter(S.chIndex,false);renderTerms();toast('Imported '+n+' terms')}catch(x){toast('That file is not a terms export')}};
+  rd.readAsText(f);this.value='';
+};
+$('#addTermBtn').addEventListener('mousedown',function(e){e.preventDefault()});
+$('#addTermBtn').addEventListener('click',function(){var s=String(window.getSelection()).trim().slice(0,128);if(s){openTerms('editor',s)}this.classList.add('hidden')});
+var selT;document.addEventListener('selectionchange',function(){clearTimeout(selT);selT=setTimeout(function(){
+  var sel=window.getSelection(),txt=sel?String(sel).trim():'',btn=$('#addTermBtn');
+  if(txt&&txt.length<=128&&sel.rangeCount&&$('#chBody').contains(sel.getRangeAt(0).commonAncestorContainer)){btn.classList.remove('hidden');placeAddBtn(sel.getRangeAt(0),btn)}else btn.classList.add('hidden');
+},180)});
+/* the Add Term button follows the selected words (above them, or below if there is no room) */
+function placeAddBtn(range,btn){
+  var r=range.getBoundingClientRect(),bw=btn.offsetWidth||100,bh=btn.offsetHeight||36;
+  var top=r.top-bh-10;if(top<64)top=r.bottom+10;
+  var left=r.left+r.width/2-bw/2;left=Math.max(8,Math.min(left,document.documentElement.clientWidth-bw-8));
+  btn.style.top=(top+window.scrollY)+'px';btn.style.left=(left+window.scrollX)+'px';
+}
+var scT;window.addEventListener('scroll',function(){infiniteTick();clearTimeout(scT);scT=setTimeout(persist,400)},{passive:true});
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'){closePopover();closeDrawers();closeTop();hideDock();$('#libModal').classList.add('hidden');return}
+  var id=(e.target||{}).id;
+  if(e.key==='Enter'&&(id==='edFrom'||id==='edTo')){e.preventDefault();saveTermFlow();return}
+  if(/INPUT|TEXTAREA/.test((e.target||{}).tagName||''))return;
+  if(e.key==='ArrowLeft')go(-1);else if(e.key==='ArrowRight')go(1);
+});
+
+/* ---------- boot ---------- */
+if(!NOVEL||!NOVEL.chapters){document.body.innerHTML='<p style="padding:30px">No chapters embedded. Run build_inkstone.py.</p>'}
+else{
+  fillIcons();buildChapters();applyLook();renderToc();renderChapter(S.chIndex,false);
+  if(S.autosave&&S.scrollY)window.scrollTo(0,S.scrollY);
+  renderDock();
+}
+})();
+</script>
+</body>
+</html>
