@@ -234,7 +234,9 @@ svg.i,.ibtn svg,[data-ic] svg,.mitem svg,.uitem svg,.mcard svg{width:20px;height
 .swatches button{padding:9px 0;border-bottom:1px solid var(--ui-line);border-right:1px solid var(--ui-line);font-size:14px}
 
 /* ---- term editor as bottom sheet on phones ---- */
+.top{transition:transform .22s}
 @media (max-width:700px){
+  .top.tuck{transform:translateY(-100%)}
   :root{--maxw:100%}
   .top{padding:8px 8px}
   #reader{margin:0;padding:0;max-width:none}
@@ -554,7 +556,7 @@ function openDrawer(id){hideDock();closeTop();$('#scrim').classList.remove('hidd
 /* ---------- top bar: menu, search, account dropdown ---------- */
 function closeTop(){$('#userMenu').classList.add('hidden');$('#btnUser').classList.remove('on');closeSearch()}
 function closeSearch(){$('#topBar').classList.remove('searching');$('#searchRes').classList.add('hidden');$('#sInput').value=''}
-function openSearch(){closeTop();hideDock();$('#topBar').classList.add('searching');$('#sInput').focus()}
+function openSearch(){closeTop();hideDock();$('#topBar').classList.remove('tuck');$('#topBar').classList.add('searching');$('#sInput').focus()}
 function siteSeg(){return '<div class="row" style="margin:8px 0 2px"><button data-site="light" class="'+(S.siteTheme==='light'?'on':'')+'">Light</button><button data-site="dark" class="'+(S.siteTheme==='dark'?'on':'')+'">Dark</button></div>'}
 function renderMenu(){
   var h='';
@@ -901,7 +903,15 @@ function placeAddBtn(range,btn){
   var left=r.left+r.width/2-bw/2;left=Math.max(8,Math.min(left,document.documentElement.clientWidth-bw-8));
   btn.style.top=(top+window.scrollY)+'px';btn.style.left=(left+window.scrollX)+'px';
 }
-var scT;window.addEventListener('scroll',function(){infiniteTick();clearTimeout(scT);scT=setTimeout(persist,400)},{passive:true});
+/* on phones the top bar slides away while you read down, and returns when you scroll up */
+var lastY=0;
+function tuckTop(){
+  var y=window.scrollY,dy=y-lastY,bar=$('#topBar');
+  if(bar.classList.contains('searching')||!$('#userMenu').classList.contains('hidden')||$('#menuDrawer').classList.contains('open')){bar.classList.remove('tuck');lastY=y;return}
+  if(y<80||dy<-6)bar.classList.remove('tuck');else if(dy>6)bar.classList.add('tuck');
+  if(Math.abs(dy)>6)lastY=y;
+}
+var scT;window.addEventListener('scroll',function(){tuckTop();infiniteTick();clearTimeout(scT);scT=setTimeout(persist,400)},{passive:true});
 document.addEventListener('keydown',function(e){
   if(e.key==='Escape'){closePopover();closeDrawers();closeTop();hideDock();$('#libModal').classList.add('hidden');return}
   var id=(e.target||{}).id;
