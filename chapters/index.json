@@ -61,8 +61,8 @@
    "n": 9,
    "title": "Absolute Order",
    "file": "9.md",
-   "words": 1121,
-   "h": "c4d00e71"
+   "words": 1155,
+   "h": "f0ffcb1e"
   },
   {
    "n": 10,
@@ -87,213 +87,227 @@
   },
   {
    "n": 13,
-   "title": "Dead Calls",
+   "title": "Behind Closed Doors",
    "file": "13.md",
-   "words": 1273,
-   "h": "32b5cadf"
+   "words": 1080,
+   "h": "3e60a38f"
   },
   {
    "n": 14,
-   "title": "The Empty Chair",
+   "title": "The Red-Walled Table",
    "file": "14.md",
-   "words": 1486,
-   "h": "29afae6d"
+   "words": 882,
+   "h": "652c473a"
   },
   {
    "n": 15,
-   "title": "The True Hour",
+   "title": "Dead Calls",
    "file": "15.md",
-   "words": 1270,
-   "h": "07244628"
+   "words": 1273,
+   "h": "669d41bf"
   },
   {
    "n": 16,
-   "title": "The Cold Bench",
+   "title": "The Empty Chair",
    "file": "16.md",
-   "words": 1024,
-   "h": "0da9ae92"
+   "words": 1486,
+   "h": "3a979c94"
   },
   {
    "n": 17,
-   "title": "The Eighteen Hours",
+   "title": "The True Hour",
    "file": "17.md",
-   "words": 1395,
-   "h": "d9db6582"
+   "words": 1270,
+   "h": "a788c3d0"
   },
   {
    "n": 18,
-   "title": "Standing Down",
+   "title": "The Cold Bench",
    "file": "18.md",
-   "words": 1655,
-   "h": "1f0d231c"
+   "words": 1024,
+   "h": "7b85289b"
   },
   {
    "n": 19,
-   "title": "Two Witnesses",
+   "title": "The Eighteen Hours",
    "file": "19.md",
-   "words": 746,
-   "h": "d2ac7e05"
+   "words": 1395,
+   "h": "23c1d05b"
   },
   {
    "n": 20,
-   "title": "The Call at Night",
+   "title": "Standing Down",
    "file": "20.md",
-   "words": 1421,
-   "h": "d3eda357"
+   "words": 1699,
+   "h": "a559287f"
   },
   {
    "n": 21,
-   "title": "Three Options",
+   "title": "Two Witnesses",
    "file": "21.md",
-   "words": 1429,
-   "h": "768eef87"
+   "words": 746,
+   "h": "475c0d88"
   },
   {
    "n": 22,
-   "title": "The Midnight Filing",
+   "title": "The Call at Night",
    "file": "22.md",
-   "words": 1232,
-   "h": "b18e2f25"
+   "words": 1421,
+   "h": "1dbccaeb"
   },
   {
    "n": 23,
-   "title": "The Cell Door",
+   "title": "Three Options",
    "file": "23.md",
-   "words": 909,
-   "h": "e6e666b9"
+   "words": 1429,
+   "h": "f44fc074"
   },
   {
    "n": 24,
-   "title": "Just an Old Float",
+   "title": "The Midnight Filing",
    "file": "24.md",
-   "words": 1029,
-   "h": "3a389aba"
+   "words": 1232,
+   "h": "912cf65d"
   },
   {
    "n": 25,
-   "title": "Ten Yuan for Worms",
+   "title": "The Cell Door",
    "file": "25.md",
-   "words": 1473,
-   "h": "dd3bdb68"
+   "words": 909,
+   "h": "14e229c7"
   },
   {
    "n": 26,
-   "title": "Seating Order",
+   "title": "Just an Old Float",
    "file": "26.md",
-   "words": 1220,
-   "h": "81598152"
+   "words": 1029,
+   "h": "04a9d076"
   },
   {
    "n": 27,
-   "title": "Nine O'Clock Monday",
+   "title": "Ten Yuan for Worms",
    "file": "27.md",
-   "words": 1483,
-   "h": "53e63a25"
+   "words": 1473,
+   "h": "a47143d8"
   },
   {
    "n": 28,
-   "title": "Permission Denied",
+   "title": "Seating Order",
    "file": "28.md",
-   "words": 1036,
-   "h": "a0a24a44"
+   "words": 1220,
+   "h": "d550c897"
   },
   {
    "n": 29,
-   "title": "Thirty-Yuan Leftovers",
+   "title": "Nine O'Clock Monday",
    "file": "29.md",
-   "words": 879,
-   "h": "81b962d2"
+   "words": 1483,
+   "h": "05acc6a3"
   },
   {
    "n": 30,
-   "title": "The Recount",
+   "title": "Permission Denied",
    "file": "30.md",
-   "words": 1268,
-   "h": "5cafe7b3"
+   "words": 1036,
+   "h": "1293d4d7"
   },
   {
    "n": 31,
-   "title": "Card Zero-One",
+   "title": "Thirty-Yuan Leftovers",
    "file": "31.md",
-   "words": 962,
-   "h": "ec5d7557"
+   "words": 879,
+   "h": "9659a7b0"
   },
   {
    "n": 32,
-   "title": "The Hotel Belongs to the Company",
+   "title": "The Recount",
    "file": "32.md",
-   "words": 1159,
-   "h": "91ca7be8"
+   "words": 1268,
+   "h": "1f57a636"
   },
   {
    "n": 33,
-   "title": "The Cloud Sea Hall",
+   "title": "Card Zero-One",
    "file": "33.md",
-   "words": 1451,
-   "h": "8d1454b3"
+   "words": 962,
+   "h": "08f3fc75"
   },
   {
    "n": 34,
-   "title": "Still Here",
+   "title": "The Hotel Belongs to the Company",
    "file": "34.md",
-   "words": 1459,
-   "h": "9aab94f0"
+   "words": 1159,
+   "h": "2ab52b4e"
   },
   {
    "n": 35,
-   "title": "The Fourth Chair",
+   "title": "The Cloud Sea Hall",
    "file": "35.md",
-   "words": 1316,
-   "h": "2c255df2"
+   "words": 1451,
+   "h": "138f8fce"
   },
   {
    "n": 36,
-   "title": "Dinner Is at Six",
+   "title": "Still Here",
    "file": "36.md",
-   "words": 1270,
-   "h": "ca4151d6"
+   "words": 1459,
+   "h": "dc115e48"
   },
   {
    "n": 37,
-   "title": "Tomato Stakes",
+   "title": "The Fourth Chair",
    "file": "37.md",
-   "words": 1452,
-   "h": "b8a75b7e"
+   "words": 1316,
+   "h": "cfddd551"
   },
   {
    "n": 38,
-   "title": "The Quiet Rule",
+   "title": "Dinner Is at Six",
    "file": "38.md",
-   "words": 1191,
-   "h": "8ddd2cf9"
+   "words": 1270,
+   "h": "f29e748a"
   },
   {
    "n": 39,
-   "title": "One Page, One Seal",
+   "title": "Tomato Stakes",
    "file": "39.md",
-   "words": 1197,
-   "h": "321f5785"
+   "words": 1452,
+   "h": "41211176"
   },
   {
    "n": 40,
-   "title": "Sit With Him",
+   "title": "The Quiet Rule",
    "file": "40.md",
-   "words": 1217,
-   "h": "df5cd064"
+   "words": 1191,
+   "h": "ae6ddfe2"
   },
   {
    "n": 41,
-   "title": "Miss Qin Next Week",
+   "title": "One Page, One Seal",
    "file": "41.md",
-   "words": 1192,
-   "h": "03e366ac"
+   "words": 1197,
+   "h": "d690d582"
   },
   {
    "n": 42,
-   "title": "What Tang Xiaoyu Was Told",
+   "title": "Sit With Him",
    "file": "42.md",
+   "words": 1217,
+   "h": "f8b6ef65"
+  },
+  {
+   "n": 43,
+   "title": "Miss Qin Next Week",
+   "file": "43.md",
+   "words": 1192,
+   "h": "6d02df7f"
+  },
+  {
+   "n": 44,
+   "title": "What Tang Xiaoyu Was Told",
+   "file": "44.md",
    "words": 1296,
-   "h": "5c4cdf4d"
+   "h": "acc5fd4c"
   }
  ]
 }
