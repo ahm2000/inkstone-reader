@@ -63,7 +63,7 @@
     ],
     "group": "Chen's family and friends",
     "role": "Chen Xuan's mother in Yunxi. Loud, worried, and always feeding him pork-rib soup.",
-    "first": 1
+    "first": 2
   },
   {
     "name": "Chen Mingde",
@@ -73,7 +73,7 @@
     ],
     "group": "Chen's family and friends",
     "role": "Chen Xuan's Second Uncle. Runs a hardware shop on Old Street. Arrested that afternoon.",
-    "first": 1,
+    "first": 2,
     "later": [
       {
         "ch": 13,
@@ -130,7 +130,7 @@
     ],
     "group": "Police and the station",
     "role": "Police official at Old Street station. Brother Tie calls him his uncle.",
-    "first": 2,
+    "first": 3,
     "later": [
       {
         "ch": 3,
@@ -150,7 +150,7 @@
     ],
     "group": "Hongrui and the underworld",
     "role": "Leads Hongrui's 'security team', a crew of eight who collect debts and break things.",
-    "first": 2,
+    "first": 1,
     "later": [
       {
         "ch": 11,
@@ -165,7 +165,7 @@
     ],
     "group": "Hongrui and the underworld",
     "role": "Hongrui security man with big front teeth. Works for Brother Tie.",
-    "first": 2,
+    "first": 6,
     "later": [
       {
         "ch": 8,
@@ -180,7 +180,7 @@
     ],
     "group": "Hongrui and the underworld",
     "role": "Brother Tie's crewman. Thin, and cackles at every joke.",
-    "first": 2,
+    "first": 9,
     "later": [
       {
         "ch": 10,
@@ -195,7 +195,7 @@
     ],
     "group": "Old Street neighbors",
     "role": "Bun-stall owner on Old Street. Saw the slap and was too scared to speak.",
-    "first": 2,
+    "first": 6,
     "later": [
       {
         "ch": 4,
@@ -211,7 +211,7 @@
     ],
     "group": "Old Street neighbors",
     "role": "Tailor on Old Street who stood frozen while Chen Jianguo was slapped.",
-    "first": 2,
+    "first": 3,
     "later": [
       {
         "ch": 4,
@@ -230,7 +230,7 @@
     ],
     "group": "Police and the station",
     "role": "Duty officer at Old Street station, tired, with twelve years on the job.",
-    "first": 3,
+    "first": 4,
     "later": [
       {
         "ch": 7,
@@ -247,7 +247,7 @@
     "aka": [],
     "group": "Police and the station",
     "role": "Young officer who laughs one second before Cheng Biao does. Mocks complaints.",
-    "first": 3,
+    "first": 4,
     "later": [
       {
         "ch": 6,
@@ -264,7 +264,7 @@
     "aka": [],
     "group": "Police and the station",
     "role": "Nineteen-year-old auxiliary at the station door. Cheng Biao knocked his cap off.",
-    "first": 3
+    "first": 4
   },
   {
     "name": "Number Forty-two",
@@ -273,7 +273,7 @@
     ],
     "group": "Police and the station",
     "role": "Big night driver at Old Street station. Wants to flatten Chen Xuan's tires.",
-    "first": 3
+    "first": 5
   },
   {
     "name": "Number Thirty-four",
@@ -282,7 +282,7 @@
     ],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Secret guard of the hero, posing as the station's records clerk.",
-    "first": 3,
+    "first": 5,
     "later": [
       {
         "ch": 9,
@@ -297,7 +297,7 @@
     ],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Hidden Black Pine Guard chief. Receives Chen Xuan's text orders by phone.",
-    "first": 3,
+    "first": 4,
     "later": [
       {
         "ch": 5,
@@ -313,7 +313,7 @@
     ],
     "group": "County officials",
     "role": "County Party Secretary and top official in Yunxi. Speaks softly and never shouts.",
-    "first": 4,
+    "first": 5,
     "later": [
       {
         "ch": 15,
@@ -328,7 +328,7 @@
     ],
     "group": "County officials",
     "role": "County Magistrate who runs the county government. Only the Party Secretary ranks above him.",
-    "first": 4,
+    "first": 5,
     "later": [
       {
         "ch": 15,
@@ -347,7 +347,7 @@
     ],
     "group": "County officials",
     "role": "Executive Deputy Magistrate. Holds the county's money and takes 'service fees'.",
-    "first": 4,
+    "first": 5,
     "later": [
       {
         "ch": 15,
@@ -362,7 +362,7 @@
     ],
     "group": "Hongrui and the underworld",
     "role": "Head of Hongrui Real Estate. Pays officials per signature to clear Old Street.",
-    "first": 4,
+    "first": 5,
     "later": [
       {
         "ch": 15,
@@ -375,7 +375,7 @@
     "aka": [],
     "group": "County officials",
     "role": "Aide to Executive Deputy Magistrate Lu, who watches the room quietly.",
-    "first": 4,
+    "first": 5,
     "later": [
       {
         "ch": 15,
@@ -394,7 +394,7 @@
     ],
     "group": "Old Street neighbors",
     "role": "Cobbler on Old Street. Joined the thumbprint pledge against Hongrui.",
-    "first": 4,
+    "first": 6,
     "later": [
       {
         "ch": 10,
@@ -409,7 +409,7 @@
     ],
     "group": "Old Street neighbors",
     "role": "Vegetable seller on Old Street. Once told Chen Mingde to sign, then changed her mind.",
-    "first": 4
+    "first": 6
   },
   {
     "name": "Number One Hundred and Four",
@@ -418,7 +418,7 @@
     ],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Attorney from the Black Pine Guard's law firm, sitting at a tea stall with a briefcase.",
-    "first": 5
+    "first": 18
   },
   {
     "name": "Number Ninety-two",
@@ -437,7 +437,7 @@
     ],
     "group": "City and province",
     "role": "Head nurse at People's Hospital. Keeps Chen Mingde's pill record on her desk.",
-    "first": 5,
+    "first": 21,
     "later": [
       {
         "ch": 13,
@@ -452,7 +452,7 @@
     ],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Secret Black Pine Guard member who runs Gong's Noodles as a watch post on Old Street.",
-    "first": 6
+    "first": 3
   },
   {
     "name": "Number Sixty-eight",
@@ -461,7 +461,7 @@
     ],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Works with Number Twenty-three at Gong's Noodles. Shares his secret watch.",
-    "first": 6
+    "first": 13
   },
   {
     "name": "Huang Boren",
@@ -471,7 +471,7 @@
     ],
     "group": "Hongrui and the underworld",
     "role": "Soft-voiced lender who charges Dong 2% a month. Threatens him over his loans.",
-    "first": 6,
+    "first": 13,
     "later": [
       {
         "ch": 15,
@@ -484,7 +484,7 @@
     "aka": [],
     "group": "Police and the station",
     "role": "Wei Kun's desk neighbor and tea partner for ten years.",
-    "first": 12,
+    "first": 15,
     "later": [
       {
         "ch": 9,
@@ -497,7 +497,7 @@
     "aka": [],
     "group": "Police and the station",
     "role": "Wei Kun's pregnant wife. Asks him every night if he had a good day.",
-    "first": 12,
+    "first": 14,
     "later": [
       {
         "ch": 13,
@@ -513,7 +513,7 @@
     ],
     "group": "Old Street neighbors",
     "role": "Nine-year-old granddaughter of Old Yu. Does homework at his shop on Saturdays.",
-    "first": 13,
+    "first": 16,
     "later": [
       {
         "ch": 10,
@@ -528,7 +528,7 @@
     ],
     "group": "Police and the station",
     "role": "Six-year-old son of Zhong Hai. Needs a heart operation the family cannot pay for.",
-    "first": 14,
+    "first": 17,
     "later": [
       {
         "ch": 18,
@@ -544,7 +544,7 @@
     ],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Captain of the hidden van team, based in a flower-delivery van.",
-    "first": 14
+    "first": 2
   },
   {
     "name": "Number Nineteen",
@@ -553,7 +553,7 @@
     ],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Deputy in Captain Tang's hidden van team. Passes on Number One's orders.",
-    "first": 14
+    "first": 18
   },
   {
     "name": "Number Seventy-three",
@@ -562,7 +562,7 @@
     ],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Round baker. His bread truck crashes a hired van at the river arch.",
-    "first": 15
+    "first": 19
   },
   {
     "name": "Number Fifty-six",
@@ -571,7 +571,7 @@
     ],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Delivery rider who sat beside Chen Xuan in the lobby, then reported to Number Twenty-three.",
-    "first": 15
+    "first": 13
   },
   {
     "name": "Bao Zhen",
@@ -580,7 +580,7 @@
     ],
     "group": "City and province",
     "role": "City Special Police team leader. Salutes the Black Pine badge without being told.",
-    "first": 16
+    "first": 20
   },
   {
     "name": "Xie Boyuan",
@@ -589,7 +589,7 @@
     ],
     "group": "Hongrui and the underworld",
     "role": "Bookkeeper in Brother Tie's crew who escaped the raid on foot.",
-    "first": 16,
+    "first": 21,
     "later": [
       {
         "ch": 15,
@@ -602,7 +602,7 @@
     "aka": [],
     "group": "City and province",
     "role": "Night clerk at the Municipal Discipline Commission. Took Bai's nineteen-page complaint.",
-    "first": 17
+    "first": 22
   },
   {
     "name": "Number Eleven",
@@ -612,7 +612,7 @@
     ],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Number Eleven, the Black Pine Guard's lawyer, with silver-rimmed glasses.",
-    "first": 17
+    "first": 21
   },
   {
     "name": "Mai Zhenhua",
@@ -621,7 +621,7 @@
     ],
     "group": "Police and the station",
     "role": "Yunxi Police Director and Deputy County Magistrate. Suspends Cheng Biao at dawn.",
-    "first": 18,
+    "first": 8,
     "later": [
       {
         "ch": 16,
@@ -646,7 +646,7 @@
     ],
     "group": "Chen's family and friends",
     "role": "Chen Xuan's grandfather, age 78. Loud, proud, and fishes at a reservoir.",
-    "first": 19
+    "first": 18
   },
   {
     "name": "Zhao Dehai",
@@ -656,7 +656,7 @@
     ],
     "group": "The elders",
     "role": "Retired Governor of Lanshui. Village thinks he was only a clerk.",
-    "first": 19
+    "first": 24
   },
   {
     "name": "Ren Gang",
@@ -665,7 +665,7 @@
     ],
     "group": "The elders",
     "role": "Colonel who guards Old Zhao with forty men. Sells cabbages as a cover.",
-    "first": 19
+    "first": 24
   },
   {
     "name": "Gao Zhengyi",
@@ -674,7 +674,7 @@
     ],
     "group": "City and province",
     "role": "Provincial Vice Director. Jumps to attention when Retired Governor Zhao calls.",
-    "first": 19,
+    "first": 25,
     "later": [
       {
         "ch": 16,
@@ -690,7 +690,7 @@
     ],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Hidden guard codenamed Number Nine. Carries the Black Pine badge that commands elite teams.",
-    "first": 19
+    "first": 2
   },
   {
     "name": "Kang Guangming",
@@ -699,21 +699,21 @@
     ],
     "group": "County officials",
     "role": "Gray Discipline Commission man who can investigate anyone, even the Secretary.",
-    "first": 20
+    "first": 25
   },
   {
     "name": "Shao Wenhua",
     "aka": [],
     "group": "County officials",
     "role": "Organization Department head who decides promotions and rarely speaks.",
-    "first": 20
+    "first": 25
   },
   {
     "name": "Lin Dong",
     "aka": [],
     "group": "Office at Hengxin",
     "role": "Youngest clerk on the twelfth floor. Works out prices on his phone calculator.",
-    "first": 22
+    "first": 29
   },
   {
     "name": "Ge Qinghe",
@@ -722,7 +722,7 @@
     ],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Hengxin cleaner. Secretly Number Fourteen of the Inner Ring.",
-    "first": 22
+    "first": 28
   },
   {
     "name": "Hao Jingshan",
@@ -732,14 +732,14 @@
     ],
     "group": "The elders",
     "role": "Tea-stall owner on Binjiang Road. Holds a high rank, sells rare tea for thirty yuan.",
-    "first": 22
+    "first": 29
   },
   {
     "name": "Pu Jian",
     "aka": [],
     "group": "City and province",
     "role": "Provincial Organization Department officer. Tao asked him to check Chen Xuan.",
-    "first": 21
+    "first": 28
   },
   {
     "name": "Number Eighty-nine",
@@ -749,7 +749,7 @@
     ],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Baker at the Golden Wheat truck. Sends messages to Number One under his counter.",
-    "first": 21
+    "first": 27
   },
   {
     "name": "Qi Zihao",
@@ -759,7 +759,7 @@
     ],
     "group": "City and province",
     "role": "Wealthy young man with a Silver hotel card. Loud and boastful.",
-    "first": 23,
+    "first": 30,
     "later": [
       {
         "ch": 19,
@@ -774,14 +774,14 @@
     ],
     "group": "City and province",
     "role": "General Manager of Yunhai Grand Hotel. Has secret orders to serve one guest without questions.",
-    "first": 24
+    "first": 32
   },
   {
     "name": "Qi Jiancheng",
     "aka": [],
     "group": "City and province",
     "role": "Father of Qi Zihao. His son says one call from him can ruin a hotel.",
-    "first": 24
+    "first": 32
   },
   {
     "name": "Liang Yuhang",
@@ -790,7 +790,7 @@
     ],
     "group": "The elders",
     "role": "Young aide of Zhao Dehai. Walked the river bank at dawn and missed the bakery van.",
-    "first": 19
+    "first": 25
   },
   {
     "name": "Pang Jinquan",
@@ -800,7 +800,7 @@
     ],
     "group": "County officials",
     "role": "Gate guard who buys buns from Number Eighty-nine every morning.",
-    "first": 21
+    "first": 27
   },
   {
     "name": "Ma Baoguo",
@@ -810,7 +810,7 @@
     ],
     "group": "County officials",
     "role": "Housing Bureau chief who called Lu Wenzhe 'Elder Brother' over wine and now keeps his distance.",
-    "first": 21
+    "first": 27
   },
   {
     "name": "The Zero Guard",
@@ -828,6 +828,6 @@
     ],
     "group": "Officials",
     "role": "The highest currently serving four-star military commander in the nation, stationed at the National Supreme Military Command Center.",
-    "first": 9
+    "first": 11
   }
 ]
