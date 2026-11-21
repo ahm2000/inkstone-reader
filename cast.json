@@ -210,5 +210,81 @@
     "group": "Zero Guard",
     "role": "Absolute Order sovereign unit; unrecorded numbers, fully masked in featureless black gear, flat neutral genderless chilled voice. Activated only by Chen Xuan.",
     "first": 30
+  },
+  {
+    "name": "Zhou Zhenhua",
+    "aka": [
+      "Vice Premier Zhou"
+    ],
+    "group": "Capital Leadership",
+    "role": "Vice Premier of the State Council; coordinates the cross-department war room and spots the Yunxi footnote.",
+    "first": 36
+  },
+  {
+    "name": "Qin Zhengguo",
+    "aka": [
+      "General Qin"
+    ],
+    "group": "Capital Leadership",
+    "role": "Four-star General at the Central Military Commission; knows Black Pine Guard, holds their vault line, and leads the CMC closed-door storm.",
+    "first": 37
+  },
+  {
+    "name": "Elder Song",
+    "aka": [],
+    "group": "Capital Leadership",
+    "role": "Ninety-year-old retired Founding Elder in the Western Hills who holds the founding-era override phrase.",
+    "first": 40
+  },
+  {
+    "name": "He Guoliang",
+    "aka": [],
+    "group": "Rivals & Opponents",
+    "role": "Vice Minister of Energy detained by Zero Guard with Zurich clearing ledgers.",
+    "first": 41
+  },
+  {
+    "name": "Fang Qiming",
+    "aka": [],
+    "group": "Rivals & Opponents",
+    "role": "Chairman of Shengyuan Capital captured at Lanshui's private heliport.",
+    "first": 42
+  },
+  {
+    "name": "Lin Zhengde",
+    "aka": [],
+    "group": "Officials",
+    "role": "Compromised Provincial Vice Governor of Lanshui captured alongside Fang Qiming.",
+    "first": 42
+  },
+  {
+    "name": "Xu Wenbin",
+    "aka": [],
+    "group": "Officials",
+    "role": "Qingyan Port Customs Director detained for smuggling rare-earth alloys and stolen schematics.",
+    "first": 43
+  },
+  {
+    "name": "Ma Zhenyu",
+    "aka": [],
+    "group": "Rivals & Opponents",
+    "role": "Senior Colonel in Southern Theater Command logistics who leaked border-garrison rosters for nine years.",
+    "first": 44
+  },
+  {
+    "name": "Gu Chengshan",
+    "aka": [
+      "Premier Gu"
+    ],
+    "group": "Capital Leadership",
+    "role": "Premier of the State Council; signs the Zero Guard handoff slate and convenes the 40-department war room.",
+    "first": 47
+  },
+  {
+    "name": "Gao Zhengyi",
+    "aka": [],
+    "group": "Capital Leadership",
+    "role": "CCDI Deputy Secretary overseeing the 100-trillion-yuan 20-year sovereign theft audit.",
+    "first": 48
   }
 ]
