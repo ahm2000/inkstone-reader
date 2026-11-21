@@ -646,14 +646,14 @@
     "aka": [],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Black Pine delivery rider. Watched the Zero Guard take Yan Tiehu and could not move.",
-    "first": 15
+    "first": 17
   },
   {
     "name": "Number Sixty-eight",
     "aka": [],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Woman at Gong's Noodles, secretly Black Pine. Says the guard grew careless around the Boss.",
-    "first": 15
+    "first": 17
   },
   {
     "name": "Huang Boren",
@@ -683,7 +683,7 @@
     "aka": [],
     "group": "Police and the station",
     "role": "Wei Kun's pregnant wife. Asks him each night whether he had a good day.",
-    "first": 16,
+    "first": 18,
     "later": [
       {
         "ch": 22,
@@ -696,7 +696,7 @@
     "aka": [],
     "group": "Police and the station",
     "role": "Wei Kun's desk partner of ten years. Afraid, and keeps his phone face down.",
-    "first": 17,
+    "first": 19,
     "later": [
       {
         "ch": 17,
@@ -713,7 +713,7 @@
     "aka": [],
     "group": "Old Street neighbors",
     "role": "Nine-year-old granddaughter of Yu Changshun. Stays at his shop on Saturdays.",
-    "first": 18,
+    "first": 20,
     "later": [
       {
         "ch": 19,
@@ -726,7 +726,7 @@
     "aka": [],
     "group": "Police and the station",
     "role": "Six-year-old son of Zhong Hai. Needs heart surgery that costs 80,000 yuan.",
-    "first": 19,
+    "first": 21,
     "later": [
       {
         "ch": 31,
@@ -739,7 +739,7 @@
     "aka": [],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Deputy in the Black Pine van. Reads out the Boss's orders.",
-    "first": 20,
+    "first": 22,
     "later": [
       {
         "ch": 31,
@@ -752,7 +752,7 @@
     "aka": [],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Man in a gray suit from the Black Pine legal desk, sitting at a tea stall.",
-    "first": 20,
+    "first": 22,
     "later": [
       {
         "ch": 22,
@@ -765,7 +765,7 @@
     "aka": [],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Round-faced baker on the bread-truck team. His truck stops the gray van at the arch.",
-    "first": 21,
+    "first": 23,
     "later": [
       {
         "ch": 27,
@@ -780,14 +780,14 @@
     ],
     "group": "Police and the station",
     "role": "City Special Police team leader. Salutes the Black Pine Badge and raids Hongrui's crew.",
-    "first": 22
+    "first": 24
   },
   {
     "name": "Xie Boyuan",
     "aka": [],
     "group": "Hongrui and the underworld",
     "role": "Hongrui's bookkeeper. Slipped away on foot when the crew was arrested.",
-    "first": 23,
+    "first": 25,
     "later": [
       {
         "ch": 26,
@@ -800,7 +800,7 @@
     "aka": [],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Black Pine member who will help Wei Kun's pregnant wife get a proper hospital bed.",
-    "first": 23,
+    "first": 25,
     "later": [
       {
         "ch": 22,
@@ -817,7 +817,7 @@
     "aka": [],
     "group": "City, province and the capital",
     "role": "Night clerk at the Municipal Discipline Commission. Stamps the complaint at 11:44 p.m.",
-    "first": 24
+    "first": 26
   },
   {
     "name": "Kang Guangming",
@@ -826,7 +826,7 @@
     ],
     "group": "County officials",
     "role": "Head of the Discipline Commission. Orders the complaint handled 'by the book. Nothing lost.'",
-    "first": 24,
+    "first": 26,
     "later": [
       {
         "ch": 25,
@@ -841,7 +841,7 @@
     ],
     "group": "Chen's family and friends",
     "role": "Chen Xuan's grandfather. Loud, proud, fishes at a reservoir, and thinks Chen Xuan is too thin.",
-    "first": 20
+    "first": 22
   },
   {
     "name": "Zhao Dehai",
@@ -850,7 +850,7 @@
     ],
     "group": "The elders",
     "role": "Retired Governor of Lanshui, fishing as a quiet old man. Borrows ten yuan for worms.",
-    "first": 26,
+    "first": 28,
     "later": [
       {
         "ch": 25,
@@ -863,14 +863,14 @@
     "aka": [],
     "group": "The elders",
     "role": "Colonel guarding Zhao Dehai with forty men. Sells cabbages as cover.",
-    "first": 26
+    "first": 28
   },
   {
     "name": "Liang Yuhang",
     "aka": [],
     "group": "The elders",
     "role": "Zhao Dehai's young aide. Swept the bank at dawn but missed the bakery van.",
-    "first": 27
+    "first": 29
   },
   {
     "name": "Gao Zhengyi",
@@ -879,7 +879,7 @@
     ],
     "group": "City, province and the capital",
     "role": "Provincial Vice Director. Jumps to attention when Retired Governor Zhao phones.",
-    "first": 27,
+    "first": 29,
     "later": [
       {
         "ch": 27,
@@ -892,7 +892,7 @@
     "aka": [],
     "group": "County officials",
     "role": "Head of the Organization Department. Has not spoken in nine straight meetings.",
-    "first": 27
+    "first": 29
   },
   {
     "name": "Zhou Guilan",
@@ -901,7 +901,7 @@
     ],
     "group": "Chen's family and friends",
     "role": "Chen Xuan's grandmother. Lays a quilt over him and says he is too thin.",
-    "first": 28
+    "first": 30
   },
   {
     "name": "Ma Baoguo",
@@ -910,28 +910,28 @@
     ],
     "group": "County officials",
     "role": "Chief of the Housing Bureau. Called Lu Wenzhe 'Elder Brother' over drinks, now keeps his distance.",
-    "first": 29
+    "first": 31
   },
   {
     "name": "Pang Jinquan",
     "aka": [],
     "group": "County officials",
     "role": "Gate guard at the county compound. Buys buns from Number Seventy-three every morning.",
-    "first": 29
+    "first": 31
   },
   {
     "name": "Pu Jian",
     "aka": [],
     "group": "City, province and the capital",
     "role": "Provincial Organization Department officer. Opens Chen Xuan's file for Tao Shu and is taken away.",
-    "first": 30
+    "first": 32
   },
   {
     "name": "Ge Qinghe",
     "aka": [],
     "group": "Office at Hengxin",
     "role": "Sixty-one-year-old Hengxin cleaner who gives Chen Xuan a warm tea egg.",
-    "first": 30,
+    "first": 32,
     "later": [
       {
         "ch": 29,
@@ -944,14 +944,14 @@
     "aka": [],
     "group": "Office at Hengxin",
     "role": "Youngest clerk on the twelfth floor. Works out the tea price on his phone.",
-    "first": 31
+    "first": 33
   },
   {
     "name": "Hao Jingshan",
     "aka": [],
     "group": "The Black Pine Guard (the hidden guard)",
     "role": "Tea-stall owner on Binjiang Road. Secretly serves the Boss, selling him rare tea for thirty yuan.",
-    "first": 31
+    "first": 33
   },
   {
     "name": "Qi Zihao",
@@ -960,7 +960,7 @@
     ],
     "group": "City, province and the capital",
     "role": "Wealthy young man with a Silver hotel card. Zhang Pengfei borrows it.",
-    "first": 32,
+    "first": 34,
     "later": [
       {
         "ch": 32,
@@ -973,7 +973,7 @@
     "aka": [],
     "group": "Police and the station",
     "role": "Instructor of Old Street station. Back in charge, with Wei Kun as his deputy.",
-    "first": 24
+    "first": 26
   },
   {
     "name": "Dai Wenbin",
@@ -982,21 +982,21 @@
     ],
     "group": "City, province and the capital",
     "role": "General Manager of the Yunhai Grand Hotel. Runs to bow to the black 01 card.",
-    "first": 34
+    "first": 36
   },
   {
     "name": "Xia Mengyao",
     "aka": [],
     "group": "City, province and the capital",
     "role": "Young front-desk clerk who presses the red button. Chen Xuan protects her job.",
-    "first": 34
+    "first": 36
   },
   {
     "name": "Qi Jiancheng",
     "aka": [],
     "group": "City, province and the capital",
     "role": "Qi Zihao's father. Checks Chen Xuan's file and meets 'PERMISSION DENIED'.",
-    "first": 34
+    "first": 36
   },
   {
     "name": "Deng Weidong",
@@ -1014,7 +1014,7 @@
     ],
     "group": "Chen's family and friends",
     "role": "Thirteen-year-old girl who waits outside a noodle shop and claims her father works at Tiancheng.",
-    "first": 37,
+    "first": 39,
     "later": [
       {
         "ch": 42,
@@ -1029,7 +1029,7 @@
     ],
     "group": "The elders",
     "role": "Sixty-six-year-old Hongshi villager, loud and round, who shames Xinhe's district head.",
-    "first": 39
+    "first": 41
   },
   {
     "name": "Pei Daqing",
@@ -1038,14 +1038,14 @@
     ],
     "group": "The elders",
     "role": "Seventy-two-year-old Hongshi villager, stone-faced, who stares down liars and vows to end Tang Xiaoyu's lie.",
-    "first": 39
+    "first": 41
   },
   {
     "name": "Dong Weimin",
     "aka": [],
     "group": "The elders",
     "role": "Dong Yuzhen's grandson, who admits he moved the stake line to give her more room.",
-    "first": 39
+    "first": 41
   },
   {
     "name": "Xin Jun",
@@ -1054,7 +1054,7 @@
     ],
     "group": "County officials",
     "role": "Xinhe District head whose report claimed every ditch was concrete; Dong Yuzhen calls it false.",
-    "first": 39
+    "first": 41
   },
   {
     "name": "Shen Jinbao",
@@ -1063,7 +1063,7 @@
     ],
     "group": "Hongrui and the underworld",
     "role": "Owner of Tiancheng Demolition who paid to hide a worker's death.",
-    "first": 40,
+    "first": 42,
     "later": [
       {
         "ch": 39,
@@ -1076,7 +1076,7 @@
     "aka": [],
     "group": "Hongrui and the underworld",
     "role": "Crew boss who took 600,000 yuan to bury a worker's death with a fake leave form.",
-    "first": 40,
+    "first": 42,
     "later": [
       {
         "ch": 39,
@@ -1089,7 +1089,7 @@
     "aka": [],
     "group": "City, province and the capital",
     "role": "Provincial Labor Department night clerk who finds an anonymous new rule on the fax.",
-    "first": 40
+    "first": 42
   },
   {
     "name": "Xu Zhongping",
@@ -1098,28 +1098,28 @@
     ],
     "group": "City, province and the capital",
     "role": "Jiang Lixin's director, woken by a call, who asks him to read the rule again.",
-    "first": 40
+    "first": 42
   },
   {
     "name": "Cai Lan",
     "aka": [],
     "group": "County officials",
     "role": "Labor Inspection officer who serves the new rule on Tiancheng Demolition.",
-    "first": 41
+    "first": 43
   },
   {
     "name": "Gu Zhenyu",
     "aka": [],
     "group": "County officials",
     "role": "Labor Inspection officer who walks into Tiancheng with Cai Lan.",
-    "first": 41
+    "first": 43
   },
   {
     "name": "Rong Xiaomei",
     "aka": [],
     "group": "Hongrui and the underworld",
     "role": "Fifty-four-year-old Tiancheng accountant who brings the real ledger to the lawyer.",
-    "first": 41
+    "first": 43
   },
   {
     "name": "Yin Hongwei",
@@ -1128,28 +1128,28 @@
     ],
     "group": "County officials",
     "role": "Yunxi Labor Bureau chief who carries the anonymous rule to the Party Secretary.",
-    "first": 41
+    "first": 43
   },
   {
     "name": "Hou Tianyou",
     "aka": [],
     "group": "County officials",
     "role": "Young clerk who asks which office issued the rule, then is told to write 'received'.",
-    "first": 41
+    "first": 43
   },
   {
     "name": "Lian Cheng",
     "aka": [],
     "group": "Hongrui and the underworld",
     "role": "Huang Boren's mild man, who brings Dong Haisheng a steel flask of heart-drug tea.",
-    "first": 42
+    "first": 44
   },
   {
     "name": "Hua Qiang",
     "aka": [],
     "group": "Hongrui and the underworld",
     "role": "Dong Haisheng's nine-year driver, who lets Lian Cheng upstairs and then confesses.",
-    "first": 42
+    "first": 44
   },
   {
     "name": "Ms. Ouyang",
@@ -1158,7 +1158,7 @@
     ],
     "group": "County officials",
     "role": "Civil Affairs officer who signs Tang Xiaoyu into the Chens' temporary guardianship.",
-    "first": 44
+    "first": 46
   },
   {
     "name": "Qin Yuhan",
@@ -1167,13 +1167,13 @@
     ],
     "group": "City, province and the capital",
     "role": "Haiyue group guest, twenty-eight, who reads Chen Xuan's file and asks to lunch with him.",
-    "first": 43
+    "first": 45
   },
   {
     "name": "Jin Ke",
     "aka": [],
     "group": "City, province and the capital",
     "role": "Qin Yuhan's assistant, who brings her Chen Xuan's file.",
-    "first": 43
+    "first": 45
   }
 ]
