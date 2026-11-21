@@ -1175,5 +1175,44 @@
     "group": "City, province and the capital",
     "role": "Qin Yuhan's assistant, who brings her Chen Xuan's file.",
     "first": 45
+  },
+  {
+    "name": "Qin Zhengming",
+    "aka": [
+      "Old Man Qin"
+    ],
+    "group": "Allies & Business",
+    "role": "Retired patriarch of Haiyue Hospitality and Property Group and old friend of Zhao Dehai.",
+    "first": 49
+  },
+  {
+    "name": "Zhou Mingcheng",
+    "aka": [],
+    "group": "Rivals & Opponents",
+    "role": "Arrogant heir to Shenghua Maritime Group and rejected suitor of Qin Yuhan.",
+    "first": 47
+  },
+  {
+    "name": "Zhou Guodong",
+    "aka": [],
+    "group": "Rivals & Opponents",
+    "role": "Chairman of Shenghua Maritime Group who tries to choke Hengxin Logistics at Qingyan Port.",
+    "first": 52
+  },
+  {
+    "name": "Zhao Mingyuan",
+    "aka": [],
+    "group": "Officials",
+    "role": "Proud young grandson of Retired Governor Zhao Dehai, humbled at Qingshan Reservoir.",
+    "first": 57
+  },
+  {
+    "name": "Li Weiming",
+    "aka": [
+      "Marcus Vance"
+    ],
+    "group": "Rivals & Opponents",
+    "role": "Dual-passport corporate fixer sent by the overseas espionage syndicate to probe Qingyan City.",
+    "first": 63
   }
 ]
