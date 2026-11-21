@@ -1214,5 +1214,28 @@
     "group": "Rivals & Opponents",
     "role": "Dual-passport corporate fixer sent by the overseas espionage syndicate to probe Qingyan City.",
     "first": 63
+  },
+  {
+    "name": "Song Baisheng",
+    "aka": [],
+    "group": "Rivals & Opponents",
+    "role": "Chairman of Wanfeng Freight Group, backed by offshore Northern Ledger funds to route Lanshui port data to Zurich.",
+    "first": 69
+  },
+  {
+    "name": "Wu Zhenbang",
+    "aka": [
+      "Deputy Governor Wu"
+    ],
+    "group": "Officials",
+    "role": "Compromised Deputy Provincial Governor of Lanshui who backs Wanfeng Freight's rigged consolidation plan.",
+    "first": 70
+  },
+  {
+    "name": "Liu Guoliang",
+    "aka": [],
+    "group": "Chen's family and friends",
+    "role": "Snobbish distant relative at Grandmother Zhou Guilan's 81st birthday in Hongshi Village.",
+    "first": 80
   }
 ]
