@@ -280,7 +280,7 @@
     "aka": [
       "Old Ding"
     ],
-    "group": "The Detail (the hidden guard)",
+    "group": "The Black Pine Guard (the hidden guard)",
     "role": "Secret guard of the hero, posing as the station's records clerk.",
     "first": 3,
     "later": [
@@ -295,8 +295,8 @@
     "aka": [
       "Chief An"
     ],
-    "group": "The Detail (the hidden guard)",
-    "role": "Hidden Detail chief. Receives Chen Xuan's text orders by phone.",
+    "group": "The Black Pine Guard (the hidden guard)",
+    "role": "Hidden Black Pine Guard chief. Receives Chen Xuan's text orders by phone.",
     "first": 3,
     "later": [
       {
@@ -416,8 +416,8 @@
     "aka": [
       "Attorney Ye"
     ],
-    "group": "The Detail (the hidden guard)",
-    "role": "Attorney from the Detail's law firm, sitting at a tea stall with a briefcase.",
+    "group": "The Black Pine Guard (the hidden guard)",
+    "role": "Attorney from the Black Pine Guard's law firm, sitting at a tea stall with a briefcase.",
     "first": 5
   },
   {
@@ -450,8 +450,8 @@
     "aka": [
       "Twenty-three"
     ],
-    "group": "The Detail (the hidden guard)",
-    "role": "Secret Detail member who runs Gong's Noodles as a watch post on Old Street.",
+    "group": "The Black Pine Guard (the hidden guard)",
+    "role": "Secret Black Pine Guard member who runs Gong's Noodles as a watch post on Old Street.",
     "first": 6
   },
   {
@@ -459,7 +459,7 @@
     "aka": [
       "Auntie Tian"
     ],
-    "group": "The Detail (the hidden guard)",
+    "group": "The Black Pine Guard (the hidden guard)",
     "role": "Works with Gong Yi at Gong's Noodles. Shares his secret watch.",
     "first": 6
   },
@@ -542,7 +542,7 @@
       "Captain Tang",
       "Captain"
     ],
-    "group": "The Detail (the hidden guard)",
+    "group": "The Black Pine Guard (the hidden guard)",
     "role": "Captain of the hidden van team, based in a flower-delivery van.",
     "first": 9
   },
@@ -551,7 +551,7 @@
     "aka": [
       "Deputy Pei"
     ],
-    "group": "The Detail (the hidden guard)",
+    "group": "The Black Pine Guard (the hidden guard)",
     "role": "Deputy in Captain Tang's hidden van team. Passes on Chief An's orders.",
     "first": 9
   },
@@ -560,7 +560,7 @@
     "aka": [
       "Fatty Cao"
     ],
-    "group": "The Detail (the hidden guard)",
+    "group": "The Black Pine Guard (the hidden guard)",
     "role": "Round baker. His bread truck crashes a hired van at the river arch.",
     "first": 10
   },
@@ -569,7 +569,7 @@
     "aka": [
       "Little Ke"
     ],
-    "group": "The Detail (the hidden guard)",
+    "group": "The Black Pine Guard (the hidden guard)",
     "role": "Delivery rider who sat beside Chen Xuan in the lobby, then reported to Gong Yi.",
     "first": 10
   },
@@ -610,8 +610,8 @@
       "Bai",
       "Number Eleven"
     ],
-    "group": "The Detail (the hidden guard)",
-    "role": "Number Eleven, the Detail's lawyer, with silver-rimmed glasses.",
+    "group": "The Black Pine Guard (the hidden guard)",
+    "role": "Number Eleven, the Black Pine Guard's lawyer, with silver-rimmed glasses.",
     "first": 12
   },
   {
@@ -688,7 +688,7 @@
       "Number Nine",
       "Nine"
     ],
-    "group": "The Detail (the hidden guard)",
+    "group": "The Black Pine Guard (the hidden guard)",
     "role": "Hidden guard codenamed Number Nine. Carries the Black Pine badge that commands elite teams.",
     "first": 14
   },
@@ -720,7 +720,7 @@
     "aka": [
       "Auntie Ge"
     ],
-    "group": "The Detail (the hidden guard)",
+    "group": "The Black Pine Guard (the hidden guard)",
     "role": "Hengxin cleaner. Secretly Number Fourteen of the Inner Ring.",
     "first": 17
   },
@@ -747,7 +747,7 @@
       "Baker Shan",
       "Brother Shan"
     ],
-    "group": "The Detail (the hidden guard)",
+    "group": "The Black Pine Guard (the hidden guard)",
     "role": "Baker at the Golden Wheat truck. Sends messages to Chief An under his counter.",
     "first": 16
   },
