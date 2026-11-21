@@ -1,68 +1,815 @@
 [
-{"name":"Chen Xuan","aka":["Xuan","Supervisor Chen"],"group":"Chen's family and friends","role":"Our hero. A calm, lazy-looking operations supervisor at Hengxin Logistics who leaves at 4:55.","first":1},
-{"name":"Hu Dewei","aka":["Manager Hu"],"group":"Office at Hengxin","role":"Department Manager at Hengxin Logistics, on the twelfth floor. Carries a huge mug.","first":1},
-{"name":"Sister Pan","aka":[],"group":"Office at Hengxin","role":"Chatty coworker who praises whoever seems to be winning, then switches sides.","first":1},
-{"name":"Zhang Pengfei","aka":["Pengfei"],"group":"Office at Hengxin","role":"Coworker in a pressed suit who works late nights hoping for a promotion.","first":1,"later":[{"ch":17,"role":"Lost the quarterly top score by 0.2 points; asks for a recount."},{"ch":18,"role":"His signature sits on the port invoice. Lost the recount."}]},
-{"name":"Sun Haoran","aka":["General Manager Sun"],"group":"Office at Hengxin","role":"General Manager of Hengxin Logistics. Visits the twelfth floor about twice a year.","first":1},
-{"name":"Liu Meifang","aka":["Mom"],"group":"Chen's family and friends","role":"Chen Xuan's mother in Yunxi. Loud, worried, and always feeding him pork-rib soup.","first":1},
-{"name":"Chen Mingde","aka":["Second Uncle","Old Chen"],"group":"Chen's family and friends","role":"Chen Xuan's Second Uncle. Runs a hardware shop on Old Street. Arrested that afternoon.","first":1,"later":[{"ch":13,"role":"Freed by Director Mai, who apologized to him."}]},
-{"name":"Wu Lanying","aka":["Second Aunt"],"group":"Chen's family and friends","role":"Second Aunt, Chen Mingde's wife. Shaken and crying after her husband's arrest.","first":2},
-{"name":"Chen Jianguo","aka":["Dad"],"group":"Chen's family and friends","role":"Chen Xuan's father. Proud, hot-tempered, and slapped in the street on Old Street.","first":2},
-{"name":"Chen Hao","aka":[],"group":"Chen's family and friends","role":"Chen Xuan's brother. Wears an earbud and teases him about sleeping.","first":2},
-{"name":"Chen Yuan","aka":["Yuan"],"group":"Chen's family and friends","role":"Chen Xuan's sister. Teaches junior high and scolds him bluntly.","first":2},
-{"name":"Wang Lei","aka":[],"group":"Chen's family and friends","role":"Old classmate who quietly paid for Chen Xuan's meals in senior year. Now drives a tricycle.","first":2},
-{"name":"Cheng Biao","aka":["Director Cheng","Cheng"],"group":"Police and the station","role":"Police official at Old Street station. Brother Hu calls him his uncle.","first":2,"later":[{"ch":3,"role":"Second in command of county police, and runs Old Street station. Bullies juniors."},{"ch":13,"role":"Suspended from every post by Director Mai. Taken away in a car."}]},
-{"name":"Brother Hu","aka":["Hu"],"group":"Hongrui and the underworld","role":"Leads Hongrui's 'security team', a crew of eight who collect debts and break things.","first":2,"later":[{"ch":11,"role":"Arrested in the Special Police raid; cried for his uncle."}]},
-{"name":"Big Tooth","aka":[],"group":"Hongrui and the underworld","role":"Hongrui security man with big front teeth. Works for Brother Hu.","first":2,"later":[{"ch":8,"role":"Brought Old Yu a 20,000 yuan envelope and hinted at harm to Ning."}]},
-{"name":"Thin Monkey","aka":[],"group":"Hongrui and the underworld","role":"Brother Hu's crewman. Thin, and cackles at every joke.","first":2,"later":[{"ch":10,"role":"Swung an iron pipe at Old Yu's sign. Hit by a flying iron shoe last."}]},
-{"name":"Meng Xiaofang","aka":[],"group":"Old Street neighbors","role":"Bun-stall owner on Old Street. Saw the slap and was too scared to speak.","first":2,"later":[{"ch":4,"role":"Joined the thumbprint pledge and promised to tell what she saw."}]},
-{"name":"Old Yu","aka":["Uncle Yu"],"group":"Old Street neighbors","role":"Tailor on Old Street who stood frozen while Chen Jianguo was slapped.","first":2,"later":[{"ch":4,"role":"Saw the 2:03 paint-shelf fall. Joined the thumbprint pledge."},{"ch":10,"role":"Wrote a signed statement on the 2:03 fall and gave it to Chen Xuan."}]},
-{"name":"Wei Kun","aka":["Officer Wei"],"group":"Police and the station","role":"Duty officer at Old Street station, tired, with twelve years on the job.","first":3,"later":[{"ch":7,"role":"Refused Cheng's false time and wrote the true hour, 7:50 a.m."},{"ch":18,"role":"Named Acting Deputy Chief of Old Street Station."}]},
-{"name":"Lei Bo","aka":[],"group":"Police and the station","role":"Young officer who laughs one second before Cheng Biao does. Mocks complaints.","first":3,"later":[{"ch":6,"role":"Took a 5,000 yuan envelope from Brother Hu for his silence."},{"ch":13,"role":"Denied knowing Cheng Biao once Director Mai arrived."}]},
-{"name":"Zhou Pingan","aka":[],"group":"Police and the station","role":"Nineteen-year-old auxiliary at the station door. Cheng Biao knocked his cap off.","first":3},
-{"name":"Mu","aka":[],"group":"Police and the station","role":"Big night driver at Old Street station. Wants to flatten Chen Xuan's tires.","first":3},
-{"name":"Old Ding","aka":[],"group":"The Detail (the hidden guard)","role":"Secret guard of the hero, posing as the station's records clerk.","first":3,"later":[{"ch":9,"role":"Spilled Lei Bo's tea and saved the poison tube as proof."}]},
-{"name":"An Zhiyuan","aka":["Chief An"],"group":"The Detail (the hidden guard)","role":"Hidden Detail chief. Receives Chen Xuan's text orders by phone.","first":3,"later":[{"ch":5,"role":"Commands the 214 hidden men watching Old Street."}]},
-{"name":"Fan Weiguo","aka":["Secretary Fan","Secretary"],"group":"County officials","role":"County Party Secretary and top official in Yunxi. Speaks softly and never shouts.","first":4,"later":[{"ch":15,"role":"Strips Lu of the Old Street project; faces Tao's push for files."}]},
-{"name":"Tao Shu","aka":["Magistrate Tao"],"group":"County officials","role":"County Magistrate who runs the county government. Only the Party Secretary ranks above him.","first":4,"later":[{"ch":15,"role":"Has waited eight years for Fan's chair. Offers to clean up Old Street files."},{"ch":16,"role":"Secretly asked for a check on Chen Xuan, then ordered silence."}]},
-{"name":"Lu Wenzhe","aka":["Magistrate Lu"],"group":"County officials","role":"Executive Deputy Magistrate. Holds the county's money and takes 'service fees'.","first":4,"later":[{"ch":15,"role":"Removed from the Old Street project. Office records sealed."}]},
-{"name":"Dong Haisheng","aka":["Boss Dong"],"group":"Hongrui and the underworld","role":"Head of Hongrui Real Estate. Pays officials per signature to clear Old Street.","first":4,"later":[{"ch":15,"role":"Caught with the ledgers. Ordered to stay in Yunxi; passport taken."}]},
-{"name":"Gu Min","aka":[],"group":"County officials","role":"Aide to Executive Deputy Magistrate Lu, who watches the room quietly.","first":4,"later":[{"ch":15,"role":"Secretly passes Lu's words to Dong and hides his notebook from Lu."},{"ch":16,"role":"Now carries Tao's briefcase and keeps Tao's secrets."}]},
-{"name":"Cobbler Sun","aka":[],"group":"Old Street neighbors","role":"Cobbler on Old Street. Joined the thumbprint pledge against Hongrui.","first":4,"later":[{"ch":10,"role":"Threw an iron shoe last at Thin Monkey to defend Old Yu's sign."}]},
-{"name":"Old Lady Fang","aka":[],"group":"Old Street neighbors","role":"Vegetable seller on Old Street. Once told Chen Mingde to sign, then changed her mind.","first":4},
-{"name":"Ye Tong","aka":["Attorney Ye"],"group":"The Detail (the hidden guard)","role":"Attorney from the Detail's law firm, sitting at a tea stall with a briefcase.","first":5},
-{"name":"Shen Wei","aka":["Dr. Shen"],"group":"City and province","role":"Heart specialist who swapped into the night shift at People's Hospital.","first":5},
-{"name":"Head Nurse Qiao","aka":["Nurse Qiao"],"group":"City and province","role":"Head nurse at People's Hospital. Keeps Chen Mingde's pill record on her desk.","first":5,"later":[{"ch":13,"role":"Met Su Min by a 'chance' bump at a pharmacy, arranging help for Wei Kun's family."}]},
-{"name":"Gong Yi","aka":["Twenty-three"],"group":"The Detail (the hidden guard)","role":"Secret Detail member who runs Gong's Noodles as a watch post on Old Street.","first":6},
-{"name":"Auntie Ma","aka":[],"group":"The Detail (the hidden guard)","role":"Works with Gong Yi at Gong's Noodles. Shares his secret watch.","first":6},
-{"name":"Chairman Huang","aka":["Chairman"],"group":"Hongrui and the underworld","role":"Soft-voiced lender who charges Dong 2% a month. Threatens him over his loans.","first":6,"later":[{"ch":15,"role":"Promises to send someone to sit with Dong after the ledger raid."}]},
-{"name":"Zhong Hai","aka":[],"group":"Police and the station","role":"Wei Kun's desk neighbor and tea partner for ten years.","first":7,"later":[{"ch":9,"role":"Sold Wei Kun's true hour to Lei Bo for a 60,000 yuan loan."}]},
-{"name":"Su Min","aka":[],"group":"Police and the station","role":"Wei Kun's pregnant wife. Asks him every night if he had a good day.","first":7,"later":[{"ch":13,"role":"Nurse Qiao 'bumped into' her. Family gets a spring-ward bed and a free flat."}]},
-{"name":"Ning","aka":["Nine-year-old Ning"],"group":"Old Street neighbors","role":"Nine-year-old granddaughter of Old Yu. Does homework at his shop on Saturdays.","first":8,"later":[{"ch":10,"role":"Scraped her palm in the truck crash, then saw her grandfather's sign smashed."}]},
-{"name":"Tiantian","aka":[],"group":"Police and the station","role":"Six-year-old son of Zhong Hai. Needs a heart operation the family cannot pay for.","first":9,"later":[{"ch":18,"role":"Has a fourth-floor hospital bed; surgery paid by a fake charity fund."}]},
-{"name":"Captain Tang","aka":["Captain"],"group":"The Detail (the hidden guard)","role":"Captain of the hidden van team, based in a flower-delivery van.","first":9},
-{"name":"Deputy Pei","aka":[],"group":"The Detail (the hidden guard)","role":"Deputy in Captain Tang's hidden van team. Passes on Chief An's orders.","first":9},
-{"name":"Fatty Cao","aka":[],"group":"The Detail (the hidden guard)","role":"Round baker. His bread truck crashes a hired van at the river arch.","first":10},
-{"name":"Little Ke","aka":[],"group":"The Detail (the hidden guard)","role":"Delivery rider who sat beside Chen Xuan in the lobby, then reported to Gong Yi.","first":10},
-{"name":"Bao Zhen","aka":["Team Leader Bao"],"group":"City and province","role":"City Special Police team leader. Salutes the Black Pine badge without being told.","first":11},
-{"name":"Abacus","aka":[],"group":"Hongrui and the underworld","role":"Bookkeeper in Brother Hu's crew who escaped the raid on foot.","first":11,"later":[{"ch":15,"role":"Caught holding the debt book; blames Dong for the fire plan."}]},
-{"name":"Qian Yu","aka":[],"group":"City and province","role":"Night clerk at the Municipal Discipline Commission. Took Bai's nineteen-page complaint.","first":12},
-{"name":"Bai Qingzhou","aka":["Bai","Number Eleven"],"group":"The Detail (the hidden guard)","role":"Number Eleven, the Detail's lawyer, with silver-rimmed glasses.","first":12},
-{"name":"Mai Zhenhua","aka":["Director Mai"],"group":"Police and the station","role":"Yunxi Police Director and Deputy County Magistrate. Suspends Cheng Biao at dawn.","first":13,"later":[{"ch":16,"role":"Ordered to bring the original detention notice to the inspectors."}]},
-{"name":"Xiaoqing","aka":[],"group":"Chen's family and friends","role":"Chen Mingde's daughter, a student in Wuhan. Her graduation is coming up.","first":13},
-{"name":"Chen Fugen","aka":["Grandpa","Grandfather Chen Fugen"],"group":"Chen's family and friends","role":"Chen Xuan's grandfather, age 78. Loud, proud, and fishes at a reservoir.","first":14},
-{"name":"Zhao Dehai","aka":["Old Zhao","Grandpa Zhao"],"group":"The elders","role":"Retired Governor of Lanshui. Village thinks he was only a clerk.","first":14},
-{"name":"Ren Gang","aka":["Colonel Ren"],"group":"The elders","role":"Colonel who guards Old Zhao with forty men. Sells cabbages as a cover.","first":14},
-{"name":"Gao Zhengyi","aka":["Vice Director Gao"],"group":"City and province","role":"Provincial Vice Director. Jumps to attention when Retired Governor Zhao calls.","first":14,"later":[{"ch":16,"role":"Leads the provincial inspection team in Yunxi. Refuses gifts and cancels the banquet."}]},
-{"name":"Mo Lin","aka":["Number Nine","Nine"],"group":"The Detail (the hidden guard)","role":"Hidden guard codenamed Number Nine. Carries the Black Pine badge that commands elite teams.","first":14},
-{"name":"Kang Guangming","aka":["Secretary Kang"],"group":"County officials","role":"Gray Discipline Commission man who can investigate anyone, even the Secretary.","first":15},
-{"name":"Shao Wenhua","aka":[],"group":"County officials","role":"Organization Department head who decides promotions and rarely speaks.","first":15},
-{"name":"Lin Dong","aka":[],"group":"Office at Hengxin","role":"Youngest clerk on the twelfth floor. Works out prices on his phone calculator.","first":17},
-{"name":"Auntie Lu","aka":[],"group":"The Detail (the hidden guard)","role":"Hengxin cleaner. Secretly Number Fourteen of the Inner Ring.","first":17},
-{"name":"Old Hao","aka":["Uncle Hao"],"group":"The elders","role":"Tea-stall owner on Binjiang Road. Holds a high rank, sells rare tea for thirty yuan.","first":17},
-{"name":"Wu Jian","aka":[],"group":"City and province","role":"Provincial Organization Department officer. Tao asked him to check Chen Xuan.","first":16},
-{"name":"Baker Shan","aka":["Brother Shan"],"group":"The Detail (the hidden guard)","role":"Baker at the Golden Wheat truck. Sends messages to Chief An under his counter.","first":16},
-{"name":"Fang Zihao","aka":["Young Master Fang","Brother Fang"],"group":"City and province","role":"Wealthy young man with a Silver hotel card. Loud and boastful.","first":18,"later":[{"ch":19,"role":"Lent Zhang his card and car; shouted when the card was refused."}]},
-{"name":"Dai Wenbin","aka":["General Manager Dai"],"group":"City and province","role":"General Manager of Yunhai Grand Hotel. Has secret orders to serve one guest without questions.","first":19},
-{"name":"Fang Jiancheng","aka":[],"group":"City and province","role":"Father of Fang Zihao. His son says one call from him can ruin a hotel.","first":19}
+  {
+    "name": "Chen Xuan",
+    "aka": [
+      "Xuan",
+      "Supervisor Chen",
+      "Boss"
+    ],
+    "group": "Chen's family and friends",
+    "role": "Our hero. A calm, lazy-looking operations supervisor at Hengxin Logistics who leaves at 4:55.",
+    "first": 1
+  },
+  {
+    "name": "Hu Dewei",
+    "aka": [
+      "Manager Hu"
+    ],
+    "group": "Office at Hengxin",
+    "role": "Department Manager at Hengxin Logistics, on the twelfth floor. Carries a huge mug.",
+    "first": 1
+  },
+  {
+    "name": "Pan Xiulan",
+    "aka": [
+      "Sister Pan"
+    ],
+    "group": "Office at Hengxin",
+    "role": "Chatty coworker who praises whoever seems to be winning, then switches sides.",
+    "first": 1
+  },
+  {
+    "name": "Zhang Pengfei",
+    "aka": [
+      "Pengfei"
+    ],
+    "group": "Office at Hengxin",
+    "role": "Coworker in a pressed suit who works late nights hoping for a promotion.",
+    "first": 1,
+    "later": [
+      {
+        "ch": 17,
+        "role": "Lost the quarterly top score by 0.2 points; asks for a recount."
+      },
+      {
+        "ch": 18,
+        "role": "His signature sits on the port invoice. Lost the recount."
+      }
+    ]
+  },
+  {
+    "name": "Sun Haoran",
+    "aka": [
+      "General Manager Sun"
+    ],
+    "group": "Office at Hengxin",
+    "role": "General Manager of Hengxin Logistics. Visits the twelfth floor about twice a year.",
+    "first": 1
+  },
+  {
+    "name": "Liu Meifang",
+    "aka": [
+      "Mom"
+    ],
+    "group": "Chen's family and friends",
+    "role": "Chen Xuan's mother in Yunxi. Loud, worried, and always feeding him pork-rib soup.",
+    "first": 1
+  },
+  {
+    "name": "Chen Mingde",
+    "aka": [
+      "Second Uncle",
+      "Old Chen"
+    ],
+    "group": "Chen's family and friends",
+    "role": "Chen Xuan's Second Uncle. Runs a hardware shop on Old Street. Arrested that afternoon.",
+    "first": 1,
+    "later": [
+      {
+        "ch": 13,
+        "role": "Freed by Director Mai, who apologized to him."
+      }
+    ]
+  },
+  {
+    "name": "Wu Lanying",
+    "aka": [
+      "Second Aunt"
+    ],
+    "group": "Chen's family and friends",
+    "role": "Second Aunt, Chen Mingde's wife. Shaken and crying after her husband's arrest.",
+    "first": 2
+  },
+  {
+    "name": "Chen Jianguo",
+    "aka": [
+      "Dad"
+    ],
+    "group": "Chen's family and friends",
+    "role": "Chen Xuan's father. Proud, hot-tempered, and slapped in the street on Old Street.",
+    "first": 2
+  },
+  {
+    "name": "Chen Hao",
+    "aka": [],
+    "group": "Chen's family and friends",
+    "role": "Chen Xuan's brother. Wears an earbud and teases him about sleeping.",
+    "first": 2
+  },
+  {
+    "name": "Chen Yuan",
+    "aka": [
+      "Yuan"
+    ],
+    "group": "Chen's family and friends",
+    "role": "Chen Xuan's sister. Teaches junior high and scolds him bluntly.",
+    "first": 2
+  },
+  {
+    "name": "Wang Lei",
+    "aka": [],
+    "group": "Chen's family and friends",
+    "role": "Old classmate who quietly paid for Chen Xuan's meals in senior year. Now drives a tricycle.",
+    "first": 2
+  },
+  {
+    "name": "Cheng Biao",
+    "aka": [
+      "Director Cheng",
+      "Cheng"
+    ],
+    "group": "Police and the station",
+    "role": "Police official at Old Street station. Brother Tie calls him his uncle.",
+    "first": 2,
+    "later": [
+      {
+        "ch": 3,
+        "role": "Second in command of county police, and runs Old Street station. Bullies juniors."
+      },
+      {
+        "ch": 13,
+        "role": "Suspended from every post by Director Mai. Taken away in a car."
+      }
+    ]
+  },
+  {
+    "name": "Yan Tiehu",
+    "aka": [
+      "Brother Tie",
+      "Hu"
+    ],
+    "group": "Hongrui and the underworld",
+    "role": "Leads Hongrui's 'security team', a crew of eight who collect debts and break things.",
+    "first": 2,
+    "later": [
+      {
+        "ch": 11,
+        "role": "Arrested in the Special Police raid; cried for his uncle."
+      }
+    ]
+  },
+  {
+    "name": "Niu Dali",
+    "aka": [
+      "Big Tooth"
+    ],
+    "group": "Hongrui and the underworld",
+    "role": "Hongrui security man with big front teeth. Works for Brother Tie.",
+    "first": 2,
+    "later": [
+      {
+        "ch": 8,
+        "role": "Brought Old Yu a 20,000 yuan envelope and hinted at harm to Ning."
+      }
+    ]
+  },
+  {
+    "name": "Yao Xiaolong",
+    "aka": [
+      "Thin Monkey"
+    ],
+    "group": "Hongrui and the underworld",
+    "role": "Brother Tie's crewman. Thin, and cackles at every joke.",
+    "first": 2,
+    "later": [
+      {
+        "ch": 10,
+        "role": "Swung an iron pipe at Old Yu's sign. Hit by a flying iron shoe last."
+      }
+    ]
+  },
+  {
+    "name": "Meng Xiaofang",
+    "aka": [
+      "Auntie Meng"
+    ],
+    "group": "Old Street neighbors",
+    "role": "Bun-stall owner on Old Street. Saw the slap and was too scared to speak.",
+    "first": 2,
+    "later": [
+      {
+        "ch": 4,
+        "role": "Joined the thumbprint pledge and promised to tell what she saw."
+      }
+    ]
+  },
+  {
+    "name": "Yu Changshun",
+    "aka": [
+      "Old Yu",
+      "Uncle Yu"
+    ],
+    "group": "Old Street neighbors",
+    "role": "Tailor on Old Street who stood frozen while Chen Jianguo was slapped.",
+    "first": 2,
+    "later": [
+      {
+        "ch": 4,
+        "role": "Saw the 2:03 paint-shelf fall. Joined the thumbprint pledge."
+      },
+      {
+        "ch": 10,
+        "role": "Wrote a signed statement on the 2:03 fall and gave it to Chen Xuan."
+      }
+    ]
+  },
+  {
+    "name": "Wei Kun",
+    "aka": [
+      "Officer Wei"
+    ],
+    "group": "Police and the station",
+    "role": "Duty officer at Old Street station, tired, with twelve years on the job.",
+    "first": 3,
+    "later": [
+      {
+        "ch": 7,
+        "role": "Refused Cheng's false time and wrote the true hour, 7:50 a.m."
+      },
+      {
+        "ch": 18,
+        "role": "Named Acting Deputy Chief of Old Street Station."
+      }
+    ]
+  },
+  {
+    "name": "Lei Bo",
+    "aka": [],
+    "group": "Police and the station",
+    "role": "Young officer who laughs one second before Cheng Biao does. Mocks complaints.",
+    "first": 3,
+    "later": [
+      {
+        "ch": 6,
+        "role": "Took a 5,000 yuan envelope from Brother Tie for his silence."
+      },
+      {
+        "ch": 13,
+        "role": "Denied knowing Cheng Biao once Director Mai arrived."
+      }
+    ]
+  },
+  {
+    "name": "Zhou Pingan",
+    "aka": [],
+    "group": "Police and the station",
+    "role": "Nineteen-year-old auxiliary at the station door. Cheng Biao knocked his cap off.",
+    "first": 3
+  },
+  {
+    "name": "Mu Yongsheng",
+    "aka": [
+      "Mu"
+    ],
+    "group": "Police and the station",
+    "role": "Big night driver at Old Street station. Wants to flatten Chen Xuan's tires.",
+    "first": 3
+  },
+  {
+    "name": "Ding Shouyi",
+    "aka": [
+      "Old Ding"
+    ],
+    "group": "The Detail (the hidden guard)",
+    "role": "Secret guard of the hero, posing as the station's records clerk.",
+    "first": 3,
+    "later": [
+      {
+        "ch": 9,
+        "role": "Spilled Lei Bo's tea and saved the poison tube as proof."
+      }
+    ]
+  },
+  {
+    "name": "An Zhiyuan",
+    "aka": [
+      "Chief An"
+    ],
+    "group": "The Detail (the hidden guard)",
+    "role": "Hidden Detail chief. Receives Chen Xuan's text orders by phone.",
+    "first": 3,
+    "later": [
+      {
+        "ch": 5,
+        "role": "Commands the 214 hidden men watching Old Street."
+      }
+    ]
+  },
+  {
+    "name": "Fan Weiguo",
+    "aka": [
+      "Secretary Fan",
+      "Secretary"
+    ],
+    "group": "County officials",
+    "role": "County Party Secretary and top official in Yunxi. Speaks softly and never shouts.",
+    "first": 4,
+    "later": [
+      {
+        "ch": 15,
+        "role": "Strips Lu of the Old Street project; faces Tao's push for files."
+      }
+    ]
+  },
+  {
+    "name": "Tao Shu",
+    "aka": [
+      "Magistrate Tao"
+    ],
+    "group": "County officials",
+    "role": "County Magistrate who runs the county government. Only the Party Secretary ranks above him.",
+    "first": 4,
+    "later": [
+      {
+        "ch": 15,
+        "role": "Has waited eight years for Fan's chair. Offers to clean up Old Street files."
+      },
+      {
+        "ch": 16,
+        "role": "Secretly asked for a check on Chen Xuan, then ordered silence."
+      }
+    ]
+  },
+  {
+    "name": "Lu Wenzhe",
+    "aka": [
+      "Magistrate Lu"
+    ],
+    "group": "County officials",
+    "role": "Executive Deputy Magistrate. Holds the county's money and takes 'service fees'.",
+    "first": 4,
+    "later": [
+      {
+        "ch": 15,
+        "role": "Removed from the Old Street project. Office records sealed."
+      }
+    ]
+  },
+  {
+    "name": "Dong Haisheng",
+    "aka": [
+      "Boss Dong"
+    ],
+    "group": "Hongrui and the underworld",
+    "role": "Head of Hongrui Real Estate. Pays officials per signature to clear Old Street.",
+    "first": 4,
+    "later": [
+      {
+        "ch": 15,
+        "role": "Caught with the ledgers. Ordered to stay in Yunxi; passport taken."
+      }
+    ]
+  },
+  {
+    "name": "Gu Min",
+    "aka": [],
+    "group": "County officials",
+    "role": "Aide to Executive Deputy Magistrate Lu, who watches the room quietly.",
+    "first": 4,
+    "later": [
+      {
+        "ch": 15,
+        "role": "Secretly passes Lu's words to Dong and hides his notebook from Lu."
+      },
+      {
+        "ch": 16,
+        "role": "Now carries Tao's briefcase and keeps Tao's secrets."
+      }
+    ]
+  },
+  {
+    "name": "Han Guifu",
+    "aka": [
+      "Cobbler Han"
+    ],
+    "group": "Old Street neighbors",
+    "role": "Cobbler on Old Street. Joined the thumbprint pledge against Hongrui.",
+    "first": 4,
+    "later": [
+      {
+        "ch": 10,
+        "role": "Threw an iron shoe last at Thin Monkey to defend Old Yu's sign."
+      }
+    ]
+  },
+  {
+    "name": "Kuang Guihua",
+    "aka": [
+      "Old Lady Kuang"
+    ],
+    "group": "Old Street neighbors",
+    "role": "Vegetable seller on Old Street. Once told Chen Mingde to sign, then changed her mind.",
+    "first": 4
+  },
+  {
+    "name": "Ye Tong",
+    "aka": [
+      "Attorney Ye"
+    ],
+    "group": "The Detail (the hidden guard)",
+    "role": "Attorney from the Detail's law firm, sitting at a tea stall with a briefcase.",
+    "first": 5
+  },
+  {
+    "name": "Shen Wei",
+    "aka": [
+      "Dr. Shen"
+    ],
+    "group": "City and province",
+    "role": "Heart specialist who swapped into the night shift at People's Hospital.",
+    "first": 5
+  },
+  {
+    "name": "Qiao Peiling",
+    "aka": [
+      "Head Nurse Qiao",
+      "Nurse Qiao"
+    ],
+    "group": "City and province",
+    "role": "Head nurse at People's Hospital. Keeps Chen Mingde's pill record on her desk.",
+    "first": 5,
+    "later": [
+      {
+        "ch": 13,
+        "role": "Met Su Min by a 'chance' bump at a pharmacy, arranging help for Wei Kun's family."
+      }
+    ]
+  },
+  {
+    "name": "Gong Yi",
+    "aka": [
+      "Twenty-three"
+    ],
+    "group": "The Detail (the hidden guard)",
+    "role": "Secret Detail member who runs Gong's Noodles as a watch post on Old Street.",
+    "first": 6
+  },
+  {
+    "name": "Tian Cuilian",
+    "aka": [
+      "Auntie Tian"
+    ],
+    "group": "The Detail (the hidden guard)",
+    "role": "Works with Gong Yi at Gong's Noodles. Shares his secret watch.",
+    "first": 6
+  },
+  {
+    "name": "Huang Boren",
+    "aka": [
+      "Chairman Huang",
+      "Chairman"
+    ],
+    "group": "Hongrui and the underworld",
+    "role": "Soft-voiced lender who charges Dong 2% a month. Threatens him over his loans.",
+    "first": 6,
+    "later": [
+      {
+        "ch": 15,
+        "role": "Promises to send someone to sit with Dong after the ledger raid."
+      }
+    ]
+  },
+  {
+    "name": "Zhong Hai",
+    "aka": [],
+    "group": "Police and the station",
+    "role": "Wei Kun's desk neighbor and tea partner for ten years.",
+    "first": 7,
+    "later": [
+      {
+        "ch": 9,
+        "role": "Sold Wei Kun's true hour to Lei Bo for a 60,000 yuan loan."
+      }
+    ]
+  },
+  {
+    "name": "Su Min",
+    "aka": [],
+    "group": "Police and the station",
+    "role": "Wei Kun's pregnant wife. Asks him every night if he had a good day.",
+    "first": 7,
+    "later": [
+      {
+        "ch": 13,
+        "role": "Nurse Qiao 'bumped into' her. Family gets a spring-ward bed and a free flat."
+      }
+    ]
+  },
+  {
+    "name": "Yu Ning",
+    "aka": [
+      "Ning",
+      "Nine-year-old Ning"
+    ],
+    "group": "Old Street neighbors",
+    "role": "Nine-year-old granddaughter of Old Yu. Does homework at his shop on Saturdays.",
+    "first": 8,
+    "later": [
+      {
+        "ch": 10,
+        "role": "Scraped her palm in the truck crash, then saw her grandfather's sign smashed."
+      }
+    ]
+  },
+  {
+    "name": "Zhong Tiantian",
+    "aka": [
+      "Tiantian"
+    ],
+    "group": "Police and the station",
+    "role": "Six-year-old son of Zhong Hai. Needs a heart operation the family cannot pay for.",
+    "first": 9,
+    "later": [
+      {
+        "ch": 18,
+        "role": "Has a fourth-floor hospital bed; surgery paid by a fake charity fund."
+      }
+    ]
+  },
+  {
+    "name": "Tang Liqun",
+    "aka": [
+      "Captain Tang",
+      "Captain"
+    ],
+    "group": "The Detail (the hidden guard)",
+    "role": "Captain of the hidden van team, based in a flower-delivery van.",
+    "first": 9
+  },
+  {
+    "name": "Pei Ruihan",
+    "aka": [
+      "Deputy Pei"
+    ],
+    "group": "The Detail (the hidden guard)",
+    "role": "Deputy in Captain Tang's hidden van team. Passes on Chief An's orders.",
+    "first": 9
+  },
+  {
+    "name": "Cao Wanli",
+    "aka": [
+      "Fatty Cao"
+    ],
+    "group": "The Detail (the hidden guard)",
+    "role": "Round baker. His bread truck crashes a hired van at the river arch.",
+    "first": 10
+  },
+  {
+    "name": "Ke Junjie",
+    "aka": [
+      "Little Ke"
+    ],
+    "group": "The Detail (the hidden guard)",
+    "role": "Delivery rider who sat beside Chen Xuan in the lobby, then reported to Gong Yi.",
+    "first": 10
+  },
+  {
+    "name": "Bao Zhen",
+    "aka": [
+      "Team Leader Bao"
+    ],
+    "group": "City and province",
+    "role": "City Special Police team leader. Salutes the Black Pine badge without being told.",
+    "first": 11
+  },
+  {
+    "name": "Xie Boyuan",
+    "aka": [
+      "Abacus"
+    ],
+    "group": "Hongrui and the underworld",
+    "role": "Bookkeeper in Brother Tie's crew who escaped the raid on foot.",
+    "first": 11,
+    "later": [
+      {
+        "ch": 15,
+        "role": "Caught holding the debt book; blames Dong for the fire plan."
+      }
+    ]
+  },
+  {
+    "name": "Qian Yu",
+    "aka": [],
+    "group": "City and province",
+    "role": "Night clerk at the Municipal Discipline Commission. Took Bai's nineteen-page complaint.",
+    "first": 12
+  },
+  {
+    "name": "Bai Qingzhou",
+    "aka": [
+      "Bai",
+      "Number Eleven"
+    ],
+    "group": "The Detail (the hidden guard)",
+    "role": "Number Eleven, the Detail's lawyer, with silver-rimmed glasses.",
+    "first": 12
+  },
+  {
+    "name": "Mai Zhenhua",
+    "aka": [
+      "Director Mai"
+    ],
+    "group": "Police and the station",
+    "role": "Yunxi Police Director and Deputy County Magistrate. Suspends Cheng Biao at dawn.",
+    "first": 13,
+    "later": [
+      {
+        "ch": 16,
+        "role": "Ordered to bring the original detention notice to the inspectors."
+      }
+    ]
+  },
+  {
+    "name": "Chen Xiaoqing",
+    "aka": [
+      "Xiaoqing"
+    ],
+    "group": "Chen's family and friends",
+    "role": "Chen Mingde's daughter, a student in Wuhan. Her graduation is coming up.",
+    "first": 13
+  },
+  {
+    "name": "Chen Fugen",
+    "aka": [
+      "Grandpa",
+      "Grandfather Chen Fugen"
+    ],
+    "group": "Chen's family and friends",
+    "role": "Chen Xuan's grandfather, age 78. Loud, proud, and fishes at a reservoir.",
+    "first": 14
+  },
+  {
+    "name": "Zhao Dehai",
+    "aka": [
+      "Old Zhao",
+      "Grandpa Zhao"
+    ],
+    "group": "The elders",
+    "role": "Retired Governor of Lanshui. Village thinks he was only a clerk.",
+    "first": 14
+  },
+  {
+    "name": "Ren Gang",
+    "aka": [
+      "Colonel Ren"
+    ],
+    "group": "The elders",
+    "role": "Colonel who guards Old Zhao with forty men. Sells cabbages as a cover.",
+    "first": 14
+  },
+  {
+    "name": "Gao Zhengyi",
+    "aka": [
+      "Vice Director Gao"
+    ],
+    "group": "City and province",
+    "role": "Provincial Vice Director. Jumps to attention when Retired Governor Zhao calls.",
+    "first": 14,
+    "later": [
+      {
+        "ch": 16,
+        "role": "Leads the provincial inspection team in Yunxi. Refuses gifts and cancels the banquet."
+      }
+    ]
+  },
+  {
+    "name": "Mo Lin",
+    "aka": [
+      "Number Nine",
+      "Nine"
+    ],
+    "group": "The Detail (the hidden guard)",
+    "role": "Hidden guard codenamed Number Nine. Carries the Black Pine badge that commands elite teams.",
+    "first": 14
+  },
+  {
+    "name": "Kang Guangming",
+    "aka": [
+      "Secretary Kang"
+    ],
+    "group": "County officials",
+    "role": "Gray Discipline Commission man who can investigate anyone, even the Secretary.",
+    "first": 15
+  },
+  {
+    "name": "Shao Wenhua",
+    "aka": [],
+    "group": "County officials",
+    "role": "Organization Department head who decides promotions and rarely speaks.",
+    "first": 15
+  },
+  {
+    "name": "Lin Dong",
+    "aka": [],
+    "group": "Office at Hengxin",
+    "role": "Youngest clerk on the twelfth floor. Works out prices on his phone calculator.",
+    "first": 17
+  },
+  {
+    "name": "Ge Qinghe",
+    "aka": [
+      "Auntie Ge"
+    ],
+    "group": "The Detail (the hidden guard)",
+    "role": "Hengxin cleaner. Secretly Number Fourteen of the Inner Ring.",
+    "first": 17
+  },
+  {
+    "name": "Hao Jingshan",
+    "aka": [
+      "Old Hao",
+      "Uncle Hao"
+    ],
+    "group": "The elders",
+    "role": "Tea-stall owner on Binjiang Road. Holds a high rank, sells rare tea for thirty yuan.",
+    "first": 17
+  },
+  {
+    "name": "Pu Jian",
+    "aka": [],
+    "group": "City and province",
+    "role": "Provincial Organization Department officer. Tao asked him to check Chen Xuan.",
+    "first": 16
+  },
+  {
+    "name": "Shan Yucai",
+    "aka": [
+      "Baker Shan",
+      "Brother Shan"
+    ],
+    "group": "The Detail (the hidden guard)",
+    "role": "Baker at the Golden Wheat truck. Sends messages to Chief An under his counter.",
+    "first": 16
+  },
+  {
+    "name": "Qi Zihao",
+    "aka": [
+      "Young Master Fang",
+      "Brother Fang"
+    ],
+    "group": "City and province",
+    "role": "Wealthy young man with a Silver hotel card. Loud and boastful.",
+    "first": 18,
+    "later": [
+      {
+        "ch": 19,
+        "role": "Lent Zhang his card and car; shouted when the card was refused."
+      }
+    ]
+  },
+  {
+    "name": "Dai Wenbin",
+    "aka": [
+      "General Manager Dai"
+    ],
+    "group": "City and province",
+    "role": "General Manager of Yunhai Grand Hotel. Has secret orders to serve one guest without questions.",
+    "first": 19
+  },
+  {
+    "name": "Qi Jiancheng",
+    "aka": [],
+    "group": "City and province",
+    "role": "Father of Qi Zihao. His son says one call from him can ruin a hotel.",
+    "first": 19
+  },
+  {
+    "name": "Liang Yuhang",
+    "aka": [
+      "Liang"
+    ],
+    "group": "The elders",
+    "role": "Young aide of Zhao Dehai. Walked the river bank at dawn and missed the bakery van.",
+    "first": 14
+  },
+  {
+    "name": "Pang Jinquan",
+    "aka": [
+      "Old Pang",
+      "Uncle Pang"
+    ],
+    "group": "County officials",
+    "role": "Gate guard who buys buns from Shan Yucai every morning.",
+    "first": 16
+  },
+  {
+    "name": "Ma Baoguo",
+    "aka": [
+      "Chief Ma",
+      "Housing Bureau Chief Ma"
+    ],
+    "group": "County officials",
+    "role": "Housing Bureau chief who called Lu Wenzhe 'Elder Brother' over wine and now keeps his distance.",
+    "first": 16
+  }
 ]
