@@ -1,0 +1,378 @@
+[
+  {
+    "name": "Chen Xuan",
+    "aka": [],
+    "group": "Chen's family and friends",
+    "role": "Protagonist; operations supervisor at Hengxin Logistics (12,000 yuan/month); commands Black Pine Guard and holds the sole key to Zero Guard.",
+    "first": 1
+  },
+  {
+    "name": "Hu Dewei",
+    "aka": [
+      "Manager Hu"
+    ],
+    "group": "Hengxin Logistics",
+    "role": "Department Manager on the 12th floor of Hengxin Logistics.",
+    "first": 1
+  },
+  {
+    "name": "Zhang Pengfei",
+    "aka": [],
+    "group": "Hengxin Logistics",
+    "role": "Flattering coworker whose initials (Z.P.) sit on the 14,000-yuan port double-storage error.",
+    "first": 1
+  },
+  {
+    "name": "Pan Xiulan",
+    "aka": [
+      "Sister Pan"
+    ],
+    "group": "Hengxin Logistics",
+    "role": "Sharp-tongued veteran coworker on the 12th floor.",
+    "first": 1
+  },
+  {
+    "name": "Zheng Qian",
+    "aka": [],
+    "group": "Hengxin Logistics",
+    "role": "Young clerk on the 12th floor of Hengxin Logistics.",
+    "first": 1
+  },
+  {
+    "name": "Sun Haoran",
+    "aka": [
+      "General Manager Sun"
+    ],
+    "group": "Hengxin Logistics",
+    "role": "General Manager of Hengxin Logistics.",
+    "first": 1
+  },
+  {
+    "name": "Liu Meifang",
+    "aka": [],
+    "group": "Chen's family and friends",
+    "role": "Chen Xuan's warm, fiercely protective mother in Fuxing New Village.",
+    "first": 2
+  },
+  {
+    "name": "Chen Jianguo",
+    "aka": [],
+    "group": "Chen's family and friends",
+    "role": "Chen Xuan's father; invents folk proverbs when stressed to keep his family calm.",
+    "first": 2
+  },
+  {
+    "name": "Chen Mingde",
+    "aka": [
+      "Second Uncle"
+    ],
+    "group": "Chen's family and friends",
+    "role": "Gentle 20-year owner of Mingde Hardware on Old Street, framed by Hongrui Real Estate and cleared cleanly by the Provincial Joint Inspection Group.",
+    "first": 2
+  },
+  {
+    "name": "Number 7",
+    "aka": [],
+    "group": "Black Pine Guard",
+    "role": "Close escort and field operations captain; escorts Chen Xuan on the private jet and commands the Riverside Road mobile van.",
+    "first": 3
+  },
+  {
+    "name": "Number 9",
+    "aka": [],
+    "group": "Black Pine Guard",
+    "role": "Escort operative and Pier Four rare-earth barge tracker.",
+    "first": 4
+  },
+  {
+    "name": "Number 11",
+    "aka": [],
+    "group": "Black Pine Guard",
+    "role": "Financial Intelligence lead who uncovers the 4.8 billion Yunxi pipeline, 620 billion provincial web, and >100 trillion yuan 20-year theft.",
+    "first": 4
+  },
+  {
+    "name": "Number 1",
+    "aka": [],
+    "group": "Black Pine Guard",
+    "role": "Commander of Black Pine Guard; leads the 20-year sweep.",
+    "first": 5
+  },
+  {
+    "name": "Number 14",
+    "aka": [],
+    "group": "Black Pine Guard",
+    "role": "Yunxi and Qingyan regional coordinator.",
+    "first": 6
+  },
+  {
+    "name": "Number 56",
+    "aka": [],
+    "group": "Black Pine Guard",
+    "role": "Embedded night-shift guard inside Old Street Station ensuring Chen Mingde's safety.",
+    "first": 6
+  },
+  {
+    "name": "Wu Lanying",
+    "aka": [
+      "Second Aunt"
+    ],
+    "group": "Chen's family and friends",
+    "role": "Chen Mingde's devoted wife.",
+    "first": 8
+  },
+  {
+    "name": "Chen Yuan",
+    "aka": [],
+    "group": "Chen's family and friends",
+    "role": "Chen Xuan's younger sister.",
+    "first": 8
+  },
+  {
+    "name": "Chen Hao",
+    "aka": [],
+    "group": "Chen's family and friends",
+    "role": "Chen Xuan's seventeen-year-old younger brother.",
+    "first": 8
+  },
+  {
+    "name": "Wang Lei",
+    "aka": [],
+    "group": "Chen's family and friends",
+    "role": "Old high school classmate who lent Chen Xuan eight yuan a day in senior year; earns an honest delivery van contract.",
+    "first": 8
+  },
+  {
+    "name": "Yu Changshun",
+    "aka": [],
+    "group": "Chen's family and friends",
+    "role": "Veteran tailor on Old Street.",
+    "first": 9
+  },
+  {
+    "name": "Number 23",
+    "aka": [],
+    "group": "Black Pine Guard",
+    "role": "Embedded watchman running Gong's Noodles across from Mingde Hardware.",
+    "first": 9
+  },
+  {
+    "name": "Yan Tiehu",
+    "aka": [],
+    "group": "Rivals & Opponents",
+    "role": "Hongrui Real Estate demolition enforcer arrested at Pier Four.",
+    "first": 10
+  },
+  {
+    "name": "Number 34",
+    "aka": [],
+    "group": "Black Pine Guard",
+    "role": "Tech team lead who unlocks the stolen naval radar, power-grid, and garrison files.",
+    "first": 11
+  },
+  {
+    "name": "Cheng Biao",
+    "aka": [],
+    "group": "Officials",
+    "role": "Former Director of Old Street Station arrested for framing Chen Mingde.",
+    "first": 11
+  },
+  {
+    "name": "Zhou Quan",
+    "aka": [],
+    "group": "Officials",
+    "role": "Cheng Biao's former deputy at Old Street Station.",
+    "first": 13
+  },
+  {
+    "name": "Deng Yongchang",
+    "aka": [],
+    "group": "Rivals & Opponents",
+    "role": "Chairman of Hongrui Real Estate arrested in Yunxi's broad-daylight sweep.",
+    "first": 13
+  },
+  {
+    "name": "Sun Weiming",
+    "aka": [],
+    "group": "Officials",
+    "role": "Former Yunxi County Magistrate arrested in the 8:30 AM roll call.",
+    "first": 17
+  },
+  {
+    "name": "Liang Guodong",
+    "aka": [],
+    "group": "Officials",
+    "role": "Former Yunxi Public Security Bureau Chief.",
+    "first": 17
+  },
+  {
+    "name": "Zero Guard",
+    "aka": [
+      "Zero Numbers"
+    ],
+    "group": "Zero Guard",
+    "role": "Absolute Order sovereign unit; unrecorded numbers, fully masked in plain black gear, flat neutral genderless cold voice. One permanent team remains inside Chen Xuan's 50-meter perimeter.",
+    "first": 30
+  },
+  {
+    "name": "Zhou Zhenhua",
+    "aka": [
+      "Vice Premier Zhou"
+    ],
+    "group": "Capital Leadership",
+    "role": "Vice Premier of the State Council overseeing the cross-department war room and asset recovery.",
+    "first": 36
+  },
+  {
+    "name": "Qin Zhengguo",
+    "aka": [
+      "General Qin"
+    ],
+    "group": "Capital Leadership",
+    "role": "Four-star General at the Central Military Commission and Qin Yuhan's grandfather.",
+    "first": 37
+  },
+  {
+    "name": "Elder Song",
+    "aka": [],
+    "group": "Capital Leadership",
+    "role": "Ninety-year-old retired Founding Elder in the Western Hills who sends Chen Xuan an unmarked cream tea invitation.",
+    "first": 40
+  },
+  {
+    "name": "He Guoliang",
+    "aka": [],
+    "group": "Rivals & Opponents",
+    "role": "Former Vice Minister of Energy caught with Zurich transfer records.",
+    "first": 41
+  },
+  {
+    "name": "Fang Qiming",
+    "aka": [],
+    "group": "Rivals & Opponents",
+    "role": "Chairman of Shengyuan Capital captured at Lanshui's heliport.",
+    "first": 42
+  },
+  {
+    "name": "Lin Zhengde",
+    "aka": [],
+    "group": "Officials",
+    "role": "Former Lanshui Provincial Vice Governor captured alongside Fang Qiming.",
+    "first": 42
+  },
+  {
+    "name": "Xu Wenbin",
+    "aka": [],
+    "group": "Officials",
+    "role": "Former Qingyan Port Customs Director detained for smuggling.",
+    "first": 43
+  },
+  {
+    "name": "Ma Zhenyu",
+    "aka": [],
+    "group": "Rivals & Opponents",
+    "role": "Former Senior Colonel in Southern Theater Command who leaked border-garrison rosters.",
+    "first": 44
+  },
+  {
+    "name": "Gu Chengshan",
+    "aka": [
+      "Premier Gu"
+    ],
+    "group": "Capital Leadership",
+    "role": "Premier of the State Council.",
+    "first": 47
+  },
+  {
+    "name": "Gao Zhengyi",
+    "aka": [],
+    "group": "Capital Leadership",
+    "role": "CCDI Deputy Secretary overseeing the 100 trillion yuan audit.",
+    "first": 48
+  },
+  {
+    "name": "Guo Zhengming",
+    "aka": [
+      "Minister Guo"
+    ],
+    "group": "Capital Leadership",
+    "role": "Minister of Public Security.",
+    "first": 60
+  },
+  {
+    "name": "Zhao Dehai",
+    "aka": [
+      "Secretary Zhao"
+    ],
+    "group": "Officials",
+    "role": "Upright Lanshui Provincial Party Secretary.",
+    "first": 66
+  },
+  {
+    "name": "Shen Wenchao",
+    "aka": [],
+    "group": "Officials",
+    "role": "Lanshui Provincial CCDI Secretary leading the Yunxi lawful sweep.",
+    "first": 67
+  },
+  {
+    "name": "Han Zhiyuan",
+    "aka": [],
+    "group": "Officials",
+    "role": "Lanshui Provincial PSB Deputy Chief who escorts Chen Mingde home.",
+    "first": 67
+  },
+  {
+    "name": "Wei Kun",
+    "aka": [],
+    "group": "Officials",
+    "role": "Honest officer promoted to full Director of Old Street Station.",
+    "first": 78
+  },
+  {
+    "name": "Ding Guoping",
+    "aka": [
+      "Minister Ding"
+    ],
+    "group": "Capital Leadership",
+    "role": "Minister of State Security.",
+    "first": 84
+  },
+  {
+    "name": "Li Weiming",
+    "aka": [
+      "Marcus Vance"
+    ],
+    "group": "Rivals & Opponents",
+    "role": "Overseas fixer from Zurich's Northern Ledger plotting at the Lanshui Forum.",
+    "first": 94
+  },
+  {
+    "name": "Zhou Mingcheng",
+    "aka": [],
+    "group": "Rivals & Opponents",
+    "role": "Arrogant Qingyan Port shipping broker humbled at Gate Seven.",
+    "first": 106
+  },
+  {
+    "name": "Qin Yuhan",
+    "aka": [],
+    "group": "Chen's family and friends",
+    "role": "Sharp young Haiyue Group executive and secretly General Qin Zhengguo's granddaughter.",
+    "first": 107
+  },
+  {
+    "name": "Qin Zhengming",
+    "aka": [],
+    "group": "Officials",
+    "role": "Upright provincial official and Qin Yuhan's father.",
+    "first": 110
+  },
+  {
+    "name": "Song Baisheng",
+    "aka": [],
+    "group": "Rivals & Opponents",
+    "role": "Chairman of Wanfeng Freight working with Li Weiming in Lanshui.",
+    "first": 121
+  }
+]
