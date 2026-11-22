@@ -320,6 +320,9 @@ svg.i,.ibtn svg,[data-ic] svg,.mitem svg,.uitem svg,.mcard svg{width:20px;height
   #castDrawer{left:0;right:0;top:auto;bottom:0;width:100%;height:88vh;max-height:88vh;border:0;border-top:1px solid var(--ui-line);border-radius:16px 16px 0 0;transform:translateY(104%)}
   #castDrawer.open{transform:none}
 }
+#castTabs{margin:0 14px 10px;flex:none}
+#castTabs button{min-height:40px}
+.cnew{display:inline-block;margin-left:8px;padding:1px 8px;border-radius:999px;background:var(--ui-accent);color:var(--ui-bg);font-size:11px;font-weight:700;vertical-align:2px;letter-spacing:.03em}
 /* ---- opening animations: panels glide in slowly and close quickly ---- */
 #dock{transition:transform .9s cubic-bezier(.2,.8,.2,1)}
 #dock.pre{transform:translateY(105%);transition:transform .4s ease}
@@ -397,6 +400,7 @@ svg.i,.ibtn svg,[data-ic] svg,.mitem svg,.uitem svg,.mcard svg{width:20px;height
 <aside class="drawer" id="castDrawer" aria-label="Who's who">
   <div class="dhead"><h3>Who's who</h3><button class="xbtn" data-close="cast" aria-label="Close">&times;</button></div>
   <div class="csearch"><input class="field" id="castSearch" type="search" placeholder="Search a name..." autocomplete="off"></div>
+  <div class="row" id="castTabs"><button data-ctab="here" class="on">On this chapter</button><button data-ctab="all">All so far</button></div>
   <div class="dbody" id="castBody"></div>
 </aside>
 
@@ -740,7 +744,7 @@ function autoStop(){
 }
 
 /* ---------- who's who ---------- */
-var cast=null,castState='idle',castQ='',castShut={};
+var cast=null,castState='idle',castQ='',castShut={},castTab='here',castRe={};
 function castOpen(){return $('#castDrawer').classList.contains('open')}
 function loadCast(){
   castState='loading';
@@ -758,7 +762,50 @@ function openCast(){
   closeTop();renderCast();openDrawer('castDrawer');
   if(castState==='idle'||castState==='fail')loadCast();
 }
+/* "On this chapter": find which known people are named in the text you are reading, in the order they first appear */
+function castRegex(f){
+  if(!castRe[f]){
+    var src=f.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),tail='';
+    if(f==='Number One')tail='(?! Hundred)';
+    if(f==='Boss')tail='(?! [A-Z][a-z])';
+    castRe[f]=new RegExp('(^|[^A-Za-z0-9])'+src+'(?![A-Za-z0-9])'+tail,'i');
+  }
+  return castRe[f];
+}
+function castHere(raw,cur){
+  var out=[];
+  cast.forEach(function(c){
+    if(c.first>cur)return;
+    var best=-1;
+    [c.name].concat(c.aka).forEach(function(f){
+      if(!f||f.length<3)return;
+      var m=castRegex(f).exec(raw);
+      if(m){var at=m.index+(m[1]?m[1].length:0);if(best<0||at<best)best=at}
+    });
+    if(best>=0)out.push({c:c,at:best});
+  });
+  out.sort(function(a,b){return a.at-b.at});
+  return out;
+}
 function renderCast(){
+  var box=$('#castBody');
+  $$('#castTabs button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-ctab')===castTab)});
+  if(castTab==='all'){renderCastAll();return}
+  var ch=chapters[S.chIndex],cur=ch?ch.n:1;
+  if(castState==='loading'||castState==='idle'){box.innerHTML='<div class="hint" style="padding:8px 2px">Loading...</div>';return}
+  if(castState==='fail'||!cast){box.innerHTML='<div class="hint" style="padding:8px 2px">Cast not available yet</div>';return}
+  if(!ch||ch.raw==null){box.innerHTML='<div class="hint" style="padding:8px 2px">Loading this chapter...</div>';return}
+  var q=castQ.trim().toLowerCase(),list=castHere(ch.raw,cur);
+  if(q)list=list.filter(function(it){return it.c.name.toLowerCase().indexOf(q)>=0||it.c.aka.some(function(a){return a.toLowerCase().indexOf(q)>=0})});
+  var h='<div class="hint" style="margin:0 0 4px">'+(q?'Matches in this chapter:':'People in Chapter '+cur+', in the order they appear:')+' '+list.length+'</div>';
+  if(!list.length)h+='<div class="hint" style="padding:10px 2px">'+(q?'No one in this chapter matches "'+esc(castQ.trim())+'". Try "All so far".':'No known characters are named in this chapter yet. Try "All so far".')+'</div>';
+  list.forEach(function(it){
+    var c=it.c,role=c.role;c.later.forEach(function(x){if(x.ch<=cur)role=x.role});
+    h+='<div class="crow"><b>'+esc(c.name)+'</b>'+(c.first===cur?'<span class="cnew">New</span>':'')+'<div class="crole">'+esc(role)+'</div><div class="cmeta">'+esc(c.group)+(c.aka.length?' &middot; Also called: '+esc(c.aka.join(', ')):'')+'</div></div>';
+  });
+  box.innerHTML=h;
+}
+function renderCastAll(){
   var box=$('#castBody'),cur=chapters[S.chIndex]?chapters[S.chIndex].n:1;
   if(castState==='loading'||castState==='idle'){box.innerHTML='<div class="hint" style="padding:8px 2px">Loading...</div>';return}
   if(castState==='fail'||!cast){box.innerHTML='<div class="hint" style="padding:8px 2px">Cast not available yet</div>';return}
@@ -1159,6 +1206,7 @@ document.addEventListener('click',function(e){
   d=t.getAttribute('data-bmgo');if(d)jumpBookmark(d);
   d=t.getAttribute('data-bmdel');if(d)deleteBookmark(d);
   d=t.getAttribute('data-cg');if(d){castShut[d]=!castShut[d];renderCast()}
+  d=t.getAttribute('data-ctab');if(d){castTab=d;renderCast()}
   d=t.getAttribute('data-rtype');if(d){S.readerType=d;saveState();applyLook();renderChapter(S.chIndex,false);renderDock()}
   var c=t.getAttribute('data-close');if(c)closeDrawers();
 });
