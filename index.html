@@ -128,9 +128,10 @@ body.old #chBody{font-family:Georgia,'Times New Roman',serif;text-align:justify}
 .switch input:checked:after{left:19px}
 
 /* drawers */
-#scrim{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:60}
-.drawer{position:fixed;left:0;top:0;bottom:0;width:min(420px,94vw);background:var(--ui-bg);color:var(--ui-fg);border-right:1px solid var(--ui-line);z-index:70;display:flex;flex-direction:column;transform:translateX(-102%);transition:transform .2s}
-.drawer.open{transform:none}
+#scrim{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:60;opacity:0;transition:opacity .4s ease}
+#scrim.show{opacity:1;transition:opacity .9s ease}
+.drawer{position:fixed;left:0;top:0;bottom:0;width:min(420px,94vw);background:var(--ui-bg);color:var(--ui-fg);border-right:1px solid var(--ui-line);z-index:70;display:flex;flex-direction:column;transform:translateX(-102%);transition:transform .4s ease}
+.drawer.open{transform:none;transition:transform .9s cubic-bezier(.2,.8,.2,1)}
 .dhead{display:flex;align-items:center;gap:12px;padding:12px 14px;border-bottom:1px solid var(--ui-line)}
 .dhead h3{margin:0;font-size:17px;flex:1}
 .xbtn{background:transparent;border:0;color:var(--ui-fg);font-size:22px;line-height:1;padding:2px 6px}
@@ -240,8 +241,8 @@ svg.i,.ibtn svg,[data-ic] svg,.mitem svg,.uitem svg,.mcard svg{width:20px;height
 
 /* ---- term editor as bottom sheet on phones ---- */
 .top{transition:transform .22s}
+.top.tuck{transform:translateY(-100%)}
 @media (max-width:700px){
-  .top.tuck{transform:translateY(-100%)}
   :root{--maxw:100%}
   .top{padding:8px 8px}
   #reader{margin:0;padding:0;max-width:none}
@@ -268,8 +269,6 @@ svg.i,.ibtn svg,[data-ic] svg,.mitem svg,.uitem svg,.mcard svg{width:20px;height
   .tpop{width:min(320px,calc(100vw - 16px))}
 }
 /* ---- v3: calm reading, progress, new controls ---- */
-#progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:100;pointer-events:none}
-#progress i{display:block;height:100%;width:100%;background:var(--ui-accent);transform:scaleX(0);transform-origin:left center;transition:transform .12s linear}
 #tint{position:fixed;inset:0;z-index:200;pointer-events:none;background:#ff8c28;mix-blend-mode:multiply;opacity:0;display:none}
 #chBody .chhead{text-align:var(--head-align);margin:.3em 0 1.5em;font-weight:700;line-height:1.25;font-size:1em}
 #chBody .chhead .kick{display:block;font-size:.5em;letter-spacing:.22em;text-transform:uppercase;color:var(--pg-mute);font-weight:600;margin-bottom:.7em}
@@ -321,6 +320,16 @@ svg.i,.ibtn svg,[data-ic] svg,.mitem svg,.uitem svg,.mcard svg{width:20px;height
   #castDrawer{left:0;right:0;top:auto;bottom:0;width:100%;height:88vh;max-height:88vh;border:0;border-top:1px solid var(--ui-line);border-radius:16px 16px 0 0;transform:translateY(104%)}
   #castDrawer.open{transform:none}
 }
+/* ---- opening animations: panels glide in slowly and close quickly ---- */
+#dock{transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+#dock.pre{transform:translateY(105%);transition:transform .4s ease}
+@keyframes inkFadeDown{from{opacity:0;transform:translateY(-14px)}to{opacity:1;transform:none}}
+@keyframes inkFade{from{opacity:0}to{opacity:1}}
+@keyframes inkPop{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:none}}
+#userMenu{animation:inkFadeDown .8s cubic-bezier(.2,.8,.2,1)}
+#searchRes{animation:inkFade .7s ease}
+.modal{animation:inkFade .8s ease}
+#addTermBtn,#tpop{animation:inkPop .6s cubic-bezier(.2,.8,.2,1)}
 @media (prefers-reduced-motion:reduce){
   *,*:before,*:after{transition:none!important;scroll-behavior:auto!important}
   *:not(.spin),*:not(.spin):before,*:not(.spin):after{animation:none!important}
@@ -328,7 +337,6 @@ svg.i,.ibtn svg,[data-ic] svg,.mitem svg,.uitem svg,.mcard svg{width:20px;height
 </style>
 </head>
 <body data-tstyle="bold" class="tc-on tc-sys tc-user tc-patch">
-<div id="progress" aria-hidden="true"><i></i></div>
 <div id="tint" aria-hidden="true"></div>
 
 <header class="top" id="topBar">
@@ -606,10 +614,9 @@ function placeAt(pos){
 }
 function clamp01(x){return x<0?0:x>1?1:x}
 function updateProgress(){
-  var bar=$('#progress i'),sec=curSectionEl(),ch=sec&&chapters[+sec.getAttribute('data-i')];
-  if(!sec||!ch){bar.style.transform='scaleX(0)';return}
+  var sec=curSectionEl(),ch=sec&&chapters[+sec.getAttribute('data-i')];
+  if(!sec||!ch)return;
   var r=sec.getBoundingClientRect(),p=clamp01(-r.top/Math.max(1,r.height-window.innerHeight*.7));
-  bar.style.transform='scaleX('+p.toFixed(4)+')';
   var ml=$('#minLeft');
   if(ml){
     var words=ch.words||Math.round((ch.raw||'').length/6),m=words*(1-p)/230;
@@ -636,13 +643,19 @@ function renderChapter(i,top){
   body.innerHTML='';body.appendChild(chapterNode(i));
   updateNav();
   if(restore){var rp=restore;restore=null;placeAt(rp)}
-  else if(top!==false)window.scrollTo(0,0);
+  else if(top!==false){window.scrollTo(0,0);requestAnimationFrame(function(){window.scrollTo(0,0)})}
   updateProgress();persist();prefetch(i+1);
 }
 /* open a chapter where the reader stopped last time (used by Contents and at start-up) */
 function resume(i){
   var c=chapters[i],p=c&&S.autosave?load('pos.'+c.n,null):null;
-  if(p&&typeof p.p==='number')restore=p;
+  if(p&&typeof p.p==='number'){
+    restore=p;
+    /* place it again a moment later, in case fonts or the layout moved things while loading, unless the reader has already started scrolling */
+    var moved=false,stop=function(){moved=true};
+    ['touchstart','wheel','keydown','mousedown'].forEach(function(ev){window.addEventListener(ev,stop,{once:true,passive:true})});
+    setTimeout(function(){if(!moved&&S.chIndex===i)placeAt(p)},400);
+  }
   renderChapter(i);
 }
 function updateNav(){
@@ -817,11 +830,28 @@ function renderDock(){
 /* keep the end of the chapter reachable above the open panel */
 function fitDock(){var d=$('#dock');document.body.style.paddingBottom=d.classList.contains('hidden')?'0px':(d.offsetHeight+20)+'px'}
 function setDock(t){dockTab=t;renderDock()}
-function showDock(){if(!chapters.length)return;$('#dock').classList.remove('hidden');renderDock()}
-function hideDock(){$('#dock').classList.add('hidden');fitDock()}
+function showDock(){
+  if(!chapters.length)return;
+  var d=$('#dock'),was=d.classList.contains('hidden');
+  clearTimeout(dockT);d.classList.remove('hidden');
+  if(was){d.classList.add('pre');void d.offsetWidth}
+  renderDock();d.classList.remove('pre');
+}
+function hideDock(){
+  var d=$('#dock');if(d.classList.contains('hidden'))return;
+  d.classList.add('pre');clearTimeout(dockT);
+  dockT=setTimeout(function(){d.classList.add('hidden');d.classList.remove('pre');fitDock()},420);
+}
 
 /* ---------- drawers ---------- */
-function openDrawer(id){hideDock();closeTop();$('#scrim').classList.remove('hidden');$('#'+id).classList.add('open')}
+var scrimT=0,dockT=0;
+function showScrim(){clearTimeout(scrimT);var s=$('#scrim');s.classList.remove('hidden');void s.offsetWidth;s.classList.add('show')}
+function hideScrim(){var s=$('#scrim');s.classList.remove('show');clearTimeout(scrimT);scrimT=setTimeout(function(){s.classList.add('hidden')},450)}
+function scrollTocToCurrent(){
+  var box=$('#tocList'),on=box&&box.querySelector('.toc-item.on');if(!on)return;
+  box.scrollTop=0;box.scrollTop=on.getBoundingClientRect().top-box.getBoundingClientRect().top;
+}
+function openDrawer(id){hideDock();closeTop();showScrim();$('#'+id).classList.add('open');if(id==='tocDrawer')scrollTocToCurrent()}
 /* ---------- top bar: menu, search, account dropdown ---------- */
 function closeTop(){$('#userMenu').classList.add('hidden');$('#btnUser').classList.remove('on');closeSearch()}
 function closeSearch(){$('#topBar').classList.remove('searching');$('#searchRes').classList.add('hidden');$('#sInput').value=''}
@@ -869,12 +899,12 @@ function runSearch(q){
   });
   box.innerHTML=h;box.classList.remove('hidden');
 }
-function closeDrawers(){clearTimeout(saveTimer);saving=false;$$('.drawer').forEach(function(d){d.classList.remove('open')});$('#scrim').classList.add('hidden')}
+function closeDrawers(){clearTimeout(saveTimer);saving=false;$$('.drawer').forEach(function(d){d.classList.remove('open')});hideScrim()}
 function renderToc(){
   var box=$('#tocList');box.innerHTML='';
   chapters.forEach(function(c,i){
     var b=el('button','toc-item'+(i===S.chIndex?' on':''),'<b>'+c.n+'. Chapter '+c.n+' '+esc(c.title)+'</b><small>'+c.words.toLocaleString()+' WORDS</small>');
-    b.setAttribute('data-i',i);b.onclick=function(){closeDrawers();resume(i)};box.appendChild(b);
+    b.setAttribute('data-i',i);b.onclick=function(){closeDrawers();renderChapter(i)};box.appendChild(b);
   });
 }
 
@@ -1255,6 +1285,7 @@ function startReader(){
     $('#chBody').innerHTML='<p class="hint" style="padding:10px 0">No chapters could be loaded from the "'+esc(NOVEL.dir)+'" folder. Open this page from the website, or from a local web server (run serve_inkstone.bat), or use the menu to import chapter files.</p>';
     return;
   }
+  try{history.scrollRestoration='manual'}catch(e){}
   resume(S.chIndex);
   renderDock();
 }
