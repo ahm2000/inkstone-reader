@@ -2577,5 +2577,26 @@
     "group": "White Guard",
     "role": "White Guard northern branch operative mapping the hidden Seven-Harbor valley at Changbai Mountain.",
     "first": 189
+  },
+  {
+    "name": "Elder Qin",
+    "aka": [],
+    "group": "Capital Leadership",
+    "role": "Retired founding military patriarch of the first-tier Qin Family; enters the crisis hall with Elder Song in Chapter 60.",
+    "first": 60
+  },
+  {
+    "name": "Elder Ye",
+    "aka": [],
+    "group": "Capital Leadership",
+    "role": "Retired former Central Discipline and Judicial patriarch of the first-tier Ye Family; respected across courts and inspection bureaus.",
+    "first": 60
+  },
+  {
+    "name": "Elder Lin",
+    "aka": [],
+    "group": "Capital Leadership",
+    "role": "Retired economic and state-planning elder of the first-tier Lin Family; mentor to half the economic ministries and Four National Banks.",
+    "first": 60
   }
 ]
