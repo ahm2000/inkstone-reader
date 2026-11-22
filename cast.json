@@ -2556,5 +2556,26 @@
     "group": "Rivals & Opponents",
     "role": "Arrogant heir of Shenzhen's Shen Family holding Haiyue Group's container ship at Shenzhen Pier Nine.",
     "first": 160
+  },
+  {
+    "name": "Shen Wanshan",
+    "aka": [],
+    "group": "Rivals & Opponents",
+    "role": "Patriarch of Shenzhen's Shen Family living in Shenzhen Bay No. 1, tied to the Seven-Harbor Consortium's 140 billion yuan Yantian Port smuggling ring.",
+    "first": 162
+  },
+  {
+    "name": "Koo Tianming",
+    "aka": [],
+    "group": "Rivals & Opponents",
+    "role": "Cold senior envoy from Hong Kong representing the Seven-Harbor Consortium in Shenzhen.",
+    "first": 167
+  },
+  {
+    "name": "Number 44",
+    "aka": [],
+    "group": "White Guard",
+    "role": "White Guard northern branch operative mapping the hidden Seven-Harbor valley at Changbai Mountain.",
+    "first": 189
   }
 ]
