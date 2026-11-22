@@ -117,7 +117,7 @@
       },
       {
         "ch": 122,
-        "role": "Hengxin clerk who loves football and avoids the Lanshui trip."
+        "role": "Hengxin clerk who loves football and avoids the Sha City trip."
       }
     ]
   },
@@ -319,7 +319,7 @@
       },
       {
         "ch": 86,
-        "role": "Qingyan crime boss whose twenty-year bank, bribe and treason web was exposed."
+        "role": "Shanghai crime boss whose twenty-year bank, bribe and treason web was exposed."
       },
       {
         "ch": 96,
@@ -346,11 +346,11 @@
       },
       {
         "ch": 20,
-        "role": "Runs five teams from a Lanshui safehouse. Orders the search for who protects Shengyuan Capital."
+        "role": "Runs five teams from a Sha City safehouse. Orders the search for who protects Shengyuan Capital."
       },
       {
         "ch": 23,
-        "role": "White Guard's top commander. Gives orders for the Lanshui team and the whole operation."
+        "role": "White Guard's top commander. Gives orders for the Sha City team and the whole operation."
       },
       {
         "ch": 30,
@@ -393,7 +393,7 @@
       },
       {
         "ch": 87,
-        "role": "White Guard officer at the Lanshui safehouse; reports to Number 1."
+        "role": "White Guard officer at the Sha City safehouse; reports to Number 1."
       },
       {
         "ch": 96,
@@ -469,14 +469,14 @@
       "Section Chief Gao"
     ],
     "group": "City, province and the capital",
-    "role": "Senior controller in Qingyan's tower who clears Runway Three for the private jet.",
+    "role": "Senior controller in Shanghai's tower who clears Runway Three for the private jet.",
     "first": 4
   },
   {
     "name": "Lin Wei",
     "aka": [],
     "group": "City, province and the capital",
-    "role": "Junior air controller at Qingyan. He is told to forget the amber strip.",
+    "role": "Junior air controller at Shanghai. He is told to forget the amber strip.",
     "first": 4
   },
   {
@@ -495,7 +495,7 @@
     "later": [
       {
         "ch": 20,
-        "role": "Leads the Computer Access team at the Lanshui safehouse."
+        "role": "Leads the Computer Access team at the Sha City safehouse."
       },
       {
         "ch": 24,
@@ -524,7 +524,7 @@
     "name": "Number 23",
     "aka": [],
     "group": "The White Guard (the hidden guard)",
-    "role": "Hidden guard man in Lanshui who traces the bank records.",
+    "role": "Hidden guard man in Sha City who traces the bank records.",
     "first": 5,
     "later": [
       {
@@ -545,7 +545,7 @@
     "name": "Number 27",
     "aka": [],
     "group": "The White Guard (the hidden guard)",
-    "role": "Hidden guard man in Lanshui who traces coastal shell accounts.",
+    "role": "Hidden guard man in Sha City who traces coastal shell accounts.",
     "first": 5,
     "later": [
       {
@@ -715,7 +715,7 @@
       },
       {
         "ch": 117,
-        "role": "Now owns a new delivery van and runs freight routes between Yunxi and Qingyan."
+        "role": "Now owns a new delivery van and runs freight routes between Yunxi and Shanghai."
       }
     ]
   },
@@ -828,11 +828,11 @@
     "later": [
       {
         "ch": 23,
-        "role": "White Guard financial analyst who leads the Lanshui money-tracking room."
+        "role": "White Guard financial analyst who leads the Sha City money-tracking room."
       },
       {
         "ch": 87,
-        "role": "White Guard officer for eleven years at the Lanshui safehouse."
+        "role": "White Guard officer for eleven years at the Sha City safehouse."
       }
     ]
   },
@@ -934,7 +934,7 @@
     "name": "Lin Xiaoyu",
     "aka": [],
     "group": "Old Street neighbors",
-    "role": "Lin Guoliang's daughter. Forced out of her Lanshui college and later fled the province.",
+    "role": "Lin Guoliang's daughter. Forced out of her Sha City college and later fled the province.",
     "first": 21
   },
   {
@@ -1052,7 +1052,7 @@
       },
       {
         "ch": 65,
-        "role": "Vice Premier. Signs the yellow dispatch order for the Yunxi and Lanshui raids."
+        "role": "Vice Premier. Signs the yellow dispatch order for the Yunxi and Sha City raids."
       },
       {
         "ch": 85,
@@ -1165,7 +1165,7 @@
       },
       {
         "ch": 85,
-        "role": "Shengyuan Capital chairman. Dug a wrecking bunker; now under interrogation in Lanshui."
+        "role": "Shengyuan Capital chairman. Dug a wrecking bunker; now under interrogation in Sha City."
       }
     ]
   },
@@ -1224,7 +1224,7 @@
       },
       {
         "ch": 64,
-        "role": "Lanshui vice governor. His investment groups are tied to Shengyuan Capital."
+        "role": "Sha City vice governor. His investment groups are tied to Shengyuan Capital."
       },
       {
         "ch": 66,
@@ -1236,7 +1236,7 @@
       },
       {
         "ch": 85,
-        "role": "Vice Governor of Lanshui, interrogated the same night as Fang Qiming."
+        "role": "Vice Governor of Sha City, interrogated the same night as Fang Qiming."
       }
     ]
   },
@@ -1255,7 +1255,7 @@
       "Customs Director"
     ],
     "group": "Police and the station",
-    "role": "Qingyan Port Customs Director who took bribes to clear smuggling cargo.",
+    "role": "Shanghai Port Customs Director who took bribes to clear smuggling cargo.",
     "first": 43,
     "later": [
       {
@@ -1264,15 +1264,15 @@
       },
       {
         "ch": 69,
-        "role": "Qingyan customs director. Taken from his home at midnight by central discipline officers."
+        "role": "Shanghai customs director. Taken from his home at midnight by central discipline officers."
       },
       {
         "ch": 96,
-        "role": "Qingyan Port Customs Director; taken in for investigation before dawn."
+        "role": "Shanghai Port Customs Director; taken in for investigation before dawn."
       },
       {
         "ch": 111,
-        "role": "Former Customs Director at Qingyan Port, arrested at midnight on Tuesday."
+        "role": "Former Customs Director at Shanghai Port, arrested at midnight on Tuesday."
       }
     ]
   },
@@ -1843,7 +1843,7 @@
       "Executive Vice Governor"
     ],
     "group": "City, province and the capital",
-    "role": "Lanshui executive vice governor. Asks whether to wait for Lin Zhengde.",
+    "role": "Sha City executive vice governor. Asks whether to wait for Lin Zhengde.",
     "first": 66
   },
   {
@@ -1872,7 +1872,7 @@
       "Deputy Party Secretary"
     ],
     "group": "City, province and the capital",
-    "role": "Lanshui deputy party secretary. Warns against panic before the scale is known.",
+    "role": "Sha City deputy party secretary. Warns against panic before the scale is known.",
     "first": 66
   },
   {
@@ -1900,7 +1900,7 @@
       "Propaganda Minister"
     ],
     "group": "City, province and the capital",
-    "role": "Lanshui propaganda minister. Panics, spills tea, and admits a dinner with Deng Yongchang.",
+    "role": "Sha City propaganda minister. Panics, spills tea, and admits a dinner with Deng Yongchang.",
     "first": 66
   },
   {
@@ -1909,7 +1909,7 @@
       "Organization Minister"
     ],
     "group": "City, province and the capital",
-    "role": "Lanshui organization minister. Asks whether the General Office was warned.",
+    "role": "Sha City organization minister. Asks whether the General Office was warned.",
     "first": 66
   },
   {
@@ -1919,12 +1919,12 @@
       "Secretary Zhao"
     ],
     "group": "City, province and the capital",
-    "role": "Lanshui Provincial Party Secretary. Calls the emergency meeting after Lin Zhengde's arrest.",
+    "role": "Sha Provincial Party Secretary. Calls the emergency meeting after Lin Zhengde's arrest.",
     "first": 66,
     "later": [
       {
         "ch": 93,
-        "role": "Lanshui Provincial Party Secretary; quietly orders Chen Mingde's family left in peace."
+        "role": "Sha Provincial Party Secretary; quietly orders Chen Mingde's family left in peace."
       },
       {
         "ch": 118,
@@ -1938,7 +1938,7 @@
       "Politics and Law Secretary"
     ],
     "group": "City, province and the capital",
-    "role": "Lanshui politics and law secretary. Asks who in Yunxi drew Beijing's eyes.",
+    "role": "Sha City politics and law secretary. Asks who in Yunxi drew Beijing's eyes.",
     "first": 66
   },
   {
@@ -2019,7 +2019,7 @@
       "Commerce Director"
     ],
     "group": "City, province and the capital",
-    "role": "Qingyan municipal commerce director. Warns shipping firms will freeze if Pier Seven is checked.",
+    "role": "Shanghai municipal commerce director. Warns shipping firms will freeze if Pier Seven is checked.",
     "first": 69
   },
   {
@@ -2028,7 +2028,7 @@
       "Deputy Chief Hou Zhenbang"
     ],
     "group": "City, province and the capital",
-    "role": "Qingyan police deputy chief. Reports Xu Wenbin was taken from home at midnight.",
+    "role": "Shanghai police deputy chief. Reports Xu Wenbin was taken from home at midnight.",
     "first": 69
   },
   {
@@ -2037,7 +2037,7 @@
       "Secretary Lin Haibo"
     ],
     "group": "City, province and the capital",
-    "role": "Qingyan Municipal Party Secretary. Demands to know where Customs Director Xu Wenbin is.",
+    "role": "Shanghai Municipal Party Secretary. Demands to know where Customs Director Xu Wenbin is.",
     "first": 69,
     "later": [
       {
@@ -2052,7 +2052,7 @@
       "Port Authority Director"
     ],
     "group": "City, province and the capital",
-    "role": "Qingyan Port Authority director. Reports that Pier Seven was seized at gunpoint.",
+    "role": "Shanghai Port Authority director. Reports that Pier Seven was seized at gunpoint.",
     "first": 69
   },
   {
@@ -2061,7 +2061,7 @@
       "Mayor Wu Yongqiang"
     ],
     "group": "City, province and the capital",
-    "role": "Qingyan mayor. Blames Customs and Lanshui for the Pier Seven approvals.",
+    "role": "Shanghai mayor. Blames Customs and Sha City for the Pier Seven approvals.",
     "first": 69
   },
   {
@@ -2070,7 +2070,7 @@
       "Finance Director"
     ],
     "group": "City, province and the capital",
-    "role": "Qingyan municipal finance director. Says Deng Yongchang runs Pier Seven's midnight swaps.",
+    "role": "Shanghai municipal finance director. Says Deng Yongchang runs Pier Seven's midnight swaps.",
     "first": 69
   },
   {
@@ -2278,7 +2278,7 @@
     "name": "Mo Tianyu",
     "aka": [],
     "group": "Hongrui and the underworld",
-    "role": "Provincial gang boss whose men tried to move in Lanshui and Yunxi.",
+    "role": "Provincial gang boss whose men tried to move in Sha City and Yunxi.",
     "first": 87
   },
   {
@@ -2308,7 +2308,7 @@
     "name": "Xu Haoran",
     "aka": [],
     "group": "City, province and the capital",
-    "role": "Chief of staff to Lanshui Party Secretary Zhao Dehai.",
+    "role": "Chief of staff to Sha City Party Secretary Zhao Dehai.",
     "first": 93
   },
   {
@@ -2333,12 +2333,12 @@
       "Old Li"
     ],
     "group": "City, province and the capital",
-    "role": "Zurich fixer known as Marcus Vance; sent to Qingyan to find the hidden hand.",
+    "role": "Zurich fixer known as Marcus Vance; sent to Shanghai to find the hidden hand.",
     "first": 94,
     "later": [
       {
         "ch": 111,
-        "role": "Zurich fixer, known as Marcus Vance, paid to find who brought down Qingyan's officials."
+        "role": "Zurich fixer, known as Marcus Vance, paid to find who brought down Shanghai's officials."
       },
       {
         "ch": 114,
@@ -2346,7 +2346,7 @@
       },
       {
         "ch": 121,
-        "role": "Now in Lanshui, paying Song Baisheng 15 million to hide servers in a freight deal."
+        "role": "Now in Sha City, paying Song Baisheng 15 million to hide servers in a freight deal."
       }
     ]
   },
@@ -2362,8 +2362,8 @@
     "aka": [
       "Manager Lin"
     ],
-    "group": "Yunxi and Qingyan business",
-    "role": "Regional manager of Ancheng Express Freight in Qingyan; recruits local drivers.",
+    "group": "Yunxi and Shanghai business",
+    "role": "Regional manager of Ancheng Express Freight in Shanghai; recruits local drivers.",
     "first": 99
   },
   {
@@ -2392,7 +2392,7 @@
   {
     "name": "Lin Xiaodong",
     "aka": [],
-    "group": "Qingyan freight firms",
+    "group": "Shanghai freight firms",
     "role": "Thin, anxious freight clerk whose seafood trucks are held up by Zhou Mingcheng.",
     "first": 106
   },
@@ -2411,7 +2411,7 @@
       "Deputy Director Zhou"
     ],
     "group": "City, province and the capital",
-    "role": "Deputy director of the Qingyan port authority; uncle of broker Zhou Mingcheng.",
+    "role": "Deputy director of the Shanghai port authority; uncle of broker Zhou Mingcheng.",
     "first": 106,
     "later": [
       {
@@ -2450,7 +2450,7 @@
       "Chief Shen"
     ],
     "group": "City, province and the capital",
-    "role": "Newly appointed chief of the Qingyan Customs Anti-Smuggling Bureau; hard and direct.",
+    "role": "Newly appointed chief of the Shanghai Customs Anti-Smuggling Bureau; hard and direct.",
     "first": 108
   },
   {
@@ -2491,8 +2491,8 @@
   {
     "name": "Feng Guoqiang",
     "aka": [],
-    "group": "Lanshui and the north",
-    "role": "Rattled Lanshui lawyer who gives Li Weiming the case list and begs him to leave.",
+    "group": "Sha City and the north",
+    "role": "Rattled Sha City lawyer who gives Li Weiming the case list and begs him to leave.",
     "first": 111
   },
   {
@@ -2514,8 +2514,8 @@
   {
     "name": "Song Baisheng",
     "aka": [],
-    "group": "Lanshui and the north",
-    "role": "Chairman of Wanfeng Freight in Lanshui; greedy and eager for Zurich's money.",
+    "group": "Sha City and the north",
+    "role": "Chairman of Wanfeng Freight in Sha City; greedy and eager for Zurich's money.",
     "first": 121
   },
   {
@@ -2524,7 +2524,7 @@
       "Deputy Governor Wu"
     ],
     "group": "Officials",
-    "role": "Compromised Lanshui Deputy Governor backing Wanfeng Freight's hidden Zurich data clause.",
+    "role": "Compromised Sha City Deputy Governor backing Wanfeng Freight's hidden Zurich data clause.",
     "first": 127
   },
   {
@@ -2547,14 +2547,14 @@
     "name": "Number 88",
     "aka": [],
     "group": "White Guard",
-    "role": "White Guard southern branch coordinator tracking Nanhai's Shen Family.",
+    "role": "White Guard southern branch coordinator tracking Shenzhen's Shen Family.",
     "first": 157
   },
   {
     "name": "Shen Jingzhou",
     "aka": [],
     "group": "Rivals & Opponents",
-    "role": "Arrogant heir of Nanhai City's Shen Family holding Haiyue Group's container ship at Nanhai Pier Nine.",
+    "role": "Arrogant heir of Shenzhen's Shen Family holding Haiyue Group's container ship at Shenzhen Pier Nine.",
     "first": 160
   }
 ]
