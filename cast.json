@@ -13,7 +13,7 @@
     "later": [
       {
         "ch": 3,
-        "role": "Every Black Pine Guard member's loyalty ends at him. The guard answers only to him."
+        "role": "Every White Guard member's loyalty ends at him. The guard answers only to him."
       },
       {
         "ch": 22,
@@ -21,11 +21,11 @@
       },
       {
         "ch": 25,
-        "role": "Commands Black Pine Guard, the private shield that protects him."
+        "role": "Commands White Guard, the private shield that protects him."
       },
       {
         "ch": 30,
-        "role": "Turns the Zero key and orders a nationwide lockdown."
+        "role": "Turns the Black key and orders a nationwide lockdown."
       },
       {
         "ch": 46,
@@ -37,7 +37,7 @@
       },
       {
         "ch": 88,
-        "role": "Our hero. Chen Mingde's nephew. Black Pine Guard reports to him by private phone."
+        "role": "Our hero. Chen Mingde's nephew. White Guard reports to him by private phone."
       },
       {
         "ch": 106,
@@ -336,13 +336,13 @@
     "aka": [
       "Number One"
     ],
-    "group": "The Black Pine Guard (the hidden guard)",
+    "group": "The White Guard (the hidden guard)",
     "role": "Runs the hidden guard's network through locked channels. Keeps no list of real names.",
     "first": 3,
     "later": [
       {
         "ch": 5,
-        "role": "The unseen head of the Black Pine Guard. Gives orders on Chen Mingde's release."
+        "role": "The unseen head of the White Guard. Gives orders on Chen Mingde's release."
       },
       {
         "ch": 20,
@@ -350,19 +350,19 @@
       },
       {
         "ch": 23,
-        "role": "Black Pine Guard's top commander. Gives orders for the Lanshui team and the whole operation."
+        "role": "White Guard's top commander. Gives orders for the Lanshui team and the whole operation."
       },
       {
         "ch": 30,
-        "role": "Stands down Black Pine Guard on Chen Xuan's order, losing all command to Zero Guard."
+        "role": "Stands down White Guard on Chen Xuan's order, losing all command to Black Guard."
       },
       {
         "ch": 46,
-        "role": "Black Pine Guard veteran of fifteen years who obeys Zero without question."
+        "role": "White Guard veteran of fifteen years who obeys Zero without question."
       },
       {
         "ch": 87,
-        "role": "Head of Black Pine Guard. Reports to Chen Xuan on a private line."
+        "role": "Head of White Guard. Reports to Chen Xuan on a private line."
       },
       {
         "ch": 110,
@@ -375,7 +375,7 @@
     "aka": [
       "Number Seven"
     ],
-    "group": "The Black Pine Guard (the hidden guard)",
+    "group": "The White Guard (the hidden guard)",
     "role": "Numbered guard who rides with Chen Xuan and gives him quiet reports.",
     "first": 3,
     "later": [
@@ -385,15 +385,15 @@
       },
       {
         "ch": 27,
-        "role": "Black Pine operative with nine years of service; brings Chen Xuan the sealed proof tablet."
+        "role": "White Guard operative with nine years of service; brings Chen Xuan the sealed proof tablet."
       },
       {
         "ch": 46,
-        "role": "Black Pine Guard member who questions Zero's choice to leave Yunxi suspects free."
+        "role": "White Guard member who questions Black Guard's choice to leave Yunxi suspects free."
       },
       {
         "ch": 87,
-        "role": "Black Pine Guard officer at the Lanshui safehouse; reports to Number 1."
+        "role": "White Guard officer at the Lanshui safehouse; reports to Number 1."
       },
       {
         "ch": 96,
@@ -410,7 +410,7 @@
     "aka": [
       "Number Nine"
     ],
-    "group": "The Black Pine Guard (the hidden guard)",
+    "group": "The White Guard (the hidden guard)",
     "role": "Numbered guard whose team clears the south service gate for Chen Xuan.",
     "first": 3,
     "later": [
@@ -420,7 +420,7 @@
       },
       {
         "ch": 46,
-        "role": "Black Pine Guard member who quickly links the Yunxi holds to Chen Mingde."
+        "role": "White Guard member who quickly links the Yunxi holds to Chen Mingde."
       }
     ]
   },
@@ -482,14 +482,14 @@
   {
     "name": "Number 12",
     "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
+    "group": "The White Guard (the hidden guard)",
     "role": "Hidden guard man who keeps the airfield and the ground line open.",
     "first": 4
   },
   {
     "name": "Number 14",
     "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
+    "group": "The White Guard (the hidden guard)",
     "role": "Hidden guard man in Yunxi County who passes on Number 1's orders.",
     "first": 5,
     "later": [
@@ -499,14 +499,14 @@
       },
       {
         "ch": 24,
-        "role": "Black Pine field agent who opened the middleman's hotel safe without a scratch."
+        "role": "White Guard field agent who opened the middleman's hotel safe without a scratch."
       }
     ]
   },
   {
     "name": "Number 19",
     "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
+    "group": "The White Guard (the hidden guard)",
     "role": "Hidden guard man in Yunxi who covers the police station back lane.",
     "first": 5,
     "later": [
@@ -523,7 +523,7 @@
   {
     "name": "Number 23",
     "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
+    "group": "The White Guard (the hidden guard)",
     "role": "Hidden guard man in Lanshui who traces the bank records.",
     "first": 5,
     "later": [
@@ -533,7 +533,7 @@
       },
       {
         "ch": 91,
-        "role": "Black Pine Guard agent who watches Old Street from nearby."
+        "role": "White Guard agent who watches Old Street from nearby."
       },
       {
         "ch": 100,
@@ -544,7 +544,7 @@
   {
     "name": "Number 27",
     "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
+    "group": "The White Guard (the hidden guard)",
     "role": "Hidden guard man in Lanshui who traces coastal shell accounts.",
     "first": 5,
     "later": [
@@ -554,7 +554,7 @@
       },
       {
         "ch": 24,
-        "role": "Black Pine field agent who copied the middleman's stolen drive in the hotel."
+        "role": "White Guard field agent who copied the middleman's stolen drive in the hotel."
       }
     ]
   },
@@ -634,7 +634,7 @@
   {
     "name": "Number 56",
     "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
+    "group": "The White Guard (the hidden guard)",
     "role": "Hidden guard man on night duty inside Old Street Station.",
     "first": 6,
     "later": [
@@ -784,7 +784,7 @@
   {
     "name": "Number 34",
     "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
+    "group": "The White Guard (the hidden guard)",
     "role": "Guard computer expert. Watches hospital and police computers for odd records.",
     "first": 11,
     "later": [
@@ -794,14 +794,14 @@
       },
       {
         "ch": 24,
-        "role": "Black Pine tech chief who opens stolen drives in a shielded vault."
+        "role": "White Guard tech chief who opens stolen drives in a shielded vault."
       }
     ]
   },
   {
     "name": "Number 42",
     "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
+    "group": "The White Guard (the hidden guard)",
     "role": "Hidden guard man assigned to find Ma Er and his payoff proof.",
     "first": 11,
     "later": [
@@ -822,17 +822,17 @@
   {
     "name": "Number 11",
     "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
+    "group": "The White Guard (the hidden guard)",
     "role": "Money expert. Triggered the bank freeze and finds a sudden huge total.",
     "first": 14,
     "later": [
       {
         "ch": 23,
-        "role": "Black Pine financial analyst who leads the Lanshui money-tracking room."
+        "role": "White Guard financial analyst who leads the Lanshui money-tracking room."
       },
       {
         "ch": 87,
-        "role": "Black Pine Guard officer for eleven years at the Lanshui safehouse."
+        "role": "White Guard officer for eleven years at the Lanshui safehouse."
       }
     ]
   },
@@ -919,7 +919,7 @@
   {
     "name": "Number 68",
     "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
+    "group": "The White Guard (the hidden guard)",
     "role": "Hidden guard tech man who copies the Land Reserve computer.",
     "first": 18
   },
@@ -967,8 +967,8 @@
   {
     "name": "Number 73",
     "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
-    "role": "Black Pine financial analyst who cracks the Shengyuan Capital bank vault.",
+    "group": "The White Guard (the hidden guard)",
+    "role": "White Guard financial analyst who cracks the Shengyuan Capital bank vault.",
     "first": 23
   },
   {
@@ -1085,7 +1085,7 @@
     "later": [
       {
         "ch": 46,
-        "role": "General who already used the vault line to reach Zero Guard's command."
+        "role": "General who already used the vault line to reach Black Guard's command."
       },
       {
         "ch": 68,
@@ -2469,7 +2469,7 @@
     "later": [
       {
         "ch": 113,
-        "role": "Knocked out by Zero Guard in the park and sent to State Security."
+        "role": "Knocked out by Black Guard in the park and sent to State Security."
       }
     ]
   },
@@ -2484,7 +2484,7 @@
     "later": [
       {
         "ch": 113,
-        "role": "Knocked out by Zero Guard in the park and sent to State Security."
+        "role": "Knocked out by Black Guard in the park and sent to State Security."
       }
     ]
   },
@@ -2546,8 +2546,8 @@
   {
     "name": "Number 88",
     "aka": [],
-    "group": "Black Pine Guard",
-    "role": "Black Pine Guard southern branch coordinator tracking Nanhai's Shen Family.",
+    "group": "White Guard",
+    "role": "White Guard southern branch coordinator tracking Nanhai's Shen Family.",
     "first": 157
   },
   {
