@@ -1,3341 +1,3304 @@
 [
-  {
-    "name": "Chen Xuan",
-    "aka": [
-      "Big Brother",
-      "Brother Xuan",
-      "Xiao Xuan",
-      "Xuan",
-      "Mr. Chen"
-    ],
-    "group": "Chen's family and friends",
-    "role": "Our hero. A quiet junior operations supervisor at Hengxin Logistics who leaves at 4:55.",
-    "first": 1,
-    "later": [
-      {
-        "ch": 3,
-        "role": "Every Black Pine Guard member's loyalty ends at him. The guard answers only to him."
-      },
-      {
-        "ch": 22,
-        "role": "Our hero. Quiet son of Chen Jianguo, watching the Old Street case from his parents' home."
-      },
-      {
-        "ch": 25,
-        "role": "Commands Black Pine Guard, the private shield that protects him."
-      },
-      {
-        "ch": 30,
-        "role": "Turns the Zero key and orders a nationwide lockdown."
-      },
-      {
-        "ch": 46,
-        "role": "Our hero. Chen Mingde's nephew, whose family the sweep must keep out of trouble."
-      },
-      {
-        "ch": 73,
-        "role": "Chen Mingde's nephew. Quiet and calm while the family waits at home."
-      },
-      {
-        "ch": 88,
-        "role": "Our hero. Chen Mingde's nephew. Black Pine Guard reports to him by private phone."
-      },
-      {
-        "ch": 106,
-        "role": "Calm Hengxin Logistics clerk who avoids showing off and drinks tea from a green thermos."
-      },
-      {
-        "ch": 143,
-        "role": "Meets Elder Song face to face at the Western Hills lake pavilion"
-      },
-      {
-        "ch": 146,
-        "role": "Turned down Deputy General Manager post and 50,000 yuan monthly pay."
-      },
-      {
-        "ch": 158,
-        "role": "Volunteers for Shenzhen trip to face the Shen Family at Pier Nine."
-      },
-      {
-        "ch": 186,
-        "role": "Hengxin gives him a 20,000 yuan bonus for the Shenzhen work"
-      },
-      {
-        "ch": 195,
-        "role": "Flies north by private jet to take charge of the Changbai operation"
-      }
-    ]
-  },
-  {
-    "name": "Hu Dewei",
-    "aka": [
-      "Manager Hu",
-      "Supervisor Hu",
-      "Department Manager Hu",
-      "Old Hu"
-    ],
-    "group": "Office at Hengxin",
-    "role": "Department manager at Hengxin Logistics. He orders everyone to stay late and threatens Chen Xuan.",
-    "first": 1,
-    "later": [
-      {
-        "ch": 97,
-        "role": "Hengxin department manager; rude and quick to blame Chen Xuan."
-      },
-      {
-        "ch": 106,
-        "role": "Hengxin supervisor who dumps errands on quiet clerks and avoids hard work."
-      },
-      {
-        "ch": 158,
-        "role": "Fakes a back injury to avoid the Shenzhen trip."
-      },
-      {
-        "ch": 186,
-        "role": "Publicly embarrassed by Pan Xiulan's questions about the Haiyue deal"
-      }
-    ]
-  },
-  {
-    "name": "Pan Xiulan",
-    "aka": [
-      "Sister Pan"
-    ],
-    "group": "Office at Hengxin",
-    "role": "Two desks away at Hengxin Logistics. Gives Chen Xuan a warning look when the manager shouts.",
-    "first": 1,
-    "later": [
-      {
-        "ch": 97,
-        "role": "Coworker at Hengxin on the twelfth floor; friendly to Chen Xuan."
-      }
-    ]
-  },
-  {
-    "name": "Sun Haoran",
-    "aka": [
-      "General Manager Sun Haoran",
-      "General Manager Sun"
-    ],
-    "group": "Office at Hengxin",
-    "role": "General manager at Hengxin Logistics. Chen Xuan sent his assistant the fixed weight report.",
-    "first": 1,
-    "later": [
-      {
-        "ch": 97,
-        "role": "Hengxin General Manager; panics over stuck cold-chain containers."
-      },
-      {
-        "ch": 122,
-        "role": "General Manager of Hengxin Logistics; nervous, proud, and eager for the forum invitation."
-      },
-      {
-        "ch": 146,
-        "role": "Offers Chen Xuan Deputy General Manager post; Chen declines."
-      },
-      {
-        "ch": 155,
-        "role": "Signs 8 million yuan Haiyue coastal contract, then the ship is held."
-      },
-      {
-        "ch": 186,
-        "role": "Announces Haiyue Group doubles Hengxin's yearly contract to 120 million yuan"
-      }
-    ]
-  },
-  {
-    "name": "Zhang Pengfei",
-    "aka": [],
-    "group": "Office at Hengxin",
-    "role": "Hengxin colleague who boasts. His initials are on a fake 14,000-yuan storage fee.",
-    "first": 1,
-    "later": [
-      {
-        "ch": 97,
-        "role": "Hengxin clerk who mocks Chen Xuan and brags about his office ties."
-      },
-      {
-        "ch": 98,
-        "role": "Blamed for the stuck Hongda Foods containers; may lose his bonus or job."
-      },
-      {
-        "ch": 122,
-        "role": "Hengxin clerk who loves football and avoids the Sha trip."
-      }
-    ]
-  },
-  {
-    "name": "Zheng Qian",
-    "aka": [],
-    "group": "Office at Hengxin",
-    "role": "Colleague across the aisle at Hengxin Logistics. Jokes with Chen Xuan and cheers his stand.",
-    "first": 1,
-    "later": [
-      {
-        "ch": 97,
-        "role": "Quiet Hengxin coworker who warns Chen Xuan about Hu Dewei and Zhang Pengfei."
-      }
-    ]
-  },
-  {
-    "name": "Chen Jianguo",
-    "aka": [
-      "Dad"
-    ],
-    "group": "Chen's family and friends",
-    "role": "Chen Xuan's father. Went to Old Street Station to beg for his brother's blood pressure pills.",
-    "first": 2,
-    "later": [
-      {
-        "ch": 22,
-        "role": "Chen Xuan's father and Chen Mingde's older brother; was turned away from the station."
-      },
-      {
-        "ch": 54,
-        "role": "Chen Xuan's father and Chen Mingde's brother. Smokes nervously and wants to beg police."
-      },
-      {
-        "ch": 73,
-        "role": "Chen Mingde's brother. Family kept safe at home during the raid."
-      },
-      {
-        "ch": 88,
-        "role": "Chen Mingde's younger brother. Helps repair the damaged hardware shop on Old Street."
-      },
-      {
-        "ch": 112,
-        "role": "Chen Xuan's father, a plain Old Street resident in Yunxi County."
-      }
-    ]
-  },
-  {
-    "name": "Chen Mingde",
-    "aka": [
-      "Second Uncle",
-      "Mingde",
-      "Uncle Chen Mingde"
-    ],
-    "group": "Chen's family and friends",
-    "role": "Chen Xuan's second uncle. Owns Mingde Hardware on Old Street and was arrested for an assault.",
-    "first": 2,
-    "later": [
-      {
-        "ch": 13,
-        "role": "Still locked in Holding Cell Two. A night guard brings him water and a blanket."
-      },
-      {
-        "ch": 22,
-        "role": "Younger brother of Chen Jianguo; held at Old Street Station since Friday night."
-      },
-      {
-        "ch": 46,
-        "role": "Yunxi hardware shopkeeper on Old Street, framed on a false charge the sweep will clear."
-      },
-      {
-        "ch": 54,
-        "role": "Second Uncle. Now held inside Old Street Station after a fake assault report."
-      },
-      {
-        "ch": 67,
-        "role": "Old Street hardware shopkeeper. Refused to sell his shop; jailed on a fake charge."
-      },
-      {
-        "ch": 73,
-        "role": "Cleared of all charges and freed. Driven home by Ji Changming."
-      },
-      {
-        "ch": 88,
-        "role": "Chen Xuan's uncle. Owns Mingde Hardware on Old Street; recently cleared of a false charge."
-      },
-      {
-        "ch": 100,
-        "role": "Reopens Mingde Hardware with a new awning; neighbors gather to celebrate."
-      },
-      {
-        "ch": 116,
-        "role": "Chen Xuan's uncle who runs Mingde Hardware on Old Street."
-      }
-    ]
-  },
-  {
-    "name": "Liu Meifang",
-    "aka": [
-      "Mom"
-    ],
-    "group": "Chen's family and friends",
-    "role": "Chen Xuan's mother. Calls him in tears after Chen Mingde is arrested.",
-    "first": 2,
-    "later": [
-      {
-        "ch": 22,
-        "role": "Chen Xuan's mother; quietly peels apples and keeps the family at home."
-      },
-      {
-        "ch": 54,
-        "role": "Chen Xuan's mother. Frightened and sleepless, wants to beg the police for Chen Mingde."
-      },
-      {
-        "ch": 73,
-        "role": "Chen Mingde's sister-in-law. Kept safe at home during the raid."
-      },
-      {
-        "ch": 88,
-        "role": "Asks Chen Xuan home for braised pork ribs. Runs the family kitchen."
-      },
-      {
-        "ch": 115,
-        "role": "Chen Xuan's mother, who lives on Old Street in Yunxi County."
-      }
-    ]
-  },
-  {
-    "name": "Wu Lanying",
-    "aka": [
-      "Second Aunt",
-      "Sister-in-law",
-      "Auntie Lanying"
-    ],
-    "group": "Chen's family and friends",
-    "role": "Chen Mingde's wife. She fainted outside the shop when police took her husband.",
-    "first": 2,
-    "later": [
-      {
-        "ch": 26,
-        "role": "Chen Mingde's wife and mother of Chen Hao and Chen Yuan; hides her fear."
-      },
-      {
-        "ch": 54,
-        "role": "Second Aunt, Chen Mingde's wife. Tearful and blames herself for the arrest."
-      },
-      {
-        "ch": 73,
-        "role": "Chen Mingde's wife. Kept safe and calm at home during the raid."
-      },
-      {
-        "ch": 88,
-        "role": "Chen Mingde's wife. Keeps the family and shop in order and scolds everyone."
-      },
-      {
-        "ch": 116,
-        "role": "Chen Mingde's wife who worries about the street and runs the family kitchen."
-      }
-    ]
-  },
-  {
-    "name": "Deng Yongchang",
-    "aka": [
-      "Chairman Deng",
-      "Chairman Deng Yongchang",
-      "Developer Deng Yongchang"
-    ],
-    "group": "Hongrui and the underworld",
-    "role": "Local developer who owns sixty percent of Hongrui Real Estate on public papers.",
-    "first": 3,
-    "later": [
-      {
-        "ch": 13,
-        "role": "Hongrui's boss. Panics when four company bank accounts freeze overnight."
-      },
-      {
-        "ch": 22,
-        "role": "County official who pressures Cheng Biao about the quarry trucks and street thugs."
-      },
-      {
-        "ch": 28,
-        "role": "Chairman who cleared Chen Mingde's papers and ordered his shop cleared."
-      },
-      {
-        "ch": 33,
-        "role": "Hongrui Plaza chairman, trapped in his top-floor office as phones die."
-      },
-      {
-        "ch": 46,
-        "role": "Yunxi County figure behind the Old Street demolition scheme, to be arrested at dawn."
-      },
-      {
-        "ch": 64,
-        "role": "Developer behind Yunxi County's fake demolition bond. Credit lines are frozen."
-      },
-      {
-        "ch": 74,
-        "role": "Hongrui Real Estate chairman. Handcuffed and taken from Hongrui Plaza in a van."
-      },
-      {
-        "ch": 86,
-        "role": "Qingyan crime boss whose twenty-year bank, bribe and treason web was exposed."
-      },
-      {
-        "ch": 96,
-        "role": "Arrested; gave up a full list of names to investigators."
-      },
-      {
-        "ch": 116,
-        "role": "Sentenced to life imprisonment; 420 million yuan in assets seized."
-      }
-    ]
-  },
-  {
-    "name": "Number 1",
-    "aka": [
-      "Number One"
-    ],
-    "group": "The Black Pine Guard (the hidden guard)",
-    "role": "Runs the hidden guard's network through locked channels. Keeps no list of real names.",
-    "first": 3,
-    "later": [
-      {
-        "ch": 5,
-        "role": "The unseen head of the Black Pine Guard. Gives orders on Chen Mingde's release."
-      },
-      {
-        "ch": 20,
-        "role": "Runs five teams from a Sha safehouse. Orders the search for who protects Shanshui Group."
-      },
-      {
-        "ch": 23,
-        "role": "Black Pine Guard's top commander. Gives orders for the Sha team and the whole operation."
-      },
-      {
-        "ch": 30,
-        "role": "Stands down Black Pine Guard on Chen Xuan's order, losing all command to Zero Guard."
-      },
-      {
-        "ch": 46,
-        "role": "Black Pine Guard veteran of fifteen years who obeys Zero without question."
-      },
-      {
-        "ch": 87,
-        "role": "Head of Black Pine Guard. Reports to Chen Xuan on a private line."
-      },
-      {
-        "ch": 110,
-        "role": "Head of the hidden guard; calm and unseen, who keeps Chen Xuan's life quiet and safe."
-      },
-      {
-        "ch": 130,
-        "role": "Runs the counter-move and sends evidence to Sha Ruijin and Ding Guoping"
-      },
-      {
-        "ch": 141,
-        "role": "Arranges the Elder Song meeting and briefs Number 7"
-      }
-    ]
-  },
-  {
-    "name": "Number 7",
-    "aka": [
-      "Number Seven"
-    ],
-    "group": "The Black Pine Guard (the hidden guard)",
-    "role": "Numbered guard who rides with Chen Xuan and gives him quiet reports.",
-    "first": 3,
-    "later": [
-      {
-        "ch": 11,
-        "role": "Gives field orders from the van and holds the proof until the right hour."
-      },
-      {
-        "ch": 27,
-        "role": "Black Pine operative with nine years of service; brings Chen Xuan the sealed proof tablet."
-      },
-      {
-        "ch": 46,
-        "role": "Black Pine Guard member who questions Zero's choice to leave Yunxi suspects free."
-      },
-      {
-        "ch": 87,
-        "role": "Black Pine Guard officer at the Sha safehouse; reports to Number 1."
-      },
-      {
-        "ch": 96,
-        "role": "Drives Chen Xuan to the airstrip and briefs him on the clean-up."
-      },
-      {
-        "ch": 110,
-        "role": "Aide to Number 1 who reports on Chen Xuan and handles guard teams."
-      },
-      {
-        "ch": 141,
-        "role": "Assigned to fly Chen Xuan to the capital in white gear"
-      },
-      {
-        "ch": 173,
-        "role": "Leads forty White Guard members through the gate into the Shen villa."
-      }
-    ]
-  },
-  {
-    "name": "Number 9",
-    "aka": [
-      "Number Nine"
-    ],
-    "group": "The Black Pine Guard (the hidden guard)",
-    "role": "Numbered guard whose team clears the south service gate for Chen Xuan.",
-    "first": 3,
-    "later": [
-      {
-        "ch": 19,
-        "role": "Leads the river watch on the Pier Four barge with Number 19."
-      },
-      {
-        "ch": 46,
-        "role": "Black Pine Guard member who quickly links the Yunxi holds to Chen Mingde."
-      }
-    ]
-  },
-  {
-    "name": "Yan Tiehu",
-    "aka": [
-      "Gang leader Yan Tiehu"
-    ],
-    "group": "Hongrui and the underworld",
-    "role": "Former quarry contractor who runs street work on Old Street for Hongrui Real Estate.",
-    "first": 3,
-    "later": [
-      {
-        "ch": 10,
-        "role": "Hongrui's street boss. Tries to slap Chen Jianguo and is stopped by Chen Xuan."
-      },
-      {
-        "ch": 22,
-        "role": "Street gang boss whose thugs have gone quiet on the Old Street job."
-      },
-      {
-        "ch": 34,
-        "role": "Captured at Pier Four; offers to give up Deng Yongchang's shipping lists."
-      },
-      {
-        "ch": 46,
-        "role": "Street thug who ran the Old Street demolition crew with Cheng Biao."
-      },
-      {
-        "ch": 65,
-        "role": "Gang boss who threatens Old Street shopkeepers. Unaware of the coming raid."
-      },
-      {
-        "ch": 75,
-        "role": "Gang boss. Arrested in a dawn raid with about twenty thugs."
-      },
-      {
-        "ch": 116,
-        "role": "Sentenced to death with a two-year reprieve; loses political rights."
-      }
-    ]
-  },
-  {
-    "name": "Gao Jianming",
-    "aka": [
-      "Section Chief Gao"
-    ],
-    "group": "City, province and the capital",
-    "role": "Senior controller in Qingyan's tower who clears Runway Three for the private jet.",
-    "first": 4
-  },
-  {
-    "name": "Lin Wei",
-    "aka": [],
-    "group": "City, province and the capital",
-    "role": "Junior air controller at Qingyan. He is told to forget the amber strip.",
-    "first": 4
-  },
-  {
-    "name": "Number 12",
-    "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
-    "role": "Hidden guard man who keeps the airfield and the ground line open.",
-    "first": 4,
-    "later": [
-      {
-        "ch": 189,
-        "role": "Sent north with Number 44 to find the hidden valley on Changbai Mountain"
-      }
-    ]
-  },
-  {
-    "name": "Number 14",
-    "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
-    "role": "Hidden guard man in Yunxi County who passes on Number 1's orders.",
-    "first": 5,
-    "later": [
-      {
-        "ch": 20,
-        "role": "Leads the Computer Access team at the Sha safehouse."
-      },
-      {
-        "ch": 24,
-        "role": "Black Pine field agent who opened the middleman's hotel safe without a scratch."
-      }
-    ]
-  },
-  {
-    "name": "Number 19",
-    "aka": [
-      "Number Nineteen"
-    ],
-    "group": "The Black Pine Guard (the hidden guard)",
-    "role": "Hidden guard man in Yunxi who covers the police station back lane.",
-    "first": 5,
-    "later": [
-      {
-        "ch": 12,
-        "role": "Breaks into Golden Wheat Bakery and swaps its camera hard drive."
-      },
-      {
-        "ch": 19,
-        "role": "River-watch partner who matches the barge's engine and shipping records."
-      },
-      {
-        "ch": 168,
-        "role": "Runs the Yantian Port night watch and tracks the smuggling containers."
-      }
-    ]
-  },
-  {
-    "name": "Number 23",
-    "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
-    "role": "Hidden guard man in Sha who traces the bank records.",
-    "first": 5,
-    "later": [
-      {
-        "ch": 9,
-        "role": "Runs Gong's Noodles on Old Street as a cover for the guard's men."
-      },
-      {
-        "ch": 91,
-        "role": "Black Pine Guard agent who watches Old Street from nearby."
-      },
-      {
-        "ch": 100,
-        "role": "Works at Gong's Noodles. Gives out buns to Old Street neighbors."
-      }
-    ]
-  },
-  {
-    "name": "Number 27",
-    "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
-    "role": "Hidden guard man in Sha who traces coastal shell accounts.",
-    "first": 5,
-    "later": [
-      {
-        "ch": 17,
-        "role": "Secretly records the tea-room talk between Sun Weiming and Liang Guodong."
-      },
-      {
-        "ch": 24,
-        "role": "Black Pine field agent who copied the middleman's stolen drive in the hotel."
-      }
-    ]
-  },
-  {
-    "name": "Zhou Quan",
-    "aka": [
-      "Deputy Zhou Quan",
-      "Officer Zhou Quan",
-      "Deputy Director Zhou Quan"
-    ],
-    "group": "Police and the station",
-    "role": "Deputy chief at Old Street Station. Signed Chen Mingde's hold slip after a phone call.",
-    "first": 5,
-    "later": [
-      {
-        "ch": 22,
-        "role": "Pushes the Old Street demolition schedule; receives transfer papers from families he pressures."
-      },
-      {
-        "ch": 33,
-        "role": "Deputy at Old Street Station; panics as radios die and blames Cheng Biao."
-      },
-      {
-        "ch": 54,
-        "role": "Old Street Station officer who wrote the fake assault report on Chen Mingde."
-      },
-      {
-        "ch": 72,
-        "role": "Old Street deputy station director. Says Cheng Biao ordered the warrant time faked."
-      }
-    ]
-  },
-  {
-    "name": "Cheng Biao",
-    "aka": [
-      "Station Director Cheng Biao",
-      "Director Cheng Biao"
-    ],
-    "group": "Police and the station",
-    "role": "Old Street Station director. Chen Xuan expects him to bury any clean proof.",
-    "first": 6,
-    "later": [
-      {
-        "ch": 13,
-        "role": "Keeps Chen Mingde locked. Gets a panic call and fears a trap."
-      },
-      {
-        "ch": 22,
-        "role": "Station director of Old Street Station; locks up shopkeepers for Hongrui Real Estate."
-      },
-      {
-        "ch": 28,
-        "role": "Old Street Station director, under orders to clear Chen Mingde's shop."
-      },
-      {
-        "ch": 33,
-        "role": "Cornered at Old Street Station as police radios and phones die."
-      },
-      {
-        "ch": 46,
-        "role": "One of five Yunxi figures held in place for a lawful local sweep."
-      },
-      {
-        "ch": 65,
-        "role": "Old Street Station director. Provincial teams plan to grab him with Yan Tiehu."
-      },
-      {
-        "ch": 72,
-        "role": "Old Street Station director. Arrested for the backdated warrant and fake X-ray."
-      },
-      {
-        "ch": 116,
-        "role": "Sentenced to eighteen years in prison for bribery and framing citizens."
-      }
-    ]
-  },
-  {
-    "name": "Number 56",
-    "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
-    "role": "Hidden guard man on night duty inside Old Street Station.",
-    "first": 6,
-    "later": [
-      {
-        "ch": 13,
-        "role": "Posing as a night guard, brings Chen Mingde warm water and a blanket."
-      },
-      {
-        "ch": 20,
-        "role": "Field Action team lead. Urges a fast strike on Pier Twelve and the provincial tier."
-      },
-      {
-        "ch": 24,
-        "role": "Stands guard in the vault while Number 34 opens the stolen drive."
-      }
-    ]
-  },
-  {
-    "name": "Chen Hao",
-    "aka": [],
-    "group": "Chen's family and friends",
-    "role": "Chen Xuan's seventeen-year-old younger brother. Angry at the bullying and wants to fight back.",
-    "first": 8,
-    "later": [
-      {
-        "ch": 77,
-        "role": "Chen Mingde's nephew. Nervous at home, cooking while the raid happened."
-      },
-      {
-        "ch": 117,
-        "role": "Chen Xuan's younger brother, a cheerful young man who teases Wang Lei."
-      },
-      {
-        "ch": 193,
-        "role": "Scores 138 of 150 on a math mock and ranks third in his grade"
-      }
-    ]
-  },
-  {
-    "name": "Chen Yuan",
-    "aka": [],
-    "group": "Chen's family and friends",
-    "role": "Chen Xuan's nineteen-year-old sister. Her calls for help to local contacts all failed.",
-    "first": 8,
-    "later": [
-      {
-        "ch": 77,
-        "role": "Chen Mingde's nephew. Joins Chen Hao to welcome him home."
-      },
-      {
-        "ch": 117,
-        "role": "Chen Hao's sister, who serves dinner and teases her brother."
-      }
-    ]
-  },
-  {
-    "name": "Wang Lei",
-    "aka": [],
-    "group": "Old Street neighbors",
-    "role": "Chen Xuan's old high school classmate. Drives a delivery cart and quietly helped the Chen family.",
-    "first": 8,
-    "later": [
-      {
-        "ch": 75,
-        "role": "Young Old Street neighbor. Shares live arrest news on his phone."
-      },
-      {
-        "ch": 79,
-        "role": "Delivery tricycle rider. Chen Xuan tells him to keep his phone on for a job."
-      },
-      {
-        "ch": 99,
-        "role": "Yunxi County tricycle driver, struggling since his father's hospital bills."
-      },
-      {
-        "ch": 106,
-        "role": "Hengxin clerk who sees through Hu Dewei's tricks and keeps quiet."
-      },
-      {
-        "ch": 117,
-        "role": "Now owns a new delivery van and runs freight routes between Yunxi and Qingyan."
-      }
-    ]
-  },
-  {
-    "name": "Yu Changshun",
-    "aka": [
-      "Uncle Yu Changshun",
-      "Old tailor Yu Changshun",
-      "Old Yu",
-      "Uncle Yu"
-    ],
-    "group": "Old Street neighbors",
-    "role": "Sixty-eight-year-old tailor on Old Street. He watches the lit hardware shop nervously.",
-    "first": 9,
-    "later": [
-      {
-        "ch": 10,
-        "role": "Steps out with a pressing iron to stop Yan Tiehu's men."
-      },
-      {
-        "ch": 21,
-        "role": "Tells Chen Xuan how Hongrui tried to push out Lin Guoliang."
-      },
-      {
-        "ch": 75,
-        "role": "Seventy-year-old Old Street tailor. Cheers the arrests of Yan Tiehu and Cheng Biao."
-      },
-      {
-        "ch": 92,
-        "role": "Old Street neighbor. Old tailor who sells cloth and quilts."
-      },
-      {
-        "ch": 116,
-        "role": "Loud, warm Old Street neighbor who celebrates the court verdicts with rice wine."
-      }
-    ]
-  },
-  {
-    "name": "Fang Zhihua",
-    "aka": [
-      "Deputy Director Fang Zhihua"
-    ],
-    "group": "County officials",
-    "role": "Deputy director at Yunxi People's Hospital. He signed a false head-injury report for Ma Er.",
-    "first": 11,
-    "later": [
-      {
-        "ch": 12,
-        "role": "Locked the real head scan and pasted a pre-written injury report from a flash drive."
-      }
-    ]
-  },
-  {
-    "name": "Ma Er",
-    "aka": [],
-    "group": "Hongrui and the underworld",
-    "role": "Drifter paid to fake a fall outside Mingde Hardware. Police use it to hold Chen Mingde.",
-    "first": 11,
-    "later": [
-      {
-        "ch": 12,
-        "role": "Boasts in a mahjong parlor that Yan Tiehu paid him five thousand yuan."
-      }
-    ]
-  },
-  {
-    "name": "Number 34",
-    "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
-    "role": "Guard computer expert. Watches hospital and police computers for odd records.",
-    "first": 11,
-    "later": [
-      {
-        "ch": 20,
-        "role": "River Shipping team lead. Checks Pier Twelve records for past shipments."
-      },
-      {
-        "ch": 24,
-        "role": "Black Pine tech chief who opens stolen drives in a shielded vault."
-      },
-      {
-        "ch": 130,
-        "role": "Confirms the server, money and passport proof for Article 14"
-      }
-    ]
-  },
-  {
-    "name": "Number 42",
-    "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
-    "role": "Hidden guard man assigned to find Ma Er and his payoff proof.",
-    "first": 11,
-    "later": [
-      {
-        "ch": 12,
-        "role": "Lifts Ma Er's payoff envelope and copies the call with Yan Tiehu."
-      },
-      {
-        "ch": 18,
-        "role": "Leads the Land Reserve basement break-in with Number 68."
-      },
-      {
-        "ch": 24,
-        "role": "Stands guard in the vault; checks stolen military and power-grid files."
-      }
-    ]
-  },
-  {
-    "name": "Number 11",
-    "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
-    "role": "Money expert. Triggered the bank freeze and finds a sudden huge total.",
-    "first": 14,
-    "later": [
-      {
-        "ch": 23,
-        "role": "Black Pine financial analyst who leads the Sha money-tracking room."
-      },
-      {
-        "ch": 87,
-        "role": "Black Pine Guard officer for eleven years at the Sha safehouse."
-      },
-      {
-        "ch": 130,
-        "role": "Lays out the money trail and packs the Jingzhou City evidence"
-      }
-    ]
-  },
-  {
-    "name": "Qian Weidong",
-    "aka": [],
-    "group": "Hongrui and the underworld",
-    "role": "Hongrui finance director. He tries to reach the bank staff after the accounts freeze.",
-    "first": 14
-  },
-  {
-    "name": "Liang Guodong",
-    "aka": [
-      "Chief Liang Guodong",
-      "Public Security Bureau Chief Liang Guodong",
-      "County Public Security Chief Liang Guodong"
-    ],
-    "group": "County officials",
-    "role": "Public Security Bureau chief. He orders Chen Mingde held two more days.",
-    "first": 17,
-    "later": [
-      {
-        "ch": 28,
-        "role": "Gave a quiet sign-off on the papers used against Chen Mingde."
-      },
-      {
-        "ch": 32,
-        "role": "Public Security Bureau chief; cut off, pacing as masked men surround his home."
-      },
-      {
-        "ch": 46,
-        "role": "Yunxi police official who signed the dirty arrest papers himself."
-      },
-      {
-        "ch": 65,
-        "role": "Yunxi County public security chief. Sits in his office with a secret phone line."
-      },
-      {
-        "ch": 71,
-        "role": "Police chief. Arrested at the 8:30 roll call on bribery and fake-evidence charges."
-      },
-      {
-        "ch": 116,
-        "role": "Sentenced to life imprisonment; 85 million yuan in assets seized."
-      }
-    ]
-  },
-  {
-    "name": "Sun Weiming",
-    "aka": [
-      "County Magistrate Sun Weiming",
-      "County Magistrate"
-    ],
-    "group": "County officials",
-    "role": "Yunxi County magistrate who meets Liang Guodong in a private tea room.",
-    "first": 17,
-    "later": [
-      {
-        "ch": 28,
-        "role": "Gave a quiet sign-off on the papers used against Chen Mingde."
-      },
-      {
-        "ch": 32,
-        "role": "County magistrate; phones dead and masked men at his front steps."
-      },
-      {
-        "ch": 46,
-        "role": "Yunxi county official who signed off on the demolition cover-up."
-      },
-      {
-        "ch": 65,
-        "role": "County magistrate of Yunxi. Sits in the county office during the raid."
-      },
-      {
-        "ch": 71,
-        "role": "County magistrate. Arrested at the roll call for bribery and abuse of power."
-      },
-      {
-        "ch": 116,
-        "role": "Sentenced to life imprisonment; 260 million yuan in assets seized."
-      }
-    ]
-  },
-  {
-    "name": "Number 68",
-    "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
-    "role": "Hidden guard tech man who copies the Land Reserve computer.",
-    "first": 18
-  },
-  {
-    "name": "Lin Guoliang",
-    "aka": [],
-    "group": "Old Street neighbors",
-    "role": "Hardware seller who refused Hongrui's offer and died in a truck crash.",
-    "first": 21
-  },
-  {
-    "name": "Lin Xiaoyu",
-    "aka": [],
-    "group": "Old Street neighbors",
-    "role": "Lin Guoliang's daughter. Forced out of her Sha college and later fled the province.",
-    "first": 21
-  },
-  {
-    "name": "Shen Zhigang",
-    "aka": [
-      "Inspector Shen Zhigang"
-    ],
-    "group": "City, province and the capital",
-    "role": "City Discipline Inspection inspector who stops the illegal arrest at Fuxing New Village.",
-    "first": 22
-  },
-  {
-    "name": "Tian Jiahao",
-    "aka": [
-      "Officer Tian Jiahao"
-    ],
-    "group": "Police and the station",
-    "role": "Junior officer at Old Street Station; quietly doubts Cheng Biao's illegal order.",
-    "first": 22
-  },
-  {
-    "name": "Zhao Kai",
-    "aka": [
-      "Officer Zhao Kai"
-    ],
-    "group": "Police and the station",
-    "role": "Junior officer at Old Street Station; smirks while carrying out Cheng Biao's illegal order.",
-    "first": 22
-  },
-  {
-    "name": "Number 73",
-    "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
-    "role": "Black Pine financial analyst who cracks the Shanshui Group bank vault.",
-    "first": 23
-  },
-  {
-    "name": "Chen Lin",
-    "aka": [],
-    "group": "Chen's family and friends",
-    "role": "Chen Mingde's younger daughter. Her dad promised to oil her bicycle chain.",
-    "first": 26
-  },
-  {
-    "name": "Chen Rui",
-    "aka": [],
-    "group": "Chen's family and friends",
-    "role": "Fourteen-year-old son of Chen Mingde. Worried about his father, who is locked up.",
-    "first": 26,
-    "later": [
-      {
-        "ch": 54,
-        "role": "Chen Xuan's young cousin in a big hoodie. Asks if his dad is back."
-      }
-    ]
-  },
-  {
-    "name": "Lin Feng",
-    "aka": [],
-    "group": "Police and the station",
-    "role": "Young night officer at Old Street Station who reports the masked men at the gate.",
-    "first": 33
-  },
-  {
-    "name": "Zhao Ming",
-    "aka": [
-      "Chief aide Zhao Ming"
-    ],
-    "group": "County officials",
-    "role": "Chief aide to Deng Yongchang; sweats and loses every phone in the tower.",
-    "first": 33
-  },
-  {
-    "name": "Qian Weiguo",
-    "aka": [],
-    "group": "Hongrui and the underworld",
-    "role": "Shanshui Group's regional shipping manager at Pier Four; panics as the dock goes dark.",
-    "first": 34
-  },
-  {
-    "name": "David Mercer",
-    "aka": [],
-    "group": "Hongrui and the underworld",
-    "role": "Claims foreign diplomatic cover; runs the tunnel server room and orders the books burned.",
-    "first": 35
-  },
-  {
-    "name": "Su Wenhao",
-    "aka": [],
-    "group": "Hongrui and the underworld",
-    "role": "File clerk in the tunnel room who copies the account books Deng's men send.",
-    "first": 35
-  },
-  {
-    "name": "Tang Weimin",
-    "aka": [],
-    "group": "City, province and the capital",
-    "role": "Vice Premier Zhou Zhenhua's secretary; nervous and loyal, frightened by the masked guards.",
-    "first": 36
-  },
-  {
-    "name": "Zhou Zhenhua",
-    "aka": [
-      "Vice Premier Zhou Zhenhua",
-      "Vice Premier",
-      "Vice Premier Zhou"
-    ],
-    "group": "City, province and the capital",
-    "role": "Vice Premier in the capital; calm as eight masked guards surround his home.",
-    "first": 36,
-    "later": [
-      {
-        "ch": 47,
-        "role": "Vice Premier, nervous as deputy ministers vanish from their homes overnight."
-      },
-      {
-        "ch": 65,
-        "role": "Vice Premier. Signs the yellow dispatch order for the Yunxi and Sha raids."
-      },
-      {
-        "ch": 85,
-        "role": "Senior leader who co-orders the quiet state takeover behind banks."
-      },
-      {
-        "ch": 119,
-        "role": "Vice Premier who reports on markets and keeps prices calm."
-      },
-      {
-        "ch": 184,
-        "role": "Chairs the Beijing crisis meeting on the four bank findings"
-      }
-    ]
-  },
-  {
-    "name": "Colonel Ye Chenglin",
-    "aka": [
-      "Ye Chenglin"
-    ],
-    "group": "The military and the capital",
-    "role": "Aide to General Qin Zhengguo; twelve years on army staff, shaken by the masked guards.",
-    "first": 37
-  },
-  {
-    "name": "Qin Zhengguo",
-    "aka": [
-      "General Qin Zhengguo",
-      "General Qin",
-      "Elder Qin",
-      "Uncle Zhengguo",
-      "Old Qin"
-    ],
-    "group": "The military and the capital",
-    "role": "Four-star general on the Central Military Commission; calm, blunt, and hunting for traitors.",
-    "first": 37,
-    "later": [
-      {
-        "ch": 46,
-        "role": "General who already used the vault line to reach Zero Guard's command."
-      },
-      {
-        "ch": 68,
-        "role": "General on a Beijing video feed. Leads the Southern Theater purge order."
-      },
-      {
-        "ch": 84,
-        "role": "Demands military trials for Shanghai agents; agrees to a 48-hour delay."
-      },
-      {
-        "ch": 85,
-        "role": "General on the Military Commission. Fights army traitors and speaks plainly with Elder Song."
-      },
-      {
-        "ch": 107,
-        "role": "Four-star general and grandfather of Qin Yuhan."
-      },
-      {
-        "ch": 120,
-        "role": "Carries Elder Song's sealed envelope to Number 1 and delivers the message."
-      },
-      {
-        "ch": 141,
-        "role": "Sends a secret message and sets up the capital meeting"
-      },
-      {
-        "ch": 143,
-        "role": "Waits fifty paces back by the pine tree during the meeting"
-      },
-      {
-        "ch": 149,
-        "role": "Serves Chen Xuan soup and tells his son never to ask questions."
-      },
-      {
-        "ch": 185,
-        "role": "Quietly seals the border crossings and blocks any truck or helicopter strike on Changbai"
-      },
-      {
-        "ch": 195,
-        "role": "Garrison sets checkpoints within forty kilometers of the Changbai vault"
-      }
-    ]
-  },
-  {
-    "name": "Elder Song",
-    "aka": [
-      "Founding Elder Song"
-    ],
-    "group": "The elders",
-    "role": "Ninety-year-old retired elder in the Western Hills who holds the founding override phrase.",
-    "first": 39,
-    "later": [
-      {
-        "ch": 47,
-        "role": "Retired founding elder who gave Qin Zhengguo the old code phrase."
-      },
-      {
-        "ch": 85,
-        "role": "Ninety-year-old Founding Elder. One of three living men who knew the Zero rules."
-      },
-      {
-        "ch": 119,
-        "role": "Founding Elder who lives in the Western Hills; Qin Zhengguo promised him tea."
-      },
-      {
-        "ch": 120,
-        "role": "Ninety years old; sends a sealed note asking Number 1 for one cup of tea."
-      },
-      {
-        "ch": 143,
-        "role": "Meets Chen Xuan at the lake pavilion and pours him tea"
-      }
-    ]
-  },
-  {
-    "name": "Zhao Ruilong",
-    "aka": [
-      "Zhao Ruilong",
-      "Shanshui Group boss",
-      "Shanshui Group Chairman"
-    ],
-    "group": "Hongrui and the underworld",
-    "role": "Shanshui Group chairman; panics as his helicopter dies and masked guards arrive.",
-    "first": 41,
-    "later": [
-      {
-        "ch": 51,
-        "role": "Chairman of Shanshui Group whose phone line was cut at dawn."
-      },
-      {
-        "ch": 61,
-        "role": "Linked to Shanshui Group, which bought lawmakers' protection in fourteen provinces."
-      },
-      {
-        "ch": 64,
-        "role": "Shanshui Group boss. His overseas accounts and local brokers are being frozen."
-      },
-      {
-        "ch": 82,
-        "role": "Shanshui Group chairman in custody. Blames Gao Yuliang and names six provinces."
-      },
-      {
-        "ch": 85,
-        "role": "Shanshui Group chairman. Dug a wrecking bunker; now under interrogation in Sha."
-      }
-    ]
-  },
-  {
-    "name": "Zhao Dehan",
-    "aka": [
-      "Division Chief Zhao Dehan",
-      "Ministry Division Chief Zhao Dehan",
-      "Energy Vice Minister"
-    ],
-    "group": "City, province and the capital",
-    "role": "Vice Minister of Energy, hiding stolen grid money and shredding bank papers as the raid starts.",
-    "first": 41,
-    "later": [
-      {
-        "ch": 45,
-        "role": "Capital vice minister whose phone line was cut off during the sweep."
-      },
-      {
-        "ch": 64,
-        "role": "Energy vice minister. Signed twenty-year power deals far below the real state rate."
-      },
-      {
-        "ch": 81,
-        "role": "Energy vice minister under questioning. Confesses and names bankers and a Geneva fixer."
-      },
-      {
-        "ch": 85,
-        "role": "Energy Vice Minister who broke after noon and named bankers and a middleman."
-      },
-      {
-        "ch": 101,
-        "role": "Former Energy Vice Minister on trial; changes his plea and offers names."
-      }
-    ]
-  },
-  {
-    "name": "Shen Yumei",
-    "aka": [],
-    "group": "City, province and the capital",
-    "role": "Zhao Dehan's wife; clutches the passport pouch and cries as the raid begins.",
-    "first": 41
-  },
-  {
-    "name": "Gao Yuliang",
-    "aka": [
-      "Deputy Secretary Gao Yuliang"
-    ],
-    "group": "City, province and the capital",
-    "role": "Provincial Vice Governor, blamed by Zhao Ruilong for signing corrupt customs passes.",
-    "first": 42,
-    "later": [
-      {
-        "ch": 43,
-        "role": "Provincial Vice Governor who signed the export permit covering Pier Four."
-      },
-      {
-        "ch": 64,
-        "role": "Sha vice governor. His investment groups are tied to Shanshui Group."
-      },
-      {
-        "ch": 66,
-        "role": "Taken from home at 1:15 a.m. by a Beijing discipline team."
-      },
-      {
-        "ch": 82,
-        "role": "Under arrest, blaming Zhao Ruilong and admitting he signed the trash permits."
-      },
-      {
-        "ch": 85,
-        "role": "Vice Governor of Sha, interrogated the same night as Zhao Ruilong."
-      }
-    ]
-  },
-  {
-    "name": "Marcus Vance",
-    "aka": [],
-    "group": "Foreign spies and the Zurich ring",
-    "role": "Foreign consular liaison secretly arranging Pier Four smuggling through Qi Tongwei.",
-    "first": 43,
-    "later": [
-      {
-        "ch": 94,
-        "role": "Revealed to be the Zurich fixer Li Weiming."
-      }
-    ]
-  },
-  {
-    "name": "Qi Tongwei",
-    "aka": [
-      "Public Security Chief Qi Tongwei",
-      "Chief Qi Tongwei",
-      "Customs Director"
-    ],
-    "group": "Police and the station",
-    "role": "Qingyan Port Customs Director who took bribes to clear smuggling cargo.",
-    "first": 43,
-    "later": [
-      {
-        "ch": 64,
-        "role": "Customs director linked to Zhao Dehan's loyal site managers and port shipments."
-      },
-      {
-        "ch": 69,
-        "role": "Qingyan customs director. Taken from his home at midnight by central discipline officers."
-      },
-      {
-        "ch": 96,
-        "role": "Qingyan Port Customs Director; taken in for investigation before dawn."
-      },
-      {
-        "ch": 111,
-        "role": "Former Customs Director at Qingyan Port, arrested at midnight on Tuesday."
-      }
-    ]
-  },
-  {
-    "name": "Ma Zhenyu",
-    "aka": [
-      "Senior Colonel Ma Zhenyu"
-    ],
-    "group": "The military and the capital",
-    "role": "Senior colonel and supply deputy who sold military secrets to cover gambling debts.",
-    "first": 44,
-    "later": [
-      {
-        "ch": 68,
-        "role": "Senior colonel in coastal logistics. Arrested for fake fuel slips and radar blind spots."
-      },
-      {
-        "ch": 102,
-        "role": "Senior Colonel who led a coastal supply ring; arrested two days earlier."
-      }
-    ]
-  },
-  {
-    "name": "Claire Moreau",
-    "aka": [],
-    "group": "Foreign spies and the Zurich ring",
-    "role": "French handler in Shanghai who ran the Zurich data link.",
-    "first": 45,
-    "later": [
-      {
-        "ch": 103,
-        "role": "French advisor who ran a Shanghai office that Ding calls a Zurich relay desk."
-      }
-    ]
-  },
-  {
-    "name": "Kenji Takahashi",
-    "aka": [],
-    "group": "Foreign spies and the Zurich ring",
-    "role": "Japanese handler in Shanghai who tried to burn the drives by hand.",
-    "first": 45,
-    "later": [
-      {
-        "ch": 103,
-        "role": "Quiet Japanese man held by State Security; offers names of Zurich partners."
-      }
-    ]
-  },
-  {
-    "name": "Viktor Kroll",
-    "aka": [],
-    "group": "Foreign spies and the Zurich ring",
-    "role": "German handler in Shanghai who tried to shoot his way to the drives.",
-    "first": 45,
-    "later": [
-      {
-        "ch": 103,
-        "role": "Senior banker from a Shanghai firm, held by State Security."
-      }
-    ]
-  },
-  {
-    "name": "Gu Chengshan",
-    "aka": [
-      "Premier Gu Chengshan",
-      "Premier Gu",
-      "Premier"
-    ],
-    "group": "City, province and the capital",
-    "role": "Premier of the State Council, shaken by the nationwide sweep.",
-    "first": 47,
-    "later": [
-      {
-        "ch": 64,
-        "role": "Premier. Gives final approval to the capital's money freeze plan."
-      },
-      {
-        "ch": 85,
-        "role": "Premier. Co-orders the quiet state takeover behind the banks."
-      },
-      {
-        "ch": 119,
-        "role": "Premier who chairs the central review of the nationwide clean-up."
-      }
-    ]
-  },
-  {
-    "name": "Gao Zhengyi",
-    "aka": [
-      "Secretary Gao Zhengyi",
-      "CCDI Deputy Secretary",
-      "Deputy Secretary Gao Zhengyi",
-      "Deputy Secretary Gao"
-    ],
-    "group": "City, province and the capital",
-    "role": "CCDI Deputy Secretary, angry at being locked out of his own building.",
-    "first": 48,
-    "later": [
-      {
-        "ch": 52,
-        "role": "CCDI Deputy Secretary. Orders all department heads into the Main Security Hall."
-      },
-      {
-        "ch": 66,
-        "role": "CCDI deputy secretary. Co-signed the joint central order with Zhou Zhenhua."
-      },
-      {
-        "ch": 81,
-        "role": "Questions Zhao Dehan in the capital, using secret bank codes as proof."
-      },
-      {
-        "ch": 85,
-        "role": "Investigator who took confessions from Zhao Dehan and three bankers."
-      },
-      {
-        "ch": 86,
-        "role": "CCDI Deputy Secretary in the review of the forty-two black cases."
-      },
-      {
-        "ch": 119,
-        "role": "CCDI deputy secretary who reads the clean-up totals and case results."
-      }
-    ]
-  },
-  {
-    "name": "Dai Chunsheng",
-    "aka": [
-      "Director Dai Chunsheng"
-    ],
-    "group": "City, province and the capital",
-    "role": "Public Security director who cannot be reached; his seat stays empty at the meeting.",
-    "first": 51
-  },
-  {
-    "name": "Han Qingshan",
-    "aka": [],
-    "group": "City, province and the capital",
-    "role": "Supreme People's Court Vice President, nervous about the five a.m. summons.",
-    "first": 51
-  },
-  {
-    "name": "Lu Mingyuan",
-    "aka": [
-      "Old Lu"
-    ],
-    "group": "City, province and the capital",
-    "role": "NDRC Vice Chairman, afraid his banking and building colleagues have vanished.",
-    "first": 51
-  },
-  {
-    "name": "Shen Weiguo",
-    "aka": [
-      "Vice Minister Shen Weiguo"
-    ],
-    "group": "City, province and the capital",
-    "role": "Vice Minister of Public Security, summoned to the West Gate at five a.m.",
-    "first": 51
-  },
-  {
-    "name": "Tang Jiandong",
-    "aka": [
-      "General Tang"
-    ],
-    "group": "The military and the capital",
-    "role": "Lieutenant General at the Joint Staff, suspicious of the dead military phone lines.",
-    "first": 51
-  },
-  {
-    "name": "Du Zhenping",
-    "aka": [
-      "Commissar Du"
-    ],
-    "group": "The military and the capital",
-    "role": "Theater Political Commissar who noticed three air-defense zones went quiet at two a.m.",
-    "first": 52
-  },
-  {
-    "name": "Pei Rongsheng",
-    "aka": [
-      "Old Pei"
-    ],
-    "group": "City, province and the capital",
-    "role": "Deputy Finance Minister, nervous after secretly calling Zhao Dehan's office.",
-    "first": 52
-  },
-  {
-    "name": "Kang Deming",
-    "aka": [
-      "Deputy Director Kang Deming"
-    ],
-    "group": "City, province and the capital",
-    "role": "Deputy Director of Public Security who demands a legal warrant from the masked unit.",
-    "first": 53
-  },
-  {
-    "name": "Wang Deshun",
-    "aka": [
-      "Uncle Wang"
-    ],
-    "group": "Old Street neighbors",
-    "role": "Bun-stall vendor near Fuxing New Village. Honest, warns Chen Xuan to bow his head.",
-    "first": 54
-  },
-  {
-    "name": "Zhao Shufen",
-    "aka": [
-      "Auntie Zhao"
-    ],
-    "group": "Old Street neighbors",
-    "role": "Nosy neighbor who hears market gossip and pities the Chen family.",
-    "first": 55
-  },
-  {
-    "name": "Du Changhe",
-    "aka": [
-      "General Du Changhe"
-    ],
-    "group": "The military and the capital",
-    "role": "Military Discipline Chief General who collects every officer's personal files.",
-    "first": 56
-  },
-  {
-    "name": "Kang Weidong",
-    "aka": [
-      "Logistics Chief Kang Weidong"
-    ],
-    "group": "The military and the capital",
-    "role": "Logistics Chief Lieutenant General, blamed for missed warnings on Ma Zhenyu's file.",
-    "first": 56
-  },
-  {
-    "name": "Shen Mingyuan",
-    "aka": [],
-    "group": "The military and the capital",
-    "role": "Political Work Director Lieutenant General who renewed Ma Zhenyu's clearance without questions.",
-    "first": 56
-  },
-  {
-    "name": "Han Dongsheng",
-    "aka": [],
-    "group": "City, province and the capital",
-    "role": "State Security Internal-Audit Bureau Director who leads the mole hunt.",
-    "first": 57
-  },
-  {
-    "name": "Luo Pei",
-    "aka": [],
-    "group": "City, province and the capital",
-    "role": "Technical Forensics Bureau Director who finds State Security codes copied from inside.",
-    "first": 57
-  },
-  {
-    "name": "Yuan Wenkai",
-    "aka": [],
-    "group": "City, province and the capital",
-    "role": "Personnel Security Bureau Director accused of covering the freeze orders.",
-    "first": 57
-  },
-  {
-    "name": "Lu Jianmin",
-    "aka": [],
-    "group": "City, province and the capital",
-    "role": "Chief Financial Auditor who checks the 100 trillion yuan loss sheet.",
-    "first": 58
-  },
-  {
-    "name": "Kong Xiaowei",
-    "aka": [],
-    "group": "City, province and the capital",
-    "role": "Counter-Terrorism and Public Security Director who lays out the Yunxi charges.",
-    "first": 59
-  },
-  {
-    "name": "Pei Hong",
-    "aka": [
-      "Procuratorate Director Pei Hong"
-    ],
-    "group": "City, province and the capital",
-    "role": "Procuratorate hall director who sets the charges for the 318 suspects.",
-    "first": 59
-  },
-  {
-    "name": "Wu Cheng",
-    "aka": [
-      "Chief Justice Wu Cheng"
-    ],
-    "group": "City, province and the capital",
-    "role": "Supreme People's Court Chief Justice who insists on airtight proof and closed trials.",
-    "first": 59
-  },
-  {
-    "name": "Fan Jianguo",
-    "aka": [
-      "Deputy Secretary-General Fan Jianguo"
-    ],
-    "group": "City, province and the capital",
-    "role": "NPC Standing Committee Deputy Secretary-General who writes the emergency orders.",
-    "first": 60
-  },
-  {
-    "name": "Guo Zhengming",
-    "aka": [
-      "Public Security Minister Guo Zhengming",
-      "Public Security Minister"
-    ],
-    "group": "City, province and the capital",
-    "role": "Minister of Public Security who leads the provincial task force into Yunxi.",
-    "first": 60,
-    "later": [
-      {
-        "ch": 64,
-        "role": "Minister of Public Security. Orders police to hit ports and mines at nine."
-      }
-    ]
-  },
-  {
-    "name": "Liu Zhengwei",
-    "aka": [
-      "Executive Deputy Minister Liu Zhengwei"
-    ],
-    "group": "City, province and the capital",
-    "role": "Organization Department Executive Deputy Minister who must fill vacant posts fast.",
-    "first": 60
-  },
-  {
-    "name": "Qian Wenbo",
-    "aka": [
-      "Chairman Qian Wenbo",
-      "NDRC Chairman"
-    ],
-    "group": "City, province and the capital",
-    "role": "NDRC Chairman who warns that freezing provincial funds could crash banks.",
-    "first": 60,
-    "later": [
-      {
-        "ch": 64,
-        "role": "NDRC chairman. Leads the capital's plan to freeze the money drain."
-      }
-    ]
-  },
-  {
-    "name": "Zhao Yunsheng",
-    "aka": [
-      "Vice Chairman Zhao Yunsheng"
-    ],
-    "group": "City, province and the capital",
-    "role": "CPPCC Vice Chairman, shaken, who orders a ruthless clean-up of tainted advisers.",
-    "first": 60
-  },
-  {
-    "name": "Qiu Jianming",
-    "aka": [],
-    "group": "City, province and the capital",
-    "role": "NPC Financial and Economic Affairs Director who asks to delay a deputy's removal.",
-    "first": 61
-  },
-  {
-    "name": "Rao Liangcai",
-    "aka": [],
-    "group": "City, province and the capital",
-    "role": "National legislature Record-Filing and Review Director who flags a bribe in a Singapore account.",
-    "first": 61
-  },
-  {
-    "name": "Du Qingshan",
-    "aka": [
-      "Social and Legal Affairs Chair Du Qingshan"
-    ],
-    "group": "City, province and the capital",
-    "role": "Social and Legal Affairs Committee Chair who leads the emergency adviser review.",
-    "first": 62
-  },
-  {
-    "name": "Hu Zhenbang",
-    "aka": [],
-    "group": "City, province and the capital",
-    "role": "Commerce and Industry Federation Chair seen on Zhao Ruilong's yacht.",
-    "first": 62
-  },
-  {
-    "name": "Kong Weiguo",
-    "aka": [
-      "Chair Kong Weiguo"
-    ],
-    "group": "City, province and the capital",
-    "role": "Overseas Chinese and Foreign Affairs Chair; shaken by the Zurich news.",
-    "first": 62
-  },
-  {
-    "name": "Pei Yongnian",
-    "aka": [
-      "Senior Adviser Pei Yongnian"
-    ],
-    "group": "City, province and the capital",
-    "role": "Retired provincial chair and senior adviser tied to Shanshui Group fees.",
-    "first": 62
-  },
-  {
-    "name": "Bai Yunfeng",
-    "aka": [],
-    "group": "City, province and the capital",
-    "role": "Personnel Discipline Inspection liaison who checks family trees and archive leaks.",
-    "first": 63
-  },
-  {
-    "name": "Meng Changqing",
-    "aka": [],
-    "group": "City, province and the capital",
-    "role": "Grassroots and County Cadre Review Chief who suggests using sidelined officials.",
-    "first": 63
-  },
-  {
-    "name": "Bian Changlin",
-    "aka": [
-      "Rare-Earth Audit Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "Mineral concession audit director. Fears loyal site managers will shred records.",
-    "first": 64
-  },
-  {
-    "name": "Cui Wenjie",
-    "aka": [
-      "Securities Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "Securities and Market Stabilization Director. Warns a freeze could crash the stock market.",
-    "first": 64
-  },
-  {
-    "name": "Hao Jianping",
-    "aka": [
-      "Energy and Mining Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "State-Owned Assets energy and mining director. Wants rigged mining deals taken back now.",
-    "first": 64
-  },
-  {
-    "name": "Kang Yongsheng",
-    "aka": [
-      "Banking Supervision Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "Banking and shadow-clearing director. Wants hidden domestic money lines cut.",
-    "first": 64
-  },
-  {
-    "name": "Lu Xiaoping",
-    "aka": [
-      "Monetary Stability Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "People's Bank monetary stability director. Opens emergency cash for clean banks.",
-    "first": 64
-  },
-  {
-    "name": "Pan Guozhen",
-    "aka": [
-      "Foreign Exchange Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "Foreign Exchange director. Blocks overseas payments and recovers Shanshui Group money abroad.",
-    "first": 64
-  },
-  {
-    "name": "Qi Shuhua",
-    "aka": [
-      "Macro-Planning Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "NDRC macro-planning director. Says savers are protected and dirty buyers frozen.",
-    "first": 64
-  },
-  {
-    "name": "Wan Zhiming",
-    "aka": [
-      "Sovereign Debt Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "Finance Ministry sovereign debt director. Freezes dirty bonds, backs city payrolls.",
-    "first": 64
-  },
-  {
-    "name": "Yu Zhipeng",
-    "aka": [
-      "Urban-Investment Debt Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "Provincial urban-investment debt director. Warns that freezing bonds angers governors.",
-    "first": 64
-  },
-  {
-    "name": "Fu Zhigang",
-    "aka": [
-      "Command and Operations Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "Command and Operations Bureau director. Repeats the civilian-safety order for the lead car.",
-    "first": 65
-  },
-  {
-    "name": "Ke Zhenhua",
-    "aka": [
-      "Internal Discipline Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "Internal Discipline director. Stopped a duty officer from calling Liang Guodong.",
-    "first": 65
-  },
-  {
-    "name": "Lei Zhendong",
-    "aka": [
-      "Counter-Terrorism Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "Counter-Terrorism director. Seizes Deng Yongchang's blasting warehouse before nine.",
-    "first": 65
-  },
-  {
-    "name": "Qiao Jianjun",
-    "aka": [
-      "Anti-Gang Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "Anti-Gang director. Has gang files ready to charge Yan Tiehu's crew.",
-    "first": 65
-  },
-  {
-    "name": "Ren Changhe",
-    "aka": [
-      "Border and Port Security Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "Border and Port Security director. Locks coastal ports and airport runway exits.",
-    "first": 65
-  },
-  {
-    "name": "Teng Xiaoming",
-    "aka": [
-      "Cyber Security Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "Cyber Security director. Blocks online rumors about the overnight arrests.",
-    "first": 65
-  },
-  {
-    "name": "Xing Weidong",
-    "aka": [
-      "Criminal Investigation Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "Criminal Investigation director. Holds arrest warrants for the Yunxi suspects.",
-    "first": 65
-  },
-  {
-    "name": "Yin Baoshan",
-    "aka": [
-      "Criminal Intelligence Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "Criminal Intelligence director. Confirms Liang Guodong is still in his Yunxi office.",
-    "first": 65
-  },
-  {
-    "name": "Zhu Haoran",
-    "aka": [
-      "Economic Crime Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "Economic Crime director. Leads six hundred officers to raid Shanshui Group offices.",
-    "first": 65
-  },
-  {
-    "name": "Cao Wenbin",
-    "aka": [
-      "Executive Vice Governor"
-    ],
-    "group": "City, province and the capital",
-    "role": "Sha executive vice governor. Asks whether to wait for Gao Yuliang.",
-    "first": 66
-  },
-  {
-    "name": "Ji Changming",
-    "aka": [
-      "Provincial PSB Deputy Chief",
-      "Deputy Chief Ji Changming"
-    ],
-    "group": "City, province and the capital",
-    "role": "Provincial police deputy chief. Leads the joint task force into Yunxi County.",
-    "first": 66,
-    "later": [
-      {
-        "ch": 72,
-        "role": "Provincial police discipline official. Arrests Cheng Biao and Zhou Quan at Old Street Station."
-      },
-      {
-        "ch": 73,
-        "role": "Provincial inspector. Personally frees Chen Mingde and apologizes for the wrongful arrest."
-      }
-    ]
-  },
-  {
-    "name": "Lu Baoguo",
-    "aka": [
-      "Deputy Party Secretary"
-    ],
-    "group": "City, province and the capital",
-    "role": "Sha deputy party secretary. Warns against panic before the scale is known.",
-    "first": 66
-  },
-  {
-    "name": "Hou Liangping",
-    "aka": [
-      "Provincial CCDI Secretary"
-    ],
-    "group": "City, province and the capital",
-    "role": "Provincial CCDI secretary. Leads the joint task force into Yunxi County.",
-    "first": 66,
-    "later": [
-      {
-        "ch": 71,
-        "role": "Deputy team leader of the Handong Anti-Corruption Bureau. Arrests Sun Weiming and Liang Guodong."
-      },
-      {
-        "ch": 78,
-        "role": "Provincial Discipline Office deputy. Questions station officers after the raids."
-      }
-    ]
-  },
-  {
-    "name": "Tang Guohua",
-    "aka": [
-      "Propaganda Minister"
-    ],
-    "group": "City, province and the capital",
-    "role": "Sha propaganda minister. Panics, spills tea, and admits a dinner with Deng Yongchang.",
-    "first": 66
-  },
-  {
-    "name": "Xu Jianmin",
-    "aka": [
-      "Organization Minister"
-    ],
-    "group": "City, province and the capital",
-    "role": "Sha organization minister. Asks whether the General Office was warned.",
-    "first": 66
-  },
-  {
-    "name": "Sha Ruijin",
-    "aka": [
-      "Provincial Party Secretary",
-      "Secretary Sha",
-      "Old Zhao",
-      "Leader Zhao"
-    ],
-    "group": "City, province and the capital",
-    "role": "Handong Provincial Party Secretary. Calls the emergency meeting after Gao Yuliang's arrest.",
-    "first": 66,
-    "later": [
-      {
-        "ch": 93,
-        "role": "Handong Provincial Party Secretary; quietly orders Chen Mingde's family left in peace."
-      },
-      {
-        "ch": 118,
-        "role": "Provincial Party Secretary who signs Wei Kun's promotion and wants honest officers rewarded."
-      },
-      {
-        "ch": 130,
-        "role": "Receives the evidence folder and plans the trap with Ding Guoping"
-      },
-      {
-        "ch": 133,
-        "role": "Publicly orders Wu to cancel the signing and write a report"
-      },
-      {
-        "ch": 153,
-        "role": "Visits Grandma Zhou's birthday lunch unannounced; shakes Chen Xuan's hand."
-      }
-    ]
-  },
-  {
-    "name": "Zhou Mingyuan",
-    "aka": [
-      "Politics and Law Secretary"
-    ],
-    "group": "City, province and the capital",
-    "role": "Sha politics and law secretary. Asks who in Yunxi drew Beijing's eyes.",
-    "first": 66
-  },
-  {
-    "name": "Deng Kai",
-    "aka": [
-      "Captain Deng Kai"
-    ],
-    "group": "City, province and the capital",
-    "role": "Anti-gang captain. Asks whether Chen Mingde's family must come to the station.",
-    "first": 67
-  },
-  {
-    "name": "Ma Lihua",
-    "aka": [
-      "Lead Forensic Auditor"
-    ],
-    "group": "City, province and the capital",
-    "role": "Lead forensic auditor. Asks whether bank terminals should be locked first.",
-    "first": 67
-  },
-  {
-    "name": "Wu Zheng",
-    "aka": [
-      "Commander Wu Zheng"
-    ],
-    "group": "City, province and the capital",
-    "role": "Counter-terrorism commander with forty officers. Ordered to enter the gate first.",
-    "first": 67
-  },
-  {
-    "name": "He Jianping",
-    "aka": [
-      "Naval Coastal Liaison"
-    ],
-    "group": "The military and the capital",
-    "role": "Naval coastal liaison senior captain. Asks who will watch the southern sea lanes.",
-    "first": 68
-  },
-  {
-    "name": "Kong Weiming",
-    "aka": [
-      "Major General Kong Weiming"
-    ],
-    "group": "The military and the capital",
-    "role": "Southern Theater deputy commander. Angrily demands answers about Ma Zhenyu's fuel slips.",
-    "first": 68
-  },
-  {
-    "name": "Lin Zhigang",
-    "aka": [
-      "Chief of Staff Lin Zhigang"
-    ],
-    "group": "The military and the capital",
-    "role": "Southern Theater chief of staff. Asks how wide the purge order goes.",
-    "first": 68
-  },
-  {
-    "name": "Shao Biao",
-    "aka": [
-      "Major General Shao Biao"
-    ],
-    "group": "The military and the capital",
-    "role": "Coastal defense chief. Answers for radar blind spots that let smugglers pass.",
-    "first": 68
-  },
-  {
-    "name": "Zheng Haiyang",
-    "aka": [
-      "Political Commissar Zheng Haiyang"
-    ],
-    "group": "The military and the capital",
-    "role": "Southern Theater political commissar. Blames Shao Biao for the radar blind spots.",
-    "first": 68
-  },
-  {
-    "name": "Feng Jianhua",
-    "aka": [
-      "Commerce Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "Qingyan municipal commerce director. Warns shipping firms will freeze if Pier Seven is checked.",
-    "first": 69
-  },
-  {
-    "name": "Hou Zhenbang",
-    "aka": [
-      "Deputy Chief Hou Zhenbang"
-    ],
-    "group": "City, province and the capital",
-    "role": "Qingyan police deputy chief. Reports Qi Tongwei was taken from home at midnight.",
-    "first": 69
-  },
-  {
-    "name": "Lin Haibo",
-    "aka": [
-      "Secretary Lin Haibo"
-    ],
-    "group": "City, province and the capital",
-    "role": "Qingyan Municipal Party Secretary. Demands to know where Public Security Chief Qi Tongwei is.",
-    "first": 69,
-    "later": [
-      {
-        "ch": 90,
-        "role": "Elder Song's aide of twenty-two years. Nervous about hidden units."
-      }
-    ]
-  },
-  {
-    "name": "Qian Zhigang",
-    "aka": [
-      "Port Authority Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "Qingyan Port Authority director. Reports that Pier Seven was seized at gunpoint.",
-    "first": 69
-  },
-  {
-    "name": "Wu Yongqiang",
-    "aka": [
-      "Mayor Wu Yongqiang"
-    ],
-    "group": "City, province and the capital",
-    "role": "Qingyan mayor. Blames Customs and Sha for the Pier Seven approvals.",
-    "first": 69
-  },
-  {
-    "name": "Zhou Liqiang",
-    "aka": [
-      "Finance Director"
-    ],
-    "group": "City, province and the capital",
-    "role": "Qingyan municipal finance director. Says Deng Yongchang runs Pier Seven's midnight swaps.",
-    "first": 69
-  },
-  {
-    "name": "Peng Shulin",
-    "aka": [
-      "Hospital Deputy Director"
-    ],
-    "group": "County officials",
-    "role": "Yunxi People's Hospital deputy director. Signed a fake X-ray report for Cheng Biao.",
-    "first": 70
-  },
-  {
-    "name": "Nie Hongbo",
-    "aka": [],
-    "group": "County officials",
-    "role": "Yunxi County Urban Planning Chief at the Monday roll call.",
-    "first": 71
-  },
-  {
-    "name": "Xiong Baolin",
-    "aka": [],
-    "group": "County officials",
-    "role": "Yunxi County Land Resources Director; Sun Weiming presses him on unsigned Old Street land permits.",
-    "first": 71
-  },
-  {
-    "name": "Bi Yaozu",
-    "aka": [],
-    "group": "Hongrui and the underworld",
-    "role": "Provincial law-firm lawyer whom Deng Yongchang shouts for when he is arrested.",
-    "first": 74
-  },
-  {
-    "name": "Hua Jingbo",
-    "aka": [
-      "Deputy Director Hua Jingbo"
-    ],
-    "group": "City, province and the capital",
-    "role": "Provincial Economic Crime Deputy Director who leads Deng Yongchang's arrest at Hongrui Plaza.",
-    "first": 74
-  },
-  {
-    "name": "Wei Kun",
-    "aka": [
-      "Deputy Squad Leader Wei Kun",
-      "Acting Director Wei",
-      "Director Wei"
-    ],
-    "group": "Police and the station",
-    "role": "Old Street deputy squad leader. Refused Cheng Biao's blank orders and sorts records.",
-    "first": 78,
-    "later": [
-      {
-        "ch": 92,
-        "role": "Acting Director of Yunxi County police. Brings Old Street a repair voucher and apology."
-      },
-      {
-        "ch": 105,
-        "role": "Praised by Sha Ruijin; county promises to make him full Director this week."
-      },
-      {
-        "ch": 118,
-        "role": "Promoted to full Director of Old Street Police Station by Provincial Secretary Sha Ruijin."
-      }
-    ]
-  },
-  {
-    "name": "Cao Wenhui",
-    "aka": [
-      "Former Huaxia Development Bank president"
-    ],
-    "group": "City, province and the capital",
-    "role": "Retired Huaxia Development Bank president. Wrote backing papers for hidden power-plant kickbacks.",
-    "first": 81
-  },
-  {
-    "name": "Lukas Weber",
-    "aka": [
-      "Geneva fixer"
-    ],
-    "group": "Hongrui and the underworld",
-    "role": "Geneva shipping insurance fixer. Turns local trade papers into Swiss bank bonds.",
-    "first": 81
-  },
-  {
-    "name": "Pan Desheng",
-    "aka": [
-      "Retired Industrial Clearing Bank president"
-    ],
-    "group": "City, province and the capital",
-    "role": "Retired industrial clearing bank president. Handled foreign money trades.",
-    "first": 81
-  },
-  {
-    "name": "Zheng Rongkui",
-    "aka": [
-      "Retired Agricultural Credit Bank president"
-    ],
-    "group": "City, province and the capital",
-    "role": "Retired agricultural credit bank president. Ran money through local shell companies.",
-    "first": 81
-  },
-  {
-    "name": "Ding Guoping",
-    "aka": [
-      "State Security Minister",
-      "Minister Ding Guoping",
-      "Minister Ding"
-    ],
-    "group": "City, province and the capital",
-    "role": "State Security minister. Says waiting lets Lukas Weber's Zurich leaders escape.",
-    "first": 83,
-    "later": [
-      {
-        "ch": 84,
-        "role": "Agrees to delay the military transfer and radio-trace Zurich for 48 hours."
-      },
-      {
-        "ch": 85,
-        "role": "Official who clashed with General Qin over a 48-hour hold."
-      },
-      {
-        "ch": 89,
-        "role": "State Security official; nervous as the clean-up order is signed."
-      },
-      {
-        "ch": 103,
-        "role": "Minister who interrogates foreign bankers and maps the Zurich network."
-      },
-      {
-        "ch": 119,
-        "role": "Minister of State Security who checks every file for false accusations."
-      },
-      {
-        "ch": 130,
-        "role": "Sends a special team to Jingzhou City and orders the signing trap closed"
-      }
-    ]
-  },
-  {
-    "name": "Fei Yaoting",
-    "aka": [
-      "Finance Minister Fei Yaoting"
-    ],
-    "group": "City, province and the capital",
-    "role": "Finance Minister; warns that exposing the hidden bank debts in public would shake provincial lenders.",
-    "first": 83
-  },
-  {
-    "name": "Ou Guanghui",
-    "aka": [
-      "Customs Director Ou Guanghui"
-    ],
-    "group": "City, province and the capital",
-    "role": "Customs Director who wants Zhao Ruilong's tax-free export docks shut down.",
-    "first": 83
-  },
-  {
-    "name": "Qu Shilin",
-    "aka": [
-      "Governor Qu Shilin"
-    ],
-    "group": "City, province and the capital",
-    "role": "People's Bank Governor; warns a public freeze would lock up the bank loan system.",
-    "first": 83
-  },
-  {
-    "name": "Ruan Defu",
-    "aka": [
-      "Commerce Minister Ruan Defu"
-    ],
-    "group": "City, province and the capital",
-    "role": "Commerce Minister who warns that public bans on foreign trading firms would stall ports.",
-    "first": 83
-  },
-  {
-    "name": "Jin Rongzhi",
-    "aka": [],
-    "group": "City, province and the capital",
-    "role": "State Security official. Insists someone tampered with the ground files.",
-    "first": 86
-  },
-  {
-    "name": "Tang Weiguo",
-    "aka": [],
-    "group": "City, province and the capital",
-    "role": "Head of the national cyber and lab testing bureau; reports the blank case checks.",
-    "first": 86
-  },
-  {
-    "name": "Mo Tianyu",
-    "aka": [],
-    "group": "Hongrui and the underworld",
-    "role": "Provincial gang boss whose men tried to move in Sha and Yunxi.",
-    "first": 87
-  },
-  {
-    "name": "Gan Weihan",
-    "aka": [
-      "Colonel Gan Weihan"
-    ],
-    "group": "The military and the capital",
-    "role": "Colonel in General Qin's guard unit; reports that the two watchers vanished.",
-    "first": 90
-  },
-  {
-    "name": "Xu Haoran",
-    "aka": [],
-    "group": "City, province and the capital",
-    "role": "Chief of staff to Sha Party Secretary Sha Ruijin.",
-    "first": 93
-  },
-  {
-    "name": "Henrik Lindholm",
-    "aka": [
-      "Senior Partner Henrik Lindholm"
-    ],
-    "group": "Zurich Northern Ledger",
-    "role": "Senior Partner of the Zurich Northern Ledger; calm and cold.",
-    "first": 94,
-    "later": [
-      {
-        "ch": 136,
-        "role": "Plans the Haiyue short attack with Marcus Vance in Zurich"
-      },
-      {
-        "ch": 140,
-        "role": "Shaken after the squeeze; asks who is backing Haiyue"
-      }
-    ]
-  },
-  {
-    "name": "Li Weiming",
-    "aka": [
-      "Old Li"
-    ],
-    "group": "City, province and the capital",
-    "role": "Zurich fixer known as Marcus Vance; sent to Qingyan to find the hidden hand.",
-    "first": 94,
-    "later": [
-      {
-        "ch": 111,
-        "role": "Zurich fixer, known as Marcus Vance, paid to find who brought down Qingyan's officials."
-      },
-      {
-        "ch": 114,
-        "role": "Trapped in the Harbor View lobby as plainclothes State Security officers close in."
-      },
-      {
-        "ch": 121,
-        "role": "Now in Sha, paying Cai Chenggong 15 million to hide servers in a freight deal."
-      },
-      {
-        "ch": 134,
-        "role": "Pays four armed men to kidnap Chen Xuan at midnight; the plan fails"
-      },
-      {
-        "ch": 135,
-        "role": "Arrested at the breakfast hall by State Security"
-      }
-    ]
-  },
-  {
-    "name": "Marc Keller",
-    "aka": [],
-    "group": "Zurich Northern Ledger",
-    "role": "Zurich banker who panics over the lost China contacts.",
-    "first": 94
-  },
-  {
-    "name": "Sylvie Marchal",
-    "aka": [],
-    "group": "Zurich Northern Ledger",
-    "role": "Zurich analyst tracking the shutdown; first to trace the Yunxi trail.",
-    "first": 94
-  },
-  {
-    "name": "Lin Jianhua",
-    "aka": [
-      "Manager Lin"
-    ],
-    "group": "Yunxi and Qingyan business",
-    "role": "Regional manager of Ancheng Express Freight in Qingyan; recruits local drivers.",
-    "first": 99
-  },
-  {
-    "name": "Gao Mingyuan",
-    "aka": [
-      "Lead CCDI Prosecutor"
-    ],
-    "group": "City, province and the capital",
-    "role": "Lead CCDI prosecutor. Confronts Zhao Dehan with Zurich transfer records.",
-    "first": 101
-  },
-  {
-    "name": "Deng Weimin",
-    "aka": [],
-    "group": "County officials",
-    "role": "Yunxi County Mayor. Arrives late and nervous when Sha Ruijin visits.",
-    "first": 105
-  },
-  {
-    "name": "Xu Guoxiang",
-    "aka": [],
-    "group": "County officials",
-    "role": "Yunxi County Party Secretary. Arrives late and flustered when Sha Ruijin visits.",
-    "first": 105
-  },
-  {
-    "name": "Lin Xiaodong",
-    "aka": [],
-    "group": "Qingyan freight firms",
-    "role": "Thin, anxious freight clerk whose seafood trucks are held up by Zhou Mingcheng.",
-    "first": 106
-  },
-  {
-    "name": "Zhao Kang",
-    "aka": [
-      "Master Zhao"
-    ],
-    "group": "Office at Hengxin",
-    "role": "Hengxin senior truck driver stuck at Port Gate Seven with a precision valve shipment.",
-    "first": 106
-  },
-  {
-    "name": "Zhou Desheng",
-    "aka": [
-      "Deputy Director Zhou"
-    ],
-    "group": "City, province and the capital",
-    "role": "Deputy director of the Qingyan port authority; uncle of broker Zhou Mingcheng.",
-    "first": 106,
-    "later": [
-      {
-        "ch": 108,
-        "role": "Escorted out of his office by the provincial discipline team; phone sealed."
-      }
-    ]
-  },
-  {
-    "name": "Zhou Mingcheng",
-    "aka": [
-      "Manager Zhou"
-    ],
-    "group": "City, province and the capital",
-    "role": "Port broker and head of Mingcheng Freight Services who demands illegal 200k fast-lane fees.",
-    "first": 106,
-    "later": [
-      {
-        "ch": 108,
-        "role": "Taken into custody after Shen Guohua freezes his brokerage license."
-      }
-    ]
-  },
-  {
-    "name": "Qin Yuhan",
-    "aka": [
-      "Director Qin",
-      "Chairwoman Qin",
-      "President Qin",
-      "Miss Qin",
-      "President Qin Yuhan"
-    ],
-    "group": "City, province and the capital",
-    "role": "Haiyue Group coastal supply director; calm, sharp-eyed, and watches how people behave.",
-    "first": 107,
-    "later": [
-      {
-        "ch": 137,
-        "role": "Refuses to sell Haiyue docks; holds 52% of voting shares"
-      },
-      {
-        "ch": 156,
-        "role": "Haiyue Group president; her flagship ship is held at Shenzhen Pier Nine."
-      },
-      {
-        "ch": 181,
-        "role": "Sets up a 20 million yuan Haiyue scholarship at Fudan University"
-      }
-    ]
-  },
-  {
-    "name": "Shen Guohua",
-    "aka": [
-      "Chief Shen"
-    ],
-    "group": "City, province and the capital",
-    "role": "Newly appointed chief of the Qingyan Customs Anti-Smuggling Bureau; hard and direct.",
-    "first": 108
-  },
-  {
-    "name": "Qin Zhengming",
-    "aka": [
-      "Chairman Qin",
-      "Uncle Qin"
-    ],
-    "group": "City, province and the capital",
-    "role": "Upright provincial official, Qin Yuhan's father, known for keeping clean books.",
-    "first": 110,
-    "later": [
-      {
-        "ch": 133,
-        "role": "Walks with Sha Ruijin to confront Deputy Mayor Ding in a hallway"
-      },
-      {
-        "ch": 148,
-        "role": "Offers Chen Xuan a Haiyue supply office job at double pay."
-      }
-    ]
-  },
-  {
-    "name": "Anton Novak",
-    "aka": [],
-    "group": "Overseas fixers and their backers",
-    "role": "Quiet, pale-eyed veteran tracker who works with Carl Mercer across Europe and Asia.",
-    "first": 111,
-    "later": [
-      {
-        "ch": 113,
-        "role": "Knocked out by Zero Guard in the park and sent to State Security."
-      }
-    ]
-  },
-  {
-    "name": "Carl Mercer",
-    "aka": [
-      "Carl"
-    ],
-    "group": "Overseas fixers and their backers",
-    "role": "Veteran foreign tracker who works for Li Weiming and follows leads for him.",
-    "first": 111,
-    "later": [
-      {
-        "ch": 113,
-        "role": "Knocked out by Zero Guard in the park and sent to State Security."
-      }
-    ]
-  },
-  {
-    "name": "Feng Guoqiang",
-    "aka": [],
-    "group": "Sha and the north",
-    "role": "Rattled Sha lawyer who gives Li Weiming the case list and begs him to leave.",
-    "first": 111
-  },
-  {
-    "name": "Old Auntie Tian",
-    "aka": [
-      "Auntie Tian"
-    ],
-    "group": "Old Street neighbors",
-    "role": "Dried-goods stall owner on Old Street who keeps her neighbors in line.",
-    "first": 116
-  },
-  {
-    "name": "Bao Haowen",
-    "aka": [],
-    "group": "Police and the station",
-    "role": "Old Street beat officer and old neighbor of Wei Kun who brings him tea.",
-    "first": 118
-  },
-  {
-    "name": "Cai Chenggong",
-    "aka": [
-      "Chairman Song"
-    ],
-    "group": "Sha and the north",
-    "role": "Chairman of Wanfeng Freight in Sha; greedy and eager for Zurich's money.",
-    "first": 121,
-    "later": [
-      {
-        "ch": 135,
-        "role": "Arrested by State Security for illegal data transfer and unlawful gains"
-      }
-    ]
-  },
-  {
-    "name": "Ding Yizhen",
-    "aka": [
-      "Deputy Mayor Ding"
-    ],
-    "group": "City, province and the capital",
-    "role": "Handong Province Deputy Governor pushing the freight alliance vote through.",
-    "first": 126,
-    "later": [
-      {
-        "ch": 133,
-        "role": "Ordered by Sha Ruijin to cancel the signing and write a report"
-      },
-      {
-        "ch": 135,
-        "role": "Taken away by the Provincial CCDI for illegal favors and investigation"
-      }
-    ]
-  },
-  {
-    "name": "Director Liang",
-    "aka": [],
-    "group": "Haiyue Group and the Shanghai port",
-    "role": "Dongwan port director who stood up and demanded answers about the Zurich firm.",
-    "first": 132
-  },
-  {
-    "name": "Julian Ash",
-    "aka": [],
-    "group": "Zurich Northern Ledger",
-    "role": "Managing director of Aegis Meridian, the hedge fund that attacks Haiyue shares.",
-    "first": 136,
-    "later": [
-      {
-        "ch": 140,
-        "role": "Aegis Meridian is wiped out after Haiyue hits the daily limit."
-      }
-    ]
-  },
-  {
-    "name": "Thomas Bauer",
-    "aka": [],
-    "group": "Zurich Northern Ledger",
-    "role": "Northern Ledger director who planned the Haiyue market attack with Lindholm.",
-    "first": 136
-  },
-  {
-    "name": "Lin Shufen",
-    "aka": [],
-    "group": "Haiyue Group and the Shanghai port",
-    "role": "Haiyue Group chief financial officer who handles bank calls and buybacks.",
-    "first": 137
-  },
-  {
-    "name": "Tang Weiguo (Haiyue Group)",
-    "aka": [
-      "Director Tang Weiguo"
-    ],
-    "group": "Haiyue Group and the Shanghai port",
-    "role": "Haiyue Group director who urged selling Dock One and Dock Two.",
-    "first": 137
-  },
-  {
-    "name": "Xu Minghui",
-    "aka": [
-      "Director Xu Minghui"
-    ],
-    "group": "Haiyue Group and the Shanghai port",
-    "role": "Haiyue Group director who pushed to sell the docks.",
-    "first": 137,
-    "later": [
-      {
-        "ch": 140,
-        "role": "Claims he always backed Haiyue after the stock is saved"
-      }
-    ]
-  },
-  {
-    "name": "Gu Shenzhi",
-    "aka": [
-      "Master Gu"
-    ],
-    "group": "Haiyue Group and the Shanghai port",
-    "role": "Sixty-four-year-old Shanghai trustee who controls the clean family money.",
-    "first": 138,
-    "later": [
-      {
-        "ch": 139,
-        "role": "Orders 80 billion yuan in cash to buy every Aegis Meridian share"
-      }
-    ]
-  },
-  {
-    "name": "Shen Wenhua",
-    "aka": [],
-    "group": "Haiyue Group and the Shanghai port",
-    "role": "Senior trust manager who splits the cash across twelve trading desks.",
-    "first": 139
-  },
-  {
-    "name": "Zhou Ming",
-    "aka": [
-      "Captain Zhou Ming"
-    ],
-    "group": "Haiyue Group and the Shanghai port",
-    "role": "Veteran trader who runs the buy wall during the Haiyue squeeze.",
-    "first": 139,
-    "later": [
-      {
-        "ch": 176,
-        "role": "Named as Qin Yuhan's driver when she lands at Shanghai Hongqiao."
-      }
-    ]
-  },
-  {
-    "name": "Eric",
-    "aka": [],
-    "group": "Zurich Northern Ledger",
-    "role": "Aegis Meridian lead trader who drops the 15 billion yuan sell wave.",
-    "first": 140
-  },
-  {
-    "name": "Zhou Guilan",
-    "aka": [
-      "Grandma Zhou",
-      "Aunt Zhou",
-      "Old Aunt Zhou"
-    ],
-    "group": "Chen's family and friends",
-    "role": "Chen Xuan's grandmother in Hongshi Village; turns eighty-one in chapter 152.",
-    "first": 151
-  },
-  {
-    "name": "Liu Guoliang",
-    "aka": [
-      "Uncle Guoliang"
-    ],
-    "group": "Chen's family and friends",
-    "role": "Distant cousin who brags about Shenzhen deals and mocks Chen Xuan's job.",
-    "first": 152,
-    "later": [
-      {
-        "ch": 154,
-        "role": "Flees the birthday lunch after the Provincial Secretary's visit."
-      }
-    ]
-  },
-  {
-    "name": "Old Zhou",
-    "aka": [],
-    "group": "Office at Hengxin",
-    "role": "Older Hengxin dispatcher who ran Shenzhen freight; warns about the Shen Family.",
-    "first": 155
-  },
-  {
-    "name": "Shen Jingzhou",
-    "aka": [
-      "Young Master Shen",
-      "Jingzhou"
-    ],
-    "group": "Shen family and the harbor families",
-    "role": "Eldest grandson of the Shen Family; pressures Haiyue for dock fees and routes.",
-    "first": 155,
-    "later": [
-      {
-        "ch": 175,
-        "role": "Arrested after trying to run for the family speedboat during the raid."
-      }
-    ]
-  },
-  {
-    "name": "Lu Guobin",
-    "aka": [
-      "Chief Inspector Lu"
-    ],
-    "group": "Shen family and the harbor families",
-    "role": "Shenzhen Port inspection chief; signs fake safety holds under Shen Family pressure.",
-    "first": 157,
-    "later": [
-      {
-        "ch": 163,
-        "role": "Suspended on the spot by Director Gao for abusing his inspection power."
-      },
-      {
-        "ch": 166,
-        "role": "Hauled away by police at five o'clock after the gate opened."
-      }
-    ]
-  },
-  {
-    "name": "Number 88",
-    "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
-    "role": "Black Pine Guard; runs the Shenzhen branch with Number 19.",
-    "first": 157,
-    "later": [
-      {
-        "ch": 168,
-        "role": "Tracks Yantian Port rare-metal smuggling with Number 19."
-      },
-      {
-        "ch": 173,
-        "role": "Leads the White Guard charge across the koi pond into the Shen villa."
-      }
-    ]
-  },
-  {
-    "name": "Shen Wanshan",
-    "aka": [
-      "Old Master Shen",
-      "Chairman Shen",
-      "Old Man Shen"
-    ],
-    "group": "Shen family and the harbor families",
-    "role": "Shen Jingzhou's father; powerful Shenzhen shipping boss with bank friends.",
-    "first": 161,
-    "later": [
-      {
-        "ch": 174,
-        "role": "Four national banks recall his loans and freeze accounts across his empire."
-      },
-      {
-        "ch": 175,
-        "role": "Arrested for port smuggling, fraud and forcing a fake business transfer."
-      },
-      {
-        "ch": 184,
-        "role": "Arrested Friday night at his Shenzhen Bay villa"
-      }
-    ]
-  },
-  {
-    "name": "Vice President Ma",
-    "aka": [],
-    "group": "Banks and bankers",
-    "role": "China Construction Bank vice president; cancels Shen Wanshan's tea meeting.",
-    "first": 162
-  },
-  {
-    "name": "Gao Zhenhua",
-    "aka": [
-      "Director Gao"
-    ],
-    "group": "Shen family and the harbor families",
-    "role": "Shenzhen Port Authority director who rushes in to open Pier Nine at four fifty-nine.",
-    "first": 163
-  },
-  {
-    "name": "Lin Jianming",
-    "aka": [
-      "Old Lin"
-    ],
-    "group": "Shen family and the harbor families",
-    "role": "Shenhai Shipping manager who phones Shen Jingzhou with the bank freeze news.",
-    "first": 163
-  },
-  {
-    "name": "He Mingcheng",
-    "aka": [],
-    "group": "Shen family and the harbor families",
-    "role": "Financial director of Shenhai Shipping who reports the bank freezes to Shen Wanshan.",
-    "first": 166
-  },
-  {
-    "name": "Zhou Dequan",
-    "aka": [],
-    "group": "Shen family and the harbor families",
-    "role": "Veteran steward of the Shen family who carries Shen Wanshan's orders and calls.",
-    "first": 166
-  },
-  {
-    "name": "Koo Tianming",
-    "aka": [
-      "Mr. Koo"
-    ],
-    "group": "Shen family and the harbor families",
-    "role": "Hong Kong envoy of the Seven-Harbor Consortium who sets traps for Chen Xuan.",
-    "first": 167,
-    "later": [
-      {
-        "ch": 175,
-        "role": "Arrested with the Shen heirs after police seize the Seven-Harbor files."
-      }
-    ]
-  },
-  {
-    "name": "Yuan Zhenhua",
-    "aka": [],
-    "group": "Shen family and the harbor families",
-    "role": "Koo Tianming's aide who carries his briefcase and printed files.",
-    "first": 167
-  },
-  {
-    "name": "Ye Dashan",
-    "aka": [],
-    "group": "Shen family and the harbor families",
-    "role": "Sunburned yard clerk at Shekou Dock who stamps Hengxin's delivery sheets.",
-    "first": 168
-  },
-  {
-    "name": "Deng Fuhai",
-    "aka": [],
-    "group": "Shen family and the harbor families",
-    "role": "Deputy clerk at Shenzhen Port Clearance Office who owes the Shen family a debt.",
-    "first": 170
-  },
-  {
-    "name": "Song Wenbo",
-    "aka": [],
-    "group": "Haiyue Group and the Shanghai port",
-    "role": "Hotel concierge near MixC Mall who hands Qin Yuhan the Shen family's invitation.",
-    "first": 170
-  },
-  {
-    "name": "Liang Biao",
-    "aka": [],
-    "group": "Shen family and the harbor families",
-    "role": "Scarred Macau enforcer hired by the Shen family to seize Qin Yuhan.",
-    "first": 172,
-    "later": [
-      {
-        "ch": 175,
-        "role": "Taken away in a police van with the other Macau enforcers."
-      }
-    ]
-  },
-  {
-    "name": "He Zhengguo",
-    "aka": [
-      "Chief He"
-    ],
-    "group": "Banks and bankers",
-    "role": "Shenzhen regional chief of Huaxia Bank; ends the Shen family's credit lines.",
-    "first": 174
-  },
-  {
-    "name": "Ma Weidong",
-    "aka": [
-      "Senior Inspector Ma"
-    ],
-    "group": "Police and the station",
-    "role": "Senior Inspector who backs the asset-freeze warrants with Deputy Director Zhao.",
-    "first": 174,
-    "later": [
-      {
-        "ch": 175,
-        "role": "Handcuffs Shen Jingzhou and Koo Tianming in the villa."
-      }
-    ]
-  },
-  {
-    "name": "Tang Zhiqiang",
-    "aka": [],
-    "group": "Banks and bankers",
-    "role": "Shenzhen regional chief of ICBC; freezes thirty-two Shen-linked accounts.",
-    "first": 174
-  },
-  {
-    "name": "Xu Wenbo",
-    "aka": [
-      "Chief Xu"
-    ],
-    "group": "Banks and bankers",
-    "role": "Shenzhen regional chief of Bank of China; freezes Shen foreign-currency accounts.",
-    "first": 174
-  },
-  {
-    "name": "Zhao Jianming",
-    "aka": [
-      "Deputy Director Zhao"
-    ],
-    "group": "Police and the station",
-    "role": "Deputy Director who holds the court warrants freezing the whole Shen empire.",
-    "first": 174
-  },
-  {
-    "name": "Zhou Mingyuan (Shenzhen China Construction Bank)",
-    "aka": [
-      "Chief Zhou"
-    ],
-    "group": "Banks and bankers",
-    "role": "Shenzhen regional chief of China Construction Bank; recalls the Shen family's loans.",
-    "first": 174
-  },
-  {
-    "name": "Manager Wang",
-    "aka": [],
-    "group": "Office at Hengxin",
-    "role": "Chen Xuan's boss at Hengxin Logistics; named only in passing.",
-    "first": 176
-  },
-  {
-    "name": "Lin Xiao",
-    "aka": [
-      "Miss Lin"
-    ],
-    "group": "Plaza 66 and Shanghai life",
-    "role": "Shop assistant at Valenti Cashmere who is uneasy about the insults.",
-    "first": 178,
-    "later": [
-      {
-        "ch": 179,
-        "role": "Made acting shift lead at Plaza 66 by General Manager Gu"
-      }
-    ]
-  },
-  {
-    "name": "Sun Tingting",
-    "aka": [
-      "Miss Sun"
-    ],
-    "group": "Plaza 66 and Shanghai life",
-    "role": "Zhao Kai's girlfriend who wants the oatmeal jacket Chen Yuan is trying on.",
-    "first": 178
-  },
-  {
-    "name": "Zhao Kai (Kaiyuan Real Estate heir)",
-    "aka": [
-      "Young Master Zhao"
-    ],
-    "group": "Plaza 66 and Shanghai life",
-    "role": "Spoiled son of Kaiyuan Real Estate; mocks Chen Xuan's family at Plaza 66.",
-    "first": 178
-  },
-  {
-    "name": "Zhao Yongsheng",
-    "aka": [],
-    "group": "Plaza 66 and Shanghai life",
-    "role": "Shanghai developer heading Kaiyuan Real Estate; father of Zhao Kai.",
-    "first": 178
-  },
-  {
-    "name": "Zhou Mei",
-    "aka": [],
-    "group": "Plaza 66 and Shanghai life",
-    "role": "Valenti Cashmere store manager who insults Chen Hao and fawns over Zhao Kai.",
-    "first": 178,
-    "later": [
-      {
-        "ch": 179,
-        "role": "Fired on the spot and barred from Plaza 66"
-      }
-    ]
-  },
-  {
-    "name": "Gu Wenbin",
-    "aka": [
-      "General Manager Gu",
-      "Uncle Gu"
-    ],
-    "group": "Plaza 66 and Shanghai life",
-    "role": "General Manager of Plaza 66 who rushes to bow to Chen Xuan and dismisses Zhou Mei.",
-    "first": 179
-  },
-  {
-    "name": "Lin Zhiyuan",
-    "aka": [
-      "Director Lin"
-    ],
-    "group": "Banks and bankers",
-    "role": "Private-banking director at Huaxia Bank's Lujiazui branch who recognizes the vault card.",
-    "first": 179
-  },
-  {
-    "name": "Professor Shen Mingde",
-    "aka": [
-      "Professor Shen"
-    ],
-    "group": "Plaza 66 and Shanghai life",
-    "role": "Retired Fudan economics professor who gives Chen Hao directions and praises Qin Yuhan.",
-    "first": 181
-  },
-  {
-    "name": "Fang Zhengming",
-    "aka": [
-      "President Fang"
-    ],
-    "group": "Banks and bankers",
-    "role": "National President of China Construction Bank; reports the forestry loan trail near Changbai.",
-    "first": 184
-  },
-  {
-    "name": "Han Guoliang",
-    "aka": [
-      "President Han"
-    ],
-    "group": "Banks and bankers",
-    "role": "National President of ICBC; pushes Beijing to send armored trucks and helicopters at once.",
-    "first": 184,
-    "later": [
-      {
-        "ch": 185,
-        "role": "Drops the raid idea after General Qin warns about the detonator"
-      }
-    ]
-  },
-  {
-    "name": "Liang Qingshan",
-    "aka": [
-      "President Liang"
-    ],
-    "group": "Banks and bankers",
-    "role": "National President of Huaxia Bank; reports the Shanghai vault card and the Shenzhen freeze.",
-    "first": 184
-  },
-  {
-    "name": "Tang Wenhao",
-    "aka": [
-      "President Tang"
-    ],
-    "group": "Banks and bankers",
-    "role": "National President of Bank of China; traces the Hong Kong gold and foreign payouts.",
-    "first": 184
-  },
-  {
-    "name": "Number 44",
-    "aka": [],
-    "group": "The Black Pine Guard (the hidden guard)",
-    "role": "White Guard watcher who photographs the Changbai valley with Number 12.",
-    "first": 189
-  },
-  {
-    "name": "Kou Zhenshan",
-    "aka": [],
-    "group": "Changbai valley and Nanjing Road plot",
-    "role": "Scarred Chinese boss running the hidden refinery in the Changbai valley.",
-    "first": 190
-  },
-  {
-    "name": "Viktor Orlov",
-    "aka": [],
-    "group": "Changbai valley and Nanjing Road plot",
-    "role": "Foreign armed commander guarding the Changbai valley refinery.",
-    "first": 190
-  },
-  {
-    "name": "Hao Zhenhai",
-    "aka": [],
-    "group": "Shen family and the harbor families",
-    "role": "Hong Kong partner who blames Chen Xuan for the Shanghai, Jingzhou City and Shenzhen losses.",
-    "first": 191
-  },
-  {
-    "name": "Simon Kwok",
-    "aka": [],
-    "group": "Shen family and the harbor families",
-    "role": "Aide to Victor Leung who gathers hotel, flight and port records.",
-    "first": 191
-  },
-  {
-    "name": "Victor Leung",
-    "aka": [],
-    "group": "Shen family and the harbor families",
-    "role": "Hong Kong financier leading the Seven-Harbor backers; controls the Changbai vault.",
-    "first": 191,
-    "later": [
-      {
-        "ch": 195,
-        "role": "Panics and orders trucks readied to haul gold and ledgers from Changbai"
-      }
-    ]
-  },
-  {
-    "name": "Kieran Cole",
-    "aka": [],
-    "group": "Shen family and the harbor families",
-    "role": "Ex-mercenary leader paid 8 million yuan to kill Chen Xuan in Shanghai.",
-    "first": 192,
-    "later": [
-      {
-        "ch": 194,
-        "role": "Knocked out in the alley and taken by Shanghai State Security"
-      }
-    ]
-  },
-  {
-    "name": "Rico Alvarez",
-    "aka": [],
-    "group": "Shen family and the harbor families",
-    "role": "Hired killer with a folding knife on Kieran Cole's four-man team.",
-    "first": 192,
-    "later": [
-      {
-        "ch": 194,
-        "role": "Pinned down and knocked out in the alley; taken by Shanghai State Security"
-      }
-    ]
-  },
-  {
-    "name": "Tomasz Novak",
-    "aka": [],
-    "group": "Shen family and the harbor families",
-    "role": "Hired killer with a silenced pistol on Kieran Cole's four-man team.",
-    "first": 192,
-    "later": [
-      {
-        "ch": 194,
-        "role": "Knocked out in the alley and taken by Shanghai State Security"
-      }
-    ]
-  },
-  {
-    "name": "Dmitri Sokol",
-    "aka": [],
-    "group": "Changbai valley and Nanjing Road plot",
-    "role": "Burly former soldier from Eastern Europe on the team hunting Chen Xuan.",
-    "first": 193
-  },
-  {
-    "name": "Zhou Meifen",
-    "aka": [],
-    "group": "Plaza 66 and Shanghai life",
-    "role": "Cheerful bookstore cashier on Nanjing Road who double-wraps Chen Hao's books.",
-    "first": 193
-  },
-  {
-    "name": "Li Dakang",
-    "aka": [
-      "Secretary Li"
-    ],
-    "group": "Officials",
-    "role": "Fiery, reform-minded Jingzhou Municipal Party Secretary sitting on the 13-member Handong Provincial Standing Committee alongside Sha Ruijin.",
-    "first": 66
-  },
-  {
-    "name": "Zhao Lichun",
-    "aka": [],
-    "group": "Rivals & Opponents",
-    "role": "Former Handong chief and father of Zhao Ruilong, patriarch of the corrupt Zhao Family Clique behind Shanshui Group.",
-    "first": 42
-  },
-  {
-    "name": "Lin Shuyin",
-    "aka": [],
-    "group": "Chen's family and friends",
-    "role": "Qin Yuhan's status-conscious mother from Beijing who looks down on Chen Xuan as a lazy 12,000-yuan clerk.",
-    "first": 98
-  },
-  {
-    "name": "Qin Haoran",
-    "aka": [],
-    "group": "Rivals & Opponents",
-    "role": "Qin Yuhan's snobbish cousin who repeatedly tries to embarrass Chen Xuan in Shanghai and Beijing.",
-    "first": 102
-  },
-  {
-    "name": "Gu Mingzhe",
-    "aka": [],
-    "group": "Rivals & Opponents",
-    "role": "Pretentious young Beijing ministry deputy and rival suitor who gets kicked off the capital task force at Elder Qin's birthday dinner.",
-    "first": 119
-  }
+ {
+  "name": "Chen Xuan",
+  "aka": [
+   "Big Brother",
+   "Brother Xuan",
+   "Xiao Xuan",
+   "Xuan",
+   "Mr. Chen"
+  ],
+  "group": "Chen's family and friends",
+  "role": "Our hero. A quiet junior operations supervisor at Hengxin Logistics who leaves at 4:55.",
+  "first": 1,
+  "later": [
+   {
+    "ch": 3,
+    "role": "Every Black Pine Guard member's loyalty ends at him. The guard answers only to him."
+   },
+   {
+    "ch": 22,
+    "role": "Our hero. Quiet son of Chen Jianguo, watching the Old Street case from his parents' home."
+   },
+   {
+    "ch": 25,
+    "role": "Commands Black Pine Guard, the private shield that protects him."
+   },
+   {
+    "ch": 30,
+    "role": "Turns the Zero key and orders a nationwide lockdown."
+   },
+   {
+    "ch": 46,
+    "role": "Our hero. Chen Mingde's nephew, whose family the sweep must keep out of trouble."
+   },
+   {
+    "ch": 73,
+    "role": "Chen Mingde's nephew. Quiet and calm while the family waits at home."
+   },
+   {
+    "ch": 88,
+    "role": "Our hero. Chen Mingde's nephew. Black Pine Guard reports to him by private phone."
+   },
+   {
+    "ch": 106,
+    "role": "Calm Hengxin Logistics clerk who avoids showing off and drinks tea from a green thermos."
+   },
+   {
+    "ch": 143,
+    "role": "Meets Elder Song face to face at the Western Hills lake pavilion"
+   },
+   {
+    "ch": 146,
+    "role": "Turned down Deputy General Manager post and 50,000 yuan monthly pay."
+   },
+   {
+    "ch": 158,
+    "role": "Volunteers for Shenzhen trip to face the Shen Family at Pier Nine."
+   },
+   {
+    "ch": 186,
+    "role": "Hengxin gives him a 20,000 yuan bonus for the Shenzhen work"
+   },
+   {
+    "ch": 195,
+    "role": "Flies north by private jet to take charge of the Changbai operation"
+   }
+  ]
+ },
+ {
+  "name": "Hu Dewei",
+  "aka": [
+   "Manager Hu",
+   "Supervisor Hu",
+   "Department Manager Hu",
+   "Old Hu"
+  ],
+  "group": "Office at Hengxin",
+  "role": "Department manager at Hengxin Logistics. He orders everyone to stay late and threatens Chen Xuan.",
+  "first": 1,
+  "later": [
+   {
+    "ch": 97,
+    "role": "Hengxin department manager; rude and quick to blame Chen Xuan."
+   },
+   {
+    "ch": 106,
+    "role": "Hengxin supervisor who dumps errands on quiet clerks and avoids hard work."
+   },
+   {
+    "ch": 158,
+    "role": "Fakes a back injury to avoid the Shenzhen trip."
+   },
+   {
+    "ch": 186,
+    "role": "Publicly embarrassed by Pan Xiulan's questions about the Haiyue deal"
+   }
+  ]
+ },
+ {
+  "name": "Pan Xiulan",
+  "aka": [
+   "Sister Pan"
+  ],
+  "group": "Office at Hengxin",
+  "role": "Two desks away at Hengxin Logistics. Gives Chen Xuan a warning look when the manager shouts.",
+  "first": 1,
+  "later": [
+   {
+    "ch": 97,
+    "role": "Coworker at Hengxin on the twelfth floor; friendly to Chen Xuan."
+   }
+  ]
+ },
+ {
+  "name": "Sun Haoran",
+  "aka": [
+   "General Manager Sun Haoran",
+   "General Manager Sun"
+  ],
+  "group": "Office at Hengxin",
+  "role": "General manager at Hengxin Logistics. Chen Xuan sent his assistant the fixed weight report.",
+  "first": 1,
+  "later": [
+   {
+    "ch": 97,
+    "role": "Hengxin General Manager; panics over stuck cold-chain containers."
+   },
+   {
+    "ch": 122,
+    "role": "General Manager of Hengxin Logistics; nervous, proud, and eager for the forum invitation."
+   },
+   {
+    "ch": 146,
+    "role": "Offers Chen Xuan Deputy General Manager post; Chen declines."
+   },
+   {
+    "ch": 155,
+    "role": "Signs 8 million yuan Haiyue coastal contract, then the ship is held."
+   },
+   {
+    "ch": 186,
+    "role": "Announces Haiyue Group doubles Hengxin's yearly contract to 120 million yuan"
+   }
+  ]
+ },
+ {
+  "name": "Zhang Pengfei",
+  "aka": [],
+  "group": "Office at Hengxin",
+  "role": "Hengxin colleague who boasts. His initials are on a fake 14,000-yuan storage fee.",
+  "first": 1,
+  "later": [
+   {
+    "ch": 97,
+    "role": "Hengxin clerk who mocks Chen Xuan and brags about his office ties."
+   },
+   {
+    "ch": 98,
+    "role": "Blamed for the stuck Hongda Foods containers; may lose his bonus or job."
+   },
+   {
+    "ch": 122,
+    "role": "Hengxin clerk who loves football and avoids the Sha trip."
+   }
+  ]
+ },
+ {
+  "name": "Zheng Qian",
+  "aka": [],
+  "group": "Office at Hengxin",
+  "role": "Colleague across the aisle at Hengxin Logistics. Jokes with Chen Xuan and cheers his stand.",
+  "first": 1,
+  "later": [
+   {
+    "ch": 97,
+    "role": "Quiet Hengxin coworker who warns Chen Xuan about Hu Dewei and Zhang Pengfei."
+   }
+  ]
+ },
+ {
+  "name": "Chen Jianguo",
+  "aka": [
+   "Dad"
+  ],
+  "group": "Chen's family and friends",
+  "role": "Chen Xuan's father. Went to Old Street Station to beg for his brother's blood pressure pills.",
+  "first": 2,
+  "later": [
+   {
+    "ch": 22,
+    "role": "Chen Xuan's father and Chen Mingde's older brother; was turned away from the station."
+   },
+   {
+    "ch": 54,
+    "role": "Chen Xuan's father and Chen Mingde's brother. Smokes nervously and wants to beg police."
+   },
+   {
+    "ch": 73,
+    "role": "Chen Mingde's brother. Family kept safe at home during the raid."
+   },
+   {
+    "ch": 88,
+    "role": "Chen Mingde's younger brother. Helps repair the damaged hardware shop on Old Street."
+   },
+   {
+    "ch": 112,
+    "role": "Chen Xuan's father, a plain Old Street resident in Yunxi County."
+   }
+  ]
+ },
+ {
+  "name": "Chen Mingde",
+  "aka": [
+   "Second Uncle",
+   "Mingde",
+   "Uncle Chen Mingde"
+  ],
+  "group": "Chen's family and friends",
+  "role": "Chen Xuan's second uncle. Owns Mingde Hardware on Old Street and was arrested for an assault.",
+  "first": 2,
+  "later": [
+   {
+    "ch": 13,
+    "role": "Still locked in Holding Cell Two. A night guard brings him water and a blanket."
+   },
+   {
+    "ch": 22,
+    "role": "Younger brother of Chen Jianguo; held at Old Street Station since Friday night."
+   },
+   {
+    "ch": 46,
+    "role": "Yunxi hardware shopkeeper on Old Street, framed on a false charge the sweep will clear."
+   },
+   {
+    "ch": 54,
+    "role": "Second Uncle. Now held inside Old Street Station after a fake assault report."
+   },
+   {
+    "ch": 67,
+    "role": "Old Street hardware shopkeeper. Refused to sell his shop; jailed on a fake charge."
+   },
+   {
+    "ch": 73,
+    "role": "Cleared of all charges and freed. Driven home by Han Zhiyuan."
+   },
+   {
+    "ch": 88,
+    "role": "Chen Xuan's uncle. Owns Mingde Hardware on Old Street; recently cleared of a false charge."
+   },
+   {
+    "ch": 100,
+    "role": "Reopens Mingde Hardware with a new awning; neighbors gather to celebrate."
+   },
+   {
+    "ch": 116,
+    "role": "Chen Xuan's uncle who runs Mingde Hardware on Old Street."
+   }
+  ]
+ },
+ {
+  "name": "Liu Meifang",
+  "aka": [
+   "Mom"
+  ],
+  "group": "Chen's family and friends",
+  "role": "Chen Xuan's mother. Calls him in tears after Chen Mingde is arrested.",
+  "first": 2,
+  "later": [
+   {
+    "ch": 22,
+    "role": "Chen Xuan's mother; quietly peels apples and keeps the family at home."
+   },
+   {
+    "ch": 54,
+    "role": "Chen Xuan's mother. Frightened and sleepless, wants to beg the police for Chen Mingde."
+   },
+   {
+    "ch": 73,
+    "role": "Chen Mingde's sister-in-law. Kept safe at home during the raid."
+   },
+   {
+    "ch": 88,
+    "role": "Asks Chen Xuan home for braised pork ribs. Runs the family kitchen."
+   },
+   {
+    "ch": 115,
+    "role": "Chen Xuan's mother, who lives on Old Street in Yunxi County."
+   }
+  ]
+ },
+ {
+  "name": "Wu Lanying",
+  "aka": [
+   "Second Aunt",
+   "Sister-in-law",
+   "Auntie Lanying"
+  ],
+  "group": "Chen's family and friends",
+  "role": "Chen Mingde's wife. She fainted outside the shop when police took her husband.",
+  "first": 2,
+  "later": [
+   {
+    "ch": 26,
+    "role": "Chen Mingde's wife and mother of Chen Hao and Chen Yuan; hides her fear."
+   },
+   {
+    "ch": 54,
+    "role": "Second Aunt, Chen Mingde's wife. Tearful and blames herself for the arrest."
+   },
+   {
+    "ch": 73,
+    "role": "Chen Mingde's wife. Kept safe and calm at home during the raid."
+   },
+   {
+    "ch": 88,
+    "role": "Chen Mingde's wife. Keeps the family and shop in order and scolds everyone."
+   },
+   {
+    "ch": 116,
+    "role": "Chen Mingde's wife who worries about the street and runs the family kitchen."
+   }
+  ]
+ },
+ {
+  "name": "Deng Yongchang",
+  "aka": [
+   "Chairman Deng",
+   "Chairman Deng Yongchang",
+   "Developer Deng Yongchang"
+  ],
+  "group": "Hongrui and the underworld",
+  "role": "Local developer who owns sixty percent of Hongrui Real Estate on public papers.",
+  "first": 3,
+  "later": [
+   {
+    "ch": 13,
+    "role": "Hongrui's boss. Panics when four company bank accounts freeze overnight."
+   },
+   {
+    "ch": 22,
+    "role": "County official who pressures Cheng Biao about the quarry trucks and street thugs."
+   },
+   {
+    "ch": 28,
+    "role": "Chairman who cleared Chen Mingde's papers and ordered his shop cleared."
+   },
+   {
+    "ch": 33,
+    "role": "Hongrui Plaza chairman, trapped in his top-floor office as phones die."
+   },
+   {
+    "ch": 46,
+    "role": "Yunxi County figure behind the Old Street demolition scheme, to be arrested at dawn."
+   },
+   {
+    "ch": 64,
+    "role": "Developer behind Yunxi County's fake demolition bond. Credit lines are frozen."
+   },
+   {
+    "ch": 74,
+    "role": "Hongrui Real Estate chairman. Handcuffed and taken from Hongrui Plaza in a van."
+   },
+   {
+    "ch": 86,
+    "role": "Qingyan crime boss whose twenty-year bank, bribe and treason web was exposed."
+   },
+   {
+    "ch": 96,
+    "role": "Arrested; gave up a full list of names to investigators."
+   },
+   {
+    "ch": 116,
+    "role": "Sentenced to life imprisonment; 420 million yuan in assets seized."
+   }
+  ]
+ },
+ {
+  "name": "Number 1",
+  "aka": [
+   "Number One"
+  ],
+  "group": "The Black Pine Guard (the hidden guard)",
+  "role": "Runs the hidden guard's network through locked channels. Keeps no list of real names.",
+  "first": 3,
+  "later": [
+   {
+    "ch": 5,
+    "role": "The unseen head of the Black Pine Guard. Gives orders on Chen Mingde's release."
+   },
+   {
+    "ch": 20,
+    "role": "Runs five teams from a Sha safehouse. Orders the search for who protects Shengyuan Capital."
+   },
+   {
+    "ch": 23,
+    "role": "Black Pine Guard's top commander. Gives orders for the Sha team and the whole operation."
+   },
+   {
+    "ch": 30,
+    "role": "Stands down Black Pine Guard on Chen Xuan's order, losing all command to Zero Guard."
+   },
+   {
+    "ch": 46,
+    "role": "Black Pine Guard veteran of fifteen years who obeys Zero without question."
+   },
+   {
+    "ch": 87,
+    "role": "Head of Black Pine Guard. Reports to Chen Xuan on a private line."
+   },
+   {
+    "ch": 110,
+    "role": "Head of the hidden guard; calm and unseen, who keeps Chen Xuan's life quiet and safe."
+   },
+   {
+    "ch": 130,
+    "role": "Runs the counter-move and sends evidence to Zhao Dehai and Ding Guoping"
+   },
+   {
+    "ch": 141,
+    "role": "Arranges the Elder Song meeting and briefs Number 7"
+   }
+  ]
+ },
+ {
+  "name": "Number 7",
+  "aka": [
+   "Number Seven"
+  ],
+  "group": "The Black Pine Guard (the hidden guard)",
+  "role": "Numbered guard who rides with Chen Xuan and gives him quiet reports.",
+  "first": 3,
+  "later": [
+   {
+    "ch": 11,
+    "role": "Gives field orders from the van and holds the proof until the right hour."
+   },
+   {
+    "ch": 27,
+    "role": "Black Pine operative with nine years of service; brings Chen Xuan the sealed proof tablet."
+   },
+   {
+    "ch": 46,
+    "role": "Black Pine Guard member who questions Zero's choice to leave Yunxi suspects free."
+   },
+   {
+    "ch": 87,
+    "role": "Black Pine Guard officer at the Sha safehouse; reports to Number 1."
+   },
+   {
+    "ch": 96,
+    "role": "Drives Chen Xuan to the airstrip and briefs him on the clean-up."
+   },
+   {
+    "ch": 110,
+    "role": "Aide to Number 1 who reports on Chen Xuan and handles guard teams."
+   },
+   {
+    "ch": 141,
+    "role": "Assigned to fly Chen Xuan to the capital in white gear"
+   },
+   {
+    "ch": 173,
+    "role": "Leads forty White Guard members through the gate into the Shen villa."
+   }
+  ]
+ },
+ {
+  "name": "Number 9",
+  "aka": [
+   "Number Nine"
+  ],
+  "group": "The Black Pine Guard (the hidden guard)",
+  "role": "Numbered guard whose team clears the south service gate for Chen Xuan.",
+  "first": 3,
+  "later": [
+   {
+    "ch": 19,
+    "role": "Leads the river watch on the Pier Four barge with Number 19."
+   },
+   {
+    "ch": 46,
+    "role": "Black Pine Guard member who quickly links the Yunxi holds to Chen Mingde."
+   }
+  ]
+ },
+ {
+  "name": "Yan Tiehu",
+  "aka": [
+   "Gang leader Yan Tiehu"
+  ],
+  "group": "Hongrui and the underworld",
+  "role": "Former quarry contractor who runs street work on Old Street for Hongrui Real Estate.",
+  "first": 3,
+  "later": [
+   {
+    "ch": 10,
+    "role": "Hongrui's street boss. Tries to slap Chen Jianguo and is stopped by Chen Xuan."
+   },
+   {
+    "ch": 22,
+    "role": "Street gang boss whose thugs have gone quiet on the Old Street job."
+   },
+   {
+    "ch": 34,
+    "role": "Captured at Pier Four; offers to give up Deng Yongchang's shipping lists."
+   },
+   {
+    "ch": 46,
+    "role": "Street thug who ran the Old Street demolition crew with Cheng Biao."
+   },
+   {
+    "ch": 65,
+    "role": "Gang boss who threatens Old Street shopkeepers. Unaware of the coming raid."
+   },
+   {
+    "ch": 75,
+    "role": "Gang boss. Arrested in a dawn raid with about twenty thugs."
+   },
+   {
+    "ch": 116,
+    "role": "Sentenced to death with a two-year reprieve; loses political rights."
+   }
+  ]
+ },
+ {
+  "name": "Gao Jianming",
+  "aka": [
+   "Section Chief Gao"
+  ],
+  "group": "City, province and the capital",
+  "role": "Senior controller in Qingyan's tower who clears Runway Three for the private jet.",
+  "first": 4
+ },
+ {
+  "name": "Lin Wei",
+  "aka": [],
+  "group": "City, province and the capital",
+  "role": "Junior air controller at Qingyan. He is told to forget the amber strip.",
+  "first": 4
+ },
+ {
+  "name": "Number 12",
+  "aka": [],
+  "group": "The Black Pine Guard (the hidden guard)",
+  "role": "Hidden guard man who keeps the airfield and the ground line open.",
+  "first": 4,
+  "later": [
+   {
+    "ch": 189,
+    "role": "Sent north with Number 44 to find the hidden valley on Changbai Mountain"
+   }
+  ]
+ },
+ {
+  "name": "Number 14",
+  "aka": [],
+  "group": "The Black Pine Guard (the hidden guard)",
+  "role": "Hidden guard man in Yunxi County who passes on Number 1's orders.",
+  "first": 5,
+  "later": [
+   {
+    "ch": 20,
+    "role": "Leads the Computer Access team at the Sha safehouse."
+   },
+   {
+    "ch": 24,
+    "role": "Black Pine field agent who opened the middleman's hotel safe without a scratch."
+   }
+  ]
+ },
+ {
+  "name": "Number 19",
+  "aka": [
+   "Number Nineteen"
+  ],
+  "group": "The Black Pine Guard (the hidden guard)",
+  "role": "Hidden guard man in Yunxi who covers the police station back lane.",
+  "first": 5,
+  "later": [
+   {
+    "ch": 12,
+    "role": "Breaks into Golden Wheat Bakery and swaps its camera hard drive."
+   },
+   {
+    "ch": 19,
+    "role": "River-watch partner who matches the barge's engine and shipping records."
+   },
+   {
+    "ch": 168,
+    "role": "Runs the Yantian Port night watch and tracks the smuggling containers."
+   }
+  ]
+ },
+ {
+  "name": "Number 23",
+  "aka": [],
+  "group": "The Black Pine Guard (the hidden guard)",
+  "role": "Hidden guard man in Sha who traces the bank records.",
+  "first": 5,
+  "later": [
+   {
+    "ch": 9,
+    "role": "Runs Gong's Noodles on Old Street as a cover for the guard's men."
+   },
+   {
+    "ch": 91,
+    "role": "Black Pine Guard agent who watches Old Street from nearby."
+   },
+   {
+    "ch": 100,
+    "role": "Works at Gong's Noodles. Gives out buns to Old Street neighbors."
+   }
+  ]
+ },
+ {
+  "name": "Number 27",
+  "aka": [],
+  "group": "The Black Pine Guard (the hidden guard)",
+  "role": "Hidden guard man in Sha who traces coastal shell accounts.",
+  "first": 5,
+  "later": [
+   {
+    "ch": 17,
+    "role": "Secretly records the tea-room talk between Sun Weiming and Liang Guodong."
+   },
+   {
+    "ch": 24,
+    "role": "Black Pine field agent who copied the middleman's stolen drive in the hotel."
+   }
+  ]
+ },
+ {
+  "name": "Zhou Quan",
+  "aka": [
+   "Deputy Zhou Quan",
+   "Officer Zhou Quan",
+   "Deputy Director Zhou Quan"
+  ],
+  "group": "Police and the station",
+  "role": "Deputy chief at Old Street Station. Signed Chen Mingde's hold slip after a phone call.",
+  "first": 5,
+  "later": [
+   {
+    "ch": 22,
+    "role": "Pushes the Old Street demolition schedule; receives transfer papers from families he pressures."
+   },
+   {
+    "ch": 33,
+    "role": "Deputy at Old Street Station; panics as radios die and blames Cheng Biao."
+   },
+   {
+    "ch": 54,
+    "role": "Old Street Station officer who wrote the fake assault report on Chen Mingde."
+   },
+   {
+    "ch": 72,
+    "role": "Old Street deputy station director. Says Cheng Biao ordered the warrant time faked."
+   }
+  ]
+ },
+ {
+  "name": "Cheng Biao",
+  "aka": [
+   "Station Director Cheng Biao",
+   "Director Cheng Biao"
+  ],
+  "group": "Police and the station",
+  "role": "Old Street Station director. Chen Xuan expects him to bury any clean proof.",
+  "first": 6,
+  "later": [
+   {
+    "ch": 13,
+    "role": "Keeps Chen Mingde locked. Gets a panic call and fears a trap."
+   },
+   {
+    "ch": 22,
+    "role": "Station director of Old Street Station; locks up shopkeepers for Hongrui Real Estate."
+   },
+   {
+    "ch": 28,
+    "role": "Old Street Station director, under orders to clear Chen Mingde's shop."
+   },
+   {
+    "ch": 33,
+    "role": "Cornered at Old Street Station as police radios and phones die."
+   },
+   {
+    "ch": 46,
+    "role": "One of five Yunxi figures held in place for a lawful local sweep."
+   },
+   {
+    "ch": 65,
+    "role": "Old Street Station director. Provincial teams plan to grab him with Yan Tiehu."
+   },
+   {
+    "ch": 72,
+    "role": "Old Street Station director. Arrested for the backdated warrant and fake X-ray."
+   },
+   {
+    "ch": 116,
+    "role": "Sentenced to eighteen years in prison for bribery and framing citizens."
+   }
+  ]
+ },
+ {
+  "name": "Number 56",
+  "aka": [],
+  "group": "The Black Pine Guard (the hidden guard)",
+  "role": "Hidden guard man on night duty inside Old Street Station.",
+  "first": 6,
+  "later": [
+   {
+    "ch": 13,
+    "role": "Posing as a night guard, brings Chen Mingde warm water and a blanket."
+   },
+   {
+    "ch": 20,
+    "role": "Field Action team lead. Urges a fast strike on Pier Twelve and the provincial tier."
+   },
+   {
+    "ch": 24,
+    "role": "Stands guard in the vault while Number 34 opens the stolen drive."
+   }
+  ]
+ },
+ {
+  "name": "Chen Hao",
+  "aka": [],
+  "group": "Chen's family and friends",
+  "role": "Chen Xuan's seventeen-year-old younger brother. Angry at the bullying and wants to fight back.",
+  "first": 8,
+  "later": [
+   {
+    "ch": 77,
+    "role": "Chen Mingde's nephew. Nervous at home, cooking while the raid happened."
+   },
+   {
+    "ch": 117,
+    "role": "Chen Xuan's younger brother, a cheerful young man who teases Wang Lei."
+   },
+   {
+    "ch": 193,
+    "role": "Scores 138 of 150 on a math mock and ranks third in his grade"
+   }
+  ]
+ },
+ {
+  "name": "Chen Yuan",
+  "aka": [],
+  "group": "Chen's family and friends",
+  "role": "Chen Xuan's nineteen-year-old sister. Her calls for help to local contacts all failed.",
+  "first": 8,
+  "later": [
+   {
+    "ch": 77,
+    "role": "Chen Mingde's nephew. Joins Chen Hao to welcome him home."
+   },
+   {
+    "ch": 117,
+    "role": "Chen Hao's sister, who serves dinner and teases her brother."
+   }
+  ]
+ },
+ {
+  "name": "Wang Lei",
+  "aka": [],
+  "group": "Old Street neighbors",
+  "role": "Chen Xuan's old high school classmate. Drives a delivery cart and quietly helped the Chen family.",
+  "first": 8,
+  "later": [
+   {
+    "ch": 75,
+    "role": "Young Old Street neighbor. Shares live arrest news on his phone."
+   },
+   {
+    "ch": 79,
+    "role": "Delivery tricycle rider. Chen Xuan tells him to keep his phone on for a job."
+   },
+   {
+    "ch": 99,
+    "role": "Yunxi County tricycle driver, struggling since his father's hospital bills."
+   },
+   {
+    "ch": 106,
+    "role": "Hengxin clerk who sees through Hu Dewei's tricks and keeps quiet."
+   },
+   {
+    "ch": 117,
+    "role": "Now owns a new delivery van and runs freight routes between Yunxi and Qingyan."
+   }
+  ]
+ },
+ {
+  "name": "Yu Changshun",
+  "aka": [
+   "Uncle Yu Changshun",
+   "Old tailor Yu Changshun",
+   "Old Yu",
+   "Uncle Yu"
+  ],
+  "group": "Old Street neighbors",
+  "role": "Sixty-eight-year-old tailor on Old Street. He watches the lit hardware shop nervously.",
+  "first": 9,
+  "later": [
+   {
+    "ch": 10,
+    "role": "Steps out with a pressing iron to stop Yan Tiehu's men."
+   },
+   {
+    "ch": 21,
+    "role": "Tells Chen Xuan how Hongrui tried to push out Lin Guoliang."
+   },
+   {
+    "ch": 75,
+    "role": "Seventy-year-old Old Street tailor. Cheers the arrests of Yan Tiehu and Cheng Biao."
+   },
+   {
+    "ch": 92,
+    "role": "Old Street neighbor. Old tailor who sells cloth and quilts."
+   },
+   {
+    "ch": 116,
+    "role": "Loud, warm Old Street neighbor who celebrates the court verdicts with rice wine."
+   }
+  ]
+ },
+ {
+  "name": "Fang Zhihua",
+  "aka": [
+   "Deputy Director Fang Zhihua"
+  ],
+  "group": "County officials",
+  "role": "Deputy director at Yunxi People's Hospital. He signed a false head-injury report for Ma Er.",
+  "first": 11,
+  "later": [
+   {
+    "ch": 12,
+    "role": "Locked the real head scan and pasted a pre-written injury report from a flash drive."
+   }
+  ]
+ },
+ {
+  "name": "Ma Er",
+  "aka": [],
+  "group": "Hongrui and the underworld",
+  "role": "Drifter paid to fake a fall outside Mingde Hardware. Police use it to hold Chen Mingde.",
+  "first": 11,
+  "later": [
+   {
+    "ch": 12,
+    "role": "Boasts in a mahjong parlor that Yan Tiehu paid him five thousand yuan."
+   }
+  ]
+ },
+ {
+  "name": "Number 34",
+  "aka": [],
+  "group": "The Black Pine Guard (the hidden guard)",
+  "role": "Guard computer expert. Watches hospital and police computers for odd records.",
+  "first": 11,
+  "later": [
+   {
+    "ch": 20,
+    "role": "River Shipping team lead. Checks Pier Twelve records for past shipments."
+   },
+   {
+    "ch": 24,
+    "role": "Black Pine tech chief who opens stolen drives in a shielded vault."
+   },
+   {
+    "ch": 130,
+    "role": "Confirms the server, money and passport proof for Article 14"
+   }
+  ]
+ },
+ {
+  "name": "Number 42",
+  "aka": [],
+  "group": "The Black Pine Guard (the hidden guard)",
+  "role": "Hidden guard man assigned to find Ma Er and his payoff proof.",
+  "first": 11,
+  "later": [
+   {
+    "ch": 12,
+    "role": "Lifts Ma Er's payoff envelope and copies the call with Yan Tiehu."
+   },
+   {
+    "ch": 18,
+    "role": "Leads the Land Reserve basement break-in with Number 68."
+   },
+   {
+    "ch": 24,
+    "role": "Stands guard in the vault; checks stolen military and power-grid files."
+   }
+  ]
+ },
+ {
+  "name": "Number 11",
+  "aka": [],
+  "group": "The Black Pine Guard (the hidden guard)",
+  "role": "Money expert. Triggered the bank freeze and finds a sudden huge total.",
+  "first": 14,
+  "later": [
+   {
+    "ch": 23,
+    "role": "Black Pine financial analyst who leads the Sha money-tracking room."
+   },
+   {
+    "ch": 87,
+    "role": "Black Pine Guard officer for eleven years at the Sha safehouse."
+   },
+   {
+    "ch": 130,
+    "role": "Lays out the money trail and packs the Sha City evidence"
+   }
+  ]
+ },
+ {
+  "name": "Qian Weidong",
+  "aka": [],
+  "group": "Hongrui and the underworld",
+  "role": "Hongrui finance director. He tries to reach the bank staff after the accounts freeze.",
+  "first": 14
+ },
+ {
+  "name": "Liang Guodong",
+  "aka": [
+   "Chief Liang Guodong",
+   "Public Security Bureau Chief Liang Guodong",
+   "County Public Security Chief Liang Guodong"
+  ],
+  "group": "County officials",
+  "role": "Public Security Bureau chief. He orders Chen Mingde held two more days.",
+  "first": 17,
+  "later": [
+   {
+    "ch": 28,
+    "role": "Gave a quiet sign-off on the papers used against Chen Mingde."
+   },
+   {
+    "ch": 32,
+    "role": "Public Security Bureau chief; cut off, pacing as masked men surround his home."
+   },
+   {
+    "ch": 46,
+    "role": "Yunxi police official who signed the dirty arrest papers himself."
+   },
+   {
+    "ch": 65,
+    "role": "Yunxi County public security chief. Sits in his office with a secret phone line."
+   },
+   {
+    "ch": 71,
+    "role": "Police chief. Arrested at the 8:30 roll call on bribery and fake-evidence charges."
+   },
+   {
+    "ch": 116,
+    "role": "Sentenced to life imprisonment; 85 million yuan in assets seized."
+   }
+  ]
+ },
+ {
+  "name": "Sun Weiming",
+  "aka": [
+   "County Magistrate Sun Weiming",
+   "County Magistrate"
+  ],
+  "group": "County officials",
+  "role": "Yunxi County magistrate who meets Liang Guodong in a private tea room.",
+  "first": 17,
+  "later": [
+   {
+    "ch": 28,
+    "role": "Gave a quiet sign-off on the papers used against Chen Mingde."
+   },
+   {
+    "ch": 32,
+    "role": "County magistrate; phones dead and masked men at his front steps."
+   },
+   {
+    "ch": 46,
+    "role": "Yunxi county official who signed off on the demolition cover-up."
+   },
+   {
+    "ch": 65,
+    "role": "County magistrate of Yunxi. Sits in the county office during the raid."
+   },
+   {
+    "ch": 71,
+    "role": "County magistrate. Arrested at the roll call for bribery and abuse of power."
+   },
+   {
+    "ch": 116,
+    "role": "Sentenced to life imprisonment; 260 million yuan in assets seized."
+   }
+  ]
+ },
+ {
+  "name": "Number 68",
+  "aka": [],
+  "group": "The Black Pine Guard (the hidden guard)",
+  "role": "Hidden guard tech man who copies the Land Reserve computer.",
+  "first": 18
+ },
+ {
+  "name": "Lin Guoliang",
+  "aka": [],
+  "group": "Old Street neighbors",
+  "role": "Hardware seller who refused Hongrui's offer and died in a truck crash.",
+  "first": 21
+ },
+ {
+  "name": "Lin Xiaoyu",
+  "aka": [],
+  "group": "Old Street neighbors",
+  "role": "Lin Guoliang's daughter. Forced out of her Sha college and later fled the province.",
+  "first": 21
+ },
+ {
+  "name": "Shen Zhigang",
+  "aka": [
+   "Inspector Shen Zhigang"
+  ],
+  "group": "City, province and the capital",
+  "role": "City Discipline Inspection inspector who stops the illegal arrest at Fuxing New Village.",
+  "first": 22
+ },
+ {
+  "name": "Tian Jiahao",
+  "aka": [
+   "Officer Tian Jiahao"
+  ],
+  "group": "Police and the station",
+  "role": "Junior officer at Old Street Station; quietly doubts Cheng Biao's illegal order.",
+  "first": 22
+ },
+ {
+  "name": "Zhao Kai",
+  "aka": [
+   "Officer Zhao Kai"
+  ],
+  "group": "Police and the station",
+  "role": "Junior officer at Old Street Station; smirks while carrying out Cheng Biao's illegal order.",
+  "first": 22
+ },
+ {
+  "name": "Number 73",
+  "aka": [],
+  "group": "The Black Pine Guard (the hidden guard)",
+  "role": "Black Pine financial analyst who cracks the Shengyuan Capital bank vault.",
+  "first": 23
+ },
+ {
+  "name": "Chen Lin",
+  "aka": [],
+  "group": "Chen's family and friends",
+  "role": "Chen Mingde's younger daughter. Her dad promised to oil her bicycle chain.",
+  "first": 26
+ },
+ {
+  "name": "Chen Rui",
+  "aka": [],
+  "group": "Chen's family and friends",
+  "role": "Fourteen-year-old son of Chen Mingde. Worried about his father, who is locked up.",
+  "first": 26,
+  "later": [
+   {
+    "ch": 54,
+    "role": "Chen Xuan's young cousin in a big hoodie. Asks if his dad is back."
+   }
+  ]
+ },
+ {
+  "name": "Lin Feng",
+  "aka": [],
+  "group": "Police and the station",
+  "role": "Young night officer at Old Street Station who reports the masked men at the gate.",
+  "first": 33
+ },
+ {
+  "name": "Zhao Ming",
+  "aka": [
+   "Chief aide Zhao Ming"
+  ],
+  "group": "County officials",
+  "role": "Chief aide to Deng Yongchang; sweats and loses every phone in the tower.",
+  "first": 33
+ },
+ {
+  "name": "Qian Weiguo",
+  "aka": [],
+  "group": "Hongrui and the underworld",
+  "role": "Shengyuan Capital's regional shipping manager at Pier Four; panics as the dock goes dark.",
+  "first": 34
+ },
+ {
+  "name": "David Mercer",
+  "aka": [],
+  "group": "Hongrui and the underworld",
+  "role": "Claims foreign diplomatic cover; runs the tunnel server room and orders the books burned.",
+  "first": 35
+ },
+ {
+  "name": "Su Wenhao",
+  "aka": [],
+  "group": "Hongrui and the underworld",
+  "role": "File clerk in the tunnel room who copies the account books Deng's men send.",
+  "first": 35
+ },
+ {
+  "name": "Tang Weimin",
+  "aka": [],
+  "group": "City, province and the capital",
+  "role": "Vice Premier Zhou Zhenhua's secretary; nervous and loyal, frightened by the masked guards.",
+  "first": 36
+ },
+ {
+  "name": "Zhou Zhenhua",
+  "aka": [
+   "Vice Premier Zhou Zhenhua",
+   "Vice Premier",
+   "Vice Premier Zhou"
+  ],
+  "group": "City, province and the capital",
+  "role": "Vice Premier in the capital; calm as eight masked guards surround his home.",
+  "first": 36,
+  "later": [
+   {
+    "ch": 47,
+    "role": "Vice Premier, nervous as deputy ministers vanish from their homes overnight."
+   },
+   {
+    "ch": 65,
+    "role": "Vice Premier. Signs the yellow dispatch order for the Yunxi and Sha raids."
+   },
+   {
+    "ch": 85,
+    "role": "Senior leader who co-orders the quiet state takeover behind banks."
+   },
+   {
+    "ch": 119,
+    "role": "Vice Premier who reports on markets and keeps prices calm."
+   },
+   {
+    "ch": 184,
+    "role": "Chairs the Beijing crisis meeting on the four bank findings"
+   }
+  ]
+ },
+ {
+  "name": "Colonel Ye Chenglin",
+  "aka": [
+   "Ye Chenglin"
+  ],
+  "group": "The military and the capital",
+  "role": "Aide to General Qin Zhengguo; twelve years on army staff, shaken by the masked guards.",
+  "first": 37
+ },
+ {
+  "name": "Qin Zhengguo",
+  "aka": [
+   "General Qin Zhengguo",
+   "General Qin",
+   "Elder Qin",
+   "Uncle Zhengguo",
+   "Old Qin"
+  ],
+  "group": "The military and the capital",
+  "role": "Four-star general on the Central Military Commission; calm, blunt, and hunting for traitors.",
+  "first": 37,
+  "later": [
+   {
+    "ch": 46,
+    "role": "General who already used the vault line to reach Zero Guard's command."
+   },
+   {
+    "ch": 68,
+    "role": "General on a Beijing video feed. Leads the Southern Theater purge order."
+   },
+   {
+    "ch": 84,
+    "role": "Demands military trials for Shanghai agents; agrees to a 48-hour delay."
+   },
+   {
+    "ch": 85,
+    "role": "General on the Military Commission. Fights army traitors and speaks plainly with Elder Song."
+   },
+   {
+    "ch": 107,
+    "role": "Four-star general and grandfather of Qin Yuhan."
+   },
+   {
+    "ch": 120,
+    "role": "Carries Elder Song's sealed envelope to Number 1 and delivers the message."
+   },
+   {
+    "ch": 141,
+    "role": "Sends a secret message and sets up the capital meeting"
+   },
+   {
+    "ch": 143,
+    "role": "Waits fifty paces back by the pine tree during the meeting"
+   },
+   {
+    "ch": 149,
+    "role": "Serves Chen Xuan soup and tells his son never to ask questions."
+   },
+   {
+    "ch": 185,
+    "role": "Quietly seals the border crossings and blocks any truck or helicopter strike on Changbai"
+   },
+   {
+    "ch": 195,
+    "role": "Garrison sets checkpoints within forty kilometers of the Changbai vault"
+   }
+  ]
+ },
+ {
+  "name": "Elder Song",
+  "aka": [
+   "Founding Elder Song"
+  ],
+  "group": "The elders",
+  "role": "Ninety-year-old retired elder in the Western Hills who holds the founding override phrase.",
+  "first": 39,
+  "later": [
+   {
+    "ch": 47,
+    "role": "Retired founding elder who gave Qin Zhengguo the old code phrase."
+   },
+   {
+    "ch": 85,
+    "role": "Ninety-year-old Founding Elder. One of three living men who knew the Zero rules."
+   },
+   {
+    "ch": 119,
+    "role": "Founding Elder who lives in the Western Hills; Qin Zhengguo promised him tea."
+   },
+   {
+    "ch": 120,
+    "role": "Ninety years old; sends a sealed note asking Number 1 for one cup of tea."
+   },
+   {
+    "ch": 143,
+    "role": "Meets Chen Xuan at the lake pavilion and pours him tea"
+   }
+  ]
+ },
+ {
+  "name": "Fang Qiming",
+  "aka": [
+   "Chairman Fang Qiming",
+   "Shengyuan Capital boss",
+   "Shengyuan Capital Chairman"
+  ],
+  "group": "Hongrui and the underworld",
+  "role": "Shengyuan Capital chairman; panics as his helicopter dies and masked guards arrive.",
+  "first": 41,
+  "later": [
+   {
+    "ch": 51,
+    "role": "Chairman of Shengyuan Capital whose phone line was cut at dawn."
+   },
+   {
+    "ch": 61,
+    "role": "Linked to Shengyuan Capital, which bought lawmakers' protection in fourteen provinces."
+   },
+   {
+    "ch": 64,
+    "role": "Shengyuan Capital boss. His overseas accounts and local brokers are being frozen."
+   },
+   {
+    "ch": 82,
+    "role": "Shengyuan Capital chairman in custody. Blames Lin Zhengde and names six provinces."
+   },
+   {
+    "ch": 85,
+    "role": "Shengyuan Capital chairman. Dug a wrecking bunker; now under interrogation in Sha."
+   }
+  ]
+ },
+ {
+  "name": "He Guoliang",
+  "aka": [
+   "Vice Minister He Guoliang",
+   "Energy Vice Minister He Guoliang",
+   "Energy Vice Minister"
+  ],
+  "group": "City, province and the capital",
+  "role": "Vice Minister of Energy, hiding stolen grid money and shredding bank papers as the raid starts.",
+  "first": 41,
+  "later": [
+   {
+    "ch": 45,
+    "role": "Capital vice minister whose phone line was cut off during the sweep."
+   },
+   {
+    "ch": 64,
+    "role": "Energy vice minister. Signed twenty-year power deals far below the real state rate."
+   },
+   {
+    "ch": 81,
+    "role": "Energy vice minister under questioning. Confesses and names bankers and a Geneva fixer."
+   },
+   {
+    "ch": 85,
+    "role": "Energy Vice Minister who broke after noon and named bankers and a middleman."
+   },
+   {
+    "ch": 101,
+    "role": "Former Energy Vice Minister on trial; changes his plea and offers names."
+   }
+  ]
+ },
+ {
+  "name": "Shen Yumei",
+  "aka": [],
+  "group": "City, province and the capital",
+  "role": "He Guoliang's wife; clutches the passport pouch and cries as the raid begins.",
+  "first": 41
+ },
+ {
+  "name": "Lin Zhengde",
+  "aka": [
+   "Vice Governor Lin Zhengde"
+  ],
+  "group": "City, province and the capital",
+  "role": "Provincial Vice Governor, blamed by Fang Qiming for signing corrupt customs passes.",
+  "first": 42,
+  "later": [
+   {
+    "ch": 43,
+    "role": "Provincial Vice Governor who signed the export permit covering Pier Four."
+   },
+   {
+    "ch": 64,
+    "role": "Sha vice governor. His investment groups are tied to Shengyuan Capital."
+   },
+   {
+    "ch": 66,
+    "role": "Taken from home at 1:15 a.m. by a Beijing discipline team."
+   },
+   {
+    "ch": 82,
+    "role": "Under arrest, blaming Fang Qiming and admitting he signed the trash permits."
+   },
+   {
+    "ch": 85,
+    "role": "Vice Governor of Sha, interrogated the same night as Fang Qiming."
+   }
+  ]
+ },
+ {
+  "name": "Marcus Vance",
+  "aka": [],
+  "group": "Foreign spies and the Zurich ring",
+  "role": "Foreign consular liaison secretly arranging Pier Four smuggling through Xu Wenbin.",
+  "first": 43,
+  "later": [
+   {
+    "ch": 94,
+    "role": "Revealed to be the Zurich fixer Li Weiming."
+   }
+  ]
+ },
+ {
+  "name": "Xu Wenbin",
+  "aka": [
+   "Customs Director Xu Wenbin",
+   "Director Xu Wenbin",
+   "Customs Director"
+  ],
+  "group": "Police and the station",
+  "role": "Qingyan Port Customs Director who took bribes to clear smuggling cargo.",
+  "first": 43,
+  "later": [
+   {
+    "ch": 64,
+    "role": "Customs director linked to He Guoliang's loyal site managers and port shipments."
+   },
+   {
+    "ch": 69,
+    "role": "Qingyan customs director. Taken from his home at midnight by central discipline officers."
+   },
+   {
+    "ch": 96,
+    "role": "Qingyan Port Customs Director; taken in for investigation before dawn."
+   },
+   {
+    "ch": 111,
+    "role": "Former Customs Director at Qingyan Port, arrested at midnight on Tuesday."
+   }
+  ]
+ },
+ {
+  "name": "Ma Zhenyu",
+  "aka": [
+   "Senior Colonel Ma Zhenyu"
+  ],
+  "group": "The military and the capital",
+  "role": "Senior colonel and supply deputy who sold military secrets to cover gambling debts.",
+  "first": 44,
+  "later": [
+   {
+    "ch": 68,
+    "role": "Senior colonel in coastal logistics. Arrested for fake fuel slips and radar blind spots."
+   },
+   {
+    "ch": 102,
+    "role": "Senior Colonel who led a coastal supply ring; arrested two days earlier."
+   }
+  ]
+ },
+ {
+  "name": "Claire Moreau",
+  "aka": [],
+  "group": "Foreign spies and the Zurich ring",
+  "role": "French handler in Shanghai who ran the Zurich data link.",
+  "first": 45,
+  "later": [
+   {
+    "ch": 103,
+    "role": "French advisor who ran a Shanghai office that Ding calls a Zurich relay desk."
+   }
+  ]
+ },
+ {
+  "name": "Kenji Takahashi",
+  "aka": [],
+  "group": "Foreign spies and the Zurich ring",
+  "role": "Japanese handler in Shanghai who tried to burn the drives by hand.",
+  "first": 45,
+  "later": [
+   {
+    "ch": 103,
+    "role": "Quiet Japanese man held by State Security; offers names of Zurich partners."
+   }
+  ]
+ },
+ {
+  "name": "Viktor Kroll",
+  "aka": [],
+  "group": "Foreign spies and the Zurich ring",
+  "role": "German handler in Shanghai who tried to shoot his way to the drives.",
+  "first": 45,
+  "later": [
+   {
+    "ch": 103,
+    "role": "Senior banker from a Shanghai firm, held by State Security."
+   }
+  ]
+ },
+ {
+  "name": "Gu Chengshan",
+  "aka": [
+   "Premier Gu Chengshan",
+   "Premier Gu",
+   "Premier"
+  ],
+  "group": "City, province and the capital",
+  "role": "Premier of the State Council, shaken by the nationwide sweep.",
+  "first": 47,
+  "later": [
+   {
+    "ch": 64,
+    "role": "Premier. Gives final approval to the capital's money freeze plan."
+   },
+   {
+    "ch": 85,
+    "role": "Premier. Co-orders the quiet state takeover behind the banks."
+   },
+   {
+    "ch": 119,
+    "role": "Premier who chairs the central review of the nationwide clean-up."
+   }
+  ]
+ },
+ {
+  "name": "Gao Zhengyi",
+  "aka": [
+   "Secretary Gao Zhengyi",
+   "CCDI Deputy Secretary",
+   "Deputy Secretary Gao Zhengyi",
+   "Deputy Secretary Gao"
+  ],
+  "group": "City, province and the capital",
+  "role": "CCDI Deputy Secretary, angry at being locked out of his own building.",
+  "first": 48,
+  "later": [
+   {
+    "ch": 52,
+    "role": "CCDI Deputy Secretary. Orders all department heads into the Main Security Hall."
+   },
+   {
+    "ch": 66,
+    "role": "CCDI deputy secretary. Co-signed the joint central order with Zhou Zhenhua."
+   },
+   {
+    "ch": 81,
+    "role": "Questions He Guoliang in the capital, using secret bank codes as proof."
+   },
+   {
+    "ch": 85,
+    "role": "Investigator who took confessions from He Guoliang and three bankers."
+   },
+   {
+    "ch": 86,
+    "role": "CCDI Deputy Secretary in the review of the forty-two black cases."
+   },
+   {
+    "ch": 119,
+    "role": "CCDI deputy secretary who reads the clean-up totals and case results."
+   }
+  ]
+ },
+ {
+  "name": "Dai Chunsheng",
+  "aka": [
+   "Director Dai Chunsheng"
+  ],
+  "group": "City, province and the capital",
+  "role": "Public Security director who cannot be reached; his seat stays empty at the meeting.",
+  "first": 51
+ },
+ {
+  "name": "Han Qingshan",
+  "aka": [],
+  "group": "City, province and the capital",
+  "role": "Supreme People's Court Vice President, nervous about the five a.m. summons.",
+  "first": 51
+ },
+ {
+  "name": "Lu Mingyuan",
+  "aka": [
+   "Old Lu"
+  ],
+  "group": "City, province and the capital",
+  "role": "NDRC Vice Chairman, afraid his banking and building colleagues have vanished.",
+  "first": 51
+ },
+ {
+  "name": "Shen Weiguo",
+  "aka": [
+   "Vice Minister Shen Weiguo"
+  ],
+  "group": "City, province and the capital",
+  "role": "Vice Minister of Public Security, summoned to the West Gate at five a.m.",
+  "first": 51
+ },
+ {
+  "name": "Tang Jiandong",
+  "aka": [
+   "General Tang"
+  ],
+  "group": "The military and the capital",
+  "role": "Lieutenant General at the Joint Staff, suspicious of the dead military phone lines.",
+  "first": 51
+ },
+ {
+  "name": "Du Zhenping",
+  "aka": [
+   "Commissar Du"
+  ],
+  "group": "The military and the capital",
+  "role": "Theater Political Commissar who noticed three air-defense zones went quiet at two a.m.",
+  "first": 52
+ },
+ {
+  "name": "Pei Rongsheng",
+  "aka": [
+   "Old Pei"
+  ],
+  "group": "City, province and the capital",
+  "role": "Deputy Finance Minister, nervous after secretly calling He Guoliang's office.",
+  "first": 52
+ },
+ {
+  "name": "Kang Deming",
+  "aka": [
+   "Deputy Director Kang Deming"
+  ],
+  "group": "City, province and the capital",
+  "role": "Deputy Director of Public Security who demands a legal warrant from the masked unit.",
+  "first": 53
+ },
+ {
+  "name": "Wang Deshun",
+  "aka": [
+   "Uncle Wang"
+  ],
+  "group": "Old Street neighbors",
+  "role": "Bun-stall vendor near Fuxing New Village. Honest, warns Chen Xuan to bow his head.",
+  "first": 54
+ },
+ {
+  "name": "Zhao Shufen",
+  "aka": [
+   "Auntie Zhao"
+  ],
+  "group": "Old Street neighbors",
+  "role": "Nosy neighbor who hears market gossip and pities the Chen family.",
+  "first": 55
+ },
+ {
+  "name": "Du Changhe",
+  "aka": [
+   "General Du Changhe"
+  ],
+  "group": "The military and the capital",
+  "role": "Military Discipline Chief General who collects every officer's personal files.",
+  "first": 56
+ },
+ {
+  "name": "Kang Weidong",
+  "aka": [
+   "Logistics Chief Kang Weidong"
+  ],
+  "group": "The military and the capital",
+  "role": "Logistics Chief Lieutenant General, blamed for missed warnings on Ma Zhenyu's file.",
+  "first": 56
+ },
+ {
+  "name": "Shen Mingyuan",
+  "aka": [],
+  "group": "The military and the capital",
+  "role": "Political Work Director Lieutenant General who renewed Ma Zhenyu's clearance without questions.",
+  "first": 56
+ },
+ {
+  "name": "Han Dongsheng",
+  "aka": [],
+  "group": "City, province and the capital",
+  "role": "State Security Internal-Audit Bureau Director who leads the mole hunt.",
+  "first": 57
+ },
+ {
+  "name": "Luo Pei",
+  "aka": [],
+  "group": "City, province and the capital",
+  "role": "Technical Forensics Bureau Director who finds State Security codes copied from inside.",
+  "first": 57
+ },
+ {
+  "name": "Yuan Wenkai",
+  "aka": [],
+  "group": "City, province and the capital",
+  "role": "Personnel Security Bureau Director accused of covering the freeze orders.",
+  "first": 57
+ },
+ {
+  "name": "Lu Jianmin",
+  "aka": [],
+  "group": "City, province and the capital",
+  "role": "Chief Financial Auditor who checks the 100 trillion yuan loss sheet.",
+  "first": 58
+ },
+ {
+  "name": "Kong Xiaowei",
+  "aka": [],
+  "group": "City, province and the capital",
+  "role": "Counter-Terrorism and Public Security Director who lays out the Yunxi charges.",
+  "first": 59
+ },
+ {
+  "name": "Pei Hong",
+  "aka": [
+   "Procuratorate Director Pei Hong"
+  ],
+  "group": "City, province and the capital",
+  "role": "Procuratorate hall director who sets the charges for the 318 suspects.",
+  "first": 59
+ },
+ {
+  "name": "Wu Cheng",
+  "aka": [
+   "Chief Justice Wu Cheng"
+  ],
+  "group": "City, province and the capital",
+  "role": "Supreme People's Court Chief Justice who insists on airtight proof and closed trials.",
+  "first": 59
+ },
+ {
+  "name": "Fan Jianguo",
+  "aka": [
+   "Deputy Secretary-General Fan Jianguo"
+  ],
+  "group": "City, province and the capital",
+  "role": "NPC Standing Committee Deputy Secretary-General who writes the emergency orders.",
+  "first": 60
+ },
+ {
+  "name": "Guo Zhengming",
+  "aka": [
+   "Public Security Minister Guo Zhengming",
+   "Public Security Minister"
+  ],
+  "group": "City, province and the capital",
+  "role": "Minister of Public Security who leads the provincial task force into Yunxi.",
+  "first": 60,
+  "later": [
+   {
+    "ch": 64,
+    "role": "Minister of Public Security. Orders police to hit ports and mines at nine."
+   }
+  ]
+ },
+ {
+  "name": "Liu Zhengwei",
+  "aka": [
+   "Executive Deputy Minister Liu Zhengwei"
+  ],
+  "group": "City, province and the capital",
+  "role": "Organization Department Executive Deputy Minister who must fill vacant posts fast.",
+  "first": 60
+ },
+ {
+  "name": "Qian Wenbo",
+  "aka": [
+   "Chairman Qian Wenbo",
+   "NDRC Chairman"
+  ],
+  "group": "City, province and the capital",
+  "role": "NDRC Chairman who warns that freezing provincial funds could crash banks.",
+  "first": 60,
+  "later": [
+   {
+    "ch": 64,
+    "role": "NDRC chairman. Leads the capital's plan to freeze the money drain."
+   }
+  ]
+ },
+ {
+  "name": "Zhao Yunsheng",
+  "aka": [
+   "Vice Chairman Zhao Yunsheng"
+  ],
+  "group": "City, province and the capital",
+  "role": "CPPCC Vice Chairman, shaken, who orders a ruthless clean-up of tainted advisers.",
+  "first": 60
+ },
+ {
+  "name": "Qiu Jianming",
+  "aka": [],
+  "group": "City, province and the capital",
+  "role": "NPC Financial and Economic Affairs Director who asks to delay a deputy's removal.",
+  "first": 61
+ },
+ {
+  "name": "Rao Liangcai",
+  "aka": [],
+  "group": "City, province and the capital",
+  "role": "National legislature Record-Filing and Review Director who flags a bribe in a Singapore account.",
+  "first": 61
+ },
+ {
+  "name": "Du Qingshan",
+  "aka": [
+   "Social and Legal Affairs Chair Du Qingshan"
+  ],
+  "group": "City, province and the capital",
+  "role": "Social and Legal Affairs Committee Chair who leads the emergency adviser review.",
+  "first": 62
+ },
+ {
+  "name": "Hu Zhenbang",
+  "aka": [],
+  "group": "City, province and the capital",
+  "role": "Commerce and Industry Federation Chair seen on Fang Qiming's yacht.",
+  "first": 62
+ },
+ {
+  "name": "Kong Weiguo",
+  "aka": [
+   "Chair Kong Weiguo"
+  ],
+  "group": "City, province and the capital",
+  "role": "Overseas Chinese and Foreign Affairs Chair; shaken by the Zurich news.",
+  "first": 62
+ },
+ {
+  "name": "Pei Yongnian",
+  "aka": [
+   "Senior Adviser Pei Yongnian"
+  ],
+  "group": "City, province and the capital",
+  "role": "Retired provincial chair and senior adviser tied to Shengyuan Capital fees.",
+  "first": 62
+ },
+ {
+  "name": "Bai Yunfeng",
+  "aka": [],
+  "group": "City, province and the capital",
+  "role": "Personnel Discipline Inspection liaison who checks family trees and archive leaks.",
+  "first": 63
+ },
+ {
+  "name": "Meng Changqing",
+  "aka": [],
+  "group": "City, province and the capital",
+  "role": "Grassroots and County Cadre Review Chief who suggests using sidelined officials.",
+  "first": 63
+ },
+ {
+  "name": "Bian Changlin",
+  "aka": [
+   "Rare-Earth Audit Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "Mineral concession audit director. Fears loyal site managers will shred records.",
+  "first": 64
+ },
+ {
+  "name": "Cui Wenjie",
+  "aka": [
+   "Securities Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "Securities and Market Stabilization Director. Warns a freeze could crash the stock market.",
+  "first": 64
+ },
+ {
+  "name": "Hao Jianping",
+  "aka": [
+   "Energy and Mining Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "State-Owned Assets energy and mining director. Wants rigged mining deals taken back now.",
+  "first": 64
+ },
+ {
+  "name": "Kang Yongsheng",
+  "aka": [
+   "Banking Supervision Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "Banking and shadow-clearing director. Wants hidden domestic money lines cut.",
+  "first": 64
+ },
+ {
+  "name": "Lu Xiaoping",
+  "aka": [
+   "Monetary Stability Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "People's Bank monetary stability director. Opens emergency cash for clean banks.",
+  "first": 64
+ },
+ {
+  "name": "Pan Guozhen",
+  "aka": [
+   "Foreign Exchange Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "Foreign Exchange director. Blocks overseas payments and recovers Shengyuan money abroad.",
+  "first": 64
+ },
+ {
+  "name": "Qi Shuhua",
+  "aka": [
+   "Macro-Planning Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "NDRC macro-planning director. Says savers are protected and dirty buyers frozen.",
+  "first": 64
+ },
+ {
+  "name": "Wan Zhiming",
+  "aka": [
+   "Sovereign Debt Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "Finance Ministry sovereign debt director. Freezes dirty bonds, backs city payrolls.",
+  "first": 64
+ },
+ {
+  "name": "Yu Zhipeng",
+  "aka": [
+   "Urban-Investment Debt Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "Provincial urban-investment debt director. Warns that freezing bonds angers governors.",
+  "first": 64
+ },
+ {
+  "name": "Fu Zhigang",
+  "aka": [
+   "Command and Operations Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "Command and Operations Bureau director. Repeats the civilian-safety order for the lead car.",
+  "first": 65
+ },
+ {
+  "name": "Ke Zhenhua",
+  "aka": [
+   "Internal Discipline Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "Internal Discipline director. Stopped a duty officer from calling Liang Guodong.",
+  "first": 65
+ },
+ {
+  "name": "Lei Zhendong",
+  "aka": [
+   "Counter-Terrorism Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "Counter-Terrorism director. Seizes Deng Yongchang's blasting warehouse before nine.",
+  "first": 65
+ },
+ {
+  "name": "Qiao Jianjun",
+  "aka": [
+   "Anti-Gang Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "Anti-Gang director. Has gang files ready to charge Yan Tiehu's crew.",
+  "first": 65
+ },
+ {
+  "name": "Ren Changhe",
+  "aka": [
+   "Border and Port Security Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "Border and Port Security director. Locks coastal ports and airport runway exits.",
+  "first": 65
+ },
+ {
+  "name": "Teng Xiaoming",
+  "aka": [
+   "Cyber Security Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "Cyber Security director. Blocks online rumors about the overnight arrests.",
+  "first": 65
+ },
+ {
+  "name": "Xing Weidong",
+  "aka": [
+   "Criminal Investigation Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "Criminal Investigation director. Holds arrest warrants for the Yunxi suspects.",
+  "first": 65
+ },
+ {
+  "name": "Yin Baoshan",
+  "aka": [
+   "Criminal Intelligence Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "Criminal Intelligence director. Confirms Liang Guodong is still in his Yunxi office.",
+  "first": 65
+ },
+ {
+  "name": "Zhu Haoran",
+  "aka": [
+   "Economic Crime Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "Economic Crime director. Leads six hundred officers to raid Shengyuan Capital offices.",
+  "first": 65
+ },
+ {
+  "name": "Cao Wenbin",
+  "aka": [
+   "Executive Vice Governor"
+  ],
+  "group": "City, province and the capital",
+  "role": "Sha executive vice governor. Asks whether to wait for Lin Zhengde.",
+  "first": 66
+ },
+ {
+  "name": "Han Zhiyuan",
+  "aka": [
+   "Provincial PSB Deputy Chief",
+   "Deputy Chief Han Zhiyuan"
+  ],
+  "group": "City, province and the capital",
+  "role": "Provincial police deputy chief. Leads the joint task force into Yunxi County.",
+  "first": 66,
+  "later": [
+   {
+    "ch": 72,
+    "role": "Provincial police discipline official. Arrests Cheng Biao and Zhou Quan at Old Street Station."
+   },
+   {
+    "ch": 73,
+    "role": "Provincial inspector. Personally frees Chen Mingde and apologizes for the wrongful arrest."
+   }
+  ]
+ },
+ {
+  "name": "Lu Baoguo",
+  "aka": [
+   "Deputy Party Secretary"
+  ],
+  "group": "City, province and the capital",
+  "role": "Sha deputy party secretary. Warns against panic before the scale is known.",
+  "first": 66
+ },
+ {
+  "name": "Shen Wenchao",
+  "aka": [
+   "Provincial CCDI Secretary"
+  ],
+  "group": "City, province and the capital",
+  "role": "Provincial CCDI secretary. Leads the joint task force into Yunxi County.",
+  "first": 66,
+  "later": [
+   {
+    "ch": 71,
+    "role": "Deputy team leader of the Provincial Joint Inspection Group. Arrests Sun Weiming and Liang Guodong."
+   },
+   {
+    "ch": 78,
+    "role": "Provincial Discipline Office deputy. Questions station officers after the raids."
+   }
+  ]
+ },
+ {
+  "name": "Tang Guohua",
+  "aka": [
+   "Propaganda Minister"
+  ],
+  "group": "City, province and the capital",
+  "role": "Sha propaganda minister. Panics, spills tea, and admits a dinner with Deng Yongchang.",
+  "first": 66
+ },
+ {
+  "name": "Xu Jianmin",
+  "aka": [
+   "Organization Minister"
+  ],
+  "group": "City, province and the capital",
+  "role": "Sha organization minister. Asks whether the General Office was warned.",
+  "first": 66
+ },
+ {
+  "name": "Zhao Dehai",
+  "aka": [
+   "Provincial Party Secretary",
+   "Secretary Zhao",
+   "Old Zhao",
+   "Leader Zhao"
+  ],
+  "group": "City, province and the capital",
+  "role": "Sha Provincial Party Secretary. Calls the emergency meeting after Lin Zhengde's arrest.",
+  "first": 66,
+  "later": [
+   {
+    "ch": 93,
+    "role": "Sha Provincial Party Secretary; quietly orders Chen Mingde's family left in peace."
+   },
+   {
+    "ch": 118,
+    "role": "Provincial Party Secretary who signs Wei Kun's promotion and wants honest officers rewarded."
+   },
+   {
+    "ch": 130,
+    "role": "Receives the evidence folder and plans the trap with Ding Guoping"
+   },
+   {
+    "ch": 133,
+    "role": "Publicly orders Wu to cancel the signing and write a report"
+   },
+   {
+    "ch": 153,
+    "role": "Visits Grandma Zhou's birthday lunch unannounced; shakes Chen Xuan's hand."
+   }
+  ]
+ },
+ {
+  "name": "Zhou Mingyuan",
+  "aka": [
+   "Politics and Law Secretary"
+  ],
+  "group": "City, province and the capital",
+  "role": "Sha politics and law secretary. Asks who in Yunxi drew Beijing's eyes.",
+  "first": 66
+ },
+ {
+  "name": "Deng Kai",
+  "aka": [
+   "Captain Deng Kai"
+  ],
+  "group": "City, province and the capital",
+  "role": "Anti-gang captain. Asks whether Chen Mingde's family must come to the station.",
+  "first": 67
+ },
+ {
+  "name": "Ma Lihua",
+  "aka": [
+   "Lead Forensic Auditor"
+  ],
+  "group": "City, province and the capital",
+  "role": "Lead forensic auditor. Asks whether bank terminals should be locked first.",
+  "first": 67
+ },
+ {
+  "name": "Wu Zheng",
+  "aka": [
+   "Commander Wu Zheng"
+  ],
+  "group": "City, province and the capital",
+  "role": "Counter-terrorism commander with forty officers. Ordered to enter the gate first.",
+  "first": 67
+ },
+ {
+  "name": "He Jianping",
+  "aka": [
+   "Naval Coastal Liaison"
+  ],
+  "group": "The military and the capital",
+  "role": "Naval coastal liaison senior captain. Asks who will watch the southern sea lanes.",
+  "first": 68
+ },
+ {
+  "name": "Kong Weiming",
+  "aka": [
+   "Major General Kong Weiming"
+  ],
+  "group": "The military and the capital",
+  "role": "Southern Theater deputy commander. Angrily demands answers about Ma Zhenyu's fuel slips.",
+  "first": 68
+ },
+ {
+  "name": "Lin Zhigang",
+  "aka": [
+   "Chief of Staff Lin Zhigang"
+  ],
+  "group": "The military and the capital",
+  "role": "Southern Theater chief of staff. Asks how wide the purge order goes.",
+  "first": 68
+ },
+ {
+  "name": "Shao Biao",
+  "aka": [
+   "Major General Shao Biao"
+  ],
+  "group": "The military and the capital",
+  "role": "Coastal defense chief. Answers for radar blind spots that let smugglers pass.",
+  "first": 68
+ },
+ {
+  "name": "Zheng Haiyang",
+  "aka": [
+   "Political Commissar Zheng Haiyang"
+  ],
+  "group": "The military and the capital",
+  "role": "Southern Theater political commissar. Blames Shao Biao for the radar blind spots.",
+  "first": 68
+ },
+ {
+  "name": "Feng Jianhua",
+  "aka": [
+   "Commerce Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "Qingyan municipal commerce director. Warns shipping firms will freeze if Pier Seven is checked.",
+  "first": 69
+ },
+ {
+  "name": "Hou Zhenbang",
+  "aka": [
+   "Deputy Chief Hou Zhenbang"
+  ],
+  "group": "City, province and the capital",
+  "role": "Qingyan police deputy chief. Reports Xu Wenbin was taken from home at midnight.",
+  "first": 69
+ },
+ {
+  "name": "Lin Haibo",
+  "aka": [
+   "Secretary Lin Haibo"
+  ],
+  "group": "City, province and the capital",
+  "role": "Qingyan Municipal Party Secretary. Demands to know where Customs Director Xu Wenbin is.",
+  "first": 69,
+  "later": [
+   {
+    "ch": 90,
+    "role": "Elder Song's aide of twenty-two years. Nervous about hidden units."
+   }
+  ]
+ },
+ {
+  "name": "Qian Zhigang",
+  "aka": [
+   "Port Authority Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "Qingyan Port Authority director. Reports that Pier Seven was seized at gunpoint.",
+  "first": 69
+ },
+ {
+  "name": "Wu Yongqiang",
+  "aka": [
+   "Mayor Wu Yongqiang"
+  ],
+  "group": "City, province and the capital",
+  "role": "Qingyan mayor. Blames Customs and Sha for the Pier Seven approvals.",
+  "first": 69
+ },
+ {
+  "name": "Zhou Liqiang",
+  "aka": [
+   "Finance Director"
+  ],
+  "group": "City, province and the capital",
+  "role": "Qingyan municipal finance director. Says Deng Yongchang runs Pier Seven's midnight swaps.",
+  "first": 69
+ },
+ {
+  "name": "Peng Shulin",
+  "aka": [
+   "Hospital Deputy Director"
+  ],
+  "group": "County officials",
+  "role": "Yunxi People's Hospital deputy director. Signed a fake X-ray report for Cheng Biao.",
+  "first": 70
+ },
+ {
+  "name": "Nie Hongbo",
+  "aka": [],
+  "group": "County officials",
+  "role": "Yunxi County Urban Planning Chief at the Monday roll call.",
+  "first": 71
+ },
+ {
+  "name": "Xiong Baolin",
+  "aka": [],
+  "group": "County officials",
+  "role": "Yunxi County Land Resources Director; Sun Weiming presses him on unsigned Old Street land permits.",
+  "first": 71
+ },
+ {
+  "name": "Bi Yaozu",
+  "aka": [],
+  "group": "Hongrui and the underworld",
+  "role": "Provincial law-firm lawyer whom Deng Yongchang shouts for when he is arrested.",
+  "first": 74
+ },
+ {
+  "name": "Hua Jingbo",
+  "aka": [
+   "Deputy Director Hua Jingbo"
+  ],
+  "group": "City, province and the capital",
+  "role": "Provincial Economic Crime Deputy Director who leads Deng Yongchang's arrest at Hongrui Plaza.",
+  "first": 74
+ },
+ {
+  "name": "Wei Kun",
+  "aka": [
+   "Deputy Squad Leader Wei Kun",
+   "Acting Director Wei",
+   "Director Wei"
+  ],
+  "group": "Police and the station",
+  "role": "Old Street deputy squad leader. Refused Cheng Biao's blank orders and sorts records.",
+  "first": 78,
+  "later": [
+   {
+    "ch": 92,
+    "role": "Acting Director of Yunxi County police. Brings Old Street a repair voucher and apology."
+   },
+   {
+    "ch": 105,
+    "role": "Praised by Zhao Dehai; county promises to make him full Director this week."
+   },
+   {
+    "ch": 118,
+    "role": "Promoted to full Director of Old Street Police Station by Provincial Secretary Zhao Dehai."
+   }
+  ]
+ },
+ {
+  "name": "Cao Wenhui",
+  "aka": [
+   "Former Huaxia Development Bank president"
+  ],
+  "group": "City, province and the capital",
+  "role": "Retired Huaxia Development Bank president. Wrote backing papers for hidden power-plant kickbacks.",
+  "first": 81
+ },
+ {
+  "name": "Lukas Weber",
+  "aka": [
+   "Geneva fixer"
+  ],
+  "group": "Hongrui and the underworld",
+  "role": "Geneva shipping insurance fixer. Turns local trade papers into Swiss bank bonds.",
+  "first": 81
+ },
+ {
+  "name": "Pan Desheng",
+  "aka": [
+   "Retired Industrial Clearing Bank president"
+  ],
+  "group": "City, province and the capital",
+  "role": "Retired industrial clearing bank president. Handled foreign money trades.",
+  "first": 81
+ },
+ {
+  "name": "Zheng Rongkui",
+  "aka": [
+   "Retired Agricultural Credit Bank president"
+  ],
+  "group": "City, province and the capital",
+  "role": "Retired agricultural credit bank president. Ran money through local shell companies.",
+  "first": 81
+ },
+ {
+  "name": "Ding Guoping",
+  "aka": [
+   "State Security Minister",
+   "Minister Ding Guoping",
+   "Minister Ding"
+  ],
+  "group": "City, province and the capital",
+  "role": "State Security minister. Says waiting lets Lukas Weber's Zurich leaders escape.",
+  "first": 83,
+  "later": [
+   {
+    "ch": 84,
+    "role": "Agrees to delay the military transfer and radio-trace Zurich for 48 hours."
+   },
+   {
+    "ch": 85,
+    "role": "Official who clashed with General Qin over a 48-hour hold."
+   },
+   {
+    "ch": 89,
+    "role": "State Security official; nervous as the clean-up order is signed."
+   },
+   {
+    "ch": 103,
+    "role": "Minister who interrogates foreign bankers and maps the Zurich network."
+   },
+   {
+    "ch": 119,
+    "role": "Minister of State Security who checks every file for false accusations."
+   },
+   {
+    "ch": 130,
+    "role": "Sends a special team to Sha City and orders the signing trap closed"
+   }
+  ]
+ },
+ {
+  "name": "Fei Yaoting",
+  "aka": [
+   "Finance Minister Fei Yaoting"
+  ],
+  "group": "City, province and the capital",
+  "role": "Finance Minister; warns that exposing the hidden bank debts in public would shake provincial lenders.",
+  "first": 83
+ },
+ {
+  "name": "Ou Guanghui",
+  "aka": [
+   "Customs Director Ou Guanghui"
+  ],
+  "group": "City, province and the capital",
+  "role": "Customs Director who wants Fang Qiming's tax-free export docks shut down.",
+  "first": 83
+ },
+ {
+  "name": "Qu Shilin",
+  "aka": [
+   "Governor Qu Shilin"
+  ],
+  "group": "City, province and the capital",
+  "role": "People's Bank Governor; warns a public freeze would lock up the bank loan system.",
+  "first": 83
+ },
+ {
+  "name": "Ruan Defu",
+  "aka": [
+   "Commerce Minister Ruan Defu"
+  ],
+  "group": "City, province and the capital",
+  "role": "Commerce Minister who warns that public bans on foreign trading firms would stall ports.",
+  "first": 83
+ },
+ {
+  "name": "Jin Rongzhi",
+  "aka": [],
+  "group": "City, province and the capital",
+  "role": "State Security official. Insists someone tampered with the ground files.",
+  "first": 86
+ },
+ {
+  "name": "Tang Weiguo",
+  "aka": [],
+  "group": "City, province and the capital",
+  "role": "Head of the national cyber and lab testing bureau; reports the blank case checks.",
+  "first": 86
+ },
+ {
+  "name": "Mo Tianyu",
+  "aka": [],
+  "group": "Hongrui and the underworld",
+  "role": "Provincial gang boss whose men tried to move in Sha and Yunxi.",
+  "first": 87
+ },
+ {
+  "name": "Gan Weihan",
+  "aka": [
+   "Colonel Gan Weihan"
+  ],
+  "group": "The military and the capital",
+  "role": "Colonel in General Qin's guard unit; reports that the two watchers vanished.",
+  "first": 90
+ },
+ {
+  "name": "Xu Haoran",
+  "aka": [],
+  "group": "City, province and the capital",
+  "role": "Chief of staff to Sha Party Secretary Zhao Dehai.",
+  "first": 93
+ },
+ {
+  "name": "Henrik Lindholm",
+  "aka": [
+   "Senior Partner Henrik Lindholm"
+  ],
+  "group": "Zurich Northern Ledger",
+  "role": "Senior Partner of the Zurich Northern Ledger; calm and cold.",
+  "first": 94,
+  "later": [
+   {
+    "ch": 136,
+    "role": "Plans the Haiyue short attack with Marcus Vance in Zurich"
+   },
+   {
+    "ch": 140,
+    "role": "Shaken after the squeeze; asks who is backing Haiyue"
+   }
+  ]
+ },
+ {
+  "name": "Li Weiming",
+  "aka": [
+   "Old Li"
+  ],
+  "group": "City, province and the capital",
+  "role": "Zurich fixer known as Marcus Vance; sent to Qingyan to find the hidden hand.",
+  "first": 94,
+  "later": [
+   {
+    "ch": 111,
+    "role": "Zurich fixer, known as Marcus Vance, paid to find who brought down Qingyan's officials."
+   },
+   {
+    "ch": 114,
+    "role": "Trapped in the Harbor View lobby as plainclothes State Security officers close in."
+   },
+   {
+    "ch": 121,
+    "role": "Now in Sha, paying Song Baisheng 15 million to hide servers in a freight deal."
+   },
+   {
+    "ch": 134,
+    "role": "Pays four armed men to kidnap Chen Xuan at midnight; the plan fails"
+   },
+   {
+    "ch": 135,
+    "role": "Arrested at the breakfast hall by State Security"
+   }
+  ]
+ },
+ {
+  "name": "Marc Keller",
+  "aka": [],
+  "group": "Zurich Northern Ledger",
+  "role": "Zurich banker who panics over the lost China contacts.",
+  "first": 94
+ },
+ {
+  "name": "Sylvie Marchal",
+  "aka": [],
+  "group": "Zurich Northern Ledger",
+  "role": "Zurich analyst tracking the shutdown; first to trace the Yunxi trail.",
+  "first": 94
+ },
+ {
+  "name": "Lin Jianhua",
+  "aka": [
+   "Manager Lin"
+  ],
+  "group": "Yunxi and Qingyan business",
+  "role": "Regional manager of Ancheng Express Freight in Qingyan; recruits local drivers.",
+  "first": 99
+ },
+ {
+  "name": "Gao Mingyuan",
+  "aka": [
+   "Lead CCDI Prosecutor"
+  ],
+  "group": "City, province and the capital",
+  "role": "Lead CCDI prosecutor. Confronts He Guoliang with Zurich transfer records.",
+  "first": 101
+ },
+ {
+  "name": "Deng Weimin",
+  "aka": [],
+  "group": "County officials",
+  "role": "Yunxi County Mayor. Arrives late and nervous when Zhao Dehai visits.",
+  "first": 105
+ },
+ {
+  "name": "Xu Guoxiang",
+  "aka": [],
+  "group": "County officials",
+  "role": "Yunxi County Party Secretary. Arrives late and flustered when Zhao Dehai visits.",
+  "first": 105
+ },
+ {
+  "name": "Lin Xiaodong",
+  "aka": [],
+  "group": "Qingyan freight firms",
+  "role": "Thin, anxious freight clerk whose seafood trucks are held up by Zhou Mingcheng.",
+  "first": 106
+ },
+ {
+  "name": "Zhao Kang",
+  "aka": [
+   "Master Zhao"
+  ],
+  "group": "Office at Hengxin",
+  "role": "Hengxin senior truck driver stuck at Port Gate Seven with a precision valve shipment.",
+  "first": 106
+ },
+ {
+  "name": "Zhou Desheng",
+  "aka": [
+   "Deputy Director Zhou"
+  ],
+  "group": "City, province and the capital",
+  "role": "Deputy director of the Qingyan port authority; uncle of broker Zhou Mingcheng.",
+  "first": 106,
+  "later": [
+   {
+    "ch": 108,
+    "role": "Escorted out of his office by the provincial discipline team; phone sealed."
+   }
+  ]
+ },
+ {
+  "name": "Zhou Mingcheng",
+  "aka": [
+   "Manager Zhou"
+  ],
+  "group": "City, province and the capital",
+  "role": "Port broker and head of Mingcheng Freight Services who demands illegal 200k fast-lane fees.",
+  "first": 106,
+  "later": [
+   {
+    "ch": 108,
+    "role": "Taken into custody after Shen Guohua freezes his brokerage license."
+   }
+  ]
+ },
+ {
+  "name": "Qin Yuhan",
+  "aka": [
+   "Director Qin",
+   "Chairwoman Qin",
+   "President Qin",
+   "Miss Qin",
+   "President Qin Yuhan"
+  ],
+  "group": "City, province and the capital",
+  "role": "Haiyue Group coastal supply director; calm, sharp-eyed, and watches how people behave.",
+  "first": 107,
+  "later": [
+   {
+    "ch": 137,
+    "role": "Refuses to sell Haiyue docks; holds 52% of voting shares"
+   },
+   {
+    "ch": 156,
+    "role": "Haiyue Group president; her flagship ship is held at Shenzhen Pier Nine."
+   },
+   {
+    "ch": 181,
+    "role": "Sets up a 20 million yuan Haiyue scholarship at Fudan University"
+   }
+  ]
+ },
+ {
+  "name": "Shen Guohua",
+  "aka": [
+   "Chief Shen"
+  ],
+  "group": "City, province and the capital",
+  "role": "Newly appointed chief of the Qingyan Customs Anti-Smuggling Bureau; hard and direct.",
+  "first": 108
+ },
+ {
+  "name": "Qin Zhengming",
+  "aka": [
+   "Chairman Qin",
+   "Uncle Qin"
+  ],
+  "group": "City, province and the capital",
+  "role": "Upright provincial official, Qin Yuhan's father, known for keeping clean books.",
+  "first": 110,
+  "later": [
+   {
+    "ch": 133,
+    "role": "Walks with Zhao Dehai to confront Deputy Governor Wu in a hallway"
+   },
+   {
+    "ch": 148,
+    "role": "Offers Chen Xuan a Haiyue supply office job at double pay."
+   }
+  ]
+ },
+ {
+  "name": "Anton Novak",
+  "aka": [],
+  "group": "Overseas fixers and their backers",
+  "role": "Quiet, pale-eyed veteran tracker who works with Carl Mercer across Europe and Asia.",
+  "first": 111,
+  "later": [
+   {
+    "ch": 113,
+    "role": "Knocked out by Zero Guard in the park and sent to State Security."
+   }
+  ]
+ },
+ {
+  "name": "Carl Mercer",
+  "aka": [
+   "Carl"
+  ],
+  "group": "Overseas fixers and their backers",
+  "role": "Veteran foreign tracker who works for Li Weiming and follows leads for him.",
+  "first": 111,
+  "later": [
+   {
+    "ch": 113,
+    "role": "Knocked out by Zero Guard in the park and sent to State Security."
+   }
+  ]
+ },
+ {
+  "name": "Feng Guoqiang",
+  "aka": [],
+  "group": "Sha and the north",
+  "role": "Rattled Sha lawyer who gives Li Weiming the case list and begs him to leave.",
+  "first": 111
+ },
+ {
+  "name": "Old Auntie Tian",
+  "aka": [
+   "Auntie Tian"
+  ],
+  "group": "Old Street neighbors",
+  "role": "Dried-goods stall owner on Old Street who keeps her neighbors in line.",
+  "first": 116
+ },
+ {
+  "name": "Bao Haowen",
+  "aka": [],
+  "group": "Police and the station",
+  "role": "Old Street beat officer and old neighbor of Wei Kun who brings him tea.",
+  "first": 118
+ },
+ {
+  "name": "Song Baisheng",
+  "aka": [
+   "Chairman Song"
+  ],
+  "group": "Sha and the north",
+  "role": "Chairman of Wanfeng Freight in Sha; greedy and eager for Zurich's money.",
+  "first": 121,
+  "later": [
+   {
+    "ch": 135,
+    "role": "Arrested by State Security for illegal data transfer and unlawful gains"
+   }
+  ]
+ },
+ {
+  "name": "Wu Zhenbang",
+  "aka": [
+   "Deputy Governor Wu"
+  ],
+  "group": "City, province and the capital",
+  "role": "Sha Province Deputy Governor pushing the freight alliance vote through.",
+  "first": 126,
+  "later": [
+   {
+    "ch": 133,
+    "role": "Ordered by Zhao Dehai to cancel the signing and write a report"
+   },
+   {
+    "ch": 135,
+    "role": "Taken away by the Provincial CCDI for illegal favors and investigation"
+   }
+  ]
+ },
+ {
+  "name": "Director Liang",
+  "aka": [],
+  "group": "Haiyue Group and the Shanghai port",
+  "role": "Dongwan port director who stood up and demanded answers about the Zurich firm.",
+  "first": 132
+ },
+ {
+  "name": "Julian Ash",
+  "aka": [],
+  "group": "Zurich Northern Ledger",
+  "role": "Managing director of Aegis Meridian, the hedge fund that attacks Haiyue shares.",
+  "first": 136,
+  "later": [
+   {
+    "ch": 140,
+    "role": "Aegis Meridian is wiped out after Haiyue hits the daily limit."
+   }
+  ]
+ },
+ {
+  "name": "Thomas Bauer",
+  "aka": [],
+  "group": "Zurich Northern Ledger",
+  "role": "Northern Ledger director who planned the Haiyue market attack with Lindholm.",
+  "first": 136
+ },
+ {
+  "name": "Lin Shufen",
+  "aka": [],
+  "group": "Haiyue Group and the Shanghai port",
+  "role": "Haiyue Group chief financial officer who handles bank calls and buybacks.",
+  "first": 137
+ },
+ {
+  "name": "Tang Weiguo (Haiyue Group)",
+  "aka": [
+   "Director Tang Weiguo"
+  ],
+  "group": "Haiyue Group and the Shanghai port",
+  "role": "Haiyue Group director who urged selling Dock One and Dock Two.",
+  "first": 137
+ },
+ {
+  "name": "Xu Minghui",
+  "aka": [
+   "Director Xu Minghui"
+  ],
+  "group": "Haiyue Group and the Shanghai port",
+  "role": "Haiyue Group director who pushed to sell the docks.",
+  "first": 137,
+  "later": [
+   {
+    "ch": 140,
+    "role": "Claims he always backed Haiyue after the stock is saved"
+   }
+  ]
+ },
+ {
+  "name": "Gu Shenzhi",
+  "aka": [
+   "Master Gu"
+  ],
+  "group": "Haiyue Group and the Shanghai port",
+  "role": "Sixty-four-year-old Shanghai trustee who controls the clean family money.",
+  "first": 138,
+  "later": [
+   {
+    "ch": 139,
+    "role": "Orders 80 billion yuan in cash to buy every Aegis Meridian share"
+   }
+  ]
+ },
+ {
+  "name": "Shen Wenhua",
+  "aka": [],
+  "group": "Haiyue Group and the Shanghai port",
+  "role": "Senior trust manager who splits the cash across twelve trading desks.",
+  "first": 139
+ },
+ {
+  "name": "Zhou Ming",
+  "aka": [
+   "Captain Zhou Ming"
+  ],
+  "group": "Haiyue Group and the Shanghai port",
+  "role": "Veteran trader who runs the buy wall during the Haiyue squeeze.",
+  "first": 139,
+  "later": [
+   {
+    "ch": 176,
+    "role": "Named as Qin Yuhan's driver when she lands at Shanghai Hongqiao."
+   }
+  ]
+ },
+ {
+  "name": "Eric",
+  "aka": [],
+  "group": "Zurich Northern Ledger",
+  "role": "Aegis Meridian lead trader who drops the 15 billion yuan sell wave.",
+  "first": 140
+ },
+ {
+  "name": "Zhou Guilan",
+  "aka": [
+   "Grandma Zhou",
+   "Aunt Zhou",
+   "Old Aunt Zhou"
+  ],
+  "group": "Chen's family and friends",
+  "role": "Chen Xuan's grandmother in Hongshi Village; turns eighty-one in chapter 152.",
+  "first": 151
+ },
+ {
+  "name": "Liu Guoliang",
+  "aka": [
+   "Uncle Guoliang"
+  ],
+  "group": "Chen's family and friends",
+  "role": "Distant cousin who brags about Shenzhen deals and mocks Chen Xuan's job.",
+  "first": 152,
+  "later": [
+   {
+    "ch": 154,
+    "role": "Flees the birthday lunch after the Provincial Secretary's visit."
+   }
+  ]
+ },
+ {
+  "name": "Old Zhou",
+  "aka": [],
+  "group": "Office at Hengxin",
+  "role": "Older Hengxin dispatcher who ran Shenzhen freight; warns about the Shen Family.",
+  "first": 155
+ },
+ {
+  "name": "Shen Jingzhou",
+  "aka": [
+   "Young Master Shen",
+   "Jingzhou"
+  ],
+  "group": "Shen family and the harbor families",
+  "role": "Eldest grandson of the Shen Family; pressures Haiyue for dock fees and routes.",
+  "first": 155,
+  "later": [
+   {
+    "ch": 175,
+    "role": "Arrested after trying to run for the family speedboat during the raid."
+   }
+  ]
+ },
+ {
+  "name": "Lu Guobin",
+  "aka": [
+   "Chief Inspector Lu"
+  ],
+  "group": "Shen family and the harbor families",
+  "role": "Shenzhen Port inspection chief; signs fake safety holds under Shen Family pressure.",
+  "first": 157,
+  "later": [
+   {
+    "ch": 163,
+    "role": "Suspended on the spot by Director Gao for abusing his inspection power."
+   },
+   {
+    "ch": 166,
+    "role": "Hauled away by police at five o'clock after the gate opened."
+   }
+  ]
+ },
+ {
+  "name": "Number 88",
+  "aka": [],
+  "group": "The Black Pine Guard (the hidden guard)",
+  "role": "Black Pine Guard; runs the Shenzhen branch with Number 19.",
+  "first": 157,
+  "later": [
+   {
+    "ch": 168,
+    "role": "Tracks Yantian Port rare-metal smuggling with Number 19."
+   },
+   {
+    "ch": 173,
+    "role": "Leads the White Guard charge across the koi pond into the Shen villa."
+   }
+  ]
+ },
+ {
+  "name": "Shen Wanshan",
+  "aka": [
+   "Old Master Shen",
+   "Chairman Shen",
+   "Old Man Shen"
+  ],
+  "group": "Shen family and the harbor families",
+  "role": "Shen Jingzhou's father; powerful Shenzhen shipping boss with bank friends.",
+  "first": 161,
+  "later": [
+   {
+    "ch": 174,
+    "role": "Four national banks recall his loans and freeze accounts across his empire."
+   },
+   {
+    "ch": 175,
+    "role": "Arrested for port smuggling, fraud and forcing a fake business transfer."
+   },
+   {
+    "ch": 184,
+    "role": "Arrested Friday night at his Shenzhen Bay villa"
+   }
+  ]
+ },
+ {
+  "name": "Vice President Ma",
+  "aka": [],
+  "group": "Banks and bankers",
+  "role": "China Construction Bank vice president; cancels Shen Wanshan's tea meeting.",
+  "first": 162
+ },
+ {
+  "name": "Gao Zhenhua",
+  "aka": [
+   "Director Gao"
+  ],
+  "group": "Shen family and the harbor families",
+  "role": "Shenzhen Port Authority director who rushes in to open Pier Nine at four fifty-nine.",
+  "first": 163
+ },
+ {
+  "name": "Lin Jianming",
+  "aka": [
+   "Old Lin"
+  ],
+  "group": "Shen family and the harbor families",
+  "role": "Shenhai Shipping manager who phones Shen Jingzhou with the bank freeze news.",
+  "first": 163
+ },
+ {
+  "name": "He Mingcheng",
+  "aka": [],
+  "group": "Shen family and the harbor families",
+  "role": "Financial director of Shenhai Shipping who reports the bank freezes to Shen Wanshan.",
+  "first": 166
+ },
+ {
+  "name": "Zhou Dequan",
+  "aka": [],
+  "group": "Shen family and the harbor families",
+  "role": "Veteran steward of the Shen family who carries Shen Wanshan's orders and calls.",
+  "first": 166
+ },
+ {
+  "name": "Koo Tianming",
+  "aka": [
+   "Mr. Koo"
+  ],
+  "group": "Shen family and the harbor families",
+  "role": "Hong Kong envoy of the Seven-Harbor Consortium who sets traps for Chen Xuan.",
+  "first": 167,
+  "later": [
+   {
+    "ch": 175,
+    "role": "Arrested with the Shen heirs after police seize the Seven-Harbor files."
+   }
+  ]
+ },
+ {
+  "name": "Yuan Zhenhua",
+  "aka": [],
+  "group": "Shen family and the harbor families",
+  "role": "Koo Tianming's aide who carries his briefcase and printed files.",
+  "first": 167
+ },
+ {
+  "name": "Ye Dashan",
+  "aka": [],
+  "group": "Shen family and the harbor families",
+  "role": "Sunburned yard clerk at Shekou Dock who stamps Hengxin's delivery sheets.",
+  "first": 168
+ },
+ {
+  "name": "Deng Fuhai",
+  "aka": [],
+  "group": "Shen family and the harbor families",
+  "role": "Deputy clerk at Shenzhen Port Clearance Office who owes the Shen family a debt.",
+  "first": 170
+ },
+ {
+  "name": "Song Wenbo",
+  "aka": [],
+  "group": "Haiyue Group and the Shanghai port",
+  "role": "Hotel concierge near MixC Mall who hands Qin Yuhan the Shen family's invitation.",
+  "first": 170
+ },
+ {
+  "name": "Liang Biao",
+  "aka": [],
+  "group": "Shen family and the harbor families",
+  "role": "Scarred Macau enforcer hired by the Shen family to seize Qin Yuhan.",
+  "first": 172,
+  "later": [
+   {
+    "ch": 175,
+    "role": "Taken away in a police van with the other Macau enforcers."
+   }
+  ]
+ },
+ {
+  "name": "He Zhengguo",
+  "aka": [
+   "Chief He"
+  ],
+  "group": "Banks and bankers",
+  "role": "Shenzhen regional chief of Huaxia Bank; ends the Shen family's credit lines.",
+  "first": 174
+ },
+ {
+  "name": "Ma Weidong",
+  "aka": [
+   "Senior Inspector Ma"
+  ],
+  "group": "Police and the station",
+  "role": "Senior Inspector who backs the asset-freeze warrants with Deputy Director Zhao.",
+  "first": 174,
+  "later": [
+   {
+    "ch": 175,
+    "role": "Handcuffs Shen Jingzhou and Koo Tianming in the villa."
+   }
+  ]
+ },
+ {
+  "name": "Tang Zhiqiang",
+  "aka": [],
+  "group": "Banks and bankers",
+  "role": "Shenzhen regional chief of ICBC; freezes thirty-two Shen-linked accounts.",
+  "first": 174
+ },
+ {
+  "name": "Xu Wenbo",
+  "aka": [
+   "Chief Xu"
+  ],
+  "group": "Banks and bankers",
+  "role": "Shenzhen regional chief of Bank of China; freezes Shen foreign-currency accounts.",
+  "first": 174
+ },
+ {
+  "name": "Zhao Jianming",
+  "aka": [
+   "Deputy Director Zhao"
+  ],
+  "group": "Police and the station",
+  "role": "Deputy Director who holds the court warrants freezing the whole Shen empire.",
+  "first": 174
+ },
+ {
+  "name": "Zhou Mingyuan (Shenzhen China Construction Bank)",
+  "aka": [
+   "Chief Zhou"
+  ],
+  "group": "Banks and bankers",
+  "role": "Shenzhen regional chief of China Construction Bank; recalls the Shen family's loans.",
+  "first": 174
+ },
+ {
+  "name": "Manager Wang",
+  "aka": [],
+  "group": "Office at Hengxin",
+  "role": "Chen Xuan's boss at Hengxin Logistics; named only in passing.",
+  "first": 176
+ },
+ {
+  "name": "Lin Xiao",
+  "aka": [
+   "Miss Lin"
+  ],
+  "group": "Plaza 66 and Shanghai life",
+  "role": "Shop assistant at Valenti Cashmere who is uneasy about the insults.",
+  "first": 178,
+  "later": [
+   {
+    "ch": 179,
+    "role": "Made acting shift lead at Plaza 66 by General Manager Gu"
+   }
+  ]
+ },
+ {
+  "name": "Sun Tingting",
+  "aka": [
+   "Miss Sun"
+  ],
+  "group": "Plaza 66 and Shanghai life",
+  "role": "Zhao Kai's girlfriend who wants the oatmeal jacket Chen Yuan is trying on.",
+  "first": 178
+ },
+ {
+  "name": "Zhao Kai (Kaiyuan Real Estate heir)",
+  "aka": [
+   "Young Master Zhao"
+  ],
+  "group": "Plaza 66 and Shanghai life",
+  "role": "Spoiled son of Kaiyuan Real Estate; mocks Chen Xuan's family at Plaza 66.",
+  "first": 178
+ },
+ {
+  "name": "Zhao Yongsheng",
+  "aka": [],
+  "group": "Plaza 66 and Shanghai life",
+  "role": "Shanghai developer heading Kaiyuan Real Estate; father of Zhao Kai.",
+  "first": 178
+ },
+ {
+  "name": "Zhou Mei",
+  "aka": [],
+  "group": "Plaza 66 and Shanghai life",
+  "role": "Valenti Cashmere store manager who insults Chen Hao and fawns over Zhao Kai.",
+  "first": 178,
+  "later": [
+   {
+    "ch": 179,
+    "role": "Fired on the spot and barred from Plaza 66"
+   }
+  ]
+ },
+ {
+  "name": "Gu Wenbin",
+  "aka": [
+   "General Manager Gu",
+   "Uncle Gu"
+  ],
+  "group": "Plaza 66 and Shanghai life",
+  "role": "General Manager of Plaza 66 who rushes to bow to Chen Xuan and dismisses Zhou Mei.",
+  "first": 179
+ },
+ {
+  "name": "Lin Zhiyuan",
+  "aka": [
+   "Director Lin"
+  ],
+  "group": "Banks and bankers",
+  "role": "Private-banking director at Huaxia Bank's Lujiazui branch who recognizes the vault card.",
+  "first": 179
+ },
+ {
+  "name": "Professor Shen Mingde",
+  "aka": [
+   "Professor Shen"
+  ],
+  "group": "Plaza 66 and Shanghai life",
+  "role": "Retired Fudan economics professor who gives Chen Hao directions and praises Qin Yuhan.",
+  "first": 181
+ },
+ {
+  "name": "Fang Zhengming",
+  "aka": [
+   "President Fang"
+  ],
+  "group": "Banks and bankers",
+  "role": "National President of China Construction Bank; reports the forestry loan trail near Changbai.",
+  "first": 184
+ },
+ {
+  "name": "Han Guoliang",
+  "aka": [
+   "President Han"
+  ],
+  "group": "Banks and bankers",
+  "role": "National President of ICBC; pushes Beijing to send armored trucks and helicopters at once.",
+  "first": 184,
+  "later": [
+   {
+    "ch": 185,
+    "role": "Drops the raid idea after General Qin warns about the detonator"
+   }
+  ]
+ },
+ {
+  "name": "Liang Qingshan",
+  "aka": [
+   "President Liang"
+  ],
+  "group": "Banks and bankers",
+  "role": "National President of Huaxia Bank; reports the Shanghai vault card and the Shenzhen freeze.",
+  "first": 184
+ },
+ {
+  "name": "Tang Wenhao",
+  "aka": [
+   "President Tang"
+  ],
+  "group": "Banks and bankers",
+  "role": "National President of Bank of China; traces the Hong Kong gold and foreign payouts.",
+  "first": 184
+ },
+ {
+  "name": "Number 44",
+  "aka": [],
+  "group": "The Black Pine Guard (the hidden guard)",
+  "role": "White Guard watcher who photographs the Changbai valley with Number 12.",
+  "first": 189
+ },
+ {
+  "name": "Kou Zhenshan",
+  "aka": [],
+  "group": "Changbai valley and Nanjing Road plot",
+  "role": "Scarred Chinese boss running the hidden refinery in the Changbai valley.",
+  "first": 190
+ },
+ {
+  "name": "Viktor Orlov",
+  "aka": [],
+  "group": "Changbai valley and Nanjing Road plot",
+  "role": "Foreign armed commander guarding the Changbai valley refinery.",
+  "first": 190
+ },
+ {
+  "name": "Hao Zhenhai",
+  "aka": [],
+  "group": "Shen family and the harbor families",
+  "role": "Hong Kong partner who blames Chen Xuan for the Shanghai, Sha City and Shenzhen losses.",
+  "first": 191
+ },
+ {
+  "name": "Simon Kwok",
+  "aka": [],
+  "group": "Shen family and the harbor families",
+  "role": "Aide to Victor Leung who gathers hotel, flight and port records.",
+  "first": 191
+ },
+ {
+  "name": "Victor Leung",
+  "aka": [],
+  "group": "Shen family and the harbor families",
+  "role": "Hong Kong financier leading the Seven-Harbor backers; controls the Changbai vault.",
+  "first": 191,
+  "later": [
+   {
+    "ch": 195,
+    "role": "Panics and orders trucks readied to haul gold and ledgers from Changbai"
+   }
+  ]
+ },
+ {
+  "name": "Kieran Cole",
+  "aka": [],
+  "group": "Shen family and the harbor families",
+  "role": "Ex-mercenary leader paid 8 million yuan to kill Chen Xuan in Shanghai.",
+  "first": 192,
+  "later": [
+   {
+    "ch": 194,
+    "role": "Knocked out in the alley and taken by Shanghai State Security"
+   }
+  ]
+ },
+ {
+  "name": "Rico Alvarez",
+  "aka": [],
+  "group": "Shen family and the harbor families",
+  "role": "Hired killer with a folding knife on Kieran Cole's four-man team.",
+  "first": 192,
+  "later": [
+   {
+    "ch": 194,
+    "role": "Pinned down and knocked out in the alley; taken by Shanghai State Security"
+   }
+  ]
+ },
+ {
+  "name": "Tomasz Novak",
+  "aka": [],
+  "group": "Shen family and the harbor families",
+  "role": "Hired killer with a silenced pistol on Kieran Cole's four-man team.",
+  "first": 192,
+  "later": [
+   {
+    "ch": 194,
+    "role": "Knocked out in the alley and taken by Shanghai State Security"
+   }
+  ]
+ },
+ {
+  "name": "Dmitri Sokol",
+  "aka": [],
+  "group": "Changbai valley and Nanjing Road plot",
+  "role": "Burly former soldier from Eastern Europe on the team hunting Chen Xuan.",
+  "first": 193
+ },
+ {
+  "name": "Zhou Meifen",
+  "aka": [],
+  "group": "Plaza 66 and Shanghai life",
+  "role": "Cheerful bookstore cashier on Nanjing Road who double-wraps Chen Hao's books.",
+  "first": 193
+ }
 ]
