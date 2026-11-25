@@ -19,8 +19,8 @@
    "n": 3,
    "title": "The Three Founding Words",
    "file": "3.md",
-   "words": 968,
-   "h": "ac63a4e0"
+   "words": 885,
+   "h": "5d1e5d75"
   },
   {
    "n": 4,
@@ -59,17 +59,31 @@
   },
   {
    "n": 9,
-   "title": "Silence in the Capital Command Hall",
+   "title": "The Old Men Who Woke in the Dark",
    "file": "9.md",
-   "words": 972,
-   "h": "61fdf700"
+   "words": 906,
+   "h": "44e28dd0"
   },
   {
    "n": 10,
-   "title": "Before Sunrise",
+   "title": "Silence in the Capital Command Hall",
    "file": "10.md",
-   "words": 993,
-   "h": "ff4919cf"
+   "words": 1046,
+   "h": "43b3ea39"
+  },
+  {
+   "n": 11,
+   "title": "The Ghosts Nobody Survived",
+   "file": "11.md",
+   "words": 964,
+   "h": "ad7eacb1"
+  },
+  {
+   "n": 12,
+   "title": "Before Sunrise",
+   "file": "12.md",
+   "words": 1031,
+   "h": "b7fd88af"
   }
  ]
 }
