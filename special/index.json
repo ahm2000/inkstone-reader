@@ -3,10 +3,73 @@
  "chapters": [
   {
    "n": 1,
-   "title": "The Night the Sky Stopped",
+   "title": "Broken Glass on the Riverside Road",
    "file": "1.md",
-   "words": 1112,
-   "h": "c9fcc2a9"
+   "words": 825,
+   "h": "cf2948a2"
+  },
+  {
+   "n": 2,
+   "title": "Panic in the White Command Room",
+   "file": "2.md",
+   "words": 905,
+   "h": "aa6849dc"
+  },
+  {
+   "n": 3,
+   "title": "The Three Founding Words",
+   "file": "3.md",
+   "words": 866,
+   "h": "c2700e0c"
+  },
+  {
+   "n": 4,
+   "title": "Briefing the Unnumbered",
+   "file": "4.md",
+   "words": 822,
+   "h": "16a9ab53"
+  },
+  {
+   "n": 5,
+   "title": "The Quiet Wave of Dread",
+   "file": "5.md",
+   "words": 848,
+   "h": "843869de"
+  },
+  {
+   "n": 6,
+   "title": "No More Playing by the Book",
+   "file": "6.md",
+   "words": 818,
+   "h": "8593b09e"
+  },
+  {
+   "n": 7,
+   "title": "Iron Across Sky, Sea, and Road",
+   "file": "7.md",
+   "words": 835,
+   "h": "faf3d73d"
+  },
+  {
+   "n": 8,
+   "title": "The Breathless Country",
+   "file": "8.md",
+   "words": 849,
+   "h": "56ca2bba"
+  },
+  {
+   "n": 9,
+   "title": "Silence in the Capital Command Hall",
+   "file": "9.md",
+   "words": 964,
+   "h": "8e6dcf9b"
+  },
+  {
+   "n": 10,
+   "title": "Before Sunrise",
+   "file": "10.md",
+   "words": 993,
+   "h": "ff4919cf"
   }
  ]
 }
